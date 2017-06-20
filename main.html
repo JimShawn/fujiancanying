@@ -23,7 +23,16 @@
 					      </ul>
 					    </li>
 					    <li class="main-menu" ng-click="goToNews()"><a href="">行业新闻</a></li>
-					    <li class="main-menu" ng-click="goToIndustryInfo()"><a href="">产业对接</a></li>
+					    <li class="dropdown main-menu" ng-click="goToIndustryInfo()">
+					    	<a href="" class="dropdown-toggle" data-toggle="dropdown" >产业对接
+					    		<span class="caret"></span>
+					    	</a>
+					    	<ul class="dropdown-menu" role="menu">
+						        <li><a href="">劳务信息</a></li>
+						        <li><a href="">餐饮转让</a></li>
+						        <li><a href="">食材对接</a></li>
+						     </ul>
+					    </li>
 					    <li class="main-menu" ng-click="goToMap()"><a href="">美食地图</a></li>
 					</ul>
 				</div>
