@@ -217,3 +217,11 @@
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
 	color: #ff8d00;
 }
+.ft1{
+    clear:none;float:right;font-size:11px;color:#666;width:680px;padding-top:10px
+}
+.ft4{
+    clear:none;
+    text-align:center;
+    color: #fff;
+}
