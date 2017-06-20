@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>福建餐饮网</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<!-- Meta, title, CSS, favicons, etc. -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./resources/css/main.css">
-	<script type="text/javascript" src="./jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="./bootstrap/dist/js/bootstrap.min.js"></script>
-</head>
-<body style="background: #fff">
+<div class="container" style="width: 1150px">
+	<div class="line"></div>
 
 	<div class="climateMonitoringBox row text-center" style="height:460px; padding:10px 0px 0px 20px;">
 
@@ -67,6 +54,7 @@
 		<div class="row"><img src="./resources/img/zhangzhou.jpg"></div>
 		<div class="row text-center" style="background: gray; color: #eee;">漳州面煎果</div>
 	</div>
+</div>
 	
 	<script>
 		$("#Map area").hover(function(e) {
@@ -78,11 +66,10 @@
 			topzhi = e.clientY + scotop + 10;
 			showdiv.css({left:leftzhi + 'px',top:topzhi + 'px'});
 			showdiv.show();
+			console.log("ddd");
 		},function() {
 			name=$(this).attr("name");
 			$(".yujing[name='"+name+"']").hide();
 		});
 		$(".yujing").hide();
 	</script>
-</body>
-</html>

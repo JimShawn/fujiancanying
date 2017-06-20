@@ -48,6 +48,11 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         templateUrl: 'industryinfo.html'
         }
 
+    ).state("main.map",{
+        url: "/map",
+        templateUrl: 'map.html'
+        }
+
     );
     $urlRouterProvider.otherwise('/main');
 

@@ -17,6 +17,9 @@ main.controller('MainController', ['$scope', '$http','$location','$rootScope','$
     $scope.goToIndustryInfo = function (argument) {
     	$state.go("main.industryInfo");
     };
+    $scope.goToMap = function (argument) {
+        $state.go("main.map");
+    };
 
 
 }]);
