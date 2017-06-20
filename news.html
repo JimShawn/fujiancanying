@@ -1,58 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<title>福建餐饮网</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./bootstrap/dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./resources/css/main.css">
-	<script type="text/javascript" src="./jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="./bootstrap/dist/js/bootstrap.min.js"></script>
-</head>
-<body style="background: #fff">
-
-<div class="row" style="background: #fff;height: 90px;">
-    <div class="col-md-2 col-lg-2"  >
-        <h2 style="font-weight: 700;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;福建餐饮网</h2>
-
-    </div>
-
-    <div class="col-md-8 col-lg-8" style="padding-left: 100px;">
-        <ul class="list-inline" style="margin-top: 15px;">
-            <li style="font-size: 18px;margin: 10px;cursor: pointer;">闽菜文化</li>
-            <li style="font-size: 18px;margin: 10px;cursor: pointer;">闽菜菜谱</li>
-            <li style="font-size: 18px;margin: 10px;cursor: pointer;">视频教学</li>
-            <li style="font-size: 18px;margin: 10px;cursor: pointer;">名师名店</li>
-            <li style="font-size: 18px;margin: 10px;cursor: pointer;color: #ff0000;">行业新闻</li>
-            <li style="font-size: 18px;margin: 10px;cursor: pointer;">产业对接</li>
-            <li style="font-size: 18px;margin: 10px;cursor: pointer;">美食地图</li>
-        </ul>
-    </div>
-
-    <div class="col-md-2 col-lg-2" >
-        <div class="input-group" style="margin-top: 20px;">
-            <input type="text" class="form-control">
-            <span class="input-group-btn">
-				<button class="btn btn-default" type="button" style="background: #989898; color: #fff">
-					搜索
-				</button>
-			</span>
-        </div>
-    </div>
-</div>
+<div class="container" style="width: 1150px" ng-controller="NewsController">
 			
 			<div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 5px 0px;">
 				<div class="col-md-2 col-lg-2"></div>
-				<div class="col-md-8 col-lg-8">
+				<div class="col-md-8 col-lg-8" ng-click="newsDetail()">
 					<div class="row" style="padding: 5px 0px;">
 						<div class="col-md-12 col-lg-12"><h4 style="color: #333;">关于开展省属职业技能鉴定考评员换证工作的通知</h4></div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-lg-12" style="color: gray;">
-						为进一步做好职业技能鉴定工作，提高职业技能鉴定工作管理水平和鉴定质量，加强考评员队伍建设，省职业技能鉴定指导中心决定对全省普通工种的考评员进行换证。现将有关事项通知如下...<a href="news-detail.html">阅读全文</a>
+						为进一步做好职业技能鉴定工作，提高职业技能鉴定工作管理水平和鉴定质量，加强考评员队伍建设，省职业技能鉴定指导中心决定对全省普通工种的考评员进行换证。现将有关事项通知如下...<a href="" ng-click="newsDetail()">阅读全文</a>
 						</div>
 					</div>
 					<div class="row" style="font-size: 12px; color: gray; margin-top: 8px;">
@@ -65,14 +21,14 @@
 
 			<div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 5px 0px;">
 				<div class="col-md-2 col-lg-2"></div>
-				<div class="col-md-8 col-lg-8">
+				<div class="col-md-8 col-lg-8" ng-click="newsDetail()">
 					<div class="row" style="padding: 5px 0px;">
 						<div class="col-md-12 col-lg-12"><h4 style="color: #333;">福建省餐饮烹饪行业协会关于举办2017年“亚明杯”福建省创新菜品技艺交流评选活动的通知
 </h4></div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-lg-12" style="color: gray;">
-						为弘扬中华饮食文化，推动闽菜的传承、创新和发展，面向大众，拓展闽菜发展新思路，由福建省餐饮烹饪行业协会主办、福建省职业技能鉴定烹饪专业委员会和福建省餐饮烹饪行业协会名厨委员会共同承办“亚明杯”福建省创新菜品技艺交流会活动。请全省各地区专委会...<a href="news-detail.html">阅读全文</a>
+						为弘扬中华饮食文化，推动闽菜的传承、创新和发展，面向大众，拓展闽菜发展新思路，由福建省餐饮烹饪行业协会主办、福建省职业技能鉴定烹饪专业委员会和福建省餐饮烹饪行业协会名厨委员会共同承办“亚明杯”福建省创新菜品技艺交流会活动。请全省各地区专委会...<a href="" ng-click="newsDetail()">阅读全文</a>
 						</div>
 					</div>
 					<div class="row" style="font-size: 12px; color: gray; margin-top: 8px;">
@@ -85,14 +41,14 @@
 
 			<div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 5px 0px;">
 				<div class="col-md-2 col-lg-2"></div>
-				<div class="col-md-8 col-lg-8">
+				<div class="col-md-8 col-lg-8" ng-click="newsDetail()">
 					<div class="row" style="padding: 5px 0px;">
 						<div class="col-md-12 col-lg-12"><h4 style="color: #333;">福建省餐饮烹饪行业协会关于第六次会员代表大会延期召开的通知
 </h4></div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-lg-12" style="color: gray;">
-						我会第六次会员代表大会原定于2017年6月2日-4日在福州海峡国际会展中心召开，同期将举办福建省餐饮产业发展大会、“亚明杯”福建省创新菜品技艺交流、闽菜好食材展等活动。现接有关部门通知，福州海峡国际会展中心将于6月上旬封闭，暂停对外服...<a href="news-detail.html">阅读全文</a>
+						我会第六次会员代表大会原定于2017年6月2日-4日在福州海峡国际会展中心召开，同期将举办福建省餐饮产业发展大会、“亚明杯”福建省创新菜品技艺交流、闽菜好食材展等活动。现接有关部门通知，福州海峡国际会展中心将于6月上旬封闭，暂停对外服...<a href="" ng-click="newsDetail()">阅读全文</a>
 						</div>
 					</div>
 					<div class="row" style="font-size: 12px; color: gray; margin-top: 8px;">
@@ -105,13 +61,13 @@
 
 			<div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 5px 0px;">
 				<div class="col-md-2 col-lg-2"></div>
-				<div class="col-md-8 col-lg-8">
+				<div class="col-md-8 col-lg-8" ng-click="newsDetail()">
 					<div class="row" style="padding: 5px 0px;">
 						<div class="col-md-12 col-lg-12"><h4 style="color: #333;">福建省餐饮烹饪行业协会关于“亚明杯”创新菜品技艺交流评选活动延期举办的通知</h4></div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-lg-12" style="color: gray;">
-						我会主办的“亚明杯”创新菜品技艺交流评选活动原定于2017年6月2日在福州海峡国际会展中心8号馆举办。现接有关部门通知，福州海峡国际会展中心将于6月上旬封闭，暂停对外服务，因此将“亚明杯”创新菜品技艺交流评...<a href="news-detail.html">阅读全文</a>
+						我会主办的“亚明杯”创新菜品技艺交流评选活动原定于2017年6月2日在福州海峡国际会展中心8号馆举办。现接有关部门通知，福州海峡国际会展中心将于6月上旬封闭，暂停对外服务，因此将“亚明杯”创新菜品技艺交流评...<a href="" ng-click="newsDetail()">阅读全文</a>
 						</div>
 					</div>
 					<div class="row" style="font-size: 12px; color: gray; margin-top: 8px;">
@@ -124,13 +80,13 @@
 
 			<div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 5px 0px;">
 				<div class="col-md-2 col-lg-2"></div>
-				<div class="col-md-8 col-lg-8">
+				<div class="col-md-8 col-lg-8" ng-click="newsDetail()">
 					<div class="row" style="padding: 5px 0px;">
 						<div class="col-md-12 col-lg-12"><h4 style="color: #333;">关于开展2016年福建餐饮十大品牌评选申报工作的通知</h4></div>
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-lg-12" style="color: gray;">
-						为了进一步贯彻落实国务院《关于发挥品牌引领作用推动供需结构升级的意见》，扩大福建餐饮在国内外的品牌影响力，有效发挥餐饮企业品牌的标杆示范作用，我会正式启动2016年度“福建餐饮企业十大品牌”评选活动...<a href="news-detail.html">阅读全文</a>
+						为了进一步贯彻落实国务院《关于发挥品牌引领作用推动供需结构升级的意见》，扩大福建餐饮在国内外的品牌影响力，有效发挥餐饮企业品牌的标杆示范作用，我会正式启动2016年度“福建餐饮企业十大品牌”评选活动...<a href="" ng-click="newsDetail()">阅读全文</a>
 						</div>
 					</div>
 					<div class="row" style="font-size: 12px; color: gray; margin-top: 8px;">
@@ -140,9 +96,4 @@
 				</div>
 				<div class="col-md-2 col-lg-2"></div>
 			</div>
-		</div>
-	</div>
-	
-</body>
-
-</html>
+</div>
