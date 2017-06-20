@@ -7,15 +7,24 @@
 
 				</div>
 
-				<div class="col-md-8 col-lg-8" style="padding-left: 100px;">
-					<ul class="list-inline" style="margin-top: 15px;">
-						<li style="font-size: 18px;margin: 10px;cursor: pointer;color: #ff0000;">闽菜文化</li>
-						<li style="font-size: 18px;margin: 10px;cursor: pointer;">闽菜菜谱</li>
-						<li style="font-size: 18px;margin: 10px;cursor: pointer;" ng-click="goToVideo()">视频教学</li>
-						<li style="font-size: 18px;margin: 10px;cursor: pointer;"  ng-click="goToChefRestaurant()">名师名店</li>
-						<li style="font-size: 18px;margin: 10px;cursor: pointer;" ng-click="goToNews()">行业新闻</li>
-						<li style="font-size: 18px;margin: 10px;cursor: pointer;" ng-click="goToIndustryInfo()">产业对接</li>
-						<li style="font-size: 18px;margin: 10px;cursor: pointer;" ng-click="goToMap()">美食地图</li>
+				<div class="col-md-8 col-lg-8" style="padding-left: 100px;margin-top: 10px;">
+					<ul class="nav nav-pills" role="tablist" >
+					    <li class="main-menu"><a href="">闽菜文化</a></li>
+					    <li class="main-menu"><a href="">闽菜菜谱</a></li>
+					    <li class="main-menu" ng-click="goToVideo()"><a href="">视频教学</a></li>
+					        
+					    <li class="dropdown main-menu" ng-click="goToChefRestaurant()">
+					      <a class="dropdown-toggle" data-toggle="dropdown" href="">
+					      名师名店 <span class="caret"></span></a>
+					      <ul class="dropdown-menu" role="menu">
+					        <li><a href="">名师</a></li>
+					        <li><a href="">名店</a></li>
+					        <li><a href="">名小吃</a></li>
+					      </ul>
+					    </li>
+					    <li class="main-menu" ng-click="goToNews()"><a href="">行业新闻</a></li>
+					    <li class="main-menu" ng-click="goToIndustryInfo()"><a href="">产业对接</a></li>
+					    <li class="main-menu" ng-click="goToMap()"><a href="">美食地图</a></li>
 					</ul>
 				</div>
 

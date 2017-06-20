@@ -225,3 +225,18 @@
     text-align:center;
     color: #fff;
 }
+.main-menu{
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+.nav>li>a {
+    color: #333333;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    color: #ee3636;
+}
+.nav>li>ul>li>a:hover {
+    color: #ee3636;
+}
