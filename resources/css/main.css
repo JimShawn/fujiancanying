@@ -130,7 +130,7 @@
 .rel, .f-pr {
     position: relative;
 }
-.u-cover .mask {
+.u-cover .mask, .mask1 {
     top: 0;
     left: 0;
     background-color: #1f6740;
@@ -263,4 +263,12 @@
         width: 20%;
         float: left;
     }
+}
+
+.show-img img:hover{
+    /* -webkit-transform: scale(1.1,1.1); */
+    -moz-transform: scale(1.1,1.1);
+    -o-transform: scale(1.1,1.1);
+    -ms-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
 }

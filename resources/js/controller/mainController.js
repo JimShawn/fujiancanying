@@ -20,6 +20,9 @@ main.controller('MainController', ['$scope', '$http','$location','$rootScope','$
     $scope.goToMap = function (argument) {
         $state.go("main.map");
     };
+    $scope.goToHomepage = function (argument) {
+        $state.go("main.homepage");
+    };
 
 
 }]);
