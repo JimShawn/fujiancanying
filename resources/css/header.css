@@ -1,0 +1,19 @@
+.main-menu{
+    line-height: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    width: 92px;
+}
+.nav>li>a {
+    display: inline;
+    height: 34px;
+    padding: 5px 10px;
+    color: #333333;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: #e43232;
+    color: white;
+}
+.nav>li>ul>li>a:hover {
+}
