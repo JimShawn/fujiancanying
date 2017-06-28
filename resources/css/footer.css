@@ -1,0 +1,22 @@
+.foot-nav {
+	margin-left: -45px;
+}
+
+.foot-nav li {
+	list-style: none;
+	float: left;
+	color: #adadad;
+	padding-left: 5px;
+}
+
+.foot-nav>li>a {
+	display: inline;
+	text-decoration: none;
+	color: #adadad;
+}
+
+.foot-nav>li>a:focus, .foot-nav>li>a:hover {
+	text-decoration: none;
+    color: #e43232;
+    font-color: white;
+}
