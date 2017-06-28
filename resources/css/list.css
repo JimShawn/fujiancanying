@@ -1,0 +1,95 @@
+.left-wrap {
+    margin: auto;
+    width: 800px;
+}
+
+.box .tit strong {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 24px;
+    color: #00509e;
+    border-bottom: #00509e 2px solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.v-box .index li {
+    height: 265px;
+    padding: 28px 0;
+    border-bottom: #797979 1px dotted;
+}
+
+.box .tit {
+    height: 31px;
+    border-bottom: #bab8b8 1px solid;
+    position: relative;
+}
+
+.v-box .b-img {
+    margin-right: 26px;
+    position: relative;
+    float: left;
+    display: inline;
+}
+
+.b-img img {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    background: none;
+}
+
+.box .b-img b {
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    padding: 0 10px;
+    position: absolute;
+    background: rgba(0,0,0,.7);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2000000,endColorstr=#b2000000);
+    color: #fff;
+    font-weight: normal;
+}
+
+.v-box dl {
+    width: 400px;
+    display: inline;
+}
+
+.v-box dt {
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.v-box dd {
+    height: 80px;
+    overflow: hidden;
+}
+
+.v-box dt a {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.v-box dd a {
+    color: #525353;
+    line-height: 20px;
+    text-decoration: none;
+    font-family: "microsoft yahei",Arial,Verdana,"宋体";
+    font-size: 16px;
+}
+
+.v-box dl div{
+    float: right;
+    text-align: right;
+}

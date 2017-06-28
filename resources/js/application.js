@@ -53,6 +53,11 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         templateUrl: 'map.html'
         }
 
+    ).state("main.caipu",{
+            url: "/caipu",
+            templateUrl: 'caipu2.html'
+        }
+
     );
     $urlRouterProvider.otherwise('/main');
 
