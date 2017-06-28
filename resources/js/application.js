@@ -19,6 +19,7 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         }
 
     ).state("main.newsDetail",{
+        params:{"news":null},
         url: "/newsDetail",
         templateUrl: 'news-detail.html'
         }

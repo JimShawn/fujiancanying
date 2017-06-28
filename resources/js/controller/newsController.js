@@ -1,10 +1,46 @@
 var news = angular.module('news', []);
 
-news.controller('NewsController', ['$scope', '$http','$location','$rootScope','$state',function ($scope,$http,$location,$rootScope,$state) {
+news.constant("newsList", [
+	{
+		id:1,
+		title:"关于开展省属职业技能鉴定考评员换证工作的通知",
+		createdTime:"2017/6/5",
+		readCount:299,
+		brief:"为进一步做好职业技能鉴定工作，提高职业技能鉴定工作管理水平和鉴定质量，加强考评员队伍建设，省职业技能鉴定指导中心决定对全省普通工种的考评员进行换证。现将有关事项通知如下：",
+		content:"<p>为进一步做好职业技能鉴定工作，提高职业技能鉴定工作管理水平和鉴定质量，加强考评员队伍建设，省职业技能鉴定指导中心决定对全省普通工种的考评员进行换证。现将有关事项通知如下：</p>" +
+			"<h4>一、换证对象</h4>" +
+			"<p>2013年与2014年经考核发证的且在省人社厅2017年公布我省尚在组织实施的职业资格目录清单内的普通工种的考评员。为落实闽人社文〔2017〕41号文件精神，兑现职业院校“双证书”承诺，做好后续工作，对于国家公布取消的职业（工种）的考评员，本着自愿原则，经考评员本人申请，予以换证。</p>" +
+			"<h4>二、培训方式</h4>" +
+			"<p>学员登入福建职训在线http：www.fjvtc.com平台，点击“福建省考评员继续教育培训”，凭地区、姓名、手机号注册账号，进行考评员换证学习（在7月10日之前完成）。</p>" +
+			"<h4>三、有关要求</h4>" +
+			"<p>（一）凡参加换证的考评员须交由推荐鉴定站盖章的《考评员换证申报表》一式二份，原考评员证卡复印件一份，近两年内免冠同底一寸照片两张。</p>" +
+			"<p>（二）考评员年龄。</p>" +
+			"<p>男： 65周岁以下，女：60周岁以下。</p>" +
+			"<p>（三）换证考评员还须提交三年《考评工作总结》。《考评工作总结》评审合格者，颁发国家人力资源和社会保障部统一印制、福建省职业技能鉴定指导中心核准的《国家职业技能鉴定考评员》证卡。</p>" +
+			"<p>（四）各鉴定站所应对三年来有参加考评工作的换证考评员资料进行审查，并于6月23日前将申报汇总表、《考评工作总结》及个人资料汇总到省职业技能鉴定指导中心培训科。联系电话：0591-87519908，邮箱地址：pxk_87519908@163.com。</p>" +
+			"<h4>四、收费标准</h4>" +
+			"<p>按照闽价费〔2009〕55号、闽价费〔2007〕63号文件规定，继续教育考核认证费100元/人。</p>"
+	},
+	{
+		id:2,
+		title:"222关于开展省属职业技能鉴定考评员换证工作的通知",
+		createdTime:"2017/04/08",
+		readCount:8,
+		brief:"8888日晚，开普敦中国大酒店里灯火通明，高朋满座，诱人的",
+		content:"<p>9日晚，开普敦中国大酒店里灯火通明，高朋满座，诱人的香味在夜空中飘散。</p><p>这里正在举行“中国福建-南非闽菜宣传推介会”，来自开普敦各界嘉宾和侨界代表百余人欢聚一堂，饶有兴致地品尝具有中国福建闽菜风味的美味佳肴。</p>"	
+	}
+]);
 
-
-        $scope.newsDetail = function (argument) {
-            $state.go("main.newsDetail");
-        }
-
+news.filter('htmlContent',['$sce', function($sce) {
+  return function(input) {
+    return $sce.trustAsHtml(input);
+  }
 }]);
+
+news.controller('NewsController', function ($scope,$http,$location,$rootScope,$state,newsList) {
+	$scope.newsList = newsList;
+});
+
+news.controller('NewsDetailController', function($scope,$stateParams) {
+	$scope.news = $stateParams.news;
+});
