@@ -1,5 +1,11 @@
 var main = angular.module('main', []);
 
+main.filter('htmlContent',['$sce', function($sce) {
+  return function(input) {
+    return $sce.trustAsHtml(input);
+  }
+}]);
+
 main.controller('MainController', ['$scope', '$http','$location','$rootScope','$state',function ($scope,$http,$location,$rootScope,$state) {
 
 

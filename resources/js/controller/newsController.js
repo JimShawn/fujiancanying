@@ -153,12 +153,6 @@ news.constant("newsList", [
 	}
 ]);
 
-news.filter('htmlContent',['$sce', function($sce) {
-  return function(input) {
-    return $sce.trustAsHtml(input);
-  }
-}]);
-
 news.controller('NewsController', function ($scope,$http,$location,$rootScope,$state,newsList) {
 	$scope.newsList = newsList;
 });
