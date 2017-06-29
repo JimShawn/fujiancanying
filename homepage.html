@@ -16,7 +16,7 @@
 			</div>
 			
 
-			<div class="container" style="width: 1140px;height: 332px;">
+			<div class="container" style="width: 1140px; height: 332px;">
 				<h2 style="margin-top: 40px;font-size: 20px;color: #333333;">闽菜菜谱
 					<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.caipu">更多></a>
 				</h2>
@@ -25,14 +25,14 @@
 					<img src="./resources/img/left-grey_05.png" style="height: 188px;width: 50px;">
 				</div> -->
 				
-				<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;">
+				<div style="height: 215px; width: inherit; margin-top: 35px; display: inline-flex;">
 
 					<div class="caipu-img img-pre" style="display: none;"></div>
 
 					<div class="caipu-img show-img" style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="snack in snackList | filter: {type: 1} | slice:0:5">
 						<a style="text-decoration-line: none;"ui-sref="main.snackDetail({snackTitle:snack.title})">
-						<div style="height: 144px;width: 192px; overflow: hidden;">
-							<img src="./resources/img/{{snack.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+						<div style="height: 144px; width: 192px; overflow: hidden;">
+							<img src="./resources/img/{{snack.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 144px; width: 192px; cursor: pointer;">
 						</div>
 						<h4 style="color:#333333;">{{snack.title}}</h4>
 						</a>
@@ -66,30 +66,30 @@
 						<div class="video-content1">
 							<div style="width: 237px;height: 306px;margin-top: 10px;">
 								<div class="p-thumb"  >
-							        <a href="http://v.youku.com/v_show/id_XMjgyNzA2NTg5Mg==.html" title="披萨制作" data-from="1-1" target="video"></a>
+							        <a href="https://v.qq.com/x/page/u0519wdc89e.html" title="南煎猪肝" data-from="1-1" target="video"></a>
 							        <i class="bg"></i>
-									<img class="quic" src="./resources/img/icon2.jpg">
-									<span class="time-tip">00:09</span>
+									<img class="quic" src="./resources/img/jiaoxue/02.jpg">
+									<!-- <span class="time-tip">00:09</span> -->
 								</div>
 								<div class="p-thumb"  style="margin-top: 10px;">
-								        <a href="http://v.youku.com/v_show/id_XMjgyNzA2NTg5Mg==.html" title="披萨制作" data-from="1-1" target="video"></a>
+								        <a href="https://v.qq.com/x/page/q0519fwxprd.html" title="淡糟香螺片" data-from="1-1" target="video"></a>
 								        <i class="bg"></i>
-										<img class="quic" src="./resources/img/icon1.jpg">
-										<span class="time-tip">00:09</span>
+										<img class="quic" src="./resources/img/jiaoxue/03.jpg">
+										<!-- <span class="time-tip">00:09</span> -->
 								</div>
 							</div>
 							<div style="width: 237px;height: 306px;margin-top: 10px;margin-left: 10px;">
 								<div class="p-thumb"  >
-							        <a href="http://v.youku.com/v_show/id_XMjgyNzA2NTg5Mg==.html" title="披萨制作" data-from="1-1" target="video"></a>
+							        <a href="https://v.qq.com/x/page/i051999wpem.html" title="爆炒双脆" data-from="1-1" target="video"></a>
 							        <i class="bg"></i>
-									<img class="quic" src="./resources/img/icon1.jpg">
-									<span class="time-tip">00:09</span>
+									<img class="quic" src="./resources/img/jiaoxue/04.jpg">
+									<!-- <span class="time-tip">00:09</span> -->
 								</div>
 								<div class="p-thumb"  style="margin-top: 10px;">
-								        <a href="http://v.youku.com/v_show/id_XMjgyNzA2NTg5Mg==.html" title="披萨制作" data-from="1-1" target="video"></a>
+								        <a href="https://v.qq.com/x/page/z0519lricn1.html" title="注油鳗鱼" data-from="1-1" target="video"></a>
 								        <i class="bg"></i>
-										<img class="quic" src="./resources/img/icon2.jpg">
-										<span class="time-tip">00:09</span>
+										<img class="quic" src="./resources/img/jiaoxue/05.jpg">
+										<!-- <span class="time-tip">00:09</span> -->
 								</div>
 							</div>
 							
@@ -101,172 +101,66 @@
 
 			<div style="background-color: #f3f3f3;width: 100%;height: 460px;padding-top: 50px;">
 				<div class="container famous" style="width: 1140px;height: 372px;">
-					<a href="" class="active" ng-mouseover="changeTab(1)">名师</a>
-					<a href="" ng-mouseover="changeTab(2)">名店</a>
-					<a href="" ng-mouseover="changeTab(3)">名小吃</a>
-					<span class="famous-more" click="console.log(1);">
+					<a href="" class="active" ng-click="changeTab(1)">名师</a>
+					<a href="" ng-click="changeTab(2)">名店</a>
+					<a href="" ng-click="changeTab(3)">名小吃</a>
+					<span class="famous-more" ng-click="gotoFamous()">
 						更多>
 					</span>
 					
-					<div class="line"></div>
+					<div class="line" style="margin-bottom: 10px;"></div>
 					<!-- <div style="width: 1140px;">
 						<img src="./resources/img/left-grey_05.png" style="height: 188px;width: 50px;">
 					</div> -->
 					
-					<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;" ng-show="famousChef">
+					<div style="height: 215px;width: 1140px;display: inline-flex;" ng-show="famousChef">
 
-						<div class="caipu-img img-pre" style="display: none;">
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/czl.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+						<div class="caipu-img img-pre" style="display: none;"></div>
+
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="chef in chefList | slice:0:5">
+							<a style="text-decoration-line: none;" ui-sref="main.chefDetail({chef:chef})"><div style="height: 254px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/{{chef.name}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 254px;width: 192px;cursor: pointer;">
 								
 							</div>
-							<h4>陈智灵1</h4>
-							<h5>厦门国际会展酒店行政总厨</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/hmr.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>胡满荣</h4>
-							<h5>巴黎国际杯“中国美食国际文化节”工作委员宴会副部长</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/hzc.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>黄志成</h4>
-							<h5>友德餐饮集团厨政管理</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/chef4.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>陈小强</h4>
-							<h5>福清一品鲜酒店主厨</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/wzq.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>吴志强</h4>
-							<h5>石狮市五洲大酒店行政总厨、厨政管理</h5>
+							<h4 style="color:#333333;">{{chef.name}}</h4>
+							</a>
+							<!-- <h5>厦门国际会展酒店行政总厨</h5> -->
 						</div>
 						
 						
-						<div class="caipu-img img-next" style="display: none;">
-								
-
-						</div>
+						<div class="caipu-img img-next" style="display: none;"></div>
 					</div>
 
-					<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;" ng-show="famousHotel">
+					<div style="height: 215px;width: 1140px;display: inline-flex;" ng-show="famousHotel">
 
-						<div class="caipu-img img-pre" style="display: none;">
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/czl.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+						<div class="caipu-img img-pre" style="display: none;"></div>
+
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="restaurant in restaurantList | slice:0:5">
+							<a style="text-decoration-line: none;" ui-sref="main.restaurantDetail({restaurant:restaurant})"><div style="height: 164px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/{{restaurant.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 164px;width: 192px;cursor: pointer;">
 								
 							</div>
-							<h4>陈智灵2</h4>
-							<h5>厦门国际会展酒店行政总厨</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/hmr.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>胡满荣</h4>
-							<h5>巴黎国际杯“中国美食国际文化节”工作委员宴会副部长</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/hzc.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>黄志成</h4>
-							<h5>友德餐饮集团厨政管理</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/chef4.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>陈小强</h4>
-							<h5>福清一品鲜酒店主厨</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/wzq.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>吴志强</h4>
-							<h5>石狮市五洲大酒店行政总厨、厨政管理</h5>
+							<h4 style="color:#333333;">{{restaurant.title}}</h4>
+							</a>
 						</div>
 						
-						
-						<div class="caipu-img img-next" style="display: none;">
-								
-
-						</div>
+						<div class="caipu-img img-next" style="display: none;"></div>
 					</div>
 
-					<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;"ng-show="famousSnack">
+					<div style="height: 215px;width: 1140px;display: inline-flex;"ng-show="famousSnack">
 
-						<div class="caipu-img img-pre" style="display: none;">
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/czl.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>陈智灵3</h4>
-							<h5>厦门国际会展酒店行政总厨</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/hmr.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>胡满荣</h4>
-							<h5>巴黎国际杯“中国美食国际文化节”工作委员宴会副部长</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/hzc.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>黄志成</h4>
-							<h5>友德餐饮集团厨政管理</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/chef4.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>陈小强</h4>
-							<h5>福清一品鲜酒店主厨</h5>
-						</div>
-						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-							<div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/wzq.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-								
-							</div>
-							<h4>吴志强</h4>
-							<h5>石狮市五洲大酒店行政总厨、厨政管理</h5>
-						</div>
-						
-						
-						<div class="caipu-img img-next" style="display: none;">
-								
+						<div class="caipu-img img-pre" style="display: none;"></div>
 
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="snack in snackList | slice:0:5">
+							<a style="text-decoration-line: none;" ui-sref="main.snackDetail({snackTitle:snack.title})"><div style="height: 144px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/{{snack.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 144px;width: 192px;cursor: pointer;">
+								
+							</div>
+							<h4 style="color:#333333;">{{snack.title}}</h4>
+							</a>
 						</div>
+
+						<div class="caipu-img img-next" style="display: none;"></div>
 					</div>
 				</div>
 			</div>
@@ -275,46 +169,28 @@
 				<div class="container transform-info">
 					<div style="width: 330px;">
 						<h2 class="transform-title">餐饮转让
-							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;">更多></a>
+							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.industryInfo">更多></a>
 						</h2>
 						<ul>
-							<li>【转让】莆田海鲜楼</li>
-							<li>【出租】东街贤南路西餐厅转租</li>
-							<li>【转让】黎明永辉旁餐馆转让</li>
-							<li>【转让】钱隆天下餐馆转让</li>
-							<li>【转让】钱隆天下餐馆转让</li>
-							<li>【转让】钱隆天下餐馆转让</li>
-							<li>【转让】钱隆天下餐馆转让</li>
+							<li ng-repeat="info in infoList.transferInfo | slice:0:7">{{info.title}}</li>
 						</ul>
 					</div>
 					<div class="line-vertical"></div>
 					<div style="width: 330px;" class="transform-container">
 						<h2 class="transform-title transform-titl-ohter">劳务信息
-							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;">更多></a>
+							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.industryInfo">更多></a>
 						</h2>
 						<ul>
-							<li>福州荣誉大酒店招聘行政文员一名</li>
-							<li>厦门绿进招聘设计人员一名</li>
-							<li>福州金誉公司招聘品管员若干</li>
-							<li>福州梅峰宾馆招聘PA工若干</li>
-							<li>聚春园驿馆诚聘</li>
-							<li>聚春园驿馆诚聘</li>
-							<li>聚春园驿馆诚聘</li>
+							<li ng-repeat="info in infoList.labourInfo | slice:0:7">{{info.title}}</li>
 						</ul>
 					</div>
 					<div class="line-vertical"></div>
 					<div style="width: 330px;" class="transform-container">
 						<h2 class="transform-title transform-titl-ohter">食材对接
-							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;">更多></a>
+							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.industryInfo">更多></a>
 						</h2>
 						<ul>
-							<li>福建大麦园小麦批发</li>
-							<li>连江廉价海鲜</li>
-							<li>尤溪本地金桔</li>
-							<li>漳州带鱼海带长期合作</li>
-							<li>宁德土鸡低价批发</li>
-							<li>泉州希尔顿酒店合作烧鸭</li>
-							<li>泉州希尔顿酒店合作烧鸭</li>
+							<li ng-repeat="info in infoList.foodInfo | slice:0:7">{{info.title}}</li>
 						</ul>
 					</div>
 				</div>
@@ -331,25 +207,25 @@
 						
 						<div style="width: 551px;display: inline-flex;background: #ffffff;">
 							<div style="height: 310px;width: 225px;">
-								<img src="./resources/img/chef4.jpg" class="img-responsive" alt="Cinque Terre" style="height: 310px;width: 225px;">
+								<img src="./resources/img/culture.jpg" class="img-responsive" alt="Cinque Terre" style="height: 310px;width: 225px;">
 								
 							</div>
 							<div class="health-content1">
-								<a >健康饮食</a>
-								<p style="font-size: 14px;letter-spacing: 2px;margin-top: 18px;color: #666666;">为了进一步贯彻落实国务院《关于发挥品牌引领作用推动供需结构升级的意见》，扩大福建餐饮在国内外的品牌影响力，有效发挥餐饮企业品牌的标杆示范作用，我会正式启动2016年度“福建餐饮企业十大品牌”评选活动，开展正餐、火锅、快餐、团餐、小吃、休闲简餐、西餐等七个领域的细分评选。希望各市、县（区）餐饮烹饪行业协会负责推荐2-3家餐饮企业积极参与评选活动的申报工作，于2017年6月15日前将申报表格（完整填写附件表格，打印、盖章、扫描）以电子邮件形式反馈至本会，我会保证对企业数据严格保密。评选结果将在2017年（首届）福建餐饮产业发展大会期间公布，且最终形成《2016年度福建餐饮企业十大品牌分析报告》并发至各申报企业在表格中所填报的联系人电子邮箱。</p>
-								<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;">更多></a>
+								<a ui-sref="main.culture">闽菜文化</a>
+								<p style="font-size: 14px;letter-spacing: 2px;margin-top: 18px;color: #666666;">闽菜是中国八大菜系之一，经历了中原汉族文化和当地古越族文化的混合、交流而逐渐形成。闽菜是以福州菜为基础，后又融合闽东、闽南、闽西、闽北、莆仙地方风味菜为主形成的菜系。福建人民经过与海外、特别是南洋群岛人民的长期交往，海外的饮食习俗也逐渐渗透到闽人的饮食生活之中，从而使闽菜成为带有开放特色的一种独特的菜系。闽菜以烹制山珍海味而著称，在色香味形俱佳的基础上，尤以“香”、“味”见长，其清鲜、和醇、荤香、不腻的风格特色，以及汤路广泛的特点，在烹坛园地中独具一席。</p>
+								<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.culture">更多></a>
 							</div>
 
 						</div>
 						<div style="width: 551px;display: inline-flex;background: #ffffff;margin-left: 40px;">
 							<div style="height: 310px;width: 225px;">
-								<img src="./resources/img/chef4.jpg" class="img-responsive" alt="Cinque Terre" style="height: 310px;width: 225px;">
+								<img src="./resources/img/map.jpg" class="img-responsive" alt="Cinque Terre" style="height: 310px;width: 225px;">
 								
 							</div>
 							<div class="health-content1">
-								<a >美食地图</a>
-								<p style="font-size: 14px;letter-spacing: 2px;margin-top: 18px;color: #666666;">为了进一步贯彻落实国务院《关于发挥品牌引领作用推动供需结构升级的意见》，扩大福建餐饮在国内外的品牌影响力，有效发挥餐饮企业品牌的标杆示范作用，我会正式启动2016年度“福建餐饮企业十大品牌”评选活动，开展正餐、火锅、快餐、团餐、小吃、休闲简餐、西餐等七个领域的细分评选。希望各市、县（区）餐饮烹饪行业协会负责推荐2-3家餐饮企业积极参与评选活动的申报工作，于2017年6月15日前将申报表格（完整填写附件表格，打印、盖章、扫描）以电子邮件形式反馈至本会，我会保证对企业数据严格保密。评选结果将在2017年（首届）福建餐饮产业发展大会期间公布，且最终形成《2016年度福建餐饮企业十大品牌分析报告》并发至各申报企业在表格中所填报的联系人电子邮箱。</p>
-								<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;">更多></a>
+								<a ui-sref="main.map">美食地图</a>
+								<p style="font-size: 14px;letter-spacing: 2px;margin-top: 18px;color: #666666;">闽菜发源于福州，以福州闽菜为代表，狭义闽菜指以福州菜为主体，代表着闽菜的文化与时尚。闽菜最早起源于福建福州闽县，在后来发展中形成福州、闽南、闽西三种流派，即广义闽菜。福州菜淡爽清鲜，讲究汤提鲜，擅长各类山珍海味，闽南菜包括泉州、厦门、漳州一带，讲究作料调味，重鲜香：闽西菜包括长汀及西南一带地方，偏重咸辣，烹制多为山珍，带有山区风味。故此，闽菜形成三大特色，一长于红糟调味，二长于制汤，三长于使用糖醋。这一传统即使进入上海，尽染海派风味后，依然未变。闽菜除了招牌菜“佛跳墙”外，还有鱼丸、乌柳居（五柳居）、白雪鸡、闽生果，醉排骨、红糟鱼排等等，均别有风味。</p>
+								<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.map">更多></a>
 							</div>
 
 						</div>
