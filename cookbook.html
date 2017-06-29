@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="./resources/css/cookbook.css">
+
+<div class="w" ng-controller="SnackController">
+    <div class="left-wrap">
+        <div id="list_news" class="box v-box">
+            <!-- <div class="tit"> <strong></strong> </div> !-->
+
+            <!-- <div class="line"></div> -->
+
+            <div class="con index" style="margin-top: 20px;">
+                <ul id="ArticleContentor">
+                    <li ng-repeat="snack in snackList | filter: {type: 1}">
+                        <div class="b-img"><a ui-sref="main.snackDetail({snackTitle:snack.title})"><img src="./resources/img/{{snack.title}}.jpg" alt="{{snack.title}}"></a></div>
+                        <dl>
+                            <dt><a ui-sref="main.snackDetail({snackTitle:snack.title})">{{snack.title}}</a></dt>
+                            <dd><a ui-sref="main.snackDetail({snackTitle:snack.title})">{{snack.brief}}</a></dd>
+                            <div class="stampstr">时间:{{snack.createdTime}}&nbsp;&nbsp;|&nbsp;&nbsp;浏览: {{snack.readCount}}次 </div>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="cl10"></div>
+        </div>
+    </div>
+    <span class="clr"></span>
+
+</div>
+
