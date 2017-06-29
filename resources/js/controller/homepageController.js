@@ -1,8 +1,11 @@
 var homepage = angular.module('homepage', []);
 
-homepage.controller('HomePageController', function ($scope,$http,$location,$rootScope,$state,snackList,newsList) {
+homepage.controller('HomePageController', function ($scope,$http,$location,$rootScope,$state,snackList,newsList,chefList,restaurantList,info) {
     $scope.snackList = snackList;
     $scope.newsList = newsList;
+    $scope.chefList = chefList;
+    $scope.restaurantList = restaurantList;
+    $scope.infoList = info;
     $scope.famousChef = true;
     $scope.famousHotel = false;
     $scope.famousSnack = false;
@@ -25,39 +28,12 @@ homepage.controller('HomePageController', function ($scope,$http,$location,$root
                 break;
         }
     }
-    
-
-    $scope.manManagement = function () {//切换到人员管理页面
-        console.log("manManagement");
-        $state.go("main.manmanagement");
-    };
-    $scope.productManagement =function () {
-        $state.go("main.productmanagement");
-    };
-    $scope.subProductManagement =function () {
-        $state.go("main.subproductmanagement");
-    };
-    $scope.positionManagement =function () {
-        $state.go("main.positionmanagement");
-    };
-    $scope.deptManagement = function () {
-        $state.go("main.deptmanagement");
-    };
-    $scope.LoanPreliminary = function () {
-        $state.go("main.loanpreliminary");
-    };
-    $scope.setPricing = function () {
-        $state.go("main.carpricinglist");
-    };
-    $scope.loanRecheck = function () {
-        $state.go("main.loanrecheck");
-    };
-    $scope.signManagement = function () {
-        $state.go("main.signmanagement");
-    };
-    $scope.giveupList = function () {
-        $state.go("main.giveuplist");
-    };
-
-
+    $scope.gotoFamous = function() {
+        if ($scope.famousHotel || $scope.famousChef) {
+            $state.go("main.chefRestaurant");
+        }
+        if ($scope.famousSnack) {
+            $state.go("main.map");   
+        }
+    }
 });
