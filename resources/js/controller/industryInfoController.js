@@ -241,7 +241,7 @@ industryinfo.constant('info', {
 '                    </tr>'+
 '                  </tbody></table>',
         scantimes:1451,
-        publishTime:':2013/5/17'
+        publishTime:'2013/5/17'
     },{
         id:3,
         title:'福州金誉食品有限公司',
@@ -407,7 +407,269 @@ industryinfo.constant('info', {
 '                    </tr>'+
 '                  </tbody></table>',
         scantimes:1520,
-        publishTime:':2013/5/17'
+        publishTime:'2013/5/17'
+    },{
+        id:6,
+        title:'金源澳门街美食广场诚聘',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'                  <tbody><tr>'+
+'                    <td height="32"><div align="left"><img src="images/zp_3.gif" width="160" height="20"></div></td>'+
+'                  </tr>'+
+'                  <tr>'+
+'                    <td align="left"><p align="left" class="lh24 ti24"></p></td>'+
+'                  </tr>'+
+'                </tbody></table>',
+        content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'                    <tbody><tr>'+
+'                      <td height="32"><div align="left"><img src="images/zp_4.gif" width="99" height="20"></div></td>'+
+'                    </tr>'+
+'                    <tr>'+
+'                      <td class="pd10">'+
+'                     <div align="left">'+
+'                     '+
+'                     <table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'                      <tbody><tr>'+
+'                        <td bgcolor="#FFFFFF" class="pd5 green2" align="center">金源澳门街美食广场诚聘</td>'+
+'                       </tr>'+
+'                            <tr>'+
+'                        <td bgcolor="#FFFFFF" class="pd5 green2"><p><style type="text/css">'+
+'.qq{'+
+'font-size: 14px;'+
+'line-height: 25px;'+
+'text-indent: 28px;'+
+'text-align:left'+
+'}</style></p>'+
+'<p class="qq">金源澳门街美食广场诚聘部长 2000元、迎宾员 1600元、服务员 1550元、点菜员 传菜员 1450元</p>'+
+'<p class="qq">收银员 1350元、清洁工 洗碗工 1250元、海鲜员 1300元、保安 1100元、厨工 1050元</p>'+
+'<p class="qq">联系电话：87808565</p></td>'+
+'                            </tr>'+
+'                       </tbody></table>'+
+'                     '+
+'                      </div>                     </td>'+
+'                    </tr>'+
+'                  </tbody></table>',
+        scantimes:3111,
+        publishTime:'2010/9/8'
+    },{
+        id:7,
+        title:'芍园1号西餐厅诚聘',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'                  <tbody><tr>'+
+'                    <td height="32"><div align="left"><img src="images/zp_3.gif" width="160" height="20"></div></td>'+
+'                  </tr>'+
+'                  <tr>'+
+'                    <td align="left"><p align="left" class="lh24 ti24"></p><p>地址:白马河芍园1号创意园内</p><p></p></td>'+
+'                  </tr>'+
+'                </tbody></table>',
+        content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'                    <tbody><tr>'+
+'                      <td height="32"><div align="left"><img src="images/zp_4.gif" width="99" height="20"></div></td>'+
+'                    </tr>'+
+'                    <tr>'+
+'                      <td class="pd10">'+
+'                     <div align="left">'+
+'                     '+
+'                     <table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'                      <tbody><tr>'+
+'                        <td bgcolor="#FFFFFF" class="pd5 green2" align="center">芍园1号西餐厅诚聘</td>'+
+'                       </tr>'+
+'                            <tr>'+
+'                        <td bgcolor="#FFFFFF" class="pd5 green2"><p><style type="text/css">'+
+'.qq{'+
+'font-size: 14px;'+
+'line-height: 25px;'+
+'text-indent: 28px;'+
+'text-align:left'+
+'}</style></p>'+
+'<p class="qq">芍园1号西餐厅诚聘西餐厨师、厨房人员、服务员、吧员、清洁工等若干名。</p>'+
+'<p class="qq">地址：白马河芍园1号创意园内</p>'+
+'<p class="qq">联系电话：18606060822</p></td>'+
+'                            </tr>'+
+'                       </tbody></table>'+
+'                     '+
+'                      </div>                     </td>'+
+'                    </tr>'+
+'                  </tbody></table>',
+        scantimes:3267,
+        publishTime:'2010/9/8'
+    },{
+        id:8,
+        title:'咖啡树时尚烘焙诚聘咖啡厅服务员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'                  <tbody><tr>'+
+'                    <td height="32"><div align="left"><img src="images/zp_3.gif" width="160" height="20"></div></td>'+
+'                  </tr>'+
+'                  <tr>'+
+'                    <td align="left"><p align="left" class="lh24 ti24"></p><p><style type="text/css">'+
+'.qq{'+
+'font-size: 14px;'+
+'line-height: 25px;'+
+'text-indent: 28px;'+
+'text-align:left'+
+'}</style></p>'+
+'<p class="qq">咖啡树时尚烘焙</p>'+
+'<p class="qq">公司规模：1-49人</p>'+
+'<p class="qq">公司性质：私营</p>'+
+'<p class="qq">公司行业：娱乐休闲/餐饮/服务</p>'+
+'<p class="qq">联 系 人：郑先生</p>'+
+'<p class="qq">联系电话：13860629719</p>'+
+'<p class="qq">电子邮件：coffeetreeshoushan@vip.qq.com</p>'+
+'<p class="qq">公司地址：仓山区首山路滨海嘉年华A区2#-11店面</p>'+
+'<p class="qq">&nbsp;</p><p></p></td>'+
+'                  </tr>'+
+'                </tbody></table>',
+        content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'                    <tbody><tr>'+
+'                      <td height="32"><div align="left"><img src="images/zp_4.gif" width="99" height="20"></div></td>'+
+'                    </tr>'+
+'                    <tr>'+
+'                      <td class="pd10">'+
+'                     <div align="left">'+
+'                     '+
+'                     <table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'                      <tbody><tr>'+
+'                        <td bgcolor="#FFFFFF" class="pd5 green2" align="center">咖啡树时尚烘焙诚聘咖啡厅服务员</td>'+
+'                       </tr>'+
+'                            <tr>'+
+'                        <td bgcolor="#FFFFFF" class="pd5 green2"><p><style type="text/css">'+
+'.qq{'+
+'font-size: 14px;'+
+'line-height: 25px;'+
+'text-indent: 28px;'+
+'text-align:left'+
+'}</style></p>'+
+'<p class="qq">招聘人数：2人</p>'+
+'<p class="qq">学历要求：中专</p>'+
+'<p class="qq">工作年限：不限</p>'+
+'<p class="qq">薪资范围：面议</p>'+
+'<p class="qq">工作地点：福州仓山对湖</p>'+
+'<p class="qq">&nbsp;</p></td>'+
+'                            </tr>'+
+'                       </tbody></table>'+
+'                     '+
+'                      </div>                     </td>'+
+'                    </tr>'+
+'                  </tbody></table>',
+        scantimes:2557,
+        publishTime:'2010/9/3'
+    },{
+        id:9,
+        title:'有名仔餐吧诚聘服务员兼送餐员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'                  <tbody><tr>'+
+'                    <td height="32"><div align="left"><img src="images/zp_3.gif" width="160" height="20"></div></td>'+
+'                  </tr>'+
+'                  <tr>'+
+'                    <td align="left"><p align="left" class="lh24 ti24"></p><p><style type="text/css">'+
+'.qq{'+
+'font-size: 14px;'+
+'line-height: 25px;'+
+'text-indent: 28px;'+
+'text-align:left'+
+'}</style></p>'+
+'<p class="qq">有名仔餐吧</p>'+
+'<p class="qq">公司规模：1-49人</p>'+
+'<p class="qq">公司性质：私营</p>'+
+'<p class="qq">公司行业：娱乐休闲/餐饮/服务</p>'+
+'<p class="qq">联 系 人：王先生</p>'+
+'<p class="qq">联系电话：13696890052</p>'+
+'<p class="qq">电子邮件：wlove2000@126.com</p>'+
+'<p class="qq">公司地址：金山榕城广场1#101</p>'+
+'<p class="qq">&nbsp;</p><p></p></td>'+
+'                  </tr>'+
+'                </tbody></table>',
+        content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'                    <tbody><tr>'+
+'                      <td height="32"><div align="left"><img src="images/zp_4.gif" width="99" height="20"></div></td>'+
+'                    </tr>'+
+'                    <tr>'+
+'                      <td class="pd10">'+
+'                     <div align="left">'+
+'                     '+
+'                     <table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'                      <tbody><tr>'+
+'                        <td bgcolor="#FFFFFF" class="pd5 green2" align="center">有名仔餐吧诚聘服务员兼送餐员</td>'+
+'                       </tr>'+
+'                            <tr>'+
+'                        <td bgcolor="#FFFFFF" class="pd5 green2"><p><style type="text/css">'+
+'.qq{'+
+'font-size: 14px;'+
+'line-height: 25px;'+
+'text-indent: 28px;'+
+'text-align:left'+
+'}</style></p>'+
+'<p class="qq">招聘人数：3人</p>'+
+'<p class="qq">学历要求：不限</p>'+
+'<p class="qq">工作年限：不限</p>'+
+'<p class="qq">薪资范围：1000-1500元/月</p>'+
+'<p class="qq">工作地点：福州仓山金山</p>'+
+'<p class="qq">&nbsp;</p></td>'+
+'                            </tr>'+
+'                       </tbody></table>'+
+'                     '+
+'                      </div>                     </td>'+
+'                    </tr>'+
+'                  </tbody></table>',
+        scantimes:2686,
+        publishTime:'2010/9/3'
+    },{
+        id:10,
+        title:'黄记福利餐饮餐馆 急招兼职或全职餐饮客服',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'                  <tbody><tr>'+
+'                    <td height="32"><div align="left"><img src="images/zp_3.gif" width="160" height="20"></div></td>'+
+'                  </tr>'+
+'                  <tr>'+
+'                    <td align="left"><p align="left" class="lh24 ti24"></p><p><style type="text/css">'+
+'.qq{'+
+'font-size: 14px;'+
+'line-height: 25px;'+
+'text-indent: 28px;'+
+'text-align:left'+
+'}</style></p>'+
+'<p class="qq">公司规模：1-49人</p>'+
+'<p class="qq">公司性质：私营</p>'+
+'<p class="qq">公司行业：娱乐休闲/餐饮/服务</p>'+
+'<p class="qq">联 系 人：黄先生</p>'+
+'<p class="qq">联系电话：13615009984</p>'+
+'<p class="qq">电子邮件：379421109@qq.com</p>'+
+'<p class="qq">公司地址：福州市晋安区鼓山</p><p></p></td>'+
+'                  </tr>'+
+'                </tbody></table>',
+        content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'                    <tbody><tr>'+
+'                      <td height="32"><div align="left"><img src="images/zp_4.gif" width="99" height="20"></div></td>'+
+'                    </tr>'+
+'                    <tr>'+
+'                      <td class="pd10">'+
+'                     <div align="left">'+
+'                     '+
+'                     <table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'                      <tbody><tr>'+
+'                        <td bgcolor="#FFFFFF" class="pd5 green2" align="center">黄记福利餐饮餐馆 急招兼职或全职餐饮客服</td>'+
+'                       </tr>'+
+'                            <tr>'+
+'                        <td bgcolor="#FFFFFF" class="pd5 green2"><p><style type="text/css">'+
+'.qq{'+
+'font-size: 14px;'+
+'line-height: 25px;'+
+'text-indent: 28px;'+
+'text-align:left'+
+'}</style></p>'+
+'<p class="qq">招聘人数：2人</p>'+
+'<p class="qq">学历要求：高中</p>'+
+'<p class="qq">工作年限：不限</p>'+
+'<p class="qq">薪资范围：面议</p>'+
+'<p class="qq">工作地点：福州晋安晋安周边</p>'+
+'<p class="qq">&nbsp;</p></td>'+
+'                            </tr>'+
+'                       </tbody></table>'+
+'                     '+
+'                      </div>                     </td>'+
+'                    </tr>'+
+'                  </tbody></table>',
+        scantimes:2441,
+        publishTime:'2010/9/3'
     }],
     foodInfo:[{
         id:0,
