@@ -101,9 +101,9 @@
 
 			<div style="background-color: #f3f3f3;width: 100%;height: 460px;padding-top: 50px;">
 				<div class="container famous" style="width: 1140px;height: 372px;">
-					<a href="" class="active">名师</a>
-					<a href="" >名店</a>
-					<a href="" >名小吃</a>
+					<a href="" class="active" ng-mouseover="changeTab(1)">名师</a>
+					<a href="" ng-mouseover="changeTab(2)">名店</a>
+					<a href="" ng-mouseover="changeTab(3)">名小吃</a>
 					<span class="famous-more" click="console.log(1);">
 						更多>
 					</span>
@@ -113,7 +113,7 @@
 						<img src="./resources/img/left-grey_05.png" style="height: 188px;width: 50px;">
 					</div> -->
 					
-					<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;">
+					<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;" ng-show="famousChef">
 
 						<div class="caipu-img img-pre" style="display: none;">
 						</div>
@@ -122,7 +122,111 @@
 								<img src="./resources/img/czl.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
 								
 							</div>
-							<h4>陈智灵</h4>
+							<h4>陈智灵1</h4>
+							<h5>厦门国际会展酒店行政总厨</h5>
+						</div>
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
+							<div style="height: 188px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/hmr.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+								
+							</div>
+							<h4>胡满荣</h4>
+							<h5>巴黎国际杯“中国美食国际文化节”工作委员宴会副部长</h5>
+						</div>
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
+							<div style="height: 188px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/hzc.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+								
+							</div>
+							<h4>黄志成</h4>
+							<h5>友德餐饮集团厨政管理</h5>
+						</div>
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
+							<div style="height: 188px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/chef4.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+								
+							</div>
+							<h4>陈小强</h4>
+							<h5>福清一品鲜酒店主厨</h5>
+						</div>
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
+							<div style="height: 188px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/wzq.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+								
+							</div>
+							<h4>吴志强</h4>
+							<h5>石狮市五洲大酒店行政总厨、厨政管理</h5>
+						</div>
+						
+						
+						<div class="caipu-img img-next" style="display: none;">
+								
+
+						</div>
+					</div>
+
+					<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;" ng-show="famousHotel">
+
+						<div class="caipu-img img-pre" style="display: none;">
+						</div>
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;">
+							<div style="height: 188px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/czl.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+								
+							</div>
+							<h4>陈智灵2</h4>
+							<h5>厦门国际会展酒店行政总厨</h5>
+						</div>
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
+							<div style="height: 188px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/hmr.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+								
+							</div>
+							<h4>胡满荣</h4>
+							<h5>巴黎国际杯“中国美食国际文化节”工作委员宴会副部长</h5>
+						</div>
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
+							<div style="height: 188px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/hzc.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+								
+							</div>
+							<h4>黄志成</h4>
+							<h5>友德餐饮集团厨政管理</h5>
+						</div>
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
+							<div style="height: 188px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/chef4.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+								
+							</div>
+							<h4>陈小强</h4>
+							<h5>福清一品鲜酒店主厨</h5>
+						</div>
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
+							<div style="height: 188px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/wzq.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+								
+							</div>
+							<h4>吴志强</h4>
+							<h5>石狮市五洲大酒店行政总厨、厨政管理</h5>
+						</div>
+						
+						
+						<div class="caipu-img img-next" style="display: none;">
+								
+
+						</div>
+					</div>
+
+					<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;"ng-show="famousSnack">
+
+						<div class="caipu-img img-pre" style="display: none;">
+						</div>
+						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;">
+							<div style="height: 188px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/czl.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+								
+							</div>
+							<h4>陈智灵3</h4>
 							<h5>厦门国际会展酒店行政总厨</h5>
 						</div>
 						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
