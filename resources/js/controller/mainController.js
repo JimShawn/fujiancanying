@@ -29,6 +29,9 @@ main.controller('MainController', ['$scope', '$http','$location','$rootScope','$
     $scope.goToHomepage = function (argument) {
         $state.go("main.homepage");
     };
+    $scope.goToMenu = function (argument) {
+        $state.go("main.caipu");
+    };
 
 
 }]);
