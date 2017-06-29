@@ -1,7 +1,7 @@
-<div class="container" style="width: 1150px">
+<div class="container" style="width: 1140px" ng-controller="SnackController">
 	<div class="line"></div>
 
-	<div class="climateMonitoringBox row text-center" style="height:460px; padding:100px 0px 0px 20px;">
+	<div class="climateMonitoringBox row text-center" style="height:660px; padding:100px 0px 0px 20px;">
 
 		<img src="./resources/img/fjmap.jpg" width="489" height="435" usemap="#Map"> 
 		<map name="Map" id="Map"> 
@@ -18,48 +18,16 @@
 
 	</div>
 
-	<div class="yujing row" name="fuzhou" style="position: absolute; z-index: 2;">
-		<div class="row"><img src="./resources/img/fuzhou.jpg"></div>
-		<div class="row text-center" style="background: gray; color: #eee;">福州肉燕</div>
-	</div>
-	<div class="yujing row" name="xiamen" style="position: absolute; z-index: 2;">
-		<div class="row"><img src="./resources/img/xiamen.jpg"></div>
-		<div class="row text-center" style="background: gray; color: #eee;">厦门沙茶面</div>
-	</div>
-	<div class="yujing row" name="putian" style="position: absolute; z-index: 2;">
-		<div class="row"><img src="./resources/img/putian.jpg"></div>
-		<div class="row text-center" style="background: gray; color: #eee;">莆田卤面</div>
-	</div>
-	<div class="yujing row" name="ningde" style="position: absolute; z-index: 2;">
-		<div class="row"><img src="./resources/img/ningde.jpg"></div>
-		<div class="row text-center" style="background: gray; color: #eee;">福鼎肉片</div>
-	</div>
-	<div class="yujing row" name="longyan" style="position: absolute; z-index: 2;">
-		<div class="row"><img src="./resources/img/longyan.jpg"></div>
-		<div class="row text-center" style="background: gray; color: #eee;">龙岩芋子包</div>
-	</div>
-	<div class="yujing row" name="quanzhou" style="position: absolute; z-index: 2;">
-		<div class="row"><img src="./resources/img/quanzhou.jpg"></div>
-		<div class="row text-center" style="background: gray; color: #eee;">泉州崇武鱼卷</div>
-	</div>
-	<div class="yujing row" name="sanming" style="position: absolute; z-index: 2;">
-		<div class="row"><img src="./resources/img/sanming.jpg"></div>
-		<div class="row text-center" style="background: gray; color: #eee;">三明沙县扁肉</div>
-	</div>
-	<div class="yujing row" name="nanping" style="position: absolute; z-index: 2;">
-		<div class="row"><img src="./resources/img/nanping.jpg"></div>
-		<div class="row text-center" style="background: gray; color: #eee;">南平和平游浆豆腐</div>
-	</div>
-	<div class="yujing row" name="zhangzhou" style="position: absolute; z-index: 2;">
-		<div class="row"><img src="./resources/img/zhangzhou.jpg"></div>
-		<div class="row text-center" style="background: gray; color: #eee;">漳州面煎果</div>
+	<div class="snack row" name="{{snack.city}}" style="position: absolute; z-index: 2;" ng-repeat="snack in snackList">
+		<div class="row"><img src="./resources/img/{{snack.title}}.jpg"></div>
+		<div class="row text-center" style="background: gray; color: #eee;">{{snack.title}}</div>
 	</div>
 </div>
 	
 	<script>
 		$("#Map area").hover(function(e) {
 			name = $(this).attr("name");
-			showdiv = $(".yujing[name='"+name+"']");
+			showdiv = $(".snack[name='"+name+"']");
 			scotop = $(document).scrollTop();
 			swith = $(window).width() - $(document).width();
 			leftzhi = e.clientX + (swith/2) + 100;
@@ -69,7 +37,7 @@
 			console.log("ddd");
 		},function() {
 			name=$(this).attr("name");
-			$(".yujing[name='"+name+"']").hide();
+			$(".snack[name='"+name+"']").hide();
 		});
-		$(".yujing").hide();
+		$(".snack").hide();
 	</script>

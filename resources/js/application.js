@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('app', ['ui.router','main','homepage','news','chef']);
+var app = angular.module('app', ['ui.router','main','homepage','news','chef','snack']);
 
 app.config(function ($stateProvider,$urlRouterProvider) {
     $stateProvider.state("main",{
@@ -52,6 +52,7 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         }
 
     ).state("main.map",{
+        params:{"snack":null},
         url: "/map",
         templateUrl: 'map.html'
         }
