@@ -2,42 +2,39 @@
 	<div class="line"></div>
 
 	<div class="climateMonitoringBox row text-center" style="height:660px; padding:100px 0px 0px 20px;">
-
 		<img src="./resources/img/fjmap.jpg" width="489" height="435" usemap="#Map"> 
 		<map name="Map" id="Map"> 
-			<area shape="poly" coords="190,429,268,363,244,350,206,313,196,288,145,328,146,398,176,434" name="zhangzhou">
-			<area shape="poly" coords="137,367,145,328,208,256,159,242,111,238,68,224,18,299,43,332" name="longyan">
-			<area shape="poly" coords="240,311,242,325,238,339,250,350,270,356,300,336,266,311" name="xiamen">
-			<area shape="poly" coords="238,249,201,283,208,313,260,309,301,331,333,317,352,292,351,278,297,273,286,256,293,237,269,220,234,222" name="quanzhou">
-			<area shape="poly" coords="355,225,299,234,287,254,308,272,335,271,368,282,387,270,375,249" name="putian">
-			<area shape="poly" coords="378,53,412,83,444,68,476,78,471,100,444,120,421,148,372,142,338,149,307,161,302,177,285,144" name="ningde">
-			<area shape="poly" coords="292,233,276,220,289,199,308,161,337,152,395,148,418,150,435,167,399,193,419,204,409,229,420,254,398,258,352,227" name="fuzhou">
-			<area shape="poly" coords="284,4,243,10,218,35,182,53,111,75,124,121,221,163,291,179,286,146,321,101,349,84" name="nanping">
-			<area shape="poly" coords="118,122,72,152,82,187,69,223,119,236,160,241,209,254,234,248,233,221,274,217,294,179,237,178,186,154,192,153" name="sanming">
+			<area shape="poly" coords="190,429,268,363,244,350,206,313,196,288,145,328,146,398,176,434" name="zhangzhou" ng-click="gotoSnackDetail('zhangzhou')">
+			<area shape="poly" coords="137,367,145,328,208,256,159,242,111,238,68,224,18,299,43,332" name="longyan" ng-click="gotoSnackDetail('longyan')">
+			<area shape="poly" coords="240,311,242,325,238,339,250,350,270,356,300,336,266,311" name="xiamen" ng-click="gotoSnackDetail('xiamen')">
+			<area shape="poly" coords="238,249,201,283,208,313,260,309,301,331,333,317,352,292,351,278,297,273,286,256,293,237,269,220,234,222" name="quanzhou" ng-click="gotoSnackDetail('quanzhou')">
+			<area shape="poly" coords="355,225,299,234,287,254,308,272,335,271,368,282,387,270,375,249" name="putian" ng-click="gotoSnackDetail('putian')">
+			<area shape="poly" coords="378,53,412,83,444,68,476,78,471,100,444,120,421,148,372,142,338,149,307,161,302,177,285,144" name="ningde" ng-click="gotoSnackDetail('ningde')">
+			<area shape="poly" coords="292,233,276,220,289,199,308,161,337,152,395,148,418,150,435,167,399,193,419,204,409,229,420,254,398,258,352,227" name="fuzhou" ng-click="gotoSnackDetail('fuzhou')">
+			<area shape="poly" coords="284,4,243,10,218,35,182,53,111,75,124,121,221,163,291,179,286,146,321,101,349,84" name="nanping" ng-click="gotoSnackDetail('nanping')">
+			<area shape="poly" coords="118,122,72,152,82,187,69,223,119,236,160,241,209,254,234,248,233,221,274,217,294,179,237,178,186,154,192,153" name="sanming" ng-click="gotoSnackDetail('sanming')">
 		</map>
-
 	</div>
 
-	<div class="snack row" name="{{snack.city}}" style="position: absolute; z-index: 2;" ng-repeat="snack in snackList">
+	<div class="snack row" name="{{snack.city}}" style="position: absolute; z-index: 2;" ng-repeat="snack in snackList | filter: {type: 2}">
 		<div class="row"><img src="./resources/img/{{snack.title}}.jpg"></div>
-		<div class="row text-center" style="background: gray; color: #eee;">{{snack.title}}</div>
+		<div class="title row text-center" style="background: gray; color: #eee;">{{snack.title}}</div>
 	</div>
 </div>
 	
-	<script>
-		$("#Map area").hover(function(e) {
-			name = $(this).attr("name");
-			showdiv = $(".snack[name='"+name+"']");
-			scotop = $(document).scrollTop();
-			swith = $(window).width() - $(document).width();
-			leftzhi = e.clientX + (swith/2) + 100;
-			topzhi = e.clientY + scotop + 10;
-			showdiv.css({left:leftzhi + 'px',top:topzhi + 'px'});
-			showdiv.show();
-			console.log("ddd");
-		},function() {
-			name=$(this).attr("name");
-			$(".snack[name='"+name+"']").hide();
-		});
-		$(".snack").hide();
-	</script>
+<script>
+	$("#Map area").hover(function(e) {
+		name = $(this).attr("name");
+		showdiv = $(".snack[name='"+name+"']");
+		scotop = $(document).scrollTop();
+		swith = $(window).width() - $(document).width();
+		leftzhi = e.clientX + (swith/2) + 100;
+		topzhi = e.clientY + scotop + 10;
+		showdiv.css({left:leftzhi + 'px',top:topzhi + 'px'});
+		showdiv.show();
+	},function() {
+		name=$(this).attr("name");
+		$(".snack[name='"+name+"']").hide();
+	});
+	$(".snack").hide();
+</script>

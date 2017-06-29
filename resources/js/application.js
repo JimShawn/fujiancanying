@@ -52,14 +52,17 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         }
 
     ).state("main.map",{
-        params:{"snack":null},
         url: "/map",
         templateUrl: 'map.html'
         }
-
     ).state("main.caipu",{
-            url: "/caipu",
-            templateUrl: 'caipu2.html'
+        url: "/caipu",
+        templateUrl: 'cookbook.html'
+        }
+    ).state("main.snackDetail",{
+        params:{"snackTitle":null},
+        url: "/snackDetail",
+        templateUrl: 'snack-detail.html'
         }
 
     ).state("main.transformInfo",{

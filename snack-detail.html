@@ -1,0 +1,24 @@
+<div class="container" style="width: 1150px" ng-controller="SnackDetailController">
+	<div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 5px 0px;">
+		<div class="col-md-2 col-lg-2"></div>
+		<div class="col-md-8 col-lg-8">
+			<div class="row text-center" style="color: #333;">
+				<h3>{{snack.title}}</h3>
+			</div>
+			<div class="row text-center" style="color: orange;">
+				<div class="col-md-3 col-lg-3">时间：{{snack.createdTime}}</div>
+				<div class="col-md-3 col-lg-3">浏览：{{snack.readCount}}次</div>
+				<div class="col-md-3 col-lg-3" style="cursor: pointer;">加入收藏</div>
+				<div class="col-md-3 col-lg-3" style="cursor: pointer;">打印本页</div>
+			</div>
+			<div class="row text-center" style="margin-left: auto; margin-right: auto; margin-top: 20px; margin-bottom: 20px;">
+				<img width="480px;" height="360px;" src="./resources/img/{{snack.title}}.jpg" alt="" />
+			</div>
+			<div class="row" style="margin-top: 20px; color: #555;">
+				<div class="col-md-12 col-lg-12" ng-bind-html="snack.content|htmlContent">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2 col-lg-2"></div>
+	</div>
+</div>

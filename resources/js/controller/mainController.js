@@ -30,8 +30,6 @@ main.controller('MainController', ['$scope', '$http','$location','$rootScope','$
         $state.go("main.homepage");
     };
     $scope.goToMenu = function (argument) {
-        $state.go("main.caipu");
+        $state.go("main.caipu", argument);
     };
-
-
 }]);
