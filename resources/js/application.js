@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('app', ['ui.router','main','homepage','news','chef','snack']);
+var app = angular.module('app', ['ui.router','main','homepage','news','chef','snack','industryinfo']);
 
 app.config(function ($stateProvider,$urlRouterProvider) {
     $stateProvider.state("main",{
@@ -60,6 +60,24 @@ app.config(function ($stateProvider,$urlRouterProvider) {
     ).state("main.caipu",{
             url: "/caipu",
             templateUrl: 'caipu2.html'
+        }
+
+    ).state("main.transformInfo",{
+            url: "/transformInfo",
+            templateUrl: 'transformInfo.html',
+            params:{item:null}
+        }
+
+    ).state("main.labourInfo",{
+            url: "/labourInfo",
+            templateUrl: 'labourInfo.html',
+            params:{item:null}
+        }
+
+    ).state("main.foodInfo",{
+            url: "/foodInfo",
+            templateUrl: 'foodInfo.html',
+            params:{item:null}
         }
 
     );
