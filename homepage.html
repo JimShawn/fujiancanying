@@ -29,40 +29,12 @@
 
 					<div class="caipu-img img-pre">
 					</div>
-					<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;">
+					<div class="caipu-img show-img" style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="snack in snackList | filter: {type: 1} | slice:0:5">
 						<div style="height: 188px;width: 192px;overflow: hidden;">
-							<img src="./resources/img/shouye2.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+							<img src="./resources/img/{{snack.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
 							
 						</div>
-						<h4>鱼香肉丝</h4>
-					</div>
-					<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-						<div style="height: 188px;width: 192px;overflow: hidden;">
-							<img src="./resources/img/shouye3.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-							
-						</div>
-						<h4>鱼香肉丝</h4>
-					</div>
-					<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-						<div style="height: 188px;width: 192px;overflow: hidden;">
-							<img src="./resources/img/shouye4.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-							
-						</div>
-						<h4>鱼香肉丝</h4>
-					</div>
-					<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-						<div style="height: 188px;width: 192px;overflow: hidden;">
-							<img src="./resources/img/shouye5.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-							
-						</div>
-						<h4>鱼香肉丝</h4>
-					</div>
-					<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 17px;text-align: center;">
-						<div style="height: 188px;width: 192px;overflow: hidden;">
-							<img src="./resources/img/shouye5.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-							
-						</div>
-						<h4>鱼香肉丝</h4>
+						<h4>{{snack.title}}</h4>
 					</div>
 					
 					

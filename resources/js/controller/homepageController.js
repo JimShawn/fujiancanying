@@ -1,8 +1,7 @@
 var homepage = angular.module('homepage', []);
 
-homepage.controller('HomePageController', ['$scope', '$http','$location','$rootScope','$state',function ($scope,$http,$location,$rootScope,$state) {
-
-
+homepage.controller('HomePageController', function ($scope,$http,$location,$rootScope,$state,snackList) {
+    $scope.snackList = snackList;
 
     $scope.manManagement = function () {//切换到人员管理页面
         console.log("manManagement");
@@ -37,4 +36,4 @@ homepage.controller('HomePageController', ['$scope', '$http','$location','$rootS
     };
 
 
-}]);
+});

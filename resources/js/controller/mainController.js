@@ -6,6 +6,12 @@ main.filter('htmlContent',['$sce', function($sce) {
   }
 }]);
 
+app.filter('slice', function() {
+  return function(arr, start, end) {
+    return (arr || []).slice(start, end);
+  };
+});
+
 main.controller('MainController', ['$scope', '$http','$location','$rootScope','$state',function ($scope,$http,$location,$rootScope,$state) {
 
 
