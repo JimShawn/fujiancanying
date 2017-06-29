@@ -16,7 +16,7 @@
 			</div>
 			
 
-			<div class="container" style="width: 1140px;height: 332px;">
+			<div class="container" style="width: 1140px; height: 332px;">
 				<h2 style="margin-top: 40px;font-size: 20px;color: #333333;">闽菜菜谱
 					<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.caipu">更多></a>
 				</h2>
@@ -25,14 +25,14 @@
 					<img src="./resources/img/left-grey_05.png" style="height: 188px;width: 50px;">
 				</div> -->
 				
-				<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;">
+				<div style="height: 215px; width: inherit; margin-top: 35px; display: inline-flex;">
 
 					<div class="caipu-img img-pre" style="display: none;"></div>
 
 					<div class="caipu-img show-img" style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="snack in snackList | filter: {type: 1} | slice:0:5">
 						<a style="text-decoration-line: none;"ui-sref="main.snackDetail({snackTitle:snack.title})">
-						<div style="height: 144px;width: 192px; overflow: hidden;">
-							<img src="./resources/img/{{snack.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+						<div style="height: 144px; width: 192px; overflow: hidden;">
+							<img src="./resources/img/{{snack.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 144px; width: 192px; cursor: pointer;">
 						</div>
 						<h4 style="color:#333333;">{{snack.title}}</h4>
 						</a>
@@ -66,30 +66,30 @@
 						<div class="video-content1">
 							<div style="width: 237px;height: 306px;margin-top: 10px;">
 								<div class="p-thumb"  >
-							        <a href="http://v.youku.com/v_show/id_XMjgyNzA2NTg5Mg==.html" title="披萨制作" data-from="1-1" target="video"></a>
+							        <a href="https://v.qq.com/x/page/u0519wdc89e.html" title="南煎猪肝" data-from="1-1" target="video"></a>
 							        <i class="bg"></i>
-									<img class="quic" src="./resources/img/icon2.jpg">
-									<span class="time-tip">00:09</span>
+									<img class="quic" src="./resources/img/jiaoxue/02.jpg">
+									<!-- <span class="time-tip">00:09</span> -->
 								</div>
 								<div class="p-thumb"  style="margin-top: 10px;">
-								        <a href="http://v.youku.com/v_show/id_XMjgyNzA2NTg5Mg==.html" title="披萨制作" data-from="1-1" target="video"></a>
+								        <a href="https://v.qq.com/x/page/q0519fwxprd.html" title="淡糟香螺片" data-from="1-1" target="video"></a>
 								        <i class="bg"></i>
-										<img class="quic" src="./resources/img/icon1.jpg">
-										<span class="time-tip">00:09</span>
+										<img class="quic" src="./resources/img/jiaoxue/03.jpg">
+										<!-- <span class="time-tip">00:09</span> -->
 								</div>
 							</div>
 							<div style="width: 237px;height: 306px;margin-top: 10px;margin-left: 10px;">
 								<div class="p-thumb"  >
-							        <a href="http://v.youku.com/v_show/id_XMjgyNzA2NTg5Mg==.html" title="披萨制作" data-from="1-1" target="video"></a>
+							        <a href="https://v.qq.com/x/page/i051999wpem.html" title="爆炒双脆" data-from="1-1" target="video"></a>
 							        <i class="bg"></i>
-									<img class="quic" src="./resources/img/icon1.jpg">
-									<span class="time-tip">00:09</span>
+									<img class="quic" src="./resources/img/jiaoxue/04.jpg">
+									<!-- <span class="time-tip">00:09</span> -->
 								</div>
 								<div class="p-thumb"  style="margin-top: 10px;">
-								        <a href="http://v.youku.com/v_show/id_XMjgyNzA2NTg5Mg==.html" title="披萨制作" data-from="1-1" target="video"></a>
+								        <a href="https://v.qq.com/x/page/z0519lricn1.html" title="注油鳗鱼" data-from="1-1" target="video"></a>
 								        <i class="bg"></i>
-										<img class="quic" src="./resources/img/icon2.jpg">
-										<span class="time-tip">00:09</span>
+										<img class="quic" src="./resources/img/jiaoxue/05.jpg">
+										<!-- <span class="time-tip">00:09</span> -->
 								</div>
 							</div>
 							
@@ -101,25 +101,25 @@
 
 			<div style="background-color: #f3f3f3;width: 100%;height: 460px;padding-top: 50px;">
 				<div class="container famous" style="width: 1140px;height: 372px;">
-					<a href="" class="active" ng-mouseover="changeTab(1)">名师</a>
-					<a href="" ng-mouseover="changeTab(2)">名店</a>
-					<a href="" ng-mouseover="changeTab(3)">名小吃</a>
+					<a href="" class="active" ng-click="changeTab(1)">名师</a>
+					<a href="" ng-click="changeTab(2)">名店</a>
+					<a href="" ng-click="changeTab(3)">名小吃</a>
 					<span class="famous-more" ng-click="gotoFamous()">
 						更多>
 					</span>
 					
-					<div class="line"></div>
+					<div class="line" style="margin-bottom: 10px;"></div>
 					<!-- <div style="width: 1140px;">
 						<img src="./resources/img/left-grey_05.png" style="height: 188px;width: 50px;">
 					</div> -->
 					
-					<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;" ng-show="famousChef">
+					<div style="height: 215px;width: 1140px;display: inline-flex;" ng-show="famousChef">
 
 						<div class="caipu-img img-pre" style="display: none;"></div>
 
 						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="chef in chefList | slice:0:5">
-							<a style="text-decoration-line: none;" ui-sref="main.chefDetail({chef:chef})"><div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/{{chef.name}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+							<a style="text-decoration-line: none;" ui-sref="main.chefDetail({chef:chef})"><div style="height: 254px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/{{chef.name}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 254px;width: 192px;cursor: pointer;">
 								
 							</div>
 							<h4 style="color:#333333;">{{chef.name}}</h4>
@@ -131,13 +131,13 @@
 						<div class="caipu-img img-next" style="display: none;"></div>
 					</div>
 
-					<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;" ng-show="famousHotel">
+					<div style="height: 215px;width: 1140px;display: inline-flex;" ng-show="famousHotel">
 
 						<div class="caipu-img img-pre" style="display: none;"></div>
 
 						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="restaurant in restaurantList | slice:0:5">
-							<a style="text-decoration-line: none;" ui-sref="main.restaurantDetail({restaurant:restaurant})"><div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/{{restaurant.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+							<a style="text-decoration-line: none;" ui-sref="main.restaurantDetail({restaurant:restaurant})"><div style="height: 164px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/{{restaurant.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 164px;width: 192px;cursor: pointer;">
 								
 							</div>
 							<h4 style="color:#333333;">{{restaurant.title}}</h4>
@@ -147,13 +147,13 @@
 						<div class="caipu-img img-next" style="display: none;"></div>
 					</div>
 
-					<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;"ng-show="famousSnack">
+					<div style="height: 215px;width: 1140px;display: inline-flex;"ng-show="famousSnack">
 
 						<div class="caipu-img img-pre" style="display: none;"></div>
 
 						<div class="caipu-img show-img "  style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="snack in snackList | slice:0:5">
-							<a style="text-decoration-line: none;" ui-sref="main.snackDetail({snack:snack})"><div style="height: 188px;width: 192px;overflow: hidden;">
-								<img src="./resources/img/{{snack.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
+							<a style="text-decoration-line: none;" ui-sref="main.snackDetail({snackTitle:snack.title})"><div style="height: 144px;width: 192px;overflow: hidden;">
+								<img src="./resources/img/{{snack.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 144px;width: 192px;cursor: pointer;">
 								
 							</div>
 							<h4 style="color:#333333;">{{snack.title}}</h4>
