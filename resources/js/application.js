@@ -30,6 +30,7 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         }
 
     ).state("main.restaurantDetail",{
+        params:{"restaurant":null},
         url: "/restaurantDetail",
         templateUrl: 'restaurant-detail.html'
         }

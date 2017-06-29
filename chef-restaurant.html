@@ -1,49 +1,24 @@
 <div class="container" style="width: 1150px" ng-controller="ChefRestaurantController">
 			
 			<div class="row">
-				<div class="col-md-1 col-lg-1"></div>
-				<div class="col-md-11 col-lg-11"><h3>名店推荐</h3></div>
+				<h3>名店推荐</h3>
 			</div>
 
-			<div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 10px 0px;">
-				<div class="col-md-2 col-lg-2"></div>
-				<div class="col-md-2 col-lg-2" style="margin: 20px;cursor: pointer;" ng-click="restaurantDetail()">
+			<div class="row" style="border-top:1px solid #f2f2f2; padding: 10px 0px;">
+				<span style="width: 230px; float: left; padding: 10px 10px;" ng-repeat="restaurant in restaurantList">
+				<a ui-sref="main.restaurantDetail({restaurant:restaurant})" style="text-decoration-line: none; color: #0d0d0d;">
 					<div class="row text-center">
-						<img src="./resources/img/restaurant1.jpg" width="216px;" height="183px;">
+						<img src="./resources/img/{{restaurant.title}}.jpg" width="210px;" height="178px;">
 					</div>
 					<div class="row text-center">
-						福鼎市东源大酒店
+						{{restaurant.title}}
 					</div>
-				</div>
-				<div class="col-md-2 col-lg-2" style="margin: 20px;cursor: pointer;" ng-click="restaurantDetail()">
-					<div class="row text-center">
-						<img src="./resources/img/restaurant2.jpg" width="216px;" height="183px;">
-					</div>
-					<div class="row text-center">
-						厦门牡丹大酒楼有限公司体育路店
-					</div>
-				</div>
-				<div class="col-md-2 col-lg-2" style="margin: 20px;cursor: pointer;" ng-click="restaurantDetail()">
-					<div class="row text-center">
-						<img src="./resources/img/restaurant3.jpg" width="216px;" height="183px;">
-					</div>
-					<div class="row text-center">
-						聚春园大酒店
-					</div>
-				</div>
-				<div class="col-md-2 col-lg-2" style="margin: 20px;cursor: pointer;" ng-click="restaurantDetail()">
-					<div class="row text-center">
-						<img src="./resources/img/restaurant4.jpg" width="216px;" height="183px;">
-					</div>
-					<div class="row text-center">
-						荣誉大酒楼（梅峰店）
-					</div>
-				</div>
+				</a>
+				</span>
 			</div>
 
 			<div class="row">
-				<div class="col-md-1 col-lg-1"></div>
-				<div class="col-md-11 col-lg-11"><h3>名师风采</h3></div>
+				<h3>名师风采</h3>
 			</div>
 
 			<div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 10px 0px;">

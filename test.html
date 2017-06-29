@@ -1,40 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>福建餐饮网</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css"> 
-		#main {
-			  max-width: 600px;
-			  margin: 0 auto; 
-			}
-			.simple {
-			  width: 500px;
-			  margin: 20px auto;
-			}
-
-			.fancy {
-			  width: 500px;
-			  margin: 20px auto;
-			  padding: 50px;
-			  border-width: 10px;
-			}
-
-
-	</style> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>下划线样式-虚线、实线</title>
+<style> 
+.-aa{ border-bottom:1px dashed #F00; color:#0FF}
+/*设置对象.-aa下边框为虚线红色，css字体颜色为天蓝色*/
+.-bb{ border-bottom:1px solid #00F; color:#090}
+/*设置对象.-bb下边框为实线蓝色，对象DIV字体颜色为绿色*/
+#n{margin:10px auto; width:920px; border:1px solid #CCC;font-size:12px; line-height:30px;}
+#n a{ padding:0 4px; color:#333}
+</style>
 </head>
 <body>
-	<div id="main"><span>sfasd</span></div>
-	<div class="simple">dd</div>
-	<div class="fancy">ddssss</div>
-	
+<p class="-aa"><span >下划线为虚线红色，字体为蓝色</span></p>
+<p class="-bb"><span >下划线为实线蓝色，字体为绿色</span></p>
 </body>
-<script type="text/javascript">
-	
-</script>
-
 </html>
