@@ -36,6 +36,7 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         }
 
     ).state("main.chefDetail",{
+        params:{"chef":null},
         url: "/chefDetail",
         templateUrl: 'chef-detail.html'
         }
