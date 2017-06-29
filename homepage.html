@@ -16,9 +16,9 @@
 			</div>
 			
 
-			<div class="container" style="width: 1140px;height: 372px;">
+			<div class="container" style="width: 1140px;height: 332px;">
 				<h2 style="margin-top: 40px;font-size: 20px;color: #333333;">闽菜菜谱
-					<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;">更多></a>
+					<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.caipu">更多></a>
 				</h2>
 				<div class="line"></div>
 				<!-- <div style="width: 1140px;">
@@ -27,16 +27,16 @@
 				
 				<div style="height: 215px;width: 1140px;margin-top: 35px;display: inline-flex;">
 
-					<div class="caipu-img img-pre" style="display: none;">
-					</div>
+					<div class="caipu-img img-pre" style="display: none;"></div>
+
 					<div class="caipu-img show-img" style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="snack in snackList | filter: {type: 1} | slice:0:5">
-						<div style="height: 188px;width: 192px;overflow: hidden;">
+						<a style="text-decoration-line: none;"ui-sref="main.snackDetail({snackTitle:snack.title})">
+						<div style="height: 144px;width: 192px; overflow: hidden;">
 							<img src="./resources/img/{{snack.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 188px;width: 192px;cursor: pointer;">
-							
 						</div>
-						<h4>{{snack.title}}</h4>
+						<h4 style="color:#333333;">{{snack.title}}</h4>
+						</a>
 					</div>
-					
 					
 					<div class="caipu-img img-next" style="display: none;">
 							
@@ -48,23 +48,19 @@
 				
 				<div class="container news-tech">
 					<div style="padding-top: 1px;margin-left: 40px; width: 498px;">
-						<h2 style="margin-top: 40px;font-size: 20px;color: #333333;">		闽菜菜谱
-							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;">更多></a>
+						<h2 style="margin-top: 40px;font-size: 20px;color: #333333;">行业资讯
+							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.news">更多></a>
 						</h2>
 						<div class="line news-line"></div>
-						<div class="news-content1">
-							<a >第七届全国烹饪技能竞赛赛前集训班圆满结束</a>
-							<p style="font-size: 14px;letter-spacing: 2px;margin-top: 18px;color: #666666;">为了迎接即将举行的第七届全国烹饪技能竞赛，提高竞赛选手的竞技水平，更好适应新的竞赛规则，2013年8月28日至30日，由福建省财贸轻纺烟草医药工会工作委员会和福建省烹饪协会联合举办的第七届全国烹饪技能竞赛赛前集训班在福州黎明职业技术学院举办。</p>
-							<h3>2017-06-28</h3>
-						</div>
-						<div class="news-content1">
-							<a >关于开展2016年福建餐饮十大品牌评选申报工作的通知</a>
-							<p style="font-size: 14px;letter-spacing: 2px;margin-top: 18px;color: #666666;">为了进一步贯彻落实国务院《关于发挥品牌引领作用推动供需结构升级的意见》，扩大福建餐饮在国内外的品牌影响力，有效发挥餐饮企业品牌的标杆示范作用，我会正式启动2016年度“福建餐饮企业十大品牌”评选活动，开展正餐、火锅、快餐、团餐、小吃、休闲简餐、西餐等七个领域的细分评选。希望各市、县（区）餐饮烹饪行业协会负责推荐2-3家餐饮企业积极参与评选活动的申报工作，于2017年6月15日前将申报表格（完整填写附件表格，打印、盖章、扫描）以电子邮件形式反馈至本会，我会保证对企业数据严格保密。评选结果将在2017年（首届）福建餐饮产业发展大会期间公布，且最终形成《2016年度福建餐饮企业十大品牌分析报告》并发至各申报企业在表格中所填报的联系人电子邮箱。</p>
-							<h3>2017-06-28</h3>
+
+						<div class="news-content1" ng-repeat="news in newsList | slice:0:2">
+							<a ui-sref="main.newsDetail({news:news})">{{news.title}}</a>
+							<p style="font-size: 14px;letter-spacing: 2px;margin-top: 18px;color: #666666;">{{news.brief}}...</p>
+							<h3>{{news.createdTime}}</h3>
 						</div>
 					</div>
 					<div style="padding-top: 1px;margin-left: 50px; width: 485px;">
-						<h2 style="margin-top: 40px;font-size: 20px;color: #333333;">		闽菜教学
+						<h2 style="margin-top: 40px;font-size: 20px;color: #333333;">闽菜教学
 							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;">更多></a>
 						</h2>
 						<div class="video-content1">
