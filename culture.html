@@ -1,0 +1,29 @@
+<div style="    background: url(./resources/img/dise_02.jpg);background-repeat: round;" ng-controller="CultureController">
+	<div class="container" style="width: 1140px;height: 800px;padding-top: 50px;">
+		<div style="height: 450px;width: 1140px;display: inline-flex;">
+
+						
+						
+						<div style="width: 800px;height: 450px;background: #ffffff;">
+							<div class="p-thumb2"  >
+							        <a href="http://v.youku.com/v_show/id_XMjgyNzA2NTg5Mg==.html" title="披萨制作" data-from="1-1" target="video"></a>
+							        <i class="bg"></i>
+									<img class="quic" src="./resources/img/icon2.jpg">
+									<span class="time-tip">00:09</span>
+							</div>
+
+						</div>
+						<div style="width: 340px;margin-left: 40px;" class="nice-paper">
+							<h2 >精彩文章
+								
+							</h2>
+							<ul>
+								<li title="{{article.title}}" ng-repeat="article in articles" ng-click="gotoDetail(article)">{{article.name}}</li>
+							</ul>
+
+						</div>
+						
+						
+					</div>
+</div>
+</div>

@@ -38,4 +38,7 @@ main.controller('MainController', ['$scope', '$http','$location','$rootScope','$
     $scope.goToMenu = function (argument) {
         $state.go("main.caipu", argument);
     };
+    $scope.goToCulture = function(){
+        $state.go("main.culture");
+    }
 }]);
