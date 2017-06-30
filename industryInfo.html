@@ -1,21 +1,25 @@
 
-		<div class="container" style="width: 1150;height: 800px;margin-top: 40px;" ng-controller="IndustryinfoController">
+		<div class="container" style="width: 1140px; height: 800px;margin-top: 40px;" ng-controller="IndustryinfoController">
 
-			<ul id="myTab" class="nav nav-tabs" style="height: 30px;">
-				<li class="active">
-					<a href="" data-toggle="tab" data-target="#home" style="font-weight: bold;font-size: 15px">
-						 餐饮转让
-					</a>
-				</li>
-				<li><a href="" data-toggle="tab" data-target="#ios" style="font-weight: bold;font-size: 15px">劳务消息</a></li>
-				<li>
-					<a href="" data-toggle="tab" data-target="#ejb" style="font-weight: bold;font-size: 15px">食材对接</a>
-				</li>
-			</ul>
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+				<ul id="myTab" class="nav nav-tabs" style="height: 30px;">
+					<li class="active">
+						<a href="" data-toggle="tab" data-target="#home" style="font-weight: bold;font-size: 15px">
+							 餐饮转让
+						</a>
+					</li>
+					<li><a href="" data-toggle="tab" data-target="#ios" style="font-weight: bold;font-size: 15px">劳务消息</a></li>
+					<li>
+						<a href="" data-toggle="tab" data-target="#ejb" style="font-weight: bold;font-size: 15px">食材对接</a>
+					</li>
+				</ul>
+				</div>
+			</div>
 			<div class="row tab-content" style="height: 220px;">
 				<div class="col-md-12 col-lg-12 tab-pane fade in active"  style="margin-top: 10px;" id="home">
 					<ul class="list-group">
-					    <li class="list-group-item rent" style="height: 50px;" ng-repeat="transferInfo in info.transferInfo" ng-click="transferDetail(transferInfo)">
+					    <li class="list-group-item rent" style="height: 50px;" ng-repeat="transferInfo in info.transferInfo | slice:0:10" ng-click="transferDetail(transferInfo)">
 							    <a href="" class="rent-name list">
 							    	{{transferInfo.title}}
 							    </a>
@@ -34,7 +38,7 @@
 				</div>
 				<div class="col-md-12 col-lg-12 tab-pane fade"  style="margin-top: 10px;" id="ios">
 					<ul class="list-group">
-					    <li class="list-group-item rent" style="height: 50px;" ng-repeat="labourInfo in info.labourInfo" ng-click="labourDetail(labourInfo)">
+					    <li class="list-group-item rent" style="height: 50px;" ng-repeat="labourInfo in info.labourInfo | slice:0:10" ng-click="labourDetail(labourInfo)">
 							    <a href="" class="rent-name list">
 							    	{{labourInfo.title}}
 							    </a>
@@ -55,7 +59,7 @@
 				
 				<div class="col-md-12 col-lg-12 tab-pane fade"  style="margin-top: 10px;" id="ejb">
 					<ul class="list-group">
-					    <li class="list-group-item rent" style="height: 50px;" ng-repeat="foodInfo in info.foodInfo" ng-click="foodDetail(foodInfo)">
+					    <li class="list-group-item rent" style="height: 50px;" ng-repeat="foodInfo in info.foodInfo | slice:0:10" ng-click="foodDetail(foodInfo)">
 							    <a href="" class="rent-name list">
 							    	{{foodInfo.title}}
 							    </a>
@@ -75,11 +79,6 @@
 				</div>
 			
 			</div>
-			<div class="col-md-12 col-lg-12 pager">
-					<span class="f-ib f-icon cPageNum">1</span>
-						 <a data-p="2" data-pn="2" class="f-icon f-ib pageNum">2</a>
-						 <a data-p="2" data-pn="2" class="f-icon f-ib next">></a>
-				</div>
 		
 		</div>
 			
