@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('app', ['ui.router','main','homepage','news','chef','snack','industryinfo','culture']);
+var app = angular.module('app', ['ui.router','main','homepage','news','chef','snack','industryinfo','culture','video']);
 
 app.config(function ($stateProvider,$urlRouterProvider) {
     $stateProvider.state("main",{
@@ -44,6 +44,12 @@ app.config(function ($stateProvider,$urlRouterProvider) {
     ).state("main.video",{
         url: "/video",
         templateUrl: 'video.html'
+        }
+
+    ).state("main.videoplay",{
+        url: "/videoplay",
+        templateUrl: 'video-play.html',
+        params:{item:null}
         }
 
     ).state("main.industryInfo",{

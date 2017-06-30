@@ -1,152 +1,21 @@
 
-		<div class="container" style="width: 1140px">
+		<div class="container" style="width: 1140px" ng-controller="VideoController">
 			<div class="line"></div>
 
 			<div class="f-cb" id="j-container">
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/p0520nrorrf.html" class="u-cover" target="_blank">
+				<div class="u-unicard f-fl" ng-repeat="video in videos">              
+					<a href="" class="u-cover" target="_blank" ng-click="gotoDetail(video)">
 						<div class="shadow rel">                  
-							<img src="./resources/img/jiaoxue/22.jpg" alt="蟹肉冬瓜茸" height="158" width="250" style="display: inline;">
+							<img ng-src="{{video.icon}}" alt="{{video.name}}" height="158" width="250" style="display: inline;">
 							<div class="mask abs"></div>                
 						</div>              
 					</a>             
-					<a href="https://v.qq.com/x/page/p0520nrorrf.html" target="_blank">
-					    <h5 class="f-c3 f-thide">蟹肉冬瓜茸</h5>
+					<a href="" target="_blank" ng-click="gotoDetail(video)">
+					    <h5 class="f-c3 f-thide">{{video.name}}</h5>
 					</a>              
-					<span class="f-c9">2017/06/29 16:35:28</span>
+					<span class="f-c9">{{video.time}}</span>
 				</div>
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/u0519wdc89e.html" class="u-cover" target="_blank">
-						<div class="shadow rel">                  
-							<img src="./resources/img/jiaoxue/01.jpg" alt="南煎猪肝" height="158" width="250" style="display: inline;">
-							<div class="mask abs"></div>                
-						</div>              
-					</a>             
-					<a href="https://v.qq.com/x/page/u0519wdc89e.html" target="_blank">
-					    <h5 class="f-c3 f-thide">南煎猪肝</h5>
-					</a>              
-					<span class="f-c9">2017/06/29 15:12:46</span>
-				</div>
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/q0519fwxprd.html" class="u-cover" target="_blank">
-						<div class="shadow rel">                  
-							<img src="./resources/img/jiaoxue/02.jpg" alt="淡糟香螺片" height="158" width="250" style="display: inline;">
-							<div class="mask abs"></div>                
-						</div>              
-					</a>             
-					<a href="https://v.qq.com/x/page/q0519fwxprd.html" target="_blank">
-					    <h5 class="f-c3 f-thide">淡糟香螺片</h5>
-					</a>              
-					<span class="f-c9">2017/06/29 13:33:54</span>
-				</div>
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/i051999wpem.html" class="u-cover" target="_blank">
-						<div class="shadow rel">                  
-							<img class="lazy" src="./resources/img/jiaoxue/03.jpg" alt="爆炒双脆" height="158" width="250" style="display: inline;">
-							<div class="mask abs"></div>                
-						</div>              
-					</a>             
-					<a href="https://v.qq.com/x/page/i051999wpem.html" target="_blank">
-					    <h5 class="f-c3 f-thide">爆炒双脆</h5>
-					</a>              
-					<span class="f-c9">2017/06/29 17:33:25</span>
-				</div>
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/z0519lricn1.html" class="u-cover" target="_blank">
-						<div class="shadow rel">                  
-							<img data-original="./resources/img/jiaoxue/04.jpg" class="lazy" src="./resources/img/jiaoxue/04.jpg" alt="注油鳗鱼" height="158" width="250" style="display: inline;">
-							<div class="mask abs"></div>                
-						</div>              
-					</a>             
-					<a href="https://v.qq.com/x/page/z0519lricn1.html" target="_blank">
-					    <h5 class="f-c3 f-thide">注油鳗鱼</h5>
-					</a>              
-					<span class="f-c9">2017/06/10 17:32:12</span>
-				</div>
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/h0519cs2xsd.html" class="u-cover" target="_blank">
-						<div class="shadow rel">                  
-							<img data-original="./resources/img/jiaoxue/05.jpg" class="lazy" src="./resources/img/jiaoxue/05.jpg" alt="全节黄瓜鱼" height="158" width="250" style="display: inline;">
-							<div class="mask abs"></div>                
-						</div>              
-					</a>             
-					<a href="https://v.qq.com/x/page/h0519cs2xsd.html" target="_blank">
-					    <h5 class="f-c3 f-thide">全节黄瓜鱼</h5>
-					</a>              
-					<span class="f-c9">2017/06/11 14:44:21</span>
-				</div>
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/e05190lcqbc.html" class="u-cover" target="_blank">
-						<div class="shadow rel">                  
-							<img data-original="./resources/img/jiaoxue/06.jpg" class="lazy" src="./resources/img/jiaoxue/06.jpg" alt="荔枝肉" height="158" width="250" style="display: inline;">
-							<div class="mask abs"></div>                
-						</div>              
-					</a>             
-					<a href="https://v.qq.com/x/page/e05190lcqbc.html" target="_blank">
-					    <h5 class="f-c3 f-thide">荔枝肉</h5>
-					</a>              
-					<span class="f-c9">2017/06/12 08:12:26</span>
-				</div>
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/a0520dqo6y3.html" class="u-cover" target="_blank">
-						<div class="shadow rel">                  
-							<img data-original="./resources/img/jiaoxue/07.jpg" class="lazy" src="./resources/img/jiaoxue/07.jpg" alt="蟹肉捣粉" height="158" width="250" style="display: inline;">
-							<div class="mask abs"></div>                
-						</div>              
-					</a>             
-					<a href="https://v.qq.com/x/page/a0520dqo6y3.html" target="_blank">
-					    <h5 class="f-c3 f-thide">蟹肉捣粉</h5>
-					</a>              
-					<span class="f-c9">2017/06/12 15:12:34</span>
-				</div>
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/l0520x2yano.html" class="u-cover" target="_blank">
-						<div class="shadow rel">                  
-							<img data-original="./resources/img/jiaoxue/08.jpg" class="lazy" src="./resources/img/jiaoxue/08.jpg" alt="鲟肉鸳鸯菜" height="158" width="250" style="display: inline;">
-							<div class="mask abs"></div>                
-						</div>              
-					</a>             
-					<a href="https://v.qq.com/x/page/l0520x2yano.html" target="_blank">
-					    <h5 class="f-c3 f-thide">鲟肉鸳鸯菜</h5>
-					</a>              
-					<span class="f-c9">2017/06/18 12:43:09</span>
-				</div>
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/o0519bqqngg.html" class="u-cover" target="_blank">
-						<div class="shadow rel">                  
-							<img data-original="./resources/img/jiaoxue/09.jpg" class="lazy" src="./resources/img/jiaoxue/09.jpg" alt="瓜烧白菜" height="158" width="250" style="display: inline;">
-							<div class="mask abs"></div>                
-						</div>              
-					</a>             
-					<a href="https://v.qq.com/x/page/o0519bqqngg.html" target="_blank">
-					    <h5 class="f-c3 f-thide">瓜烧白菜</h5>
-					</a>              
-					<span class="f-c9">2017/06/22 09:11:23</span>
-				</div>
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/r0520a18web.html" class="u-cover" target="_blank">
-						<div class="shadow rel">                  
-							<img data-original="./resources/img/jiaoxue/10.jpg" class="lazy" src="./resources/img/jiaoxue/10.jpg" alt="软熘珠帘鱼" height="158" width="250" style="display: inline;">
-							<div class="mask abs"></div>                
-						</div>              
-					</a>             
-					<a href="https://v.qq.com/x/page/r0520a18web.html" target="_blank">
-					    <h5 class="f-c3 f-thide">软帘珠帘鱼</h5>
-					</a>              
-					<span class="f-c9">2017/06/22 17:22:38</span>
-				</div>
-				<div class="u-unicard f-fl">              
-					<a href="https://v.qq.com/x/page/g0520d3dz2x.html" class="u-cover" target="_blank">
-						<div class="shadow rel">                  
-							<img data-original="./resources/img/jiaoxue/11.jpg" class="lazy" src="./resources/img/jiaoxue/11.jpg" alt="红糟羊肉" height="158" width="250" style="display: inline;">
-							<div class="mask abs"></div>                
-						</div>              
-					</a>             
-					<a href="https://v.qq.com/x/page/g0520d3dz2x.html" target="_blank">
-					    <h5 class="f-c3 f-thide">红糟羊肉</h5>
-					</a>              
-					<span class="f-c9">2017/06/23 10:33:555</span>
-				</div>
+				
 
 			</div>
 		</div>
