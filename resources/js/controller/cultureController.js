@@ -50,6 +50,15 @@ culture.controller('CultureController', ['$scope', '$http','$location','$rootSco
     $scope.gotoDetail = function (item) {
         $state.go('main.cultureDetail',{item:item});
     };
+    $scope.videoObj = {
+            name:'闽菜走天下',
+            time:'05:49',
+            icon:'./resources/img/fujian_food_culture.jpg',
+            url:'./resources/video/92sucai.mp4'
+        };
+    $scope.gotoVideoDetail = function (item) {
+        $state.go('main.videoplay',{item:item});
+    };
 
 
 }]);
