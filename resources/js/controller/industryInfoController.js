@@ -132,7 +132,7 @@ industryinfo.constant('info', {
         title:'福州荣誉大酒店招聘行政文员一名',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
                   '<tbody><tr>'+
-                    '<td height="32"><div align="left"><img src="./resources/img/zp_3.gif" width="160" height="20"></div></td>'+
+                
                   '</tr><tr>'+
                     '<td align="left"><p align="left" class="lh24 ti24"></p><p><style type="text/css">'+
 '.qq{'+
@@ -146,7 +146,7 @@ industryinfo.constant('info', {
                   '</tr></tbody></table>',
         content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
                     '<tbody><tr>'+
-                      '<td height="32"><div align="left"><img src="./resources/img/zp_4.gif" width="99" height="20"></div></td>'+
+                    
                     '</tr>'+
                     '<tr>'+
                       '<td class="pd10">'+
@@ -187,7 +187,6 @@ industryinfo.constant('info', {
         title:'厦门绿进食品有限公司',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
 '                  <tbody><tr>'+
-'                    <td height="32"><div align="left"><img src="./resources/img/zp_3.gif" width="160" height="20"></div></td>'+
 '                  </tr>'+
 '                  <tr>'+
 '                    <td align="left"><p align="left" class="lh24 ti24"></p><p><style type="text/css">'+
@@ -205,7 +204,6 @@ industryinfo.constant('info', {
 '                </tbody></table>',
         content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
 '                    <tbody><tr>'+
-'                      <td height="32"><div align="left"><img src="./resources/img/zp_4.gif" width="99" height="20"></div></td>'+
 '                    </tr>'+
 '                    <tr>'+
 '                      <td class="pd10">'+
@@ -247,7 +245,6 @@ industryinfo.constant('info', {
         title:'福州金誉食品有限公司',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
 '                  <tbody><tr>'+
-'                    <td height="32"><div align="left"><img src="./resources/img/zp_3.gif" width="160" height="20"></div></td>'+
 '                  </tr>'+
 '                  <tr>'+
 '                    <td align="left"><p align="left" class="lh24 ti24"></p><p><style type="text/css">'+
@@ -266,7 +263,6 @@ industryinfo.constant('info', {
 '                </tbody></table>',
         content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
 '                    <tbody><tr>'+
-'                      <td height="32"><div align="left"><img src="./resources/img/zp_4.gif" width="99" height="20"></div></td>'+
 '                    </tr>'+
 '                    <tr>'+
 '                      <td class="pd10">'+
@@ -311,7 +307,6 @@ industryinfo.constant('info', {
         title:'福州梅峰宾馆',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
 '                  <tbody><tr>'+
-'                    <td height="32"><div align="left"><img src="./resources/img/zp_3.gif" width="160" height="20"></div></td>'+
 '                  </tr>'+
 '                  <tr>'+
 '                    <td align="left"><p align="left" class="lh24 ti24"></p><p><style type="text/css">'+
@@ -327,7 +322,6 @@ industryinfo.constant('info', {
 '                </tbody></table>',
         content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
 '                    <tbody><tr>'+
-'                      <td height="32"><div align="left"><img src="./resources/img/zp_4.gif" width="99" height="20"></div></td>'+
 '                    </tr>'+
 '                    <tr>'+
 '                      <td class="pd10">'+
@@ -371,7 +365,6 @@ industryinfo.constant('info', {
         title:'聚春园驿馆',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
 '                  <tbody><tr>'+
-'                    <td height="32"><div align="left"><img src="./resources/img/zp_3.gif" width="160" height="20"></div></td>'+
 '                  </tr>'+
 '                  <tr>'+
 '                    <td align="left"><p align="left" class="lh24 ti24"></p></td>'+
@@ -379,7 +372,6 @@ industryinfo.constant('info', {
 '                </tbody></table>',
         content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
 '                    <tbody><tr>'+
-'                      <td height="32"><div align="left"><img src="./resources/img/zp_4.gif" width="99" height="20"></div></td>'+
 '                    </tr>'+
 '                    <tr>'+
 '                      <td class="pd10">'+
@@ -412,17 +404,13 @@ industryinfo.constant('info', {
         id:6,
         title:'金源澳门街美食广场诚聘',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-'                  <tbody><tr>'+
-'                    <td height="32"><div align="left"><img src="images/zp_3.gif" width="160" height="20"></div></td>'+
-'                  </tr>'+
+'                  <tbody>'+
 '                  <tr>'+
 '                    <td align="left"><p align="left" class="lh24 ti24"></p></td>'+
 '                  </tr>'+
 '                </tbody></table>',
         content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-'                    <tbody><tr>'+
-'                      <td height="32"><div align="left"><img src="images/zp_4.gif" width="99" height="20"></div></td>'+
-'                    </tr>'+
+'                    <tbody>'+
 '                    <tr>'+
 '                      <td class="pd10">'+
 '                     <div align="left">'+
@@ -454,17 +442,13 @@ industryinfo.constant('info', {
         id:7,
         title:'芍园1号西餐厅诚聘',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-'                  <tbody><tr>'+
-'                    <td height="32"><div align="left"><img src="images/zp_3.gif" width="160" height="20"></div></td>'+
-'                  </tr>'+
+'                  <tbody>'+
 '                  <tr>'+
 '                    <td align="left"><p align="left" class="lh24 ti24"></p><p>地址:白马河芍园1号创意园内</p><p></p></td>'+
 '                  </tr>'+
 '                </tbody></table>',
         content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-'                    <tbody><tr>'+
-'                      <td height="32"><div align="left"><img src="images/zp_4.gif" width="99" height="20"></div></td>'+
-'                    </tr>'+
+'                    <tbody>'+
 '                    <tr>'+
 '                      <td class="pd10">'+
 '                     <div align="left">'+
@@ -496,9 +480,7 @@ industryinfo.constant('info', {
         id:8,
         title:'咖啡树时尚烘焙诚聘咖啡厅服务员',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-'                  <tbody><tr>'+
-'                    <td height="32"><div align="left"><img src="images/zp_3.gif" width="160" height="20"></div></td>'+
-'                  </tr>'+
+'                  <tbody>'+
 '                  <tr>'+
 '                    <td align="left"><p align="left" class="lh24 ti24"></p><p><style type="text/css">'+
 '.qq{'+
@@ -519,9 +501,7 @@ industryinfo.constant('info', {
 '                  </tr>'+
 '                </tbody></table>',
         content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-'                    <tbody><tr>'+
-'                      <td height="32"><div align="left"><img src="images/zp_4.gif" width="99" height="20"></div></td>'+
-'                    </tr>'+
+'                    <tbody>'+
 '                    <tr>'+
 '                      <td class="pd10">'+
 '                     <div align="left">'+
@@ -556,9 +536,7 @@ industryinfo.constant('info', {
         id:9,
         title:'有名仔餐吧诚聘服务员兼送餐员',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-'                  <tbody><tr>'+
-'                    <td height="32"><div align="left"><img src="images/zp_3.gif" width="160" height="20"></div></td>'+
-'                  </tr>'+
+'                  <tbody>'+
 '                  <tr>'+
 '                    <td align="left"><p align="left" class="lh24 ti24"></p><p><style type="text/css">'+
 '.qq{'+
@@ -579,9 +557,7 @@ industryinfo.constant('info', {
 '                  </tr>'+
 '                </tbody></table>',
         content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-'                    <tbody><tr>'+
-'                      <td height="32"><div align="left"><img src="images/zp_4.gif" width="99" height="20"></div></td>'+
-'                    </tr>'+
+'                    <tbody>'+
 '                    <tr>'+
 '                      <td class="pd10">'+
 '                     <div align="left">'+
@@ -617,7 +593,6 @@ industryinfo.constant('info', {
         title:'黄记福利餐饮餐馆 急招兼职或全职餐饮客服',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
 '                  <tbody><tr>'+
-'                    <td height="32"><div align="left"><img src="images/zp_3.gif" width="160" height="20"></div></td>'+
 '                  </tr>'+
 '                  <tr>'+
 '                    <td align="left"><p align="left" class="lh24 ti24"></p><p><style type="text/css">'+
@@ -638,7 +613,6 @@ industryinfo.constant('info', {
 '                </tbody></table>',
         content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
 '                    <tbody><tr>'+
-'                      <td height="32"><div align="left"><img src="images/zp_4.gif" width="99" height="20"></div></td>'+
 '                    </tr>'+
 '                    <tr>'+
 '                      <td class="pd10">'+
