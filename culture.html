@@ -1,29 +1,32 @@
-<div style="    background: url(./resources/img/dise_02.jpg);background-repeat: round;" ng-controller="CultureController">
+<div style="background: url(./resources/img/dise_02.jpg);background-repeat: round;" ng-controller="CultureController">
 	<div class="container" style="width: 1140px;height: 800px;padding-top: 50px;">
 		<div style="height: 450px;width: 1140px;display: inline-flex;">
 
-						
-						
-						<div style="width: 800px;height: 450px;background: #ffffff;">
-							<div class="p-thumb2"  >
-							        <a href="https://v.qq.com/x/page/r0520liqsz5.html" title="闽菜走天下" data-from="1-1" target="video"></a>
-							        <i class="bg"></i>
-									<img class="quic" src="./resources/img/fujian_food_culture.jpg">
-									<span class="time-tip">05:49</span>
-							</div>
+			<div style="width: 800px; height: 600px;">
+				<div style="width: 800px;">
+				<p>闽菜是中国八大菜系之一，经历了中原汉族文化和当地古越族文化的混合、交流而逐渐形成。</p>
+				<p>闽菜是以福州菜为基础，后又融合闽东、闽南、闽西、闽北、莆仙地方风味菜为主形成的菜系。</p>
+				<p>福建人民经过与海外、特别是南洋群岛人民的长期交往，海外的饮食习俗也逐渐渗透到闽人的饮食生活之中，从而使闽菜成为带有开放特色的一种独特的菜系。</p>
+				<p>闽菜以烹制山珍海味而著称，在色香味形俱佳的基础上，尤以“香”、“味”见长，其清鲜、和醇、荤香、不腻的风格特色，以及汤路广泛的特点，在烹坛园地中独具一席。</p>
+				</div>
+				<div class="p-thumb2"  >
+				        <a href="https://v.qq.com/x/page/r0520liqsz5.html" title="闽菜走天下" data-from="1-1" target="video"></a>
+				        <i class="bg"></i>
+						<img class="quic" src="./resources/img/fujian_food_culture.jpg">
+						<span class="time-tip">05:49</span>
+				</div>
 
-						</div>
-						<div style="width: 340px;margin-left: 40px;" class="nice-paper">
-							<h2 >精彩文章
-								
-							</h2>
-							<ul>
-								<li title="{{article.title}}" ng-repeat="article in articles" ng-click="gotoDetail(article)">{{article.name}}</li>
-							</ul>
-
-						</div>
-						
-						
-					</div>
+			</div>
+			<div style="width: 300px; margin-left: 40px;" class="nice-paper">
+				<h2>闽菜文化</h2>
+				<ul>
+					<li title="{{article.title}}" ng-repeat="article in articles| filter: {type: 1} | slice:0:5" ng-click="gotoDetail(article)">{{article.name}}</li>
+				</ul>
+				<h2 style="margin-top: 100px;">名师名店</h2>
+				<ul>
+					<li title="{{article.title}}" ng-repeat="article in articles| filter: {type: 2} | slice:0:5" ng-click="gotoDetail(article)">{{article.name}}</li>
+				</ul>
+			</div>
+		</div>
 </div>
 </div>
