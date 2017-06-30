@@ -67,19 +67,19 @@ app.config(function ($stateProvider,$urlRouterProvider) {
 
     ).state("main.transformInfo",{
             url: "/transformInfo",
-            templateUrl: 'transformInfo.html',
+            templateUrl: 'transforminfo.html',
             params:{item:null}
         }
 
     ).state("main.labourInfo",{
             url: "/labourInfo",
-            templateUrl: 'labourInfo.html',
+            templateUrl: 'labourinfo.html',
             params:{item:null}
         }
 
     ).state("main.foodInfo",{
             url: "/foodInfo",
-            templateUrl: 'foodInfo.html',
+            templateUrl: 'foodinfo.html',
             params:{item:null}
         }
 
