@@ -1,6 +1,499 @@
 var industryinfo = angular.module('industryinfo', []);
 industryinfo.constant('info', {
     transferInfo:[{
+        id:18,
+        title:'【转让】福州晋安区象园餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq"> 区域： 福州晋安区象园 </p> '+
+'  <p class="qq">地址：长乐南路公交车站</p> '+
+'  <p class="qq"> 行业：餐馆   </p> '+
+'  <p class="qq"> 类型：商业街卖场</p> '+
+'  <p class="qq"> 面积：110㎡</p> '+
+'  <p class="qq">转让费：16 万元</p> '+
+'  <p class="qq">移动电话：13328792698 </p> '+
+'  <p class="qq">租金：11000 元/月</p> '+
+'  <p class="qq">联系人：钟先生 </p> '+
+'  <p class="qq">联系电话：18350115015</p> '+
+'  <p><img src="./resources/img/transform-1.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:567,
+        publishTime:'2017/7/6',
+        tel:'18350115015'
+    },{
+        id:19,
+        title:'【转让】东街口公交站旁餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq"> 区域： 福州鼓楼   东街  </p> '+
+'  <p class="qq">地址：东街口公交站旁</p> '+
+'  <p class="qq"> 类型：商业街卖场</p> '+
+'  <p class="qq"> 面积：34㎡</p> '+
+'  <p class="qq">转让费：10 万元</p>  '+
+'  <p class="qq">租金：20000 元/月</p> '+
+'  <p class="qq">联系人：陈生 </p> '+
+'  <p class="qq">联系电话：15375990766</p> '+
+'  <p><img src="./resources/img/transform-2.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:555,
+        publishTime:'2017/7/6',
+        tel:15375990766
+    },{
+        id:20,
+        title:'【转让】马尾区君竹路与建星路交叉口酒楼饭店',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq"> 区域： 福州马尾区 步行街</p> '+
+'  <p class="qq">行业：酒楼饭店</p>'+
+'  <p class="qq">地址：马尾区君竹路与建星路交叉口</p> '+
+'  <p class="qq"> 性质：转让</p> '+
+'  <p class="qq"> 面积：380 平方米</p> '+
+'  <p class="qq">价格：8,000 元</p>  '+
+'  <p class="qq">联系人：翁先生 </p> '+
+'  <p class="qq">联系电话：13706988424</p> '+
+'  <p><img src="./resources/img/transform-3.jpg"  width=300 height=400></p> '+
+'  <p><img src="./resources/img/transform-4.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:512,
+        publishTime:'2017/7/6',
+        tel:13706988424
+    },{
+        id:21,
+        title:'【转让】厦门湖里金尚路餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq"> 区域： 厦门湖里   金尚路  </p> '+
+'  <p class="qq">临近：一家亲酒楼 后坑</p>'+
+'  <p class="qq">行业：餐馆   </p> '+
+'  <p class="qq"> 类型：商业街卖场</p> '+
+'  <p class="qq"> 面积：400㎡</p> '+
+'  <p class="qq">转让费：30.00 万元  </p>  '+
+'  <p class="qq">租金：面议 </p> '+
+'  <p class="qq">联系人：丁女士 </p> '+
+'  <p class="qq">联系电话：13860431263</p> '+
+'  <p><img src="./resources/img/transform-5.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:502,
+        publishTime:'2017/7/6',
+        tel:13860431263
+    },{
+        id:22,
+        title:'【转让】厦门湖里高新技术园创新园美食广场餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域： 厦门湖里   高新技术园 </p> '+
+'  <p class="qq">地址：创新园美食广场</p>'+
+'  <p class="qq">临近：红星美凯龙</p> '+
+'  <p class="qq"> 行业：餐馆  </p> '+
+'  <p class="qq"> 类型：商业街卖场</p> '+
+'  <p class="qq">面积：90㎡</p>  '+
+'  <p class="qq">租金：12000 元/月 </p> '+
+'  <p class="qq">转让费： 面议 </p>'+
+'  <p class="qq">联系人：郭小姐 </p> '+
+'  <p class="qq">联系电话：15960271119</p> '+
+'  <p><img src="./resources/img/transform-6.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:487,
+        publishTime:'2017/7/6',
+        tel:15960271119
+    },{
+        id:23,
+        title:'【转让】厦门思明长青路嘉华大厦餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域： 厦门思明   长青路 </p> '+
+'  <p class="qq">地址：嘉华大厦</p>'+
+'  <p class="qq">临近：劳动力大厦</p> '+
+'  <p class="qq"> 行业：餐馆  </p> '+
+'  <p class="qq"> 类型：住宅底商</p> '+
+'  <p class="qq">面积：170㎡</p>  '+
+'  <p class="qq">转让费：10 万元 </p> '+
+'  <p class="qq">租金：18000 元/月 </p>'+
+'  <p class="qq">联系人：林总 </p> '+
+'  <p class="qq">联系电话：13716155788</p> '+
+'  <p><img src="./resources/img/transform-7.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:467,
+        publishTime:'2017/7/6',
+        tel:13716155788
+    },{
+        id:24,
+        title:'【转让】厦门市思明区禾祥西路餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域： 厦门市思明区 禾祥西路   </p> '+
+'  <p class="qq">地址：靠近锦江之星</p>'+
+'  <p class="qq">临近：后江埭路</p> '+
+'  <p class="qq">行业：餐馆  </p> '+
+'  <p class="qq">类型：住宅底商</p> '+
+'  <p class="qq">面积：270㎡</p>  '+
+'  <p class="qq">转让费：13.9 万元 </p> '+
+'  <p class="qq">租金：2.2 元/㎡/天</p>'+
+'  <p class="qq">联系电话：13959293621</p> '+
+'  <p><img src="./resources/img/transform-8.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:456,
+        publishTime:'2017/7/6',
+        tel:13959293621
+    },{
+        id:25,
+        title:'【转让】泉州周边新华都池店街餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域：泉州周边  </p> '+
+'  <p class="qq">临近：新华都 池店街</p>'+
+'  <p class="qq">行业：餐馆   </p> '+
+'  <p class="qq">类型：商业街卖场</p> '+
+'  <p class="qq">面积：60㎡</p>  '+
+'  <p class="qq">转让费：10.00 万元 </p> '+
+'  <p class="qq">租金：5000 元/月</p>'+
+'  <p class="qq">联系人：林总</p>'+
+'  <p class="qq">联系电话：13716155788</p> '+
+'  <p><img src="./resources/img/transform-9.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:434,
+        publishTime:'2017/7/6',
+        tel:13716155788
+    },{
+        id:26,
+        title:'【转让】泉州市丰泽区城东华大学生街3号店 华大学生街餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域：泉州市丰泽 区 城东   </p> '+
+'  <p class="qq">临近：华大学生街3号店 华大学生街</p>'+
+'  <p class="qq">行业：餐馆   </p> '+
+'  <p class="qq">类型：商业街卖场</p> '+
+'  <p class="qq">面积：37㎡</p>  '+
+'  <p class="qq">转让费：16.00 万元 </p> '+
+'  <p class="qq">租金：4200 元/月</p>'+
+'  <p class="qq">联系人：刘女士</p>'+
+'  <p class="qq">联系电话：18859774088</p> '+
+'  <p><img src="./resources/img/transform-10.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:420,
+        publishTime:'2017/7/6',
+        tel:18859774088
+    },{
+        id:27,
+        title:'【转让】泉州市丰泽丰泽街餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域：泉州市丰泽   丰泽街 </p> '+
+'  <p class="qq">临近：远太苑小区 祥远路</p>'+
+'  <p class="qq">行业：餐馆   </p> '+
+'  <p class="qq">类型：商业街卖场</p> '+
+'  <p class="qq">面积：40㎡</p>  '+
+'  <p class="qq">转让费：10.00 万元 </p> '+
+'  <p class="qq">租金：4000 元/月</p>'+
+'  <p class="qq">联系人：冯林</p>'+
+'  <p class="qq">联系电话：18501315839</p> '+
+'  <p><img src="./resources/img/transform-11.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:401,
+        publishTime:'2017/7/6',
+        tel:18501315839
+    },{
+        id:28,
+        title:'【转让】泉州丰泽泉秀路餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域： 泉州丰泽 泉秀路   </p> '+
+'  <p class="qq">临近：万达2号门对面</p>'+
+'  <p class="qq">行业：餐馆   </p> '+
+'  <p class="qq">类型：商业街卖场</p> '+
+'  <p class="qq">面积：240㎡</p>  '+
+'  <p class="qq">转让费：面议 </p> '+
+'  <p class="qq">租金：30000 元/月</p>'+
+'  <p class="qq">联系电话：18659597867 </p> '+
+'  <p><img src="./resources/img/transform-12.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:300,
+        publishTime:'2017/7/6',
+        tel:18659597867
+    },{
+        id:29,
+        title:'【转让】莆田城厢区府路餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域： 莆田城厢  </p> '+
+'  <p class="qq">临近： 区府路</p>'+
+'  <p class="qq">行业：餐馆   </p> '+
+'  <p class="qq">类型：商业街卖场</p> '+
+'  <p class="qq">面积：350㎡</p>  '+
+'  <p class="qq">转让费：80.00 万元   </p> '+
+'  <p class="qq">租金：面议</p>'+
+'  <p class="qq">联系电话：18150667866 </p> '+
+'  <p><img src="./resources/img/transform-13.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:388,
+        publishTime:'2017/7/6',
+        tel:18150667866
+    },{
+        id:30,
+        title:'【转让】莆田涵江六一东路',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域： 莆田涵江   </p> '+
+'  <p class="qq">地址：六一东路</p>'+
+'  <p class="qq">类型：商业街卖场</p> '+
+'  <p class="qq">面积：500㎡</p>  '+
+'  <p class="qq">转让费：20.00 万元   </p> '+
+'  <p class="qq">租金：10300 元/月</p>'+
+'  <p class="qq">联系电话：15060368687 </p> '+
+'  <p><img src="./resources/img/transform-14.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:567,
+        publishTime:'2017/7/6',
+        tel:15060368687
+    },{
+        id:31,
+        title:'【转让】莆田荔城处于儿童医院荔青中学之间摊位柜台',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域： 莆田荔城    </p> '+
+'  <p class="qq">地址：处于儿童医院荔青中学之间</p>'+
+'  <p class="qq">类型：摊位柜台</p> '+
+'  <p class="qq">面积：90㎡</p>  '+
+'  <p class="qq">转让费：8 万元   </p> '+
+'  <p class="qq">租金：5500 元/月</p>'+
+'  <p class="qq">联系电话：15094020703 </p> '+
+'  <p><img src="./resources/img/transform-15.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:632,
+        publishTime:'2017/7/6',
+        tel:15094020703
+    },{
+        id:32,
+        title:'【转让】莆田市荔城区新度镇新度村下坂路口餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域： 莆田市荔城区</p> '+
+'  <p class="qq">临近：新度镇新度村下坂路口</p>'+
+'  <p class="qq">行业：餐馆 </p> '+
+'  <p class="qq">类型：商业街卖场</p> '+
+'  <p class="qq">面积：110㎡</p>  '+
+'  <p class="qq">转让费：14.00 万元   </p> '+
+'  <p class="qq">租金：4000 元/月</p>'+
+'  <p class="qq">联系电话：13799223056</p> '+
+'  <p><img src="./resources/img/transform-16.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:578,
+        publishTime:'2017/7/6',
+        tel:13799223056
+    },{
+        id:33,
+        title:'【转让】莆田市城厢凤凰山街道凤凰路270号餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域：莆田市城厢 </p> '+
+'  <p class="qq">地址：凤凰山街道凤凰路270号</p>'+
+'  <p class="qq">行业：餐馆 </p> '+
+'  <p class="qq">类型：商业街卖场</p> '+
+'  <p class="qq">面积：45㎡</p>  '+
+'  <p class="qq">转让费：2.2万元   </p> '+
+'  <p class="qq">租金：2600 元/月</p>'+
+'  <p class="qq">联系电话：18728606248</p> '+
+'  <p><img src="./resources/img/transform-17.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:963,
+        publishTime:'2017/7/6',
+        tel:18728606248
+    },{
+        id:34,
+        title:'【转让】漳州市龙文区交警支队二手车市场餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域：漳州市龙文 区</p> '+
+'  <p class="qq">地址：交警支队二手车市场</p>'+
+'  <p class="qq">行业：餐馆 </p> '+
+'  <p class="qq">类型：住宅底商</p> '+
+'  <p class="qq">面积：46㎡</p>  '+
+'  <p class="qq">转让费：3.8万元   </p> '+
+'  <p class="qq">租金：2.2 元/㎡/天</p>'+
+'  <p class="qq">联系电话：13859240228</p> '+
+'  <p><img src="./resources/img/transform-18.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:230,
+        publishTime:'2017/7/6',
+        tel:13859240228
+    },{
+        id:35,
+        title:'【转让】蕉城新能源美食园商业街卖场',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域：蕉城</p> '+
+'  <p class="qq">地址：新能源美食园</p>'+
+'  <p class="qq">类型：商业街卖场</p> '+
+'  <p class="qq">面积：200㎡</p>  '+
+'  <p class="qq">转让费：10万元   </p> '+
+'  <p class="qq">租金：6000 元/月</p>'+
+'  <p class="qq">联系电话：15381668938</p> '+
+'  <p><img src="./resources/img/transform-19.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:300,
+        publishTime:'2017/7/6',
+        tel:15381668938
+    },{
+        id:36,
+        title:'【转让】福鼎点头镇长春街17-19号冷饮甜品店',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域：福鼎</p> '+
+'  <p class="qq">地址：点头镇长春街17-19号</p>'+
+'  <p class="qq">行业：冷饮甜品店 </p>'+
+'  <p class="qq">类型：商业街卖场</p> '+
+'  <p class="qq">面积：50㎡</p>  '+
+'  <p class="qq">转让费：12万元   </p> '+
+'  <p class="qq">租金：1500 元/月</p>'+
+'  <p class="qq">联系电话：13809573696</p> '+
+'  <p><img src="./resources/img/transform-20.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:103,
+        publishTime:'2017/7/6',
+        tel:13809573696
+    },{
+        id:37,
+        title:'【转让】台商投资区星湖湾 南北主干道 餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域：台商投资区</p> '+
+'  <p class="qq">临近：星湖湾 南北主干道</p>'+
+'  <p class="qq">行业：餐馆 </p>'+
+'  <p class="qq">类型：住宅底商</p> '+
+'  <p class="qq">面积：260㎡</p>  '+
+'  <p class="qq">转让费：0.00万元   </p> '+
+'  <p class="qq">租金：5000 元/月</p>'+
+'  <p class="qq">联系电话：15159504363</p> '+
+'  <p><img src="./resources/img/transform-21.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:103,
+        publishTime:'2017/7/6',
+        tel:15159504363
+    },{
+        id:38,
+        title:'【转让】龙岩新罗中山路上井街餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域：龙岩新罗 </p> '+
+'  <p class="qq">地址：中山路上井街</p>'+
+'  <p class="qq">行业：餐馆 </p>'+
+'  <p class="qq">类型：住宅底商</p> '+
+'  <p class="qq">面积：65㎡</p>  '+
+'  <p class="qq">转让费：8万元   </p> '+
+'  <p class="qq">租金：4300 元/月</p>'+
+'  <p class="qq">联系电话：15062269940</p> '+
+'  <p><img src="./resources/img/transform-22.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:98,
+        publishTime:'2017/7/6',
+        tel:15062269940
+    },{
+        id:39,
+        title:'【转让】新罗新火车站对面犀牛路路口餐馆',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">'+
+'      .qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}'+
+'    </style>'+
+'  </p>'+
+'  <p class="qq">区域：新罗 </p> '+
+'  <p class="qq">地址：新火车站对面犀牛路路口</p>'+
+'  <p class="qq">行业：餐馆 </p>'+
+'  <p class="qq">类型：住宅底商</p> '+
+'  <p class="qq">面积：96㎡</p>  '+
+'  <p class="qq">转让费：13.8万元   </p> '+
+'  <p class="qq">租金：6500 元/月</p>'+
+'  <p class="qq">联系电话：13515917161</p> '+
+'  <p><img src="./resources/img/transform-23.jpg"  width=300 height=400></p>              '+
+'</td>',
+        scantimes:102,
+        publishTime:'2017/7/6',
+        tel:13515917161
+    },{
         id:0,
         title:'【转让】莆田海鲜楼',
         content:'转让莆田市荔城中大道黄金地段海鲜楼，高档装修，停车方便，设备齐全',
@@ -128,6 +621,653 @@ industryinfo.constant('info', {
         tel:'0371-86656959'
     }],
     labourInfo:[{
+        id:11,
+        title:'福建省饮食服务有限公司招聘启事',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'                  <tbody><tr>'+
+'                  </tr>'+
+'                  <tr>'+
+'                    <td align="left"><p align="left" class="lh24 ti24"></p></td>'+
+'                  </tr>'+
+'                </tbody></table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2" align="center">福建省饮食服务有限公司招聘启事</td>'+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   一、任职要求'+
+'               </p>'+
+'               <p class="qq">'+
+'                   （一）大学本科及以上学历，会计或财务管理相关专业，同时具备三年以上会计从业经验者；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   （二）熟悉财务管理知识及工作流程，熟悉税务知识及相关业务，熟练运用财务管理相关软件；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   （三）工作仔细认真、责任心强、吃苦耐劳，服从管理，具有良好的职业素养和沟通组织协调能力。'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   二、薪酬待遇'+
+'               </p>'+
+'               <p class="qq">'+
+'                   试用期满且通过考核后，薪酬按饮服公司《薪酬管理制度》执行。薪资包括基本工资、绩效工资和五险一金。'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   三、招聘方式：公开选聘'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   四、岗位工作地点：福州'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   五、选聘程序'+
+'               </p>'+
+'               <p class="qq">'+
+'                   （一）报名方式'+
+'               </p>'+
+'               <p class="qq">'+
+'                   凡符合条件的人员，均可参加报名，应聘者请将本人简历（请写明联系电话）、身份证复印件、学历证书复印件、相关资格证书复印件等资料扫描发至以下邮箱：31519125@qq.com，或直接将相关资料递送至福建省饮食服务有限公司综合部，地址：福州市鼓楼区中山路23号西苑四层，联系电话：0591-87840554。报名截止时间：2017年6月13日下午6：00。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   （二）资格审查'+
+'               </p>'+
+'               <p class="qq">'+
+'                   公司选聘工作领导小组根据有关要求，对报名人员的材料进行资格初审，对符合条件者，将通知其参加笔试、面试。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   （三）选聘考试'+
+'               </p>'+
+'               <p class="qq">'+
+'                   采取笔试和面试形式，获得笔试成绩前三名者入围面试人选。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   （四）研究决定并公示'+
+'               </p>'+
+'               <p class="qq">'+
+'                   由公司选聘工作领导小组研究决定录用者，并按照相关规定进行公示。'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:531,
+        publishTime:'2017/7/6'
+    },{
+        id:13,
+        title:'福建省清口清餐饮管理有限公司诚聘服务员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">清口清餐饮管理有限公司于2009年成立于福州，公司致力于以福州捞化为代表的传统小吃的标准开发与连锁经营。公司现拥有管理行政办公中心和生产加工中心，目前已开发62家连锁门店，（中亭街、火车站、五四路、杨桥路、华林路、台江步行街、仓山万达、台江万达、铜盘、塔头、福新中路、农林大学、新店、甘蔗、长乐、福清、白湖亭、金山、宝龙、大利嘉城、马尾等等）拥有员工和管理团队人员500多人，公司将以规范化管理和标准化生产，在生产管理、物流配送、物料采购、人员培训等方面精益求精，在保质培优的前提下做大做强。 企业精神：正本清源，福口利心 企业使命：弘扬闽菜文化，构建大美生活，与社会同进步 与员工共成长'+
+'核心价值观：真实 和谐 分享 共赢企业愿景：玩真的，百城万店，创中国餐饮一线品牌。'+
+'随着现代社会经济的发展，人们的饮食观念也在发生着变化，健康、快捷、营养已经成为饮食文化的主导要素。中式快餐就是在这种背景之下迅速崛起。'+
+'据不完全统计，仅福州市场上的各种不同形式的捞化店就达上千家，但大多以家庭作坊、夫妻店的形式经营，质量良莠不齐。 “清口清”在秉承福州捞化文化的同时勇于开拓创新，研发新工艺，独创清口清汤、露、面等小吃产品，迅速在餐饮市场上脱颖而出。'+
+'清口清餐饮管理有限公司“清口清”倡导健康饮食，让顾客享口福、享清福。似曾相识久，一碗暖人心。清口清产品原料、辅材均精挑细选，并与大量的品牌厂家合作互动，形成战略联盟。“清口清，沁人有心，润物无声”我们将打造能够和“儿时的味道”相媲美的美味，回馈广大清口清的忠实拥趸。“清口清”团队以青年为创业主力军，构筑大中专学生创业平台，践行“单店股份制”的形式，增加员工的参与感，在做人的同时做真事，做大事。成就从基层员工到门店股东的创业梦想。'+
+'</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2" align="center">福建省清口清餐饮管理有限公司诚聘服务员</td>'+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   岗位职责：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1、按照领班安排认真做好桌椅、餐厅卫生，餐厅铺台，准备好各种用品，确保正常营业使用。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2、接待顾客应主动、热情、礼貌、耐心、周到，使顾客有宾至如归之感；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   3、运用礼貌语言，为客人提供最佳服务，'+
+'               </p>'+
+'               <p class="qq">'+
+'                   4、善于向顾客介绍和推销本餐厅饮品及特色菜点；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   5、配合领班工作，服从领班或以上领导指挥，团结及善于帮助同事工作；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   6、积极参加培训，不断提高服务技能。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   任职资格：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1、年龄18-30岁，身体健康，女性身高1、58m以上、男性身高1、70以上，能吃苦，'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2、品行端正，能吃苦耐劳，初中以上文化程度。。'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   待遇：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2700+加班补贴+投资分红；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   提供优越的住宿条件，提供丰盛的工作餐；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   月休两天，享受国家法定节假日，法定节假日上班享有三薪；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   生日享有生日假一天；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   休息日上班享有加班补贴100；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   享受年假；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   公司提供带薪培训和良好的晋升机会。'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   联系方式：吴先生 18059183900'+
+'               </p>'+
+'               <p class="qq">'+
+'                   上班地点：福州市区、八县都有我们的门店（新店、火车站、五四路、东街口、东二环泰禾、塔头、杨桥路、西洪路、五里亭、前屿、福新路、中亭街、白湖亭、金山、洪山桥头等等。'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   加入清口清团队您的收获：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   - 受益终生的餐饮连锁企业工作经验'+
+'               </p>'+
+'               <p class="qq">'+
+'                   - 广阔的发展空间，完善的晋升渠道'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:423,
+        publishTime:'2017/7/6'
+    },{
+        id:14,
+        title:'福建省清口清餐饮管理有限公司诚聘餐饮店收银员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">清口清餐饮管理有限公司于2009年成立于福州，公司致力于以福州捞化为代表的传统小吃的标准开发与连锁经营。公司现拥有管理行政办公中心和生产加工中心，目前已开发62家连锁门店，（中亭街、火车站、五四路、杨桥路、华林路、台江步行街、仓山万达、台江万达、铜盘、塔头、福新中路、农林大学、新店、甘蔗、长乐、福清、白湖亭、金山、宝龙、大利嘉城、马尾等等）拥有员工和管理团队人员500多人，公司将以规范化管理和标准化生产，在生产管理、物流配送、物料采购、人员培训等方面精益求精，在保质培优的前提下做大做强。 企业精神：正本清源，福口利心 企业使命：弘扬闽菜文化，构建大美生活，与社会同进步 与员工共成长'+
+'核心价值观：真实 和谐 分享 共赢企业愿景：玩真的，百城万店，创中国餐饮一线品牌。'+
+'随着现代社会经济的发展，人们的饮食观念也在发生着变化，健康、快捷、营养已经成为饮食文化的主导要素。中式快餐就是在这种背景之下迅速崛起。'+
+'据不完全统计，仅福州市场上的各种不同形式的捞化店就达上千家，但大多以家庭作坊、夫妻店的形式经营，质量良莠不齐。 “清口清”在秉承福州捞化文化的同时勇于开拓创新，研发新工艺，独创清口清汤、露、面等小吃产品，迅速在餐饮市场上脱颖而出。'+
+'清口清餐饮管理有限公司“清口清”倡导健康饮食，让顾客享口福、享清福。似曾相识久，一碗暖人心。清口清产品原料、辅材均精挑细选，并与大量的品牌厂家合作互动，形成战略联盟。“清口清，沁人有心，润物无声”我们将打造能够和“儿时的味道”相媲美的美味，回馈广大清口清的忠实拥趸。“清口清”团队以青年为创业主力军，构筑大中专学生创业平台，践行“单店股份制”的形式，增加员工的参与感，在做人的同时做真事，做大事。成就从基层员工到门店股东的创业梦想。'+
+'</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2" align="center">福建省清口清餐饮管理有限公司诚聘餐饮店收银员</td>'+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   岗位职责：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1.负责前台收银及服务员相关工作；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2.配合店长工作；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   任职资格：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1.年龄：18-42周岁，*，五官端正；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2.有良好的服务意识、强烈的责任心和团队意识；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   3.有无经验均可，公司提供带薪培训；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   4.热爱餐饮行业。'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   待遇：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2700-3500/月，（员工入股）；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   提供住宿；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   月休两天，享受国家法定节假日，法定节假日上班享有三薪；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   生日享有生日假一天；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   休息日上班享有加班补贴100；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   享受年假；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   公司提供带薪培训和良好的晋升机会。'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   提成方案：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1、普通员工拥有竞争单店投资3%股份机会。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2、店长拥有所管理店面15%投资机会。月收益6000-12000。'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   联系方式：吴先生 18059183900'+
+'               </p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:120,
+        publishTime:'2017/7/6'
+    },{
+        id:15,
+        title:'福建省清口清餐饮管理有限公司诚聘储备店长',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">清口清餐饮管理有限公司于2009年成立于福州，公司致力于以福州捞化为代表的传统小吃的标准开发与连锁经营。公司现拥有管理行政办公中心和生产加工中心，目前已开发62家连锁门店，（中亭街、火车站、五四路、杨桥路、华林路、台江步行街、仓山万达、台江万达、铜盘、塔头、福新中路、农林大学、新店、甘蔗、长乐、福清、白湖亭、金山、宝龙、大利嘉城、马尾等等）拥有员工和管理团队人员500多人，公司将以规范化管理和标准化生产，在生产管理、物流配送、物料采购、人员培训等方面精益求精，在保质培优的前提下做大做强。 企业精神：正本清源，福口利心 企业使命：弘扬闽菜文化，构建大美生活，与社会同进步 与员工共成长'+
+'核心价值观：真实 和谐 分享 共赢企业愿景：玩真的，百城万店，创中国餐饮一线品牌。'+
+'随着现代社会经济的发展，人们的饮食观念也在发生着变化，健康、快捷、营养已经成为饮食文化的主导要素。中式快餐就是在这种背景之下迅速崛起。'+
+'据不完全统计，仅福州市场上的各种不同形式的捞化店就达上千家，但大多以家庭作坊、夫妻店的形式经营，质量良莠不齐。 “清口清”在秉承福州捞化文化的同时勇于开拓创新，研发新工艺，独创清口清汤、露、面等小吃产品，迅速在餐饮市场上脱颖而出。'+
+'清口清餐饮管理有限公司“清口清”倡导健康饮食，让顾客享口福、享清福。似曾相识久，一碗暖人心。清口清产品原料、辅材均精挑细选，并与大量的品牌厂家合作互动，形成战略联盟。“清口清，沁人有心，润物无声”我们将打造能够和“儿时的味道”相媲美的美味，回馈广大清口清的忠实拥趸。“清口清”团队以青年为创业主力军，构筑大中专学生创业平台，践行“单店股份制”的形式，增加员工的参与感，在做人的同时做真事，做大事。成就从基层员工到门店股东的创业梦想。'+
+'</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2" align="center">福建省清口清餐饮管理有限公司诚聘储备店长</td>'+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   岗位职责：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1、带领员工认真做好餐前准备，确保质量标准；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2、正式开餐后，督导服务员认真做好服务工作并亲自参加服务工作；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   3、及时跟踪、检查台面，对不合格的地方进行指正、改正；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   4、及时对餐台上菜速度、情况了解，及时催菜；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   5、餐后组织服务员及时清台，整理好餐厅桌椅卫生，保持餐厅整洁和环境良好；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   6、督导服务员认真落实酒店与部门规章制度；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   7、搞好本班组与其他班组的协调；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   8、做好班组员工考勤、培训工作。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   任职资格：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1、初中以上文化程度，形象气质佳；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2、熟悉餐厅管理和服务方面的知识，具有熟练的服务技能；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   3、有较高的处理餐厅突发事件的应变能力及对客沟通能力；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   4、热爱服务工作，工作踏实、认真，有较强的事业心和责任感。'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   工作时间：9小时'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   联系方式：吴先生 18059183900'+
+'               </p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },{
+        id:16,
+        title:'福建省清口清餐饮管理有限公司诚聘行政专员/助理',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">清口清餐饮管理有限公司于2009年成立于福州，公司致力于以福州捞化为代表的传统小吃的标准开发与连锁经营。公司现拥有管理行政办公中心和生产加工中心，目前已开发62家连锁门店，（中亭街、火车站、五四路、杨桥路、华林路、台江步行街、仓山万达、台江万达、铜盘、塔头、福新中路、农林大学、新店、甘蔗、长乐、福清、白湖亭、金山、宝龙、大利嘉城、马尾等等）拥有员工和管理团队人员500多人，公司将以规范化管理和标准化生产，在生产管理、物流配送、物料采购、人员培训等方面精益求精，在保质培优的前提下做大做强。 企业精神：正本清源，福口利心 企业使命：弘扬闽菜文化，构建大美生活，与社会同进步 与员工共成长'+
+'核心价值观：真实 和谐 分享 共赢企业愿景：玩真的，百城万店，创中国餐饮一线品牌。'+
+'随着现代社会经济的发展，人们的饮食观念也在发生着变化，健康、快捷、营养已经成为饮食文化的主导要素。中式快餐就是在这种背景之下迅速崛起。'+
+'据不完全统计，仅福州市场上的各种不同形式的捞化店就达上千家，但大多以家庭作坊、夫妻店的形式经营，质量良莠不齐。 “清口清”在秉承福州捞化文化的同时勇于开拓创新，研发新工艺，独创清口清汤、露、面等小吃产品，迅速在餐饮市场上脱颖而出。'+
+'清口清餐饮管理有限公司“清口清”倡导健康饮食，让顾客享口福、享清福。似曾相识久，一碗暖人心。清口清产品原料、辅材均精挑细选，并与大量的品牌厂家合作互动，形成战略联盟。“清口清，沁人有心，润物无声”我们将打造能够和“儿时的味道”相媲美的美味，回馈广大清口清的忠实拥趸。“清口清”团队以青年为创业主力军，构筑大中专学生创业平台，践行“单店股份制”的形式，增加员工的参与感，在做人的同时做真事，做大事。成就从基层员工到门店股东的创业梦想。'+
+'</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2" align="center">福建省清口清餐饮管理有限公司诚聘行政专员/助理</td>'+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   岗位职责：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1、负责公司各类电脑文档的编号、打印、排版和归档；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2、报表的收编以及整理，以便更好的贯彻和落实工作；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   3、协调会议室预定，合理安排会议室的使用；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   4、协助保洁员完成公共办公区、会议室环境的日常维护工作，确保办公区的整洁有序；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   5、完成部门经理交代的其它工作。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   任职资格：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1、形象好，气质佳，年龄在20-30岁，女性；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2、1年以上相关工作经验，文秘、行政管理等相关专业优先考虑；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   3、熟悉办公室行政管理知识及工作流程，具备基本商务信函写作能力及较强的书面和口头表达能力；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   4、熟悉公文写作格式，熟练运用OFFICE等办公软件；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   5、工作仔细认真、责任心强、为人正直。'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   联系方式：吴先生 18059183900'+
+'               </p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:540,
+        publishTime:'2017/7/6'
+    },{
+        id:17,
+        title:'福建令狐冲餐饮管理有限公司诚聘福州企划方案全职',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">福建令狐冲餐饮管理有限公司是一家专注做烤鱼的餐饮连锁品牌，目前全国门店突破130家。旗下三个餐饮品牌“令狐冲窑烤活鱼”以及“烧哥烤鱼”、“狼烧吧”。'+
+'</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2" align="center">福建令狐冲餐饮管理有限公司诚聘福州企划方案全职</td>'+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   应聘者请携带个人简历及作品。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   岗位职责：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1、负责公司市场营销活动方案的策划与组织实施，对外宣传资料和文案的撰写'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2.熟悉企业文化撰写，软文编辑等。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   职位描述'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   任职资格：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1、熟悉餐饮行业，两年以上相关工作，有4A广告公司创意、文案相关工作经验者优先；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   3、具有较强的文案写作能力，出色的文字组织能力，写作经验丰富，有丰富的提案经验；'+
+'                   '+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   工作时间：朝九晚五，大小周，'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   联系方式：何三三 17759116313'+
+'               </p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:620,
+        publishTime:'2017/7/6'
+    },{
+        id:18,
+        title:'福建令狐冲餐饮管理有限公司诚聘配菜/打荷包吃住',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">福建令狐冲餐饮管理有限公司是一家专注做烤鱼的餐饮连锁品牌，目前全国门店突破130家。旗下三个餐饮品牌“令狐冲窑烤活鱼”以及“烧哥烤鱼”、“狼烧吧”。'+
+'</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2" align="center">福建令狐冲餐饮管理有限公司诚聘配菜/打荷包吃住</td>'+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   岗位职责：负责配菜、切菜、配料，熟悉各种原材料'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1、按照领班安排认真做好桌椅、餐厅卫生，餐厅铺台，准备好各种用品，确保正常营业使用。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2、接待顾客应主动、热情、礼貌、耐心、周到，使顾客有宾至如归之感；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   3、运用礼貌语言，为客人提供最佳服务，'+
+'               </p>'+
+'               <p class="qq">'+
+'                   4、善于向顾客介绍和推销本餐厅饮品及特色菜点；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   5、配合领班工作，服从领班或以上领导指挥，团结及善于帮助同事工作；'+
+'               </p>'+
+'               <p class="qq">'+
+'                   6、积极参加培训，不断提高服务技能。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   任职资格：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   1、年龄18-30岁，身体健康，女性身高1、58m以上、男性身高1、70以上，能吃苦，'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2、品行端正，能吃苦耐劳，初中以上文化程度。'+
+'                   '+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   联系方式：何三三 17759116313'+
+'               </p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:436,
+        publishTime:'2017/7/6'
+    },{
         id:0,
         title:'福州荣誉大酒店招聘行政文员一名',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
@@ -646,6 +1786,67 @@ industryinfo.constant('info', {
         publishTime:'2010/9/3'
     }],
     foodInfo:[{
+        id:9,
+        title:'霞浦县万丰水产科技有限公司',
+        content:'<td align="left" valign="top" class="pd10">'+
+'  <p align="left" class="lh24 ti24">'+
+'    <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'  </p>'+
+'  <p class="qq"> '+
+'    霞浦万丰水产科技有限公司位于福建省海岸线最长的霞浦县，霞浦的官井洋是千百年我国珍稀大黄鱼的洄游产卵地，如今也是全国最大的大黄鱼人工养殖区域，每年出产的人工养殖大黄鱼产值近百亿元。 '+
+'  </p> '+
+'  <p class="qq"> '+
+'    公司总部占地约64亩，依山傍海，海水资源丰沛，目前已投资7000万元人民币，建成福建省规模最大的陆基循环水工厂化养殖企业，养殖水体面积为22600平方面积。2013年国家海洋局在福建的海洋经济示范区项目定点本企业，2015年12月获得福建省海洋与渔业厅授牌，定为福建省现代渔业养殖示范园区。同年获得福建省海洋与渔业厅、福建省财政厅的现代农业（渔业）项目（标准工厂化循环水养殖示范基地）和福建省“菜篮子”产品生产（水产业）项目。'+
+'  </p> '+
+'  <p class="qq"> '+
+'   万丰水产的每座车间均有独立的循环水处理系统，配备全自动不锈钢微滤机、蛋白分离器（配臭氧发生器）、罗茨增氧气泵、桨式水车增氧机及热水管道升温系统、进排水系统、电力控制系统、增氧管道系统。为大黄鱼生产提供一个稳定、独立的水体空间，杜绝海洋污染的影响，好水出好鱼。'+
+'  </p> '+
+'  <p class="qq">&nbsp;</p>'+
+'  <p class="qq"> '+
+'   售价：'+
+'  </p> '+
+'  <p class="qq"> '+
+'   单条装    400g±50g   ¥108.00元 ¥86.00元'+
+'  </p> '+
+'  <p class="qq"> '+
+'   单条装    500g±50g   ¥128.00元 ¥108.00元'+
+'  </p> <p class="qq"> '+
+'   单条装    600g±50g   ¥158.00元 ¥138.00元'+
+'  </p> <p class="qq"> '+
+'   家庭装（2条）    800g±50g   ¥216.00元 ¥168.00元'+
+'  </p> <p class="qq"> '+
+'   家庭装（2条）    1000g±50g   ¥268.00元 ¥198.00元'+
+'  </p> <p class="qq"> '+
+'   家庭装（2条）    1200g±50g   ¥316.00元 ¥268.00元'+
+'  </p> <p class="qq"> '+
+'   大礼盒装（5条）  3000g±50g   ¥790.00元 ¥660.00元'+
+'  </p> <p class="qq"> '+
+'   定制装    ±50g   面议'+
+'  </p> '+
+'  <p class="qq">&nbsp;</p>'+
+'  <p class="qq"> '+
+'   联系人：游经理'+
+'  </p> '+
+'  <p class="qq">&nbsp;</p>'+
+'  <p class="qq"> '+
+'   销售热线15860675851  0591-83276926'+
+'  </p> '+
+'  <p class="qq">&nbsp;</p>'+
+'  <p class="qq"> '+
+'   公司地址：福州市台江区连江中路318号（榕都318）7号楼'+
+'  </p> '+
+'  <p class="qq">&nbsp;</p>'+
+'  <p class="qq"> '+
+'   备注：大礼盒装和定制装可发快递，其他包装规格只适合福州市区订货，具体事宜请电询！'+
+'  </p> '+
+'  <p class="qq"> '+
+'   <img src="./resources/img/haiweiyiping-code.jpg" width="80" height="90">'+
+'  </p>'+
+'  <p></p>               '+
+'</td>',
+        scantimes:623,
+        publishTime:'2017/7/6'
+    },{
         id:0,
         title:'厦门亿尔佳食品有限公司',
         content:'<td align="left" valign="top" class="pd10"><p align="left" class="lh24 ti24"><style type="text/css">'+
