@@ -1365,58 +1365,6 @@ industryinfo.constant('info', {
     },
 {
         id:15,
-        title:'福建令狐冲餐饮管理有限公司诚聘公司会计',
-        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
-'  <tbody> '+
-'    <tr></tr>'+
-'    <tr>'+
-'      <td align="left">'+
-'        <p align="left" class="lh24 ti24"></p>'+
-'        <p>'+
-'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
-'        </p>'+
-'        <p class="qq">'+
-'福建令狐冲餐饮管理有限公司是一家专注做烤鱼的餐饮连锁品牌，目前全国门店突破130家。旗下三个餐饮品牌“令狐冲窑烤活鱼”以及“烧哥烤鱼”、“狼烧吧”。</p>'+
-'        <p class="qq">&nbsp;</p>'+
-'        <p></p>'+
-'      </td>'+
-'    </tr>'+
-'  </tbody>'+
-'</table>',
-        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
-'   <tbody>'+
-'       <tr>'+
-'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
-'               <p>'+
-'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
-'               </p>'+
-'<p class="qq">岗位职责：</p>'+
-'<p class="qq">1、审批财务收支，审阅财务专题报告和会计报表，对重大的财务收支计划、经济合同进行会签；</p>'+
-'<p class="qq">2、编制预算和执行预算，参与拟订资金筹措和使用方案，确保资金的有效使用；</p>'+
-'<p class="qq">3、审查公司对外提供的会计资料；</p>'+
-'<p class="qq">4、负责审核公司本部和各下属单位上报的会计报表和集团公司会计报表，编制财务综合分析报告和专题分析报告，为公司领导决策提供可靠的依据；</p>'+
-'<p class="qq">5、制订公司内部财务、会计制度和工作程序，经批准后组织实施并监督执行；</p>'+
-'<p class="qq">6、组织编制与实现公司的财务收支计划、信贷计划与成本费用计划。</p>'+
-'<p class="qq">任职资格：</p>'+
-'<p class="qq">1、会计相关专业，大专以上学历；</p>'+
-'<p class="qq">2、2年以上工作经验，有一般纳税人企业工作经验者优先；</p>'+
-'<p class="qq">3、认真细致，爱岗敬业，吃苦耐劳，有良好的职业操守；</p>'+
-'<p class="qq">4、思维敏捷，接受能力强，能独立思考，善于总结工作经验；</p>'+
-'<p class="qq">5、熟练应用财务及Office办公软件，对金蝶、用友等财务系统有实际操作者优先；</p>'+
-'<p class="qq">6、具有良好的沟通能力；</p>'+
-'<p class="qq">7、有会计从业资格证书，同时具备会计初级资格证者优先考虑。</p>'+
-'<p class="qq">联系方式：何三三 17759116313</p>'+
-'               '+
-'               <p class="qq">&nbsp;</p>'+
-'           </td>'+
-'       </tr>'+
-'   </tbody>'+
-'</table>',
-        scantimes:302,
-        publishTime:'2017/7/6'
-    },
-{
-        id:15,
         title:'福建令狐冲餐饮管理有限公司诚聘营运总监',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
 '  <tbody> '+
