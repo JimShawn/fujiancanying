@@ -620,7 +620,8 @@ industryinfo.constant('info', {
         publishTime:'2017/6/9',
         tel:'0371-86656959'
     }],
-    labourInfo:[{
+    labourInfo:[
+    {
         id:11,
         title:'福建省饮食服务有限公司招聘启事',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
@@ -632,9 +633,6 @@ industryinfo.constant('info', {
 '                </tbody></table>',
         content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
 '   <tbody>'+
-'       <tr>'+
-'           <td bgcolor="#FFFFFF" class="pd5 green2" align="center">福建省饮食服务有限公司招聘启事</td>'+
-'       </tr>'+
 '       <tr>'+
 '           <td bgcolor="#FFFFFF" class="pd5 green2">'+
 '               <p>'+
@@ -952,9 +950,6 @@ industryinfo.constant('info', {
 '</table>',
         content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
 '   <tbody>'+
-'       <tr>'+
-'           <td bgcolor="#FFFFFF" class="pd5 green2" align="center">福建省清口清餐饮管理有限公司诚聘储备店长</td>'+
-'       </tr>'+
 '       <tr>'+
 '           <td bgcolor="#FFFFFF" class="pd5 green2">'+
 '               <p>'+
@@ -1367,7 +1362,1707 @@ industryinfo.constant('info', {
 '</table>',
         scantimes:436,
         publishTime:'2017/7/6' 
-    },{
+    },
+{
+        id:15,
+        title:'福建令狐冲餐饮管理有限公司诚聘公司会计',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'福建令狐冲餐饮管理有限公司是一家专注做烤鱼的餐饮连锁品牌，目前全国门店突破130家。旗下三个餐饮品牌“令狐冲窑烤活鱼”以及“烧哥烤鱼”、“狼烧吧”。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、审批财务收支，审阅财务专题报告和会计报表，对重大的财务收支计划、经济合同进行会签；</p>'+
+'<p class="qq">2、编制预算和执行预算，参与拟订资金筹措和使用方案，确保资金的有效使用；</p>'+
+'<p class="qq">3、审查公司对外提供的会计资料；</p>'+
+'<p class="qq">4、负责审核公司本部和各下属单位上报的会计报表和集团公司会计报表，编制财务综合分析报告和专题分析报告，为公司领导决策提供可靠的依据；</p>'+
+'<p class="qq">5、制订公司内部财务、会计制度和工作程序，经批准后组织实施并监督执行；</p>'+
+'<p class="qq">6、组织编制与实现公司的财务收支计划、信贷计划与成本费用计划。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、会计相关专业，大专以上学历；</p>'+
+'<p class="qq">2、2年以上工作经验，有一般纳税人企业工作经验者优先；</p>'+
+'<p class="qq">3、认真细致，爱岗敬业，吃苦耐劳，有良好的职业操守；</p>'+
+'<p class="qq">4、思维敏捷，接受能力强，能独立思考，善于总结工作经验；</p>'+
+'<p class="qq">5、熟练应用财务及Office办公软件，对金蝶、用友等财务系统有实际操作者优先；</p>'+
+'<p class="qq">6、具有良好的沟通能力；</p>'+
+'<p class="qq">7、有会计从业资格证书，同时具备会计初级资格证者优先考虑。</p>'+
+'<p class="qq">联系方式：何三三 17759116313</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建令狐冲餐饮管理有限公司诚聘营运总监',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'福建令狐冲餐饮管理有限公司是一家专注做烤鱼的餐饮连锁品牌，目前全国门店突破130家。旗下三个餐饮品牌“令狐冲窑烤活鱼”以及“烧哥烤鱼”、“狼烧吧”。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：公司副总级别，负责全国200多家门店的运营管理。</p>'+
+'<p class="qq">任职资格：5年以上餐饮连锁管理经验。</p>'+
+'<p class="qq">工作时间：根据工作调整</p>'+
+'<p class="qq">联系方式：何三三 17759116313</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建令狐冲餐饮管理有限公司诚聘主办会计',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'福建令狐冲餐饮管理有限公司是一家专注做烤鱼的餐饮连锁品牌，目前全国门店突破130家。旗下三个餐饮品牌“令狐冲窑烤活鱼”以及“烧哥烤鱼”、“狼烧吧”。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、审批财务收支，审阅财务专题报告和会计报表，对重大的财务收支计划、经济合同进行会签；</p>'+
+'<p class="qq">2、编制预算和执行预算，参与拟订资金筹措和使用方案，确保资金的有效使用；</p>'+
+'<p class="qq">3、审查公司对外提供的会计资料；</p>'+
+'<p class="qq">4、负责审核公司本部和各下属单位上报的会计报表和集团公司会计报表，编制财务综合分析报告和专题分析报告，为公司领导决策提供可靠的依据；</p>'+
+'<p class="qq">5、制订公司内部财务、会计制度和工作程序，经批准后组织实施并监督执行；</p>'+
+'<p class="qq">6、组织编制与实现公司的财务收支计划、信贷计划与成本费用计划。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、会计相关专业，本科以上学历；</p>'+
+'<p class="qq">2、5年以上工作经验，有一般纳税人企业工作经验者优先；</p>'+
+'<p class="qq">3、认真细致，爱岗敬业，吃苦耐劳，有良好的职业操守；</p>'+
+'<p class="qq">4、思维敏捷，接受能力强，能独立思考，善于总结工作经验；</p>'+
+'<p class="qq">5、熟练应用财务及Office办公软件，对金蝶、用友等财务系统有实际操作者优先；</p>'+
+'<p class="qq">6、具有良好的沟通能力；</p>'+
+'<p class="qq">7、有会计从业资格证书，同时具备会计初级资格证者优先考虑。</p>'+
+'<p class="qq">联系方式：何三三 17759116313</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州市誉道餐饮管理有限公司诚聘服务员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'福州市誉道餐饮管理有限公司是一家专注于台湾排骨饭为特色的中式快餐连锁品牌。虽然公司正式成立才两年，但旗下经营的誉道排骨中式餐厅已经营了十五年。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、按照领班安排认真做好桌椅、餐厅卫生，餐厅铺台，准备好各种用品，确保正常营业使用。</p>'+
+'<p class="qq">2、接待顾客应主动、热情、礼貌、耐心、周到，使顾客有宾至如归之感；</p>'+
+'<p class="qq">3、运用礼貌语言，为客人提供最佳服务，</p>'+
+'<p class="qq">4、善于向顾客介绍和推销本餐厅饮品及特色菜点；</p>'+
+'<p class="qq">5、配合领班工作，服从领班或以上领导指挥，团结及善于帮助同事工作；</p>'+
+'<p class="qq">6、积极参加培训，不断提高服务技能。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、年龄18-30岁，身体健康，女性身高1、58m以上、男性身高1、70以上，能吃苦，</p>'+
+'<p class="qq">2、品行端正，能吃苦耐劳，初中以上文化程度。</p>'+
+'<p class="qq">联系方式：张小姐  17759082327</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'厦门豪客来餐饮管理有限公司诚聘储备经理（福州）包吃住',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'豪客来创办于1993年，今年我们已经24岁了！正值青春年少的我们，充满着雄心壮志，满满的豪情，从厦门一步一个脚印，已经踏遍了全国90几个城市并开设了超过300家的直营餐厅。毫不傲娇地说，我们可是全国最大主营牛排的西式餐饮连锁企业之一哦！</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">您的岗位：豪客来储备经理</p>'+
+'<p class="qq">您将得到：</p>'+
+'<p class="qq">*有竞争力的薪酬福利：</p>'+
+'<p class="qq">1、3200-3700元/月+包吃住+每周/每月分红……</p>'+
+'<p class="qq">2、2-3年内培养成餐厅经理，年薪8万起；还可参与公司金种子计划，做为餐厅的持股人，拥有自己的事业；</p>'+
+'<p class="qq">3、周休2天，带薪年假、病假、产假、保育假…… 各种节假日活动经费、生日礼品、重大纪念日礼金；</p>'+
+'<p class="qq">*个人成长发展：</p>'+
+'<p class="qq">1、持续成长的培训机会：1对1的辅导培训，完善的进阶式培训计划——危机管理、利润管理、时间管理、绩效管理、单店营销管理等课程，理论结合实际，帮助您更快的成长；</p>'+
+'<p class="qq">2、2-3年内，您可以成长为独立管理运营一家餐厅，带领一个50人左右的团队，掌握几百万营业额的餐厅经理；</p>'+
+'<p class="qq">3、充足的晋升机会，公正透明的晋升渠道：储备经理 餐厅经理 区经理 其他更高职位；</p>'+
+'<p class="qq">4、全国100多个城市任您选（深圳、东莞、福州、广州、厦门、泉州、成都、重庆、武汉、杭州、······）</p>'+
+'<p class="qq">我们的企业文化：</p>'+
+'<p class="qq">1、年轻化，富有激情的团队，相互信任，认同鼓励，是一个充满欢乐的大家庭；</p>'+
+'<p class="qq">2、充满爱心的豪客来家园，给员工家的归属感；</p>'+
+'<p class="qq">您只需具备：</p>'+
+'<p class="qq">1、大专及以上学历，专业不限；</p>'+
+'<p class="qq">2、擅于沟通、富有激情、乐于接受挑战；</p>'+
+'<p class="qq">3、抗压能力强，适应轮班及快节奏的工作（无通宵班）；</p>'+
+'<p class="qq">温馨提示：</p>'+
+'<p class="qq">1、在诚聘过程中，手机是我们联系你的主要方式，请您保持手机畅通并确保简历中手机号码的准确性，不要因为错误的联系方式让我们失去了解你的机会；</p>'+
+'<p class="qq">2、若您接到我们面试的通知，请记录具体的时间和地点并携带要求提供的相关证件准时参加，不要在最后时刻错失良机；</p>'+
+'<p class="qq">3、面试周期需要10天左右，请做好时间安排，我们也会及时跟进面试流程。</p>'+
+'<p class="qq">联系方式：陈女士  0592-3838515</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州聚春园会展酒店有限公司聘餐饮服务员福利好包吃住',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'福州聚春园会展酒店系由福州市建设发展集团有限公司与福州聚春园饭店有限公司强强联手，按国际五星级标准合资兴建的大型国有酒店，酒店总投资估算约15亿元人民币，酒店设有各类客房613间，是一座集住宿、餐饮、娱乐、旅游、购物、商务、会议等功能为一体的国有五星级旅游饭店，由福州市建设发展集团有限公司与福州聚春园集团合资兴建。福州聚春园会展酒店藉榕城特有的历史文化内涵及训练有素的员工、严格科学的管理营造家居的舒适温馨，为八方来客提供规范有序、宾至如归的服务。</p>'+
+'<p class="qq">饭店员工基本待遇情况介绍如下：</p>'+
+'<p class="qq">1、普通员工转正工资2900—3200元；</p>'+
+'<p class="qq">2、提供员工公寓、免费工作餐；</p>'+
+'<p class="qq">3、提供“五险一金”；</p>'+
+'<p class="qq">4、提供元旦、元宵、五一、端午、国庆、中秋等节假日过节费；</p>'+
+'<p class="qq">5. 提供员工运动休息场所；</p>'+
+'<p class="qq">6、年终享受年终奖；</p>'+
+'<p class="qq">6、带薪婚嫁、丧假、病假等假期同时入店满一年还可享受带薪年假；</p>'+
+'<p class="qq">聚春园会展酒店提供良好的培训及发展机遇，欢迎加入我们的团队！</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">公司急聘，有意者速联系！！！</p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、按照领班安排认真做好桌椅、餐厅卫生，餐厅铺台，准备好各种用品，确保正常营业使用。</p>'+
+'<p class="qq">2、接待顾客应主动、热情、礼貌、耐心、周到，使顾客有宾至如归之感；</p>'+
+'<p class="qq">3、运用礼貌语言，为客人提供最佳服务，</p>'+
+'<p class="qq">4、善于向顾客介绍和推销本餐厅饮品及特色菜点；</p>'+
+'<p class="qq">5、配合领班工作，服从领班或以上领导指挥，团结及善于帮助同事工作；</p>'+
+'<p class="qq">6、积极参加培训，不断提高服务技能。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、年龄18-30岁，身体健康，女性身高1、58m以上、男性身高1、70以上，能吃苦，</p>'+
+'<p class="qq">2、品行端正，能吃苦耐劳，初中以上文化程度。</p>'+
+'<p class="qq">有意向者可直接来电咨询： 练小姐 0591-86309999</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建佳客来食品股份有限公司诚聘餐厅经理',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">企业简介</p>'+
+'<p class="qq">成立于1998年，其前生为福州佳客来餐饮连锁有限公司。目前公司资产总规模6.7亿元，品牌价值3亿元，年销售额1.1亿元。2011年公司在福州马尾区投资6亿元，征地42亩成立，目前佳客来拥有人才培训基地，现代化中央厨房（牛排加工厂），产品研发中心，物流配送中心、行政办公营运中心等先进的软硬件设施，并在连江县筹建牛、羊养殖基地，成为农业产业化的龙头企业。</p>'+
+'<p class="qq">佳客来自1998年1月8日首家门店在福州湖东路开业至今，依托15年的牛排制作历史，每年为千万忠实顾客提供无法复制的西式健康美食。一百分纯正牛肉，百分之百步步甄选，成就了佳客来牛排国际双认证安全牛肉的荣誉称号，让每一位顾客每一次光临佳客来都能享受到出众的品质、服务、清洁的环境，感受到物超所值的快乐。</p>'+
+'<p class="qq">“佳客来”在倡导健康饮食新风尚的同时，更兼顾美味，在保留原有核心产品经营的基础上，广泛采集信息，汲取各地西餐精华，每年都策划出富有新意、精彩纷呈的营销活动，开发出更多美味新品，全力满足顾客不同的需求，在市民心目中树立了“吃牛排就到佳客来”的好口碑。</p>'+
+'<p class="qq">在产品研发、经营管理模式和企业文化建设等方面引用台湾先进的理念，创立至今加盟连锁经营分店连年呈级数增长：到2015年12月为止已成功开设连锁分店400多家，分布于全国60多个大中城市，为社会提供1.5万多个就业岗位，每年为超过5000万的忠实顾客服务，是中国规模最大，发展最快的餐饮连锁品牌之一。佳客来先后被评为“中华餐饮名店”“全国绿色餐饮企业”“福州市知名商标”“福建省著名商标”“中国食品安全示范单位”“国际双认证安全牛肉生产体系认证”， 是2004年至今连续13年被评为“中国餐饮百强企业” 的唯一一家上市餐饮食品加工企业。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、负责餐厅日常运营工作。</p>'+
+'<p class="qq">2、协调餐厅各个部门主要管理人员的关系,制定经营管理方案,控制合理的毛利率,对成本核算与财务活动进行监督。</p>'+
+'<p class="qq">3、根据市场情况和不同时期的需要,制定合适的营销方案，提高餐厅营业额。</p>'+
+'<p class="qq">4、抓好员工队伍建设，注重培训、考核和选拔人才，通过组织员工活动，激发员工积极性。</p>'+
+'<p class="qq">5、妥善处理客人投诉，与客人建立良好的关系。</p>'+
+'<p class="qq">6、做好餐厅安全和防火工作；</p>'+
+'<p class="qq">任职要求：</p>'+
+'<p class="qq">1、拥有餐饮行业同等岗位二年以上工作经验；</p>'+
+'<p class="qq">2、熟悉餐厅的运作及经营；</p>'+
+'<p class="qq">3、良好的沟通、合作能力和独立的工作能力；</p>'+
+'<p class="qq">4、有较强的管理能力和责任心。</p>'+
+'<p class="qq">5、对于现有西餐行业标准及对服务行业流程均有较深认识者优先；</p>'+
+'<p class="qq">6、有着良好的客诉处理能力及相应的营运促销方案者优先；</p>'+
+'<p class="qq">7、拥有餐厅筹备工作经验优先。</p>'+
+'<p class="qq">8、能够服从公司外调要求。</p>'+
+'<p class="qq">福利待遇：</p>'+
+'<p class="qq">薪资</p>'+
+'<p class="qq">4500—7000</p>'+
+'<p class="qq">/月+业绩抽成，月休4天，包食宿，享有社保补贴，享有国家法定节假日、婚假、产假、免费培训、生日礼物、员工活动及年终奖等福利。</p>'+
+'<p class="qq">联系电话 400-6263-888、0591-87776556（来电时间周一-周六09:00-12:00,14:00-18:00其他时间及周日勿扰）</p>'+
+'<p class="qq">面试地点 福州市鼓楼区湖东路97号欣华楼602佳客来（佳客来牛排餐厅对面，农业银行楼上），乘100路、121路、61路、70路、78路车到社会主义学院站下!</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州市晋安区草本餐饮管理有限公司诚聘收银员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">福州市晋安区草本餐饮管理有限公司成立于2006年是一家主营餐饮行业的公司，又名“草本汤”餐饮。公司发展至今，在福州市区已有39家直营店，广受食客好评。</p>'+
+'<p class="qq">草本汤的目标：创造一个公平公正的工作平台，用自己的双手改变命运的价值观，变成现实;将草本汤开向全国。</p>'+
+'<p class="qq">草本汤的宗旨：从底层草根做起，成为合格员工，成为店长，成为股东，成为董事。用我们勤劳的双手去改变自己的命运。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">负责店面收银、结算、理账工作，有收银工作经验者优先。30岁以下</p>'+
+'<p class="qq">联系方式：刘经理  13062182606</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'上海姑奶奶餐饮管理有限公司诚聘营运督导',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">上海姑奶奶餐饮管理有限公司自2013年成立以来，将“解放天下女人的双手”作为企业发展使命，一直秉承“幸福就是一起吃饭”的经营理念，以打造成为“千千万万个家庭的第二厨房”为企业目标，让每一个幸福的女人都不用下厨房，让人们多点时间陪伴家人一起吃饭。</p>'+
+'<p class="qq">姑奶奶厨坊致力营造一起吃饭的幸福氛围，为顾客提供美味的饭菜，舒适的就餐环境，亲切热情的服务。细腻柔情在姑奶奶的菜式中体现得淋漓尽致，作为江南菜的传承人，姑奶奶对于菜品，始终如一坚持只选用上等新鲜原材料，调味品也都只选用有质量保证的知名品牌，不仅在味道上苛求完美，在美观上也是精益求精，为的是让享用美食的人吃得舒心，看着享受。姑奶奶每推出一道菜，必定要经过专业厨师多次尝试、改良，直至通过测评，才允许在门店推出。外观精致口感上佳的菜品、贴心的服务以及优雅舒适的用餐环境让姑奶奶一面世，便在福建、浙江、上海、江苏迅速刮起一阵狂潮，风行江南，俨然成为了消费者的第二厨坊。</p>'+
+'<p class="qq">目前，上海姑奶奶餐饮管理有限公司已有直营店和合作店150家，并拥有自己的配送供应商，年产值近2亿元。目前旗下有北京、重庆、内蒙古三家分公司，门店在福建、浙江、广东、内蒙古、河南、北京等地区均有分布，上海姑奶奶餐饮管理有限公司的近期目标是在3年内将姑奶奶打造成江南小炒精致品牌，让姑奶奶成为千万家庭的第二厨房。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、协助副总经理拟订、修订公司发展战略规划，使公司的发展具有明确、清晰、合理的方向，并符合总部的目标和要求；</p>'+
+'<p class="qq">2、协助副总经理拟订、修订年度经营计划，组织拟订公司年度营运门店经营计划草案，使之符合公司发展战略的要求，并符合总部下达的年度经营目标；其次，分解年度经营计划，规划计划指标，督导部门人员年度、月度工作计划的落实执行；</p>'+
+'<p class="qq">3、策划推进及组织协调公司重大营运计划、进行市场发展追踪和策略调整，加速内部管理机制的完善，并指导部门内部的规划化作业流程；</p>'+
+'<p class="qq">4、组织建设和实施公司规章制度、相关程序文件营运门店、单个项目的管理制度（手册）及关键岗位流程，实施并追踪检查部门人员实施各项制度和要求，保证营运门店和项目类工作的规范化管理，提高规范化管理水平；</p>'+
+'<p class="qq">5、制定并设立部门人员发展计划，追踪检查所属区域经理工作，按时完成所有下属的管理评估；</p>'+
+'<p class="qq">6、召开主持部门会议，督促和协调部门内各级人员工作执行进展，调整及规划部门人员工作计划、总结及目标达成要求，每月按期同副总经理汇报质检部门工作进展；</p>'+
+'<p class="qq">7、完成副总经理交付的其它任务。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1.良好的沟通力、判断力和工作执行；</p>'+
+'<p class="qq">2.有丰富的餐饮管理经验；</p>'+
+'<p class="qq">3.能吃苦耐劳，适应强度工作，男性优先。</p>'+
+'<p class="qq">工作时间：月休4天</p>'+
+'<p class="qq">薪资福利：年底十三薪，7000-8000元/月。</p>'+
+'<p class="qq">联系方式：张女士  0591-83858329</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+    {
+        id:15,
+        title:'上海姑奶奶餐饮管理有限公司诚聘招商专员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">上海姑奶奶餐饮管理有限公司自2013年成立以来，将“解放天下女人的双手”作为企业发展使命，一直秉承“幸福就是一起吃饭”的经营理念，以打造成为“千千万万个家庭的第二厨房”为企业目标，让每一个幸福的女人都不用下厨房，让人们多点时间陪伴家人一起吃饭。</p>'+
+'<p class="qq">姑奶奶厨坊致力营造一起吃饭的幸福氛围，为顾客提供美味的饭菜，舒适的就餐环境，亲切热情的服务。细腻柔情在姑奶奶的菜式中体现得淋漓尽致，作为江南菜的传承人，姑奶奶对于菜品，始终如一坚持只选用上等新鲜原材料，调味品也都只选用有质量保证的知名品牌，不仅在味道上苛求完美，在美观上也是精益求精，为的是让享用美食的人吃得舒心，看着享受。姑奶奶每推出一道菜，必定要经过专业厨师多次尝试、改良，直至通过测评，才允许在门店推出。外观精致口感上佳的菜品、贴心的服务以及优雅舒适的用餐环境让姑奶奶一面世，便在福建、浙江、上海、江苏迅速刮起一阵狂潮，风行江南，俨然成为了消费者的第二厨坊。</p>'+
+'<p class="qq">目前，上海姑奶奶餐饮管理有限公司已有直营店和合作店150家，并拥有自己的配送供应商，年产值近2亿元。目前旗下有北京、重庆、内蒙古三家分公司，门店在福建、浙江、广东、内蒙古、河南、北京等地区均有分布，上海姑奶奶餐饮管理有限公司的近期目标是在3年内将姑奶奶打造成江南小炒精致品牌，让姑奶奶成为千万家庭的第二厨房。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、负责招商，无经验可学习；</p>'+
+'<p class="qq">2、有餐饮行业管理经验，对餐饮行业有一定的认识、见解；</p>'+
+'<p class="qq">3、有招商工作经验者优先，男女不限，年龄20-38岁；</p>'+
+'<p class="qq">4、能适应全国各地区出差；</p>'+
+'<p class="qq">5、有责任心，乐观开朗，积极向上，擅长于与人沟通交流。</p>'+
+'<p class="qq">工作时间：</p>'+
+'<p class="qq">1、上班时间自由安排；</p>'+
+'<p class="qq">2、出差差旅交通费全报销，工资补贴500元/天，收入无封顶。</p>'+
+'<p class="qq">联系方式：吕先生  18705939949</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'上海姑奶奶餐饮管理有限公司诚聘炉台改刀(福新华昌大厦）',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">上海姑奶奶餐饮管理有限公司自2013年成立以来，将“解放天下女人的双手”作为企业发展使命，一直秉承“幸福就是一起吃饭”的经营理念，以打造成为“千千万万个家庭的第二厨房”为企业目标，让每一个幸福的女人都不用下厨房，让人们多点时间陪伴家人一起吃饭。</p>'+
+'<p class="qq">姑奶奶厨坊致力营造一起吃饭的幸福氛围，为顾客提供美味的饭菜，舒适的就餐环境，亲切热情的服务。细腻柔情在姑奶奶的菜式中体现得淋漓尽致，作为江南菜的传承人，姑奶奶对于菜品，始终如一坚持只选用上等新鲜原材料，调味品也都只选用有质量保证的知名品牌，不仅在味道上苛求完美，在美观上也是精益求精，为的是让享用美食的人吃得舒心，看着享受。姑奶奶每推出一道菜，必定要经过专业厨师多次尝试、改良，直至通过测评，才允许在门店推出。外观精致口感上佳的菜品、贴心的服务以及优雅舒适的用餐环境让姑奶奶一面世，便在福建、浙江、上海、江苏迅速刮起一阵狂潮，风行江南，俨然成为了消费者的第二厨坊。</p>'+
+'<p class="qq">目前，上海姑奶奶餐饮管理有限公司已有直营店和合作店150家，并拥有自己的配送供应商，年产值近2亿元。目前旗下有北京、重庆、内蒙古三家分公司，门店在福建、浙江、广东、内蒙古、河南、北京等地区均有分布，上海姑奶奶餐饮管理有限公司的近期目标是在3年内将姑奶奶打造成江南小炒精致品牌，让姑奶奶成为千万家庭的第二厨房。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：1、根据菜肴品种和质量要求，把两种或两种以上的主料和辅料进行搭配；</p>'+
+'<p class="qq">2、负责将配好的原料腌好调味、上粉上浆、用炉子烹制；</p>'+
+'<p class="qq">3、协助厨师制作出锅造型。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、18—30岁，普通话流利；</p>'+
+'<p class="qq">2、身体健康，反应灵敏；</p>'+
+'<p class="qq">3、踏实肯干，做事认真负责；</p>'+
+'<p class="qq">4、服从领导管理，为人友好和善。</p>'+
+'<p class="qq">联系方式：赖督导  15980827027</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建京元餐饮管理有限公司诚聘人事行政专员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">福建京元餐饮管理有限公司，下辖福州京元餐饮管理有限公司、北京榕城京元餐饮管理有限公司、泉州京元餐饮管理有限公司等多家下属大型餐饮管理机构其中福州京元餐饮管理有限公司是福建省首家以公司形式注册的股份制餐饮企业。</p>'+
+'<p class="qq">自2003年成立以来，一直致力于生产配送中式快餐、承包托管大型企事业食堂、供应大型超市配菜、为餐饮企业提供管理咨询的全方位餐饮集团公司。</p>'+
+'<p class="qq">经过十多年的辛勤耕耘，京元餐饮无论公司规模、管理团队、产品研发、生产加工、即时配送、管理方式以及售后服务等方面，在餐饮业中都首屈一指，赢得客户的充分信任和赞誉。</p>'+
+'<p class="qq">公司坚持努力实行菜品标准化、生产工厂化、配送定制化、订餐网络化的前沿实效管理制度。2004年5月公司导入ISO9001质量管理体系。2005年4月导入HACCP食品安全控制体系，成为福建省中式快餐行业唯一独家导入该体系的企业。2005年11月公司在中国人民财产保险股份有限公司投保食客险，成为福建省中式快餐行业唯一投保食客险的中式快餐企业。</p>'+
+'<p class="qq">公司始终坚持安全、卫生、营养、快捷的放心餐饮形式，并且承包托管了多家知名企事业员工食堂，赢得了广大顾客的信赖和赞许。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、负责公司的活动策划；</p>'+
+'<p class="qq">2、负责一些人事事项；</p>'+
+'<p class="qq">3、上级领导交办的其他事项。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、大专以上学历；</p>'+
+'<p class="qq">2、熟悉电脑技术。</p>'+
+'<p class="qq">工作时间：周一至周六，早上9：00-12:30，下午13:30-17:30,国家法定节假日正常休息。</p>'+
+'<p class="qq">联系方式：吴女士  18305956434</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建京元餐饮管理有限公司诚聘晋安区三八路仓管员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">福建京元餐饮管理有限公司，下辖福州京元餐饮管理有限公司、北京榕城京元餐饮管理有限公司、泉州京元餐饮管理有限公司等多家下属大型餐饮管理机构其中福州京元餐饮管理有限公司是福建省首家以公司形式注册的股份制餐饮企业。</p>'+
+'<p class="qq">自2003年成立以来，一直致力于生产配送中式快餐、承包托管大型企事业食堂、供应大型超市配菜、为餐饮企业提供管理咨询的全方位餐饮集团公司。</p>'+
+'<p class="qq">经过十多年的辛勤耕耘，京元餐饮无论公司规模、管理团队、产品研发、生产加工、即时配送、管理方式以及售后服务等方面，在餐饮业中都首屈一指，赢得客户的充分信任和赞誉。</p>'+
+'<p class="qq">公司坚持努力实行菜品标准化、生产工厂化、配送定制化、订餐网络化的前沿实效管理制度。2004年5月公司导入ISO9001质量管理体系。2005年4月导入HACCP食品安全控制体系，成为福建省中式快餐行业唯一独家导入该体系的企业。2005年11月公司在中国人民财产保险股份有限公司投保食客险，成为福建省中式快餐行业唯一投保食客险的中式快餐企业。</p>'+
+'<p class="qq">公司始终坚持安全、卫生、营养、快捷的放心餐饮形式，并且承包托管了多家知名企事业员工食堂，赢得了广大顾客的信赖和赞许。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">1、对供应商所提供之商品进行验货，做到账物相符、货单相符、账账相符；</p>'+
+'<p class="qq">2、遵守原物料进、出仓管理原则并及时做好盘点工作；</p>'+
+'<p class="qq">3、准确、及时做好餐厅财务报表；</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">会电脑办公软件操作；</p>'+
+'<p class="qq">联系方式：吴女士  18305956434</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建京元餐饮管理有限公司诚聘大学城仓管员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">福建京元餐饮管理有限公司，下辖福州京元餐饮管理有限公司、北京榕城京元餐饮管理有限公司、泉州京元餐饮管理有限公司等多家下属大型餐饮管理机构其中福州京元餐饮管理有限公司是福建省首家以公司形式注册的股份制餐饮企业。</p>'+
+'<p class="qq">自2003年成立以来，一直致力于生产配送中式快餐、承包托管大型企事业食堂、供应大型超市配菜、为餐饮企业提供管理咨询的全方位餐饮集团公司。</p>'+
+'<p class="qq">经过十多年的辛勤耕耘，京元餐饮无论公司规模、管理团队、产品研发、生产加工、即时配送、管理方式以及售后服务等方面，在餐饮业中都首屈一指，赢得客户的充分信任和赞誉。</p>'+
+'<p class="qq">公司坚持努力实行菜品标准化、生产工厂化、配送定制化、订餐网络化的前沿实效管理制度。2004年5月公司导入ISO9001质量管理体系。2005年4月导入HACCP食品安全控制体系，成为福建省中式快餐行业唯一独家导入该体系的企业。2005年11月公司在中国人民财产保险股份有限公司投保食客险，成为福建省中式快餐行业唯一投保食客险的中式快餐企业。</p>'+
+'<p class="qq">公司始终坚持安全、卫生、营养、快捷的放心餐饮形式，并且承包托管了多家知名企事业员工食堂，赢得了广大顾客的信赖和赞许。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：1、对供应商所提供的商品进行验货，做到账物相符、货单相符、账账相符；</p>'+
+'<p class="qq">2、遵守原物料进、出仓管理原则并及时做好盘点工作；</p>'+
+'<p class="qq">3、准确、及时做好餐厅财务报表；</p>'+
+'<p class="qq">任职资格：会电脑办公软件操作；</p>'+
+'<p class="qq">联系方式：吴女士  18305956434</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建京元餐饮管理有限公司诚聘大学城餐厅经理助理',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">福建京元餐饮管理有限公司，下辖福州京元餐饮管理有限公司、北京榕城京元餐饮管理有限公司、泉州京元餐饮管理有限公司等多家下属大型餐饮管理机构其中福州京元餐饮管理有限公司是福建省首家以公司形式注册的股份制餐饮企业。</p>'+
+'<p class="qq">自2003年成立以来，一直致力于生产配送中式快餐、承包托管大型企事业食堂、供应大型超市配菜、为餐饮企业提供管理咨询的全方位餐饮集团公司。</p>'+
+'<p class="qq">经过十多年的辛勤耕耘，京元餐饮无论公司规模、管理团队、产品研发、生产加工、即时配送、管理方式以及售后服务等方面，在餐饮业中都首屈一指，赢得客户的充分信任和赞誉。</p>'+
+'<p class="qq">公司坚持努力实行菜品标准化、生产工厂化、配送定制化、订餐网络化的前沿实效管理制度。2004年5月公司导入ISO9001质量管理体系。2005年4月导入HACCP食品安全控制体系，成为福建省中式快餐行业唯一独家导入该体系的企业。2005年11月公司在中国人民财产保险股份有限公司投保食客险，成为福建省中式快餐行业唯一投保食客险的中式快餐企业。</p>'+
+'<p class="qq">公司始终坚持安全、卫生、营养、快捷的放心餐饮形式，并且承包托管了多家知名企事业员工食堂，赢得了广大顾客的信赖和赞许。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：1、协助经理管理餐厅现场；</p>'+
+'<p class="qq">2、做好餐厅的日常管理工作；</p>'+
+'<p class="qq">3、餐厅内突发情况的处理。</p>'+
+'<p class="qq">任职资格：热爱餐饮行业</p>'+
+'<p class="qq">联系方式：陈女士  15750808129</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建京元餐饮管理有限公司诚聘面点师',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">福建京元餐饮管理有限公司，下辖福州京元餐饮管理有限公司、北京榕城京元餐饮管理有限公司、泉州京元餐饮管理有限公司等多家下属大型餐饮管理机构其中福州京元餐饮管理有限公司是福建省首家以公司形式注册的股份制餐饮企业。</p>'+
+'<p class="qq">自2003年成立以来，一直致力于生产配送中式快餐、承包托管大型企事业食堂、供应大型超市配菜、为餐饮企业提供管理咨询的全方位餐饮集团公司。</p>'+
+'<p class="qq">经过十多年的辛勤耕耘，京元餐饮无论公司规模、管理团队、产品研发、生产加工、即时配送、管理方式以及售后服务等方面，在餐饮业中都首屈一指，赢得客户的充分信任和赞誉。</p>'+
+'<p class="qq">公司坚持努力实行菜品标准化、生产工厂化、配送定制化、订餐网络化的前沿实效管理制度。2004年5月公司导入ISO9001质量管理体系。2005年4月导入HACCP食品安全控制体系，成为福建省中式快餐行业唯一独家导入该体系的企业。2005年11月公司在中国人民财产保险股份有限公司投保食客险，成为福建省中式快餐行业唯一投保食客险的中式快餐企业。</p>'+
+'<p class="qq">公司始终坚持安全、卫生、营养、快捷的放心餐饮形式，并且承包托管了多家知名企事业员工食堂，赢得了广大顾客的信赖和赞许。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：负责食堂内的面点制作，能够进行面点创新。</p>'+
+'<p class="qq">任职资格：有3-5年的食堂面点制作经验，能够吃苦耐劳，热爱餐饮行业。</p>'+
+'<p class="qq">联系方式：邹先生  18606919859</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+    {
+        id:15,
+        title:'福建京元餐饮管理有限公司诚聘董事长助理</p>',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">福建京元餐饮管理有限公司，下辖福州京元餐饮管理有限公司、北京榕城京元餐饮管理有限公司、泉州京元餐饮管理有限公司等多家下属大型餐饮管理机构其中福州京元餐饮管理有限公司是福建省首家以公司形式注册的股份制餐饮企业。</p>'+
+'<p class="qq">自2003年成立以来，一直致力于生产配送中式快餐、承包托管大型企事业食堂、供应大型超市配菜、为餐饮企业提供管理咨询的全方位餐饮集团公司。</p>'+
+'<p class="qq">经过十多年的辛勤耕耘，京元餐饮无论公司规模、管理团队、产品研发、生产加工、即时配送、管理方式以及售后服务等方面，在餐饮业中都首屈一指，赢得客户的充分信任和赞誉。</p>'+
+'<p class="qq">公司坚持努力实行菜品标准化、生产工厂化、配送定制化、订餐网络化的前沿实效管理制度。2004年5月公司导入ISO9001质量管理体系。2005年4月导入HACCP食品安全控制体系，成为福建省中式快餐行业唯一独家导入该体系的企业。2005年11月公司在中国人民财产保险股份有限公司投保食客险，成为福建省中式快餐行业唯一投保食客险的中式快餐企业。</p>'+
+'<p class="qq">公司始终坚持安全、卫生、营养、快捷的放心餐饮形式，并且承包托管了多家知名企事业员工食堂，赢得了广大顾客的信赖和赞许。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、完成董事长日常交代的工作；</p>'+
+'<p class="qq">2、完成董事长交办的其它工作事项。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、本科以上学历，有驾驶证优先考虑；</p>'+
+'<p class="qq">2、工作有条理，细致、认真、有责任心，办事严谨；</p>'+
+'<p class="qq">3、熟练电脑操作及Office办公软件；</p>'+
+'<p class="qq">联系方式：吴女士  18305956434</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建京元餐饮管理有限公司诚聘财务人员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">福建京元餐饮管理有限公司，下辖福州京元餐饮管理有限公司、北京榕城京元餐饮管理有限公司、泉州京元餐饮管理有限公司等多家下属大型餐饮管理机构其中福州京元餐饮管理有限公司是福建省首家以公司形式注册的股份制餐饮企业。</p>'+
+'<p class="qq">自2003年成立以来，一直致力于生产配送中式快餐、承包托管大型企事业食堂、供应大型超市配菜、为餐饮企业提供管理咨询的全方位餐饮集团公司。</p>'+
+'<p class="qq">经过十多年的辛勤耕耘，京元餐饮无论公司规模、管理团队、产品研发、生产加工、即时配送、管理方式以及售后服务等方面，在餐饮业中都首屈一指，赢得客户的充分信任和赞誉。</p>'+
+'<p class="qq">公司坚持努力实行菜品标准化、生产工厂化、配送定制化、订餐网络化的前沿实效管理制度。2004年5月公司导入ISO9001质量管理体系。2005年4月导入HACCP食品安全控制体系，成为福建省中式快餐行业唯一独家导入该体系的企业。2005年11月公司在中国人民财产保险股份有限公司投保食客险，成为福建省中式快餐行业唯一投保食客险的中式快餐企业。</p>'+
+'<p class="qq">公司始终坚持安全、卫生、营养、快捷的放心餐饮形式，并且承包托管了多家知名企事业员工食堂，赢得了广大顾客的信赖和赞许。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、做好食堂原材料申请统计及核对工作；</p>'+
+'<p class="qq">2、协助经理做好食堂的简单会计工作；</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、大专以上学历；</p>'+
+'<p class="qq">2、工作认真负责，承压能力较强，良好的团队合作精神。</p>'+
+'<p class="qq">联系方式：吴女士  18305956434</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建京元餐饮管理有限公司诚聘厨师',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">福建京元餐饮管理有限公司，下辖福州京元餐饮管理有限公司、北京榕城京元餐饮管理有限公司、泉州京元餐饮管理有限公司等多家下属大型餐饮管理机构其中福州京元餐饮管理有限公司是福建省首家以公司形式注册的股份制餐饮企业。</p>'+
+'<p class="qq">自2003年成立以来，一直致力于生产配送中式快餐、承包托管大型企事业食堂、供应大型超市配菜、为餐饮企业提供管理咨询的全方位餐饮集团公司。</p>'+
+'<p class="qq">经过十多年的辛勤耕耘，京元餐饮无论公司规模、管理团队、产品研发、生产加工、即时配送、管理方式以及售后服务等方面，在餐饮业中都首屈一指，赢得客户的充分信任和赞誉。</p>'+
+'<p class="qq">公司坚持努力实行菜品标准化、生产工厂化、配送定制化、订餐网络化的前沿实效管理制度。2004年5月公司导入ISO9001质量管理体系。2005年4月导入HACCP食品安全控制体系，成为福建省中式快餐行业唯一独家导入该体系的企业。2005年11月公司在中国人民财产保险股份有限公司投保食客险，成为福建省中式快餐行业唯一投保食客险的中式快餐企业。</p>'+
+'<p class="qq">公司始终坚持安全、卫生、营养、快捷的放心餐饮形式，并且承包托管了多家知名企事业员工食堂，赢得了广大顾客的信赖和赞许。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、做好厨房的管理、卫生、饭菜工作。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、年龄30岁以上，身体健康；</p>'+
+'<p class="qq">2、有5年以上的大锅菜经验；</p>'+
+'<p class="qq">联系方式：吴女士  18305956434</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州市鼓楼区雍和会餐厅诚聘前台接待包吃住',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">雍和会海鲜姿造坐落于繁华且有历史底蕴的三坊七巷光禄坊，毗邻安泰河，复古的小楼与河畔的依依杨柳构成了一幅唯美的风景画。店内装修雍容华贵，一楼是颇具风情的大厅，二楼是大气典雅的包厢，店内的服务员优雅有礼，服务周到。雍和会海鲜姿造主营海鲜姿造火锅，以海鲜作为主线菜肴，着眼一个“鲜”字，很多食材在上桌后还是鲜活的，定格在视觉、嗅觉、味觉的完美融合，精美的海鲜姿造犹如精美艺术品，让人赏心悦目，叹为观止，流连忘返；独特的裸烹食法还原食材本质美味，原汁原味。一人一锅的小火锅，方便卫生，造型美观，金属质地传热快。商家秉承着对美食的独到见解，将饮食文化的精髓色、香、味、形体现的淋漓尽致。在中华传统海鲜的基础上不断借鉴、吸取、融合及创新，追求品质的唯美，引领了海鲜餐饮的潮流和风尚。雍和会海鲜姿造是您情侣约会、三五知己小聚、商务宴请的上佳之选 </p>'+
+'<p class="qq">特色服务：有景观位，有露天位，可以刷卡，有包厢，音乐伴奏，有送餐，有停车位，有表演，提供在线菜单，有夜宵，有wifi。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">要求：</p>'+
+'<p class="qq">形象气质佳，有收银经验优先，对餐饮行业感兴趣。欢迎有志之士前来咨询面试。</p>'+
+'<p class="qq">面试时间：上午10:30-11:30，下午16:30-17:30</p>'+
+'<p class="qq">发展途径：</p>'+
+'<p class="qq">1、途径一：收银员--组长--部长--主管—店经理</p>'+
+'<p class="qq">2、途径二：职能部门（人力资源部、财务部、工程部、采购部、监察部等）。</p>'+
+'<p class="qq">薪酬及福利待遇:（以下条件真实有效）</p>'+
+'<p class="qq">1、公司为员工免费提供食宿，宿舍配有空调、电视、洗衣机等设施；</p>'+
+'<p class="qq">2、员工工作满一年公司给予报销员工的健康证费用；</p>'+
+'<p class="qq">3、员工每月享有四天公休假</p>'+
+'<p class="qq">4、员工在公司连续工作满一年，可享受5天带薪年休假</p>'+
+'<p class="qq">5、3-7试用期，试用期满公司即给员工办理工伤保险</p>'+
+'<p class="qq">工作地址：</p>'+
+'<p class="qq">福州市鼓楼区湖东路171号中旅大厦二楼雍和会餐厅</p>'+
+'<p class="qq">（乘车到省二人民医院站100、117、121、128、159、61、70、78或闽江饭店下车129、22、2、51、52、5、69、72、76、9、K3）</p>'+
+'<p class="qq">联系方式：吴女士  18065159329</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州市鼓楼区雍和会餐厅诚聘传菜员包吃住',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">雍和会海鲜姿造坐落于繁华且有历史底蕴的三坊七巷光禄坊，毗邻安泰河，复古的小楼与河畔的依依杨柳构成了一幅唯美的风景画。店内装修雍容华贵，一楼是颇具风情的大厅，二楼是大气典雅的包厢，店内的服务员优雅有礼，服务周到。雍和会海鲜姿造主营海鲜姿造火锅，以海鲜作为主线菜肴，着眼一个“鲜”字，很多食材在上桌后还是鲜活的，定格在视觉、嗅觉、味觉的完美融合，精美的海鲜姿造犹如精美艺术品，让人赏心悦目，叹为观止，流连忘返；独特的裸烹食法还原食材本质美味，原汁原味。一人一锅的小火锅，方便卫生，造型美观，金属质地传热快。商家秉承着对美食的独到见解，将饮食文化的精髓色、香、味、形体现的淋漓尽致。在中华传统海鲜的基础上不断借鉴、吸取、融合及创新，追求品质的唯美，引领了海鲜餐饮的潮流和风尚。雍和会海鲜姿造是您情侣约会、三五知己小聚、商务宴请的上佳之选 </p>'+
+'<p class="qq">特色服务：有景观位，有露天位，可以刷卡，有包厢，音乐伴奏，有送餐，有停车位，有表演，提供在线菜单，有夜宵，有wifi。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">雍和会企业文化</p>'+
+'<p class="qq">坚信你只要在本职工作，做到最好，做到无可挑剔，雍和会将会成为你重要发展平台！</p>'+
+'<p class="qq">雍和会现有的管理人员全部是从服务员、传菜员等最基层的岗位上提拔起来的，公司为每一位员工提供公平、公正的发展空间。</p>'+
+'<p class="qq">发展途径：基础员工--组长--部长--主管—店经理</p>'+
+'<p class="qq">待遇:（以下条件真实有效）</p>'+
+'<p class="qq">1、公司为员工免费提供食宿，宿舍配有空调、电视、洗衣机等设施；</p>'+
+'<p class="qq">2、员工工作满一年公司给予报销员工的健康证费用；</p>'+
+'<p class="qq">3、员工每月享有四天公休假</p>'+
+'<p class="qq">4、员工在公司连续工作满一年，可享受5天带薪年休假</p>'+
+'<p class="qq">5、3-7试用期，试用期满公司即给员工办理工伤保险</p>'+
+'<p class="qq">工作地点：</p>'+
+'<p class="qq">1、福州市鼓楼区三坊七巷光禄坊37号雍和会餐厅（双抛桥站下车118、128、18、1、22、27、301、317、55、5、61、66、75、80）</p>'+
+'<p class="qq">2、福州市鼓楼区湖东路171号中旅大厦四楼雍和会餐厅（（乘车到省二人民医院站100、117、121、128、159、61、70、78或闽江饭店下车129、22、2、51、52、5、69、72、76、9、K3）</p>'+
+'<p class="qq">联系方式：吴女士  18065159329</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州市鼓楼区雍和会餐厅诚聘保洁',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">雍和会海鲜姿造坐落于繁华且有历史底蕴的三坊七巷光禄坊，毗邻安泰河，复古的小楼与河畔的依依杨柳构成了一幅唯美的风景画。店内装修雍容华贵，一楼是颇具风情的大厅，二楼是大气典雅的包厢，店内的服务员优雅有礼，服务周到。雍和会海鲜姿造主营海鲜姿造火锅，以海鲜作为主线菜肴，着眼一个“鲜”字，很多食材在上桌后还是鲜活的，定格在视觉、嗅觉、味觉的完美融合，精美的海鲜姿造犹如精美艺术品，让人赏心悦目，叹为观止，流连忘返；独特的裸烹食法还原食材本质美味，原汁原味。一人一锅的小火锅，方便卫生，造型美观，金属质地传热快。商家秉承着对美食的独到见解，将饮食文化的精髓色、香、味、形体现的淋漓尽致。在中华传统海鲜的基础上不断借鉴、吸取、融合及创新，追求品质的唯美，引领了海鲜餐饮的潮流和风尚。雍和会海鲜姿造是您情侣约会、三五知己小聚、商务宴请的上佳之选 </p>'+
+'<p class="qq">特色服务：有景观位，有露天位，可以刷卡，有包厢，音乐伴奏，有送餐，有停车位，有表演，提供在线菜单，有夜宵，有wifi。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">要求年龄50岁以下，能吃苦耐劳。</p>'+
+'<p class="qq">1、公司为员工免费提供食宿，宿舍配有空调、洗衣机等设施；</p>'+
+'<p class="qq">2、员工工作满一年公司给予报销员工的健康证费用；</p>'+
+'<p class="qq">3、员工每月享有四天公休假</p>'+
+'<p class="qq">4、员工在公司连续工作满一年，可享受5天带薪年休假</p>'+
+'<p class="qq">5、3-7试用期，试用期满公司即给员工办理工伤保险</p>'+
+'<p class="qq">工作地点：</p>'+
+'<p class="qq">福州市鼓楼区湖东路171号中旅大厦四楼雍和会餐厅（（乘车到省二人民医院站100、117、121、128、159、61、70、78闽江饭店下车129、22、2、51、52、5、69、72、76、9、K3）</p>'+
+'<p class="qq">联系方式：吴女士  18065159329</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州五洲佳豪大酒店诚聘保安主管/领班',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'福州五洲佳豪酒店投资有限公司(福州)是隶属五洲佳豪酒店管理有限公司,公司现管理的企业有:石狮五洲大酒店、石狮豪富华五洲佳豪酒楼、五洲佳豪酒楼(金玛)店、五洲商贸有限公司、五洲佳豪酒楼(福州)店。</p>'+
+'<p class="qq">福州五洲佳豪酒店投资有限公司位于福州市西二环中心,交通便捷,距福州火车站、福州汽车北站、高速路入口仅20分钟车程,是福州首家以顶级餐饮、服务为标准的餐饮酒店.'+
+'酒楼建筑总面积约12000平方米,一楼设星级酒店式接待总台、可容纳500人同时就餐的豪华宴会大厅、可容纳350人同时就餐的高档早、午茶餐厅. 3楼拥有可容纳400人同时就餐的超级豪华宴会大厅. B座的3-5楼是酒楼的豪华会所,豪华会所面积约2600平方米. 其中2间超豪华包厢,15间不同风格的豪华会所. 49间风格迥异的贵宾特色包厢,贵宾们可根据自己的所需进行选择和惬意畅饮.'+
+'五洲坚持“一流的管理、一流的服务、一流的企业”的核心价值观,争当“行业领头雁” 的企业精神,奉行“顾客永远是对的”的服务理念 ,贯彻“以人为本”的管理理念,让员工与企业共同发展. 五洲管理者体验、深入基层,从而推行出一套符合科学发展观的战略思想,以及一系列有效的先进管理理念;基层员工爱岗敬业,吃苦耐劳;五洲全体员工上下一心围绕“源于石狮、名震福建”的共同愿景,扎扎实实抓好日常的管理、真诚微笑服务工作. 使客人在经典五洲品味到特色、精致、口味化的美食,享受到宾至如归的人生惬意.'+
+'五洲在董事会的领导下,实行总经理责任制. 福州五洲佳豪酒店投资有限公司设总经理办公室、人力资源部、财务部、餐饮部、销售部、工程部等六个部门. 五洲在总经理的领导下实行垂直领导、分级管理,正常情况下,对上不越级请示,对下不越级指挥. 五洲在福建不断壮大,五洲全体员工有着良好的个人发展空间。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1.负责各责任区内的楼宇，通道，停车场，绿化地，车辆及其它公共场所的治安防范管理。在当班时间内对本区域的安全负有主要责任。</p>'+
+'<p class="qq">2.负责管好进入责任区的车辆，保持道路畅通，车辆停放有序，检查停放的车辆是否已上防盗锁;注意司机和车辆在开车前有无异样，发现可疑立即查证，以确保安全。</p>'+
+'<p class="qq">3.负责责任区内的清洁、绿化及公共设施设备的检查，发现问题及时通知各服务中心进行处理。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1.思想品德好，有敬业爱岗精神，敢于同不良倾向、违法犯罪行为作斗争。</p>'+
+'<p class="qq">2.作风正派、热爱集体、团结同志、有较强的上进心和责任感。</p>'+
+'<p class="qq">3.有较强的观察、记忆、思维、反应、书写、口语及分析能力；服从指挥、遵章守纪、处事认真、态度和善、听从安排，善于微笑服务。工作时间：一天八小时</p>'+
+'<p class="qq">年龄要求：20-40岁，男性</p>'+
+'<p class="qq">联系方式：江小姐  15280072058</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'平潭麒麟荣誉国际酒店诚聘酒店客房服务员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'平潭麒麟荣誉国际酒店位于平潭竹屿口，地处美丽的海岸线上，是未来平潭中心商务区的标志。酒店地理位置优越，环境优美，可将美丽的竹屿湖风光尽收眼底，远眺海岸线美景。平潭麒麟荣誉国际酒店是荣誉酒店管理集团旗下的一家顶级酒店，营业面积约20985平方米，建筑面积约6万平方。酒店建筑设计灵感来自欧式风格的生态型建筑，低层设计融入了现代中式装饰元素，大小花园水流环绕，竹屿湖更是汇聚了酒店的诗画美景精华。酒店拥有各类规格客房可供选择，设施设备齐全，欢迎四海宾客入住。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、按照领班安排认真做好床铺整理、客房清洁、打扫卫生的工作。</p>'+
+'<p class="qq">2、接待顾客应主动、热情、礼貌、耐心、周到，使顾客有宾至如归之感；</p>'+
+'<p class="qq">3、运用礼貌语言，为客人提供服务，</p>'+
+'<p class="qq">4、配合领班工作，服从领班或以上领导指挥，团结及善于帮助同事工作；</p>'+
+'<p class="qq">5、积极参加培训，不断提高服务技能。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、年龄18-40岁，身体健康，能吃苦。</p>'+
+'<p class="qq">2、品行端正，能吃苦耐劳，初中以上文化程度。</p>'+
+'<p class="qq">工作时间：8小时/天，4休/月</p>'+
+'<p class="qq">联系方式：凌佳若  13358291639</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'平潭麒麟荣誉国际酒店诚聘客户经理',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'平潭麒麟荣誉国际酒店位于平潭竹屿口，地处美丽的海岸线上，是未来平潭中心商务区的标志。酒店地理位置优越，环境优美，可将美丽的竹屿湖风光尽收眼底，远眺海岸线美景。平潭麒麟荣誉国际酒店是荣誉酒店管理集团旗下的一家顶级酒店，营业面积约20985平方米，建筑面积约6万平方。酒店建筑设计灵感来自欧式风格的生态型建筑，低层设计融入了现代中式装饰元素，大小花园水流环绕，竹屿湖更是汇聚了酒店的诗画美景精华。酒店拥有各类规格客房可供选择，设施设备齐全，欢迎四海宾客入住。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、了解和熟悉饭店各部门、各种服务设施和服务项目，熟悉自己的业务，在经理的领导下，做好营销工作。</p>'+
+'<p class="qq">2、协同经理做好市场调查、进行市场预测，提出报告，做好酒店营业推广工作。</p>'+
+'<p class="qq">3、参加“VIP”客人的接待工作，负责安排他们的生活。</p>'+
+'<p class="qq">4、了解和熟悉本地区、本国的风景名胜等旅游参观点。</p>'+
+'<p class="qq">5、熟悉新闻界，注意与他们搞好关系，注意发新闻或提供报导材料。注意阅读或提供报导材料。注意阅读报纸、杂志、剪辑有关酒店的材料，积累资料以便日后总结材料或宣传报告用。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、形象气质佳，性格开朗，组织协调能力强。</p>'+
+'<p class="qq">2、具有敏锐的观察能力。</p>'+
+'<p class="qq">3、善于把握市场动态，捕捉商机，制定计划。</p>'+
+'<p class="qq">4、具备市场策划，团队管理及商务谈判能力。</p>'+
+'<p class="qq">5、旅游、营销、酒店管理相关专业优先。</p>'+
+'<p class="qq">工作时间：9:00--18:30</p>'+
+'<p class="qq">联系方式：凌佳若  13358291639</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州市井榕餐饮管理有限公司诚聘苏宁探鱼服务员包吃住',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">井榕餐饮成立于2006年，至今已有十多年的时间，旗下拥有井榕酒楼，探鱼时尚餐厅，耍浪时尚餐厅：</p>'+
+'<p class="qq">井榕大酒楼排尾店：地址：福州市台江区排尾路263号（闽江世纪广场1号楼）</p>'+
+'<p class="qq">井榕大酒楼广达店：地址：福州市广达路双丰大厦438号(亚细亚)</p>'+
+'<p class="qq">探鱼时尚餐厅：地址：福州市台江区工业路233号福州苏宁广场F5层</p>'+
+'<p class="qq">耍浪时尚餐厅：地址：位于五四北泰禾广场5楼</p>'+
+'<p class="qq">井涌玉液香盈室，榕生银根客满楼。不断追求品牌的创新和突破，传播具有井榕特色的海西餐饮文化。井榕人，将会一如既往地用感恩的心来服务客户和回馈社会，传承闽菜经典且兼容创新，力争成为创新闽菜的典范。</p>'+
+'<p class="qq">井榕餐饮竭诚欢迎您的加入！</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、按照领班安排认真做好桌椅、餐厅卫生，餐厅铺台，准备好各种用品，确保正常营业使用。</p>'+
+'<p class="qq">2、接待顾客应主动、热情、礼貌、耐心、周到，使顾客有宾至如归之感；</p>'+
+'<p class="qq">3、运用礼貌语言，为客人提供最佳服务，</p>'+
+'<p class="qq">4、善于向顾客介绍和推销本餐厅饮品及特色菜点；</p>'+
+'<p class="qq">5、配合领班工作，服从领班或以上领导指挥，团结及善于帮助同事工作；</p>'+
+'<p class="qq">6、积极参加培训，不断提高服务技能。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、年龄18-30岁，身体健康，女性身高1、58m以上、男性身高1、70以上，能吃苦，</p>'+
+'<p class="qq">2、品行端正，能吃苦耐劳，初中以上文化程度。</p>'+
+'<p class="qq">联系方式：苏小姐  18659128561</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建悦港琴湾餐饮管理有限公司急聘客服专员',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">至求职者的一封信：'+
+'<p class="qq">我们没有光鲜亮丽的企业诚聘广告，没有太多可以炫耀的企业实力，因为我们深知只有一支强大的团队，才能让我们更骄傲的屹立于行业至高点，可以更自豪的说我们才是真正的餐饮人。我们年轻，但我们有朝气，我们深知我们有诸多不足，我们明白我们还有很多需要改进，但对于悦港人来说我们每一个人都怀揣着一颗远大的梦想，马云说过一句话：梦想要有，万一实现了呢！2016年对于悦港人来说，是个转型的一年，是个壮大的一年，是个夯实的一年，可我们明白没有人才的引进这一切都是空谈，HR行业里俗套的说，人才如何选企业？五大要素决定你的选择：强势的餐饮项目品类+优越的运营模式+开明的掌舵手+强大的资金实力+齐心协力的团队，企业拥五者拥天下，但事毕竟是靠人做出来的，悦港当下确实求贤若渴，但我们的团队有个不成文的共识，我们寻求的是靠谱有才之人。因为我们知道团队连心方可其利断金。 今悦港故愚效仿秦孝公诚出《求贤令》，敬能尊士，视人才如己出。并于此诚告天下：但凡志同道合之能人善士可强悦港者，即高薪厚职，与君共享共赢。望天下俊才毛遂自荐担当重任，共赴愿景，悦港琴湾将视才重用，全力让君施展。悦港琴湾情意切切，专侯您的到来！我肺腑之言，愿换你真心相待！</p>'+
+'<p class="qq">如果您真需要了解悦港琴湾集团，可以略阅一下简介，没有华丽的语句，但求您能看到希望和平台。</p>'+
+'<p class="qq">福建悦港琴湾餐饮集团，目前已在中国福州、江苏、厦门等各大城市拥有多家大规模门店。并已成为省内以经营中、日、韩等国际多元化料理以及中华意境菜的领军餐饮品牌。集团目前经营业态包含：松月自慢料理、璞月中华意境菜、悦港琴湾大酒店、辣皇朝干锅主题餐厅等。拥有门店6家直营店，1家加盟店，目前员工500人，新增门店陆续开幕中……</p>'+
+'<p class="qq">福州辣皇朝餐饮管理有限公司：</p>'+
+'<p class="qq">福州辣皇朝餐饮管理有限公司是一家以特色干锅为主题的时尚餐饮连锁品牌，并创造性地将川味辣食融入龙虾、蟹类干锅餐品，为福州的食客们带去新的美食体验。公司现已在福州、厦门开设3家大型直营店，并在此基础上全面铺开福州战略，以期望实现三年打造5家直营分店和20家外卖小站的发展目标。</p>'+
+'<p class="qq">福州松月自慢料理餐厅：</p>'+
+'<p class="qq">福州松月自慢料理餐厅由悦港琴湾餐饮集团历时两年打造的日本料理餐厅，自4月开业以来便成为福州餐饮的新标杆。松月自慢料理以高标准、高要求、高待遇的三高姿态保持在行业的领先地位。</p>'+
+'<p class="qq">福州璞月中华意境菜：</p>'+
+'<p class="qq">福州璞月中华意境菜用了整整半年的时间，踏访中国7个城市，遍寻80多位中餐大厨，璞月的厨师是散落人间的吴刚，坚持着十年、二十年甚至更久的时间，始终保持对食物的热情，跨越时间的泾河，以唐宋的诗意和大波墨的风格，创造出璞月中华意境菜！</p>'+
+'<p class="qq">欢迎各类精英人才入司就职，共创辉煌。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1、受理及主动电话客户，能够及时发现客户问题并给到正确和满意的回复；</p>'+
+'<p class="qq">2、与客户建立良好的联系，熟悉及挖掘客户需求，并对客户进行系统的应用培训；</p>'+
+'<p class="qq">3、具备处理问题、安排进展、跟进进程、沟通及疑难问题服务的意识跟能力，最大限度的提高客户满意度。遇到不能解决的问题按流程提交相关人员或主管处理，并跟踪进展直至解决；</p>'+
+'<p class="qq">4、具备一定的销售能力，针对公司现有的客户进行营销，让客户接受更为广泛的网络产品，达到最好的网络营销的效果。</p>'+
+'<p class="qq">5、不断接受公司的各项业务和技能提升培训。</p>'+
+'<p class="qq">任职资格：</p>'+
+'<p class="qq">1、专科学历，有一定客户服务工作经验或销售经验，有一定的客户服务知识和能力 。</p>'+
+'<p class="qq">2、计算机操作熟练，office办公软件使用熟练，有一定的网络知识基础，熟练使用Photoshop等制图工具者优先考虑。</p>'+
+'<p class="qq">3、要求一定要有“客户为先”的服务精神，一切从帮助客户、满足客户角度出发。</p>'+
+'<p class="qq">4、性格要求沉稳、隐忍，善于倾听，有同理心，乐观、积极。普通话标准、流利，反应灵敏。</p>'+
+'<p class="qq">5、热爱工作，敬业、勤恳，乐于思考，具有自我发展的主观愿望和自我学习能力。可适当加班者优先。</p>'+
+'<p class="qq">联系方式：王小姐  13705915900</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州市凡塔斯餐饮管理有限公司诚聘西餐厨师长（福州）',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'凡塔斯总部设于福建省福州市，多年来，凭借丰富的行业经验、出色的产品品质、强烈的社会责任感，为现代都市人群提供可口、安心、健康的美食，致力于推广环保、绿色的食品文化，营造有品味的生活氛围,在福建市场占据了重要地位，未来，凡塔斯将不断扩张营业版图，将美味带给全国各地。</p>'+
+'<p class="qq">截止2016年10月，凡塔斯牛排在福建省、江西省及广东省共拥有30家门店。未来将陆续进驻全国各大主要省会城市，实现全国连锁经营。目前凡塔斯旗下有5个品牌，凡塔斯、普兰朵、闽小馆、极面道、麻吉丫，覆盖美食界牛排、闽菜、泰面、麻辣鸭卤四大领域，是餐饮行业的新晋明星。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1.负责厨房的组织领导与业务管理工作；</p>'+
+'<p class="qq">2.负责厨房的劳动力调配和班组间的协调工作；</p>'+
+'<p class="qq">3.负责指挥烹调工作。制定菜单，对菜品质量现场把关指导；</p>'+
+'<p class="qq">4.准确掌握原料结存量，了解市场供应情况和价格，根据不同季节和需求制定菜单推出新菜，每天审核请购单；</p>'+
+'<p class="qq">5.负责厨房卫生工作，抓好食品卫生和个人卫生督促严格执行食品卫生法，把好原料的进货验收关。</p>'+
+'<p class="qq">任职要求：</p>'+
+'<p class="qq">1.高中以上学历，身体健康、精力充沛，二年以上西餐厅厨师长工作经验；</p>'+
+'<p class="qq">2.具有强烈的责任心，勇于开拓和创新，作风干练；</p>'+
+'<p class="qq">3.拥有较高的烹饪技术，了解和熟悉食品材料的产地、规格、质量、一般进货价；</p>'+
+'<p class="qq">4.对成本控制管理、食品营养学、厨房的设备知识拥有相当的基础。</p>'+
+'<p class="qq">薪资待遇：4500元-7000元/月</p>'+
+'<p class="qq">一天8小时工作制，月休4天，提供6险、包吃、季度绩效奖金、技术补贴、身股银股分红</p>'+
+'<p class="qq">联系方式：林小姐0591-83309993</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州市凡塔斯餐饮管理有限公司诚聘中餐闽小馆厨师长',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'凡塔斯总部设于福建省福州市，多年来，凭借丰富的行业经验、出色的产品品质、强烈的社会责任感，为现代都市人群提供可口、安心、健康的美食，致力于推广环保、绿色的食品文化，营造有品味的生活氛围,在福建市场占据了重要地位，未来，凡塔斯将不断扩张营业版图，将美味带给全国各地。</p>'+
+'<p class="qq">截止2016年10月，凡塔斯牛排在福建省、江西省及广东省共拥有30家门店。未来将陆续进驻全国各大主要省会城市，实现全国连锁经营。目前凡塔斯旗下有5个品牌，凡塔斯、普兰朵、闽小馆、极面道、麻吉丫，覆盖美食界牛排、闽菜、泰面、麻辣鸭卤四大领域，是餐饮行业的新晋明星。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1.负责厨房的组织领导与业务管理工作；</p>'+
+'<p class="qq">2.负责厨房的劳动力调配和班组间的协调工作；</p>'+
+'<p class="qq">3.负责指挥烹调工作。制定菜单，对菜品质量现场把关指导；</p>'+
+'<p class="qq">4.准确掌握原料结存量，了解市场供应情况和价格，根据不同季节和需求制定菜单推出新菜，每天审核请购单；</p>'+
+'<p class="qq">5.负责厨房卫生工作，抓好食品卫生和个人卫生督促严格执行食品卫生法，把好原料的进货验收关。</p>'+
+'<p class="qq">任职要求：</p>'+
+'<p class="qq">1.高中以上学历，身体健康、精力充沛，酒店、连锁中餐行业厨师长经验优先考虑；</p>'+
+'<p class="qq">2.具有强烈的责任心，勇于开拓和创新，作风干练；</p>'+
+'<p class="qq">3.拥有较高的烹饪技术，了解和熟悉食品材料的产地、规格、质量、一般进货价；</p>'+
+'<p class="qq">4.对成本控制管理、食品营养学、厨房的设备知识拥有相当的基础。</p>'+
+'<p class="qq">薪资待遇：8000-10000元/月</p>'+
+'<p class="qq">一天8小时工作制，月休4天，没有大夜班，提供六险</p>'+
+'<p class="qq">联系方式：林小姐  17704622244</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州市凡塔斯餐饮管理有限公司诚聘餐厅储备经理（福州）',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'凡塔斯总部设于福建省福州市，多年来，凭借丰富的行业经验、出色的产品品质、强烈的社会责任感，为现代都市人群提供可口、安心、健康的美食，致力于推广环保、绿色的食品文化，营造有品味的生活氛围,在福建市场占据了重要地位，未来，凡塔斯将不断扩张营业版图，将美味带给全国各地。</p>'+
+'<p class="qq">截止2016年10月，凡塔斯牛排在福建省、江西省及广东省共拥有30家门店。未来将陆续进驻全国各大主要省会城市，实现全国连锁经营。目前凡塔斯旗下有5个品牌，凡塔斯、普兰朵、闽小馆、极面道、麻吉丫，覆盖美食界牛排、闽菜、泰面、麻辣鸭卤四大领域，是餐饮行业的新晋明星。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">薪资福利：</p>'+
+'<p class="qq">- 薪资约为3500元/月，转正后4000-5000元/月，入职即享有商业医疗保险</p>'+
+'<p class="qq">- 月休4天、六险、员工餐、超额业绩奖、季度绩效奖金、带薪年假、婚假、年度旅游、年度调薪等丰厚奖金福利</p>'+
+'<p class="qq">- 2年内培养成为凡塔斯的餐厅总经理，优秀餐厅总经理年收入可达15-20万</p>'+
+'<p class="qq">职业发展：</p>'+
+'<p class="qq">储备经理→副经理→资深副经理→餐厅总经理→营运督导→更高职位</p>'+
+'<p class="qq">- 资深副经理级别以上有机会享受身股银股计划</p>'+
+'<p class="qq">工作内容：</p>'+
+'<p class="qq">- 餐厅现场人员管理，订货排班，成本控制，设备维护等营运系统管理工作</p>'+
+'<p class="qq">企业文化：</p>'+
+'<p class="qq">- 成为收获最多幸福的餐饮企业</p>'+
+'<p class="qq">- 在这一段职业生涯内获得追求幸福的能力，体会幸福的心态，拥抱幸福的勇气</p>'+
+'<p class="qq">岗位申请条件：</p>'+
+'<p class="qq">- 拥有大专以上学历（20-28周岁之间即可），专业不限</p>'+
+'<p class="qq">- 服务意识强，热情大方，有志于从事餐饮行业</p>'+
+'<p class="qq">- 适应倒班（没有大夜班）和快节奏的工作环境</p>'+
+'<p class="qq">面试流程为：进入餐厅参加2天试岗→复试→终试→入职</p>'+
+'<p class="qq">工作地点：福州市区凡塔斯门店</p>'+
+'<p class="qq">联系方式：林小姐0591-83309993</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州市凡塔斯餐饮管理有限公司诚聘研发助理',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'凡塔斯总部设于福建省福州市，多年来，凭借丰富的行业经验、出色的产品品质、强烈的社会责任感，为现代都市人群提供可口、安心、健康的美食，致力于推广环保、绿色的食品文化，营造有品味的生活氛围,在福建市场占据了重要地位，未来，凡塔斯将不断扩张营业版图，将美味带给全国各地。</p>'+
+'<p class="qq">截止2016年10月，凡塔斯牛排在福建省、江西省及广东省共拥有30家门店。未来将陆续进驻全国各大主要省会城市，实现全国连锁经营。目前凡塔斯旗下有5个品牌，凡塔斯、普兰朵、闽小馆、极面道、麻吉丫，覆盖美食界牛排、闽菜、泰面、麻辣鸭卤四大领域，是餐饮行业的新晋明星。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">工作职责：</p>'+
+'<p class="qq">1.能按要求制定和追踪汇总品控部所需要执行的表格及报告。汇总分析后提交品控部经理做审阅（如食用油或食材耗记录、新品万元用量等工作收集）；</p>'+
+'<p class="qq">2.协助研发部经理研发新品的采购工作和新品拍摄工作；</p>'+
+'<p class="qq">3.针对企业多维系统本部门的维护和更新，定期对多维、vpn系统做检查；</p>'+
+'<p class="qq">4.协助食品安全手册和企业产品数据库文书上的修订和后期的维护更新；</p>'+
+'<p class="qq">5.协助设定企业生厂区操作标准的培训教材文书上的处理和资料整理。</p>'+
+'<p class="qq">任职要求：</p>'+
+'<p class="qq">1.以食品或烹饪专业毕业者优先，学历高中或中专以上即可；</p>'+
+'<p class="qq">2.有一年以上的连锁餐饮行业从业经验优先，悉中西式烹调方法，对于烹饪专业知识了解；</p>'+
+'<p class="qq">3.熟悉office办公软件操作，文案功底较强（以在烹饪专业性学校任教为最佳）；</p>'+
+'<p class="qq">4.性格开朗乐观，富有责任心。</p>'+
+'<p class="qq">薪资：3000-5000元，月休8天</p>'+
+'<p class="qq">工作时间： 9：00-18:00</p>'+
+'<p class="qq">福利待遇：提供五险一金、年假、婚假、产假、保育假、生日福利、定期的员工活动，年终奖金等</p>'+
+'<p class="qq">联系方式：林小姐0591-83309993</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福州市凡塔斯餐饮管理有限公司诚聘餐厅总经理（福州）',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'凡塔斯总部设于福建省福州市，多年来，凭借丰富的行业经验、出色的产品品质、强烈的社会责任感，为现代都市人群提供可口、安心、健康的美食，致力于推广环保、绿色的食品文化，营造有品味的生活氛围,在福建市场占据了重要地位，未来，凡塔斯将不断扩张营业版图，将美味带给全国各地。</p>'+
+'<p class="qq">截止2016年10月，凡塔斯牛排在福建省、江西省及广东省共拥有30家门店。未来将陆续进驻全国各大主要省会城市，实现全国连锁经营。目前凡塔斯旗下有5个品牌，凡塔斯、普兰朵、闽小馆、极面道、麻吉丫，覆盖美食界牛排、闽菜、泰面、麻辣鸭卤四大领域，是餐饮行业的新晋明星。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">工作职责：</p>'+
+'<p class="qq">1、负责所管辖门店实现经营目标；</p>'+
+'<p class="qq">2、负责餐厅现场营运管理及人员管理；</p>'+
+'<p class="qq">3、培养骨干工作能力成长，不断规范餐厅的各项规章制度和工作流程。</p>'+
+'<p class="qq">任职要求：</p>'+
+'<p class="qq">1、高中及以上文化程度，形象气质佳；</p>'+
+'<p class="qq">2、熟悉餐厅管理和服务方面的知识，具有熟练的服务技能；</p>'+
+'<p class="qq">3、有较高的处理餐厅突发事件的应变能力及对客沟通能力；</p>'+
+'<p class="qq">4、热爱服务工作，工作踏实、认真，有较强的事业心和责任感；</p>'+
+'<p class="qq">5、愿意服从公司标准化管理。</p>'+
+'<p class="qq">薪资：底薪+绩效奖金，包吃，月休4天</p>'+
+'<p class="qq">福利待遇：提供五险、年假、婚假、产假、保育假、生日福利、定期的员工活动等</p>'+
+'<p class="qq">联系方式：何小姐  17704622244</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建省久号餐饮管理有限公司诚聘前厅客服',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">福建省久号餐饮管理有限公司，创立于1999年，是一家集专业膳食、营养配餐为一体，具备较强竞争力和发展潜力的中式餐饮服务企业。'+
+'久号中式快餐，以方便快捷的自助形式，契合国人快节奏的生活形态，加之精益求精的品质，受到了广大顾客的喜爱。'+
+'公司以“完美品质、贴心服务、安全卫生、客户满意”的经营理念作为引领企业前行的指向标，依托先进的管理模式和专业高效的运营团队，经过几代久号人的持续努力，久号从一家几十平米的小店面逐步发展成长为拥有近30家直营店、400余名员工的成熟企业。凭借优质的产品和卓越的服务，久号餐饮已成为福州地区中式餐饮的标杆式连锁品牌，拥有大批忠实的消费客群。'+
+'二十年来，久号餐饮始终秉持“为中国、做好饭”的企业使命，立足品质、创新发展、合作共赢，先后与中科院福建物质结构研究所、晋安区服务中心、仓山区政府、福州大学、福建农林大学、福建工程学院、山姆沃尔玛在内的数十家企事业单位、高校建立了良好的合作伙伴关系，成为福州地区极具品牌影响力的餐饮企业。'+
+'“十年如一日，只为做好饭”，二十年的辛勤耕耘，和对优秀品质始终如一的坚持，造就了久号今天的发展与成绩。二十年来，久号持续致力于专业人才团队的培养，为员工构筑共赢合作的梦想平台，将打造中国最具信赖的餐饮品牌作为企业不懈奋斗的终身目标。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1.负责门店线上外卖订单的接单工作并及时安排配送；</p>'+
+'<p class="qq">2.认真核对外卖餐品，确保准确无遗漏；</p>'+
+'<p class="qq">3.负责及时回复客户线上留言、解决各项客户投诉，确保和提升客户满意度；</p>'+
+'<p class="qq">4.参与外卖销量等各项数据的汇总、分析与反馈；</p>'+
+'<p class="qq">任职要求：</p>'+
+'<p class="qq">1.良好的沟通能力、服务意识，待人热情；具有同岗位经验者优先；</p>'+
+'<p class="qq">2.普通话标准，对电话、网络沟通有一定的经验与技巧；</p>'+
+'<p class="qq">3.具备较好的团队合作能力，妥善处理各项协作关系；</p>'+
+'<p class="qq">4.听从安排，能够严格按岗位标准操作；</p>'+
+'<p class="qq">5.较强的上进心，对餐饮行业有较高的热情；</p>'+
+'<p class="qq">6.对互联网平台有一定聊挨饿，能够熟练使用各类办公软件；</p>'+
+'<p class="qq">联系方式：久号餐饮  18959199635</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+{
+        id:15,
+        title:'福建省久号餐饮管理有限公司诚聘外卖平台维护',
+        company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'<p class="qq">福建省久号餐饮管理有限公司，创立于1999年，是一家集专业膳食、营养配餐为一体，具备较强竞争力和发展潜力的中式餐饮服务企业。'+
+'久号中式快餐，以方便快捷的自助形式，契合国人快节奏的生活形态，加之精益求精的品质，受到了广大顾客的喜爱。'+
+'公司以“完美品质、贴心服务、安全卫生、客户满意”的经营理念作为引领企业前行的指向标，依托先进的管理模式和专业高效的运营团队，经过几代久号人的持续努力，久号从一家几十平米的小店面逐步发展成长为拥有近30家直营店、400余名员工的成熟企业。凭借优质的产品和卓越的服务，久号餐饮已成为福州地区中式餐饮的标杆式连锁品牌，拥有大批忠实的消费客群。'+
+'二十年来，久号餐饮始终秉持“为中国、做好饭”的企业使命，立足品质、创新发展、合作共赢，先后与中科院福建物质结构研究所、晋安区服务中心、仓山区政府、福州大学、福建农林大学、福建工程学院、山姆沃尔玛在内的数十家企事业单位、高校建立了良好的合作伙伴关系，成为福州地区极具品牌影响力的餐饮企业。'+
+'“十年如一日，只为做好饭”，二十年的辛勤耕耘，和对优秀品质始终如一的坚持，造就了久号今天的发展与成绩。二十年来，久号持续致力于专业人才团队的培养，为员工构筑共赢合作的梦想平台，将打造中国最具信赖的餐饮品牌作为企业不懈奋斗的终身目标。</p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'<p class="qq">岗位职责：</p>'+
+'<p class="qq">1.负责公司线上外卖平台、网站等的日常维护工作，保证平台的正常运行；</p>'+
+'<p class="qq">2.密切关注平台的运行情况，发现问题及时汇报，并协调相关部门尽快解决；</p>'+
+'<p class="qq">3.做好活动通知，活动资料、活动图片的及时上传；</p>'+
+'<p class="qq">4.完成上级领导交办的其他各项工作。</p>'+
+'<p class="qq">任职要求：</p>'+
+'<p class="qq">1.专科及以上学历，计算机，网络管理等相关专业，一年以上网站工作经验；</p>'+
+'<p class="qq">2.掌握Photoshop,Dreamweaver等网站工具使用；</p>'+
+'<p class="qq">3.精通平台维护相关知识、善于整合资源；</p>'+
+'<p class="qq">4.熟练使用办公软件。</p>'+
+'<p class="qq">联系方式：久号餐饮  18959199635</p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:302,
+        publishTime:'2017/7/6'
+    },
+    {
         id:0,
         title:'福州荣誉大酒店招聘行政文员一名',
         company:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
