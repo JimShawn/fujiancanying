@@ -172,7 +172,7 @@
 							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.industryInfo">更多></a>
 						</h2>
 						<ul>
-							<li ng-repeat="info in infoList.transferInfo | slice:0:7"><a ui-sref="main.transformInfo({item:info})">{{info.title}}</a></li>
+							<li ng-repeat="info in infoList.transferInfo | slice:0:7"><a ui-sref="main.transformInfo({item:info})">{{info.title.substr(0, 20)}}{{info.title.length > 20 ? '...' : ''}}</a></li>
 						</ul>
 					</div>
 					<div class="line-vertical"></div>
@@ -181,7 +181,7 @@
 							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.industryInfo">更多></a>
 						</h2>
 						<ul>
-							<li ng-repeat="info in infoList.labourInfo | slice:0:7"><a ui-sref="main.labourInfo({item:info})">{{info.title}}</a></li>
+							<li ng-repeat="info in infoList.labourInfo | slice:0:7"><a ui-sref="main.labourInfo({item:info})">{{info.title.substr(0, 20)}}{{info.title.length > 20 ? '...' : ''}}</a></li>
 						</ul>
 					</div>
 					<div class="line-vertical"></div>
@@ -190,7 +190,7 @@
 							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.industryInfo">更多></a>
 						</h2>
 						<ul>
-							<li ng-repeat="info in infoList.foodInfo | slice:0:7"><a ui-sref="main.foodInfo({item:info})">{{info.title}}</a></li>
+							<li ng-repeat="info in infoList.foodInfo | slice:0:7"><a ui-sref="main.foodInfo({item:info})">{{info.title.substr(0, 20)}}{{info.title.length > 20 ? '...' : ''}}</a></li>
 						</ul>
 					</div>
 				</div>
