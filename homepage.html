@@ -1,19 +1,32 @@
 <div style="width: 1920px;" ng-controller="HomePageController">
-
-			
-			<div style="width: 100%;height: 400px;background: url(./resources/img/food1_02.jpg); background-size:100% 100%; background-repeat:no-repeat; text-align: center;">
-				
-				<div style="width:1140px; margin-left:auto; margin-right: auto; font-size: 16px; color: #000000; cursor: pointer; height: inherit;">
-					<p style="line-height: 50px; font-size: 36px; padding-top: 40px;">2017福建餐饮产业发展大会</p>
-					<p style="line-height: 50px; font-size: 42px; color: #8C2026;">提升闽菜竞争力  加快闽菜走出去</p>
-					<p style="line-height: 16px; margin-top: 40px; margin-bottom: 2px;"><span style="font-weight: bold; margin-left: 17px;">指导单位：</span><span style="letter-spacing: 19px;">福建省商务厅</span></p>
-					<p style="line-height: 16px; margin-bottom: 2px;"><span style="font-weight: bold;">主办单位：</span><span style="letter-spacing: 1.5px;">福建省餐饮烹饪行业协会</span></p>
-					<p style="line-height: 16px; margin-bottom: 2px;"><span style="font-weight: bold;">协办单位：</span>各市县区餐饮烹饪行业协会</p>
-					<p style="line-height: 16px; margin-bottom: 2px;"><span style="margin-left: 92px;letter-spacing: 13px;">中国网海峡频道</span></p>
-					<p style="line-height: 16px; margin-bottom: 2px;"><span style="margin-left: 80px;">福建天益餐饮管理有限公司</span></p>
+			<!--banner-->
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-size:100% 100%; background-repeat:no-repeat; text-align: center;" >
+				<ol class="carousel-indicators"  style="margin-bottom:-10px;">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="./resources/img/banner1.jpg" style="width: 100%; height: 400px; " data-src="" alt="First slide">
+					</div>
+					<div class="item">
+						<img src="./resources/img/banner2.jpg" style="width: 100%; height: 400px; " data-src="" alt="Second slide">	
+					</div>
+					<!-- <div class="item">
+						<img src="./resources/img/banner3.jpg" style="width: 100%; height: 400px; " data-src="" alt="Second slide">	
+					</div> -->
 				</div>
-
+				<!-- Controls -->  
+				<a class="left carousel-control" href="#myCarousel" data-slide="prev" style="margin-top:80px; height:30px; display:none">&lsaquo;</a>
+				<a class="right carousel-control" href="#myCarousel" data-slide="next" style="margin-top:80px; height:30px; display:none">&rsaquo;</a>
 			</div>
+
+			<script>
+				$('.carousel').carousel({
+					interval: 4000
+				})
+			</script>
 			
 
 			<div class="container" style="width: 1140px; height: 332px;">
@@ -234,13 +247,5 @@
 					</div>
 				</div>
 			</div>
-
-					
-
-					
-					
-					
-					
-
 		</div>
 	</div>
