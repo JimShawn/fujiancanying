@@ -3529,6 +3529,1258 @@ industryinfo.constant('info', {
         publishTime:'2010/9/3'
     }],
     foodInfo:[{
+        id:1,
+        title:'福建金厨世家食品发展有限公司',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           '+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   福建金厨世家食品发展有限公司是佳客来拥有十多年西餐连锁经营经验的基础上成立的一家专业从事肉类食品集研发、生产和销售为一体的综合型现代化企业。公司已累计投资达二亿八千万元，经过十多年的发展，已形成了完备的管理运营体系，公司设置有肉牛养殖基地、调味生产基地、食品加工厂、产品研发中心、物流配送中心、市场开发部等。'+
+'经过多年的发展，公司已荣获“中国绿色餐饮企业”、“中国餐饮百强企业”、“福建最具影响力特许品牌”、“中国最具竞争力优势连锁品牌”、“福建省著名商标”、“福州市知名商标”等荣誉称号。2014年被吸纳为“中国烹饪协会名厨专业委员会荣誉主任单位”。'+
+'中国知名的牛排连锁机构佳客来（福建）餐饮连锁管理有限公司，创建于2001年，经过十多年的发展，至今已有近400家连锁分店分布于全国大中城市。“佳客来”在倡导健康饮食新风尚的同时，更兼顾美味，在广大群众心中树立了“吃牛排就到佳客来”的好口碑；更有专业食品生产加工公司——福建雅力士食品有限公司，为金厨世家产品的质量安全保驾护航。福建雅力士食品有限公司采用当今世界最先进的现代食品加工工艺，引进德国全自动生产线，实现生产、加工流程全过程微机电脑控制，并严格采用ISO9001-2000/HACCP生产质量管理体系来确保产品质量的稳定。'+
+'金厨世家以“责任、高效、共赢”为企业核心文化，精心打造“金”字品牌。以诚取信，以信取胜，金厨世家期待与广大合作伙伴携手共赢，用金色光芒照耀辉煌成长路。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/金厨世家.jpg" width="420" height="158">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品信息'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   半筋半肉'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： BEEF WITH TENDON'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 400g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：取料独特 口感爽脆'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：将半筋半肉加热后拆包，取出放入盘中蒸热，用原汤汁勾上薄芡即可，上面加上青红椒片点缀，可根据烹调需要用铁板，砂锅，干锅，炒等多种烹调方法'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/半筋半肉.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   泰式牛筋腩'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： THAILAND STYLE SIRLOIN'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 400g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：快捷方便 口感软糯'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：将牛筋腩自然化冻，用微波或笼蒸十分钟左右，取出放入盘中用原汤汁勾上薄芡即可，上面加上青红椒片点缀，可根据烹调需要改变多种烹调方法。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/牛筋腩.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   澳式牛仔'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： AUSTRIALIAN BEEF SHORT RIBS'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 450g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：肉质爽口 味道香辣'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：①自然解冻的牛仔骨，放入煎锅用牛油煎至表皮金黄色熟透后，再放入干葱、洋葱、蒜片爆香之后调入黑胡椒汁，片刻装盘即可。②在煲仔或铁板中放入牛油、京葱爆香，放入煎过牛仔骨，淋入黑椒汁烧开，趁热上菜即可。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/澳式牛仔.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   煎鸡'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： FRYING CHICKEN'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 240g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：风味独特 取材新颖'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：自然化冻，拌均匀，用不粘锅干煎，淋上鲍汁，黑胡椒汁口味更佳。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/煎鸡.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   广式脆肉柳'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： GUANGDONG STYLE CRISPY MEA'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 350g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：食用便捷 口感爽脆'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：自然化冻后，上香油拌匀，再拉油或过水。一般用于爆炒、做羹、烧烤、盐焗、水煮、铁板烧、滚油焗、青瓜烩汤、也可烫火锅等。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/广式脆肉柳.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   港式精排骨'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： GOLD METAL BONE'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 400g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：肉香馥郁 肉质鲜嫩 取料独特 外酥里嫩 香而不腻'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：将精排骨自然解冻后拌均匀放入五、六成热油锅中，炸熟至表皮呈金黄色即可捞出滤干，改刀装盘点缀即可食用，食用时可配上生菜叶加入沙拉酱即可。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/港式精排骨.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   澳舌'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： AUSTRIALIAN PORK TONGUE'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 300g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：舌肉滑嫩 鲜香可口'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：自然化冻后，过油或飞水后，可用于爆炒、铁板焗、XO酱爆、做羹汤、火锅均可。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/澳舌.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   猪虎掌'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： PORK HOCK'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 400g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：酱汁香浓 肥而不腻。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：猪虎掌（制作中可去掉少量的油）用六至七成油锅炸至淡黄捞出。用上汤、味精、香料、蚝油，小火焖三十分钟左右，熄火再至汤汁冷却后捞出。将焖过猪虎掌与板栗、高汤、炸过，蒜仁、青红辣椒片大火收浓汁装盘即可。也可用卤、焖、炖、煨等烹调方法。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/猪虎掌.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   福牛道佳'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： GOOD BEEF GOOD TASTE'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 260g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   选材有道:'+
+'精选澳洲进口带有少许雪花的牛霖芯肉及，肉质细嫩的牛肉，经过特别的工艺制作而成，在烹调方面简单、快捷，自然化冻后，可用烫火锅，滑炒，鲍汁等，是一道别具一格的牛肉特色菜。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：'+
+'1.将自然化冻好的福牛道佳加入少许生粉轻轻的拌均匀；'+
+'2．热锅冷油放入福牛道佳轻轻滑熟滤干待用；'+
+'3.少许油入锅，爆香五米料加入黑椒汁倒入福牛道佳，翻炒即可装入烧好的铁板。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   注意事项：福牛道佳要解冻好，操作方面需要轻拌轻放，以防肉破碎'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：选材独特 口感韧脆爽滑'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/福牛道佳.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   蒜香小小排'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： POPK CHOP IN GARLIC SAUCE'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 350g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：蒜香风味 香脆可口。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：将蒜香小小排自然解冻后放入六七成熟油锅中炸至熟透后捞起，回油锅炸至金黄色表皮酥脆装盘即可食用。食用时可配上炸好蒜蓉、椒盐，效果更佳。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/蒜香小小排.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   金厨小牛'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： SF BEEF'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 300g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：口感嫩滑 弹性爽口'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：自然化冻后，上香油拌匀，再拉油或过水，用于辅料爆炒，滑炒均可，火锅食用口味独特。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   雪花牛仔粒'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： SNOWFLAKE BEEF CUBES'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 260g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品特点：肉质爽口 口感滑嫩'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：将软香骨自然解冻，放入少许花生油搅拌均匀，放入五六成油温浸炸至熟捞起，然后猛火把油温升至七八成热复炸至表皮金黄色，用炸过的龙虾片或炸过的粉丝装盘即可。软香骨一定要炸至熟透软骨酥脆可口。用孜然炒、避风塘炒、黄飞鸿辣椒炒。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/雪花牛仔粒.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   秘制软香骨'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： CHICKEN KEBABS'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 300g  '+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：口感香脆 风味独特'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：将雪花牛仔粒自然化冻，手抓均匀，放入四成油温，滑油沥干待用，配上青椒，黄椒，红椒及洋葱爆炒即可'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/秘制软香骨.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   蚝油牛柳'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： GUANGDONG STYLE BEEF FILLET'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 300g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：口感爽滑 味道正宗'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：自然化冻后，上香油拌匀再拉油或过水。用辅料爆炒，可做羹汤或火锅，食用口味独特。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/蚝油牛柳.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   金厨猪颈肉'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： GOLDEN COOK PORK NECK'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 350g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：风味独特 肉质爽脆'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：①油温加热至四成时，将整块解冻后的猪颈肉浸炸至熟捞起，并与七成油温抢油复炸至表皮金黄，改刀切片装盘即可。（食用时沾少许椒盐或胡椒粉口味更佳。）②可解冻后做烧烤或者改刀切成丝片做羹汤等'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/金厨猪颈肉.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   韩舌'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： KOREAN PORK TONGUE'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 300g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：舌肉滑嫩 鲜香可口'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：自然化冻后，过油或飞水后，可用于爆炒、铁板焗、XO酱爆、做羹汤、火锅均可。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/韩舌.jpg" width="357" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   黄金粒粒香'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   英文名称： GOLD PORK'+
+'               </p>'+
+'               <p class="qq">'+
+'                   •   产品规格： 300g'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品特点：口感爽脆?肉质香嫩?味道香辣'+
+'               </p>'+
+'               <p class="qq">'+
+'                   烹调方法：粒粒香自然化冻拌均匀，起油锅至四成热时，下粒粒香炸熟捞起，复油温至六七成热放入粒粒香复炸至酥黄捞起滤干油。起锅下底油爆香五米料，放入炸过粒粒香，椒盐，炸香蒜蓉，炒匀装盘即可食用。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/黄金粒粒香.jpg" width="357" height="244">'+
+'               </p>'+
+'               '+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:562,
+        publishTime:'2017/7/7'
+    },{
+        id:1,
+        title:'福建北记食品有限公司',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           '+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   福建北记食品有限公司是一家专业从事食品研发、生产、销售的综合性现代化企业，成立至今，已有多年研发、生产与销售的成功历程，公司凭借自有的核心技术及专业的研发队伍，始终以“创新”为核心竞争力，已成长为时尚食材的先行者，引领食品市场新潮流！'+
+'        公司历来重视产品质量安全，建立有完善的质量和食品安全管理体系，从采购、生产、运输等各个环节，层层把关，并不断引进国内、外先进生产设备，建成高产能的食品生产基地，可生产点心类、肉类、海鲜类、手工菜等多种食品，产品全部通过食品“质量安全”认证，多次在国内专业大赛中荣获金牌菜等荣誉，无论在营养卫生，还是在口味质量上都赢得了消费者的青睐和市场的一致好评！'+
+'        公司秉承“专业北记，五星品质”的理念，以打造中国手工菜系领导品牌为己任，并一直致力于北记食品产业化形成和规模化发展，公司以高品质的产品、严密的质检手段，严格的经营管理打造出了“北记”这一优秀品牌，我们坚持不仅为市场提供优质的产品，更与合作伙伴达成共同发展的目标，“北记”热诚期待与全国合作伙伴携手发展，共同开创中国食品汗液的新纪元！'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品信息'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/北记.jpg" width="278" height="170">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/北记产品信息.jpg" width="558" height="538">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/北记产品信息2.jpg" width="557" height="231">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/北记产品信息3.jpg" width="519" height="562">'+
+'               </p>'+
+'               '+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:461,
+        publishTime:'2017/7/7'
+    },{
+        id:1,
+        title:'福建省亚明食品有限公司',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           '+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   亚明食品创立于2003年在天上圣母妈祖的故乡--福建莆田，是一家专业从事“中式酒店菜肴标准化”研发、生产、销售为一体的国家高企、是中国国家级高新技术企业领先品牌、是中式菜肴标准化生产福建标杆企业。  '+
+' 在创始人吴其明先生的带领下，经过三十年的技术沉淀，自主研发创新发明19项以上专利………，开发出一系列产品丰富新颖、口味稳定独特、烹饪方便快捷的经典名菜，为广大酒店和服务性餐饮企业提供安全卫生、品质上乘的经典名菜。'+
+'吴其明先生操盘企业13年所打造的团队，专心专注、狼性十足，面对市场毫无畏惧，倾力把公司财务系统、组织系统、营销系统、生产系统打造成专业化、规范化、标准化公司，成为业界楷模，在中式酒店菜肴领域独树一帜，拥有较高的市场占有率，在全国29个省（直辖市）设立合作办事处，拥有完善的销售网点。 '+
+'  吴其明先生在企业蓬勃发展的同时不忘回馈社会，积极参与社会慈善公益事业，并成立“亚明慈善基金”，资助“奖教奖学”“圆贫困学生大学梦”“关爱老人慰问”等慈善公益活动。 '+
+'亚明食品在政府及社会各界人士的厚爱和大力支持下，企业得到跨越式的发展，产品得到业界同仁及市场的肯定和认可。2008年荣获“莆田市知名商标”，'+
+'2009年被吸纳为“中国烹饪协会名厨专业委员会荣誉主任单位”；'+
+'2011年获得“莆田市守合同重信用企业”；2011年吸纳为“福建省闽菜研究协会副会长单位”；'+
+'2012年荣获“福建省著名商标”荣誉；'+
+'2013年荣获:“莆田市龙头企业”荣誉，'+
+'2014年第一家荣获：“国家高新技术企业”荣誉的中式酒店菜肴品牌；'+
+'2015年荣获“福建省龙头企业”；'+
+'2016年荣获“中式菜肴标准化生产福建标杆企业”荣誉。'+
+'不过这只是万里长征的第一步，亚明食品将永不止步，勇往直前，竭诚欢迎各届人士前来共谋发展…………'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明.jpg" width="654" height="265">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品信息'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明1.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明2.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明3.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明4.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明5.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明6.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明7.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明8.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明9.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明10.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明11.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明12.jpg" width="291" height="237">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明13.jpg" width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明14.jpg"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明15.jpg"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明16.jpg"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明17.jpg"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明18.jpg"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明19.jpg"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明20.jpg"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明21.png"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明22.png"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明23.png"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明24.png"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明25.png" width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明26.png"  width="298" height="486">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明27.png"  width="590" height="259">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/亚明28.png"  width="298" height="486">'+
+'               </p>'+
+'               '+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:231,
+        publishTime:'2017/7/7'
+    },{
+        id:1,
+        title:'福建达道食品有限公司',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           '+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   福建达道食品有限公司是由福建金牌老字号、福州特色风味小吃达道牛肉当代传人董正伟投资创立的知名品牌企业。'+
+'        达道牛肉，严守祖传工艺，传承百年原味，历经数十载风雨历程，凭借专业的技术和管理团队，遵循现代化的管理制度和品牌经营的连锁模式，有着完善的组织机构及管理体系。强大的优势使得达道牛肉企业迅猛发展，在全国范围内已拥有数十家品牌连锁店，及一家通过国家质监总局QS质量安全体系认证以生产、加工、销售“达道牛肉”特色产品为主的食品生产加工企业。成为拥有自主品牌，集研发、生产、加工、销售、品牌管理为一体的综合型现代企业。'+
+'        企业采取现代食品安全生产经营管理模式，由公司（工厂）中央厨房生产加工半成品原材料，配以浓缩牛骨营养高汤，由达道专业物流配送中心用保鲜冷藏车配送至下属各门店及超市熟食专柜使用，实现了商品量化及流程标准化管理。“全牛”系列产品在沃尔玛、好又多、永辉、世纪联华、新华都等大型国际品牌超市中热销，深受广大商家，消费者和海内外游客喜爱。'+
+'        达道牛肉将美食文化与先进的管理、经营模式及理念融入到企业发展中，立足于开发生产牛肉滑、牛杂、牛肚、牛筋等“全牛”系列产品，致力打造成为海西第一“牛”品牌，并将主导的文化与生活、休闲方式普及到每一座城市和每一个家庭里。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                                   企业荣誉：'+
+'               荣获“全国食品行业名优品牌”称号'+
+'               荣获“福建百佳品牌特色餐饮名店”称号'+
+'               荣获“福建金牌老字号”称号'+
+'               荣获“中华老字号传承与创新先进单位”称号'+
+'               荣获“福州市知名商标”称号'+
+'               荣获“文明诚信个体工商户”称号'+
+'               荣获福州第四届美食节风味美食展优秀奖'+
+'               荣获福州第四届美食节风味美食展“十佳品牌风味小吃”称号'+
+'               荣获福州第五届美食节优胜单位'+
+'               历届6•18中国海峡项目成果交易会指定供餐企业'+
+'               历届5•18中国海峡两岸经贸交易会指定供餐企业'+
+'               </p>'+
+'               <p class="qq">'+
+'                   现有直营门店如下，欢迎各位莅临指导 ：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品信息'+
+'               </p>'+
+'               <p class="qq">'+
+'                   福州达道食品有限公司       '+
+'地址：福州市台江区达道路1号'+
+'电话：0591-88330777         '+
+'传真：0591-87111686         '+
+'网址：www.fzddsp.com        '+
+'邮箱：fzddsp@188.com'+
+'               </p>'+
+'               <p class="qq">'+
+'                   达道牛肉-中亭街总店'+
+'地址：福州市台江区达道路1号'+
+'电话：0591-83668777'+
+'               </p>'+
+'               <p class="qq">'+
+'                   达道牛肉-中亭街利民苑店（可送餐）'+
+'地址：台江区中亭街利民苑G区3楼143号'+
+'电话：0591-83296666 '+
+'               </p>'+
+'               <p class="qq">'+
+'                   达道牛肉-河下店'+
+'地址：台江区河下街24号'+
+'电话：0591-83277577'+
+'               </p>'+
+'               <p class="qq">'+
+'                   达道牛肉-鳌峰店 （可送餐）'+
+'地址：台江区光明路光明港新村7号店面（东南妇幼医院下，一楼店面）'+
+'电话：0591-83929067'+
+'               </p>'+
+'               <p class="qq">'+
+'                   达道牛肉-万达店（可送餐）'+
+'地址：台江区万达广场室外步行街1F-104店 '+
+'电话：0591-8835967'+
+'               </p>'+
+'               <p class="qq">'+
+'                   达道牛肉-福飞店（可送餐）'+
+'地址：鼓楼区福飞路198号（国棉永辉对面，儒庭酒店下，一楼店面）'+
+'电话：0591-83839656 '+
+'               </p>'+
+'               <p class="qq">'+
+'                   达道牛肉-杨桥店（可送餐）'+
+'地址：鼓楼区杨桥西路145号（山姆沃尔玛侧对面）'+
+'电话：0591-83712997'+
+'               </p>'+
+'               <p class="qq">'+
+'                   达道牛肉-融侨店'+
+'地址：鼓楼区融侨锦江B区2期(融侨永辉旁)'+
+'电话：0591-83778213'+
+'               </p>'+
+'               <p class="qq">'+
+'                   达道牛肉-福新店'+
+'地址：鼓楼区五一路129号（鼓楼医院对面，榕城商贸中心楼下，一楼店面）'+
+'电话：0591-87620967'+
+'               </p>'+
+'               <p class="qq">'+
+'                   达道牛肉-先锋店（可送餐）'+
+'地址：仓山区展进巷38号-2号店'+
+'电话：0591-87621333'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   产品信息'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/达道.jpg" width="675" height="385">'+
+'               </p>'+
+'               '+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:145,
+        publishTime:'2017/7/7'
+    },{
+        id:1,
+        title:'福州力马贸易有限公司',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           '+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   福州力马贸易有限公司，是一家以经营食品为主的贸易公司，公司现有员工近百人，销售网络遍及福州市区及八县市，拥有上佳的经营口碑与出色的市场运作及操控能力，是福州市综合实力较强的食品贸易专业行销机构之一。 '+
+'公司总部位于福州市区台江区后洲街道江滨中大道86号福泰华庭12楼，设有业务部、市场部、财务部、储运部、综管部，四家分公司（泉州、南平、宁德、福州），多个驻地办事处......'+
+'一直以来，凭借着发达完善的销售网络、诚信的口碑、互惠互利的合作模式，成为了众多知名企业稳定的合作伙伴；'+
+'公司成立至今，基本形成了一个充满活力、适应性强、高效运转的公司管理体系，取得了显著的成就，并为公司的可持续发展提供了强有力的保障。 '+
+'               </p>'+
+'               <p class="qq">'+
+'                   携手翔锦，与您共创新辉煌！ '+
+'               </p>'+
+'               <p class="qq">'+
+'                   公司性质：   民营'+
+'               </p>'+
+'               <p class="qq">'+
+'                                   公司规模：   100-499人'+
+'               </p>'+
+'               <p class="qq">'+
+'                   现有直营门店如下，欢迎各位莅临指导 ：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   公司行业：   快速消费品（食品/饮料/烟酒/日化）'+
+'               </p>'+
+'               <p class="qq">'+
+'               公司地址：   福州市台江区后洲街道江滨中大道86号福泰华庭12楼801室'+
+'               </p>'+
+'               <p class="qq">'+
+'                   主营项目：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   批发生抽'+
+'               </p>'+
+'               '+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:213,
+        publishTime:'2017/7/7'
+    },{
+        id:1,
+        title:'福州市麦渔水产有限公司',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           '+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   福州市麦渔水产有限公司办公室地址位于海峡西岸经济区政治、经济、文化、科研中心，福建省会福州，于2014年04月24日在福州工商局注册成立，注册资本为100.000000万人民币（万元），在公司发展壮大的3年里，我们始终为客户提供最好的产品、良好的技术支持、健全的售后服务，我公司主要经营批发预包装食品兼散装食品；鲜活水产品、冷冻水产品、新鲜果蔬、初级农产品（不含直接入口食品）的加工及批发、代购代销；畜禽产品、调味料、建筑材料、五金交电（不含电动自行车）、日用百货、办公用品、服装鞋帽的批发、代购代销；自营和代理各类商品和技术的进出口，但国家限定公司经营或禁止进出口的商品和技术除外。（依法须经批准的项目，经相关部门批准后方可开展经营活动），我们有最好的产品和专业的销售和技术团队，我公司是福州水产品加工厂黄页行业内知名企业，如果您对我公司的产品服务有兴趣，期待您在线留言或者来电咨询'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   联系方式'+
+'               </p>'+
+'               <p class="qq">'+
+'                   公司地址：福州市马尾区马尾镇兴业西路59号（加工车间）综合楼310'+
+'               </p>'+
+'               <p class="qq">'+
+'                   联系电话：13635286066'+
+'               </p>'+
+'               <p class="qq">'+
+'                   经营范围：'+
+'               </p>'+
+'               <p class="qq">'+
+'                   批发预包装食品兼散装食品；鲜活水产品、冷冻水产品、新鲜果蔬、初级农产品（不含直接入口食品）的加工及批发、代购代销；畜禽产品、调味料、建筑材料、五金交电（不含电动自行车）、日用百货、办公用品、服装鞋帽的批发、代购代销；自营和代理各类商品和技术的进出口，但国家限定公司经营或禁止进出口的商品和技术除外。'+
+'               </p>'+
+'               '+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:178,
+        publishTime:'2017/7/7'
+    },{
+        id:1,
+        title:'福州素天下食品有限公司',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           '+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   福州素天下食品有限公司创办于2001年，是一家专业从事素食文化研究、素食品研发生产销售于一体的实业公司。公司现有"魔芋制品"、"大豆蛋白制品"与"食用菌制品"三大系列60多个畅销产品，规模在全国行业排名前列,获"福建省农业产业化龙头企业"、"中国素食专家"、"福建省著名商标"等荣誉称号。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   Fuzhou Sotia Food Co., Ltd. was established in 2001, is a manufacturer specialized in culture research, development and production of vegetarian & healthy food. Currently we have 3 series, "Konjac", "Soybean Protein" and "Edible Fungus" which including more than 60 kinds of popular food. Sotia is among the top ranking in the food industry and win the awards as "Fujian Agricultural Industrial Leading Enterprise", "China Vegetarian Experts" and "Fujian Famous Trademark" etc.'+
+'               </p>'+
+'               <p class="qq">'+
+'                   公司拥有行业领先的生产加工设备，先进的微生物检测、质量检测及监控系统，并通过欧盟ISO9001/HACCP双体系认证。融传统工艺配方与现代技术标准为一体，每种产品从原料基地品种选择到生产加工，环环控制，层层把关，严格遵循QS加工标准作业程序，确实做到卫生、安全、高质量的要求，确保每个产品卫生都符合质量要求、不断提高产品的质量，让客户满意。公司与高校、科研院所加强产研合作，不断推陈出新，追求品质特色。'+
+'               </p>'+
+'               <p class="qq">'+
+'                     Our well-equipped facilities and excellent microbe test, quality control and supervision system throughout all stages of production enable us to guarantee total customer satisfaction. Besides, we have received both ISO9001 and HACCP certificate. Combined with the essence of both traditional recipe and modern technology, the strict QS system was implemented in each link from materials entering, production to finished products leaving plant, which could guarantee the hygiene, safety and quality effectively. We also strengthen the cooperation with some university & college and research institute, continuously to weed through the old to bring forth the new and guarantee the standard of all products.'+
+'               </p>'+
+'               <p class="qq">'+
+'                   素天下自创业以来一直以"做素食行业的灯塔"为导向，本着"创意乐膳好生活"为企业目标，遵循"发现、合理、分享"运营方式，带领素天下全体员工对产品研发、产品推广不断革新，力求满足当代消费者的健康饮食需求。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   '+
+'                    Since the establishment of Sotia, our vision is "to be the light house in the vegetarian food product area" and our mission is "creative, good in color & favor & taste and create healthy life". Abide by our operation principle "discover (realize the problem & opportunity), reasonable (get used to the habits) and share (cooperation)", we will make continuous efforts on the product development and satisfy our consumers requirements on health food.'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   公司名称：福州素天下食品有限公司 '+
+'               </p>'+
+'               <p class="qq">'+
+'                   公司地址：福建省福州市仓山区建新镇红江路8号金山工业集中区浦上工业园D区  '+
+'               </p>'+
+'               <p class="qq">'+
+'                   联系电话：86 -591 - 83852228'+
+'               </p>'+
+'               <p class="qq">'+
+'                   传真电话：0591-83845809'+
+'               </p>'+
+'               <p class="qq">'+
+'                   电子邮件：stx@sotian.cn'+
+'               </p>'+
+'               '+
+'               <p class="qq">'+
+'                   公司网址: http://www.sotia.cn/'+
+'               </p>'+
+'               <p class="qq">'+
+'                   Name of Company： Fuzhou Sotia Food Co., Ltd  '+
+'               </p>'+
+'               <p class="qq">'+
+'                   Address： Block D, Pushang Industrial Park, JInshan, No.8 Hongjiang Road,'+
+'           Jianxin Town, Cangshan District, Fuzhou, Fujian'+
+'               </p>'+
+'               <p class="qq">'+
+'                   Tel ：86 -591 - 83852228'+
+'               </p>'+
+'               <p class="qq">'+
+'                   Fax ：0591-83845809'+
+'               </p>'+
+'               <p class="qq">'+
+'                   Email： stx@sotia.cn'+
+'               </p>'+
+'               '+
+'               <p class="qq">'+
+'                   Website：http://www.sotia.cn/'+
+'               </p>'+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   产品信息'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/素食天下1.jpg" width="557" height="328">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/素食天下2.jpg" width="557" height="328">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/素食天下3.jpg" width="557" height="328">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/素食天下4.jpg" width="557" height="328">'+
+'               </p>'+
+'               '+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:125,
+        publishTime:'2017/7/7'
+    },{
+        id:1,
+        title:'福州泽霖食品有限公司',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           '+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   福州泽霖食品有限公司是一家专业从事海蜇捕捞、加工、销售为一体的企业，公司位于福建省福州市甘洪路闽侯铁岭工业集中区一期九号西路六号。自1992年创建伊始，公司就秉承“诚信、敬业、合作、创新”的经营理念，以向消费者奉献“绿色、健康、安全”的食品为已任，创立了“闽洋”品牌即食海蜇和盐渍海蜇系列两大类产品100多品种。“闽洋”海蜇，精选优质天然海蜇为原料，采用传统工艺与现代先进加工技术相合，精心制作，口感脆嫩，味道鲜美，方便即食。“闽洋”海蜇，代表着福建沿海地方特色海产品，是日常佐餐、宴请宾客、休闲野餐、旅游特产、馈赠亲友之佳品。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   “闽洋”海蜇荣获了福州市知名商标、福建省著名商标、中国第一届青年运动会特许生产商、明星供应商、优秀企业、旅游好商品、09年度CCTV-2上榜品牌荣誉称号。福州泽霖食品有限公司在同行业中首批通过国家质量安全QS认证企业。“闽洋”海蜇不仅畅销国内市场，还远销台湾、新加坡、港澳、日本、欧美等国家和地区。现与餐饮连锁企业大丰收、北京青年餐厅、令狐冲、周麻婆、桥亭小镇、蜀王集团等已达成战略合作伙伴。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   公司恪守诚信经营，以高品质、严管理、细核算、优服务的经营标准，努力加强与国内外客商的交流，真诚欢迎国内外客商莅临洽谈合作！'+
+'               </p>'+
+'               '+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   地 址：福建省福州市福兴投资区埠兴路4号'+
+'               <p class="qq">'+
+'                   电 话：0591-22989089'+
+'               </p>'+
+'               <p class="qq">'+
+'                   传 真：0591-22987369'+
+'               </p>'+
+'               <p class="qq">'+
+'                   邮　箱：648593013@qq.com'+
+'               </p>'+
+'               <p class="qq">'+
+'                   网　址：www.zelinfood.com.cn'+
+'               </p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   产品信息'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/泽霖1.png" width="600" height="404">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/泽霖2.png" width="600" height="404">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/泽霖3.png" width="600" height="404">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/泽霖4.png" width="600" height="404">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/泽霖5.png" width="600" height="404">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/泽霖6.png" width="600" height="404">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/泽霖7.png" width="600" height="404">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/泽霖8.png" width="600" height="404">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/泽霖9.png" width="600" height="404">'+
+'               </p>'+
+'               <p class="qq">'+
+'                   <img src="./resources/img/foodinfo/泽霖10.jpg" width="314" height="203">'+
+'               </p>'+
+'               '+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:153,
+        publishTime:'2017/7/7'
+    },{
+        id:1,
+        title:'连城县明源养殖专业合作社',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           '+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   连城县明源养殖专业合作社是由一百多家养殖户合作而成。我们有丰富的白鸭资源和优越的养殖条件，我们有着良好的合作体系和科学的管理方法，我们有着悠久的养殖历史和强大的科研支持。超600万的注册资金，愈几百亩的农田养殖场，近二十年的养殖探索经验，数十次的改良，明源白鸭合作社孜孜不倦的追求，就是为了给消费者一个更绿色，更放心，更保健的选择。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   我们的宗旨 质量第一 客户至上 一流的服务 合理的价格！'+
+'               </p>'+
+'               '+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   地址：福建省连城县明源养殖专业合作社</p>'+
+'               <p class="qq">'+
+'                   电话:谢女士13850633548 罗先生13626021052'+
+'               </p>'+
+'               <p class="qq">'+
+'                   QQ：317618988'+
+'               </p>'+
+'               <p class="qq">'+
+'                    网址：www.lcmyby.com'+
+'               </p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   产品信息'+
+'               </p>'+
+'               <p class="qq">'+
+'                   连城白鸭、连城白鸭蛋'+
+'               </p>'+
+'               '+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:145,
+        publishTime:'2017/7/7'
+    },{
+        id:1,
+        title:'厦门陈纪乐肴居食品有限公司',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           '+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   乐肴居食品投身餐饮业已有十余年，一直致力于对健康食品和地道美食进行多方探索。经过十多年的积淀，融合了闽式、粤式、港式和对自己厨艺的传承，逐步发展壮大，且形成了有自我特色的体系，为建立食品公司奠定了坚实的基础。终于，在2012年7月，正式升格为厦门陈纪乐肴居食品有限公司。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   公司总部设在食品加工制造业繁荣的厦门轻工食品园区。是一个占地8000多平方米，配备有现代化厂房，标准化速冻米面车间，设施完善，环境优雅的工业园。公司现有员工1000多名，其中管理及工程人员占公司员工的15%，是一支在行业有着多年经验，且精力充沛的队伍。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   作为一个具有自主特色加工流程的速冻米面制品生产企业，为实现企业价值并提供给广大消费者绿色、健康、美味的御厨佳肴，我司经过多次市场调研，对产品进行传承、研发与改进，先后生产出港式肉夹包、爆汁流沙包、黄金玉米烙、客家芋饺等具有闽粤特色的产品。填补了市场上闽粤风味速冻米面产品的空缺，广受当代人喜爱，且享有很高的美誉度和消费者忠诚度。'+
+'               </p>'+
+'               <p class="qq">'+
+'                   今天，厦门陈纪乐肴居食品有限公司将继续以好的面貌，坚定的品牌传承，稳定的业绩增长，秉承脚踏实地、厚积薄发的创业精神，为实现企业价值，以及消费者需求，一步一个脚印，以品牌美好的未来为希冀迈进！'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   地址  '+
+'福建省厦门市同安区轻工食品园白云大道111号'+
+'               </p>'+
+'               <p class="qq">'+
+'                   电话:0592-7203318'+
+'               </p>'+
+'               <p class="qq">'+
+'                   传真:0592-7203312'+
+'               </p>'+
+'               <p class="qq">'+
+'                    微信公众号 leyaoju 客服 lyjfood'+
+'               </p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   产品信息'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/陈纪乐1.png" width="568" height="197">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/陈纪乐2.png" width="568" height="197">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/陈纪乐3.png" width="568" height="197">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/陈纪乐4.png" width="568" height="197">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/陈纪乐5.png" width="568" height="197">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/陈纪乐6.png" width="568" height="197">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/陈纪乐7.png" width="568" height="197">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/陈纪乐8.png" width="568" height="197">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/陈纪乐9.png" width="568" height="197">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/陈纪乐10.png" width="568" height="197">'+
+'               </p>'+
+'               '+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:121,
+        publishTime:'2017/7/7'
+    },{
+        id:1,
+        title:'厦门绿进食品有限公司',
+        content:'<table width="100%" height="58" border="0" cellpadding="0" cellspacing="1" bgcolor="#A8BDD7">'+
+'   <tbody>'+
+'       <tr>'+
+'           '+
+'       </tr>'+
+'       <tr>'+
+'           <td bgcolor="#FFFFFF" class="pd5 green2">'+
+'               <p>'+
+'                   <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   2004年，我们扎根于美丽的国际花园城市-厦门，经过多年来的拼搏磨砺中不断地成长，逐渐树立了自己的品牌，成为了家喻户晓的食品企业。公司拥有占地面积四万多平的办公场所，拥有强大的技术团队和各种大型的现代化制品车间，拥有德国、日本和台湾的先进生产技术和现代化生产设备，拥有成熟的生产技术管理和服务模式，服务于各种酒店、宴会及其它服务性配餐企事单位的美食研发与生产。俗话说:真金不怕火炼!如此严谨的基础配备，奠定了品牌创造价值的永恒定律。'+
+'               </p>'+
+'               <p class="qq">'+
+'                    "绿进"品牌在深耕市场的同时，不会忘记坚持以"源于绿,进无疆"的企业战略为核心，努力开发优质的绿色营养食品，引领市场潮流。"厨师好帮手，绿进帮您做"的服务理念，以客户为中心,全方位提供方便快捷的美食研发及服务支持。目前主营产品有速冻肉制品、菜肴(生)制品、鱼糜制品等系列，产品畅销全国各地。'+
+'               </p>'+
+'               <p class="qq">'+
+'                    经过多年来的努力拼搏，公司在"绿进"相关系列产品成功推广下，又开拓了"松板"、"绿烹"等子品牌产品下沉于市场，为美食行业增添一道亮丽风景线!绿进本着"顾好品质，做好品牌，真诚与您合作"的原则，与您一起创建美食的神话!'+
+'               </p>'+
+'               <p class="qq">'+
+'                   &nbsp;'+
+'               </p>'+
+'               <p class="qq">'+
+'                   免费服务热线：800-858-2815'+
+'               </p>'+
+'               <p class="qq">'+
+'                   网址：www.xmlifood.com'+
+'               </p>'+
+'               <p class="qq">'+
+'                   电话：0592-7201168  7209999'+
+'               </p>'+
+'               <p class="qq">'+
+'                   传真：0592-5362152'+
+'               </p>'+
+'               <p class="qq">'+
+'                   邮编：361100'+
+'               </p>'+
+'               <p class="qq">'+
+'                   邮箱：1346846005@qq.com'+
+'               </p>'+
+'               <p class="qq">'+
+'                   地址：厦门市同安区新民镇梧侣村大店3号'+
+'               </p>'+
+'               <p class="qq">'+
+'                   厦门绿进食品微信号：xmljfood'+
+'               </p>'+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'               <p class="qq">'+
+'                   各区域销售经理联系电话 '+
+'               </p>'+
+'               <p class="qq">'+
+'                   福建大区负责人：苏经理13656013786'+
+'               </p>'+
+'               <p class="qq">'+
+'                   华西大区负责人：耿经理15860719512'+
+'               </p>'+
+'               <p class="qq">'+
+'                   华东大区负责人：李经理13906026051'+
+'               </p>'+
+'               <p class="qq">'+
+'                   浙江大区负责人：郑经理13950171119'+
+'               </p>'+
+'               <p class="qq">'+
+'                   北方大区负责人：朱经理15860716170 '+
+'               </p>'+
+'               <p class="qq">'+
+'                   华南大区负责人：孙经理13859972219 '+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/绿进1.jpg" width="525" height="494">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/绿进2.jpg" width="525" height="494">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/绿进3.jpg" width="568" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/绿进4.jpg" width="568" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/绿进5.jpg" width="568" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/绿进6.jpg" width="568" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/绿进7.jpg" width="568" height="244">'+
+'               </p>'+
+'               <p class="qq">'+
+'                 <img src="./resources/img/foodinfo/绿进8.jpg" width="568" height="244">'+
+'               </p>'+
+'               '+
+'               '+
+'               <p class="qq">&nbsp;</p>'+
+'           </td>'+
+'       </tr>'+
+'   </tbody>'+
+'</table>',
+        scantimes:102,
+        publishTime:'2017/7/7'
+    },{
         id:9,
         title:'霞浦县万丰水产科技有限公司',
         content:'<td align="left" valign="top" class="pd10">'+
