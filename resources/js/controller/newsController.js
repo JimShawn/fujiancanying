@@ -2,6 +2,93 @@ var news = angular.module('news', []);
 
 news.constant("newsList", [
 	{
+	title:'晋江市餐饮烹饪行业协会隆重成立',
+	createdTime:"2017/7/20",
+	readCount:256,
+	brief:'2017年7月18日，晋江市餐饮烹饪行业协会成立大会暨揭牌仪式在晋江市委党校隆重举行，700多位晋江市餐饮业同仁欢集一堂，共同见证了这一历史时刻。晋江市荣誉酒店有限责任公司胡满荣先生当选会长，晋江市乐厨食品有限公司陈山春先生当选执行会长兼秘书长，福誉贸易有限公司李芳龙先生当选监事长。',
+	content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'              <img src="./resources/img/news/new2.jpg" width="640" height="480">'+
+'            </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq">'+
+'         2017年7月18日，晋江市餐饮烹饪行业协会成立大会暨揭牌仪式在晋江市委党校隆重举行，700多位晋江市餐饮业同仁欢集一堂，共同见证了这一历史时刻。晋江市荣誉酒店有限责任公司胡满荣先生当选会长，晋江市乐厨食品有限公司陈山春先生当选执行会长兼秘书长，福誉贸易有限公司李芳龙先生当选监事长。中国烹饪协会副会长李亚光，中国烹饪协会特邀副会长、福建省餐饮烹饪行业协会会长林小龙，中国烹饪协会副秘书长、名厨专业委员会副主席贾传刚，福建省省餐饮烹饪行业协会党支部书记、监事长翁贵明，泉州商务局丁峰局长，晋江副市长李自力，晋江市商务局蔡文卿局长，晋江市民政局副局长张连桥等领导出席成立大会，李自力副市长为晋江市餐饮烹饪行业协会授牌授印。'+
+'        </p>'+
+'        <p class="qq">'+
+'         近年来，晋江市经济的发展带动了餐饮业的繁荣与兴盛，餐饮业态不断丰富，餐饮专业人才不断涌现，菜肴品类更富特色。相信晋江市餐饮烹饪行业协会将成为晋江市餐饮产业链上的企业经营者及从业人员沟通、交流、学习、互助的平台，期待协会充分发挥社团组织的作用，为弘扬晋江饮食文化，促进晋江市餐饮业持续健康发展，推动闽菜走出去的发挥积极作用。'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq">'+
+'              <img src="./resources/img/news/new5.jpg" width="557" height="313">'+
+'        </p>'+
+'        <p class="qq" style="text-align: center;font-size: 20px;">'+
+'              成立大会现场'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq">'+
+'              <img src="./resources/img/news/new6.jpg" width="557" height="348">'+
+'        </p>'+
+'        <p class="qq" style="text-align: center;font-size: 20px;">'+
+'              陈自力副市长为晋江市餐饮烹饪行业协会授牌授印'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq" >'+
+'              <img src="./resources/img/news/new7.jpg" width="557" height="341">'+
+'        </p>'+
+'        <p class="qq" style="text-align: center;font-size: 20px;">'+
+'              中国烹饪协会副会长李亚光先生致辞'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq">'+
+'              <img src="./resources/img/news/new8.jpg" width="557" height="323">'+
+'        </p>'+
+'        <p class="qq" style="text-align: center;font-size: 20px;">'+
+'              中国烹饪协会特邀副会长、福建省餐饮烹饪行业协会会长林小龙先生出席会议'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq">'+
+'              <img src="./resources/img/news/new9.jpg" width="557" height="323">'+
+'        </p>'+
+'        <p class="qq" style="text-align: center;font-size: 20px;">'+
+'              中国烹饪协会副秘书长、名厨专业委员会副主任贾传刚先生致辞'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq" >'+
+'              <img src="./resources/img/news/new10.jpg" width="631" height="384">'+
+'        </p>'+
+'        <p class="qq" style="text-align: center;font-size: 20px;">'+
+'              新当选会长胡满荣先生致辞'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq" >'+
+'              <img src="./resources/img/news/new11.jpg" width="630" height="369">'+
+'        </p>'+
+'        <p class="qq" style="text-align: center;font-size: 20px;">'+
+'              新当选执行会长兼秘书长陈山春先生携全体协会会员宣读《食品安全承诺书》'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq">'+
+'              <img src="./resources/img/news/new12.jpg" width="557" height="366">'+
+'        </p>'+
+'        <p class="qq" style="text-align: center;font-size: 20px;">'+
+'              领导嘉宾合影'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>'
+	},
+	{
 	title:'柘荣县餐饮行业商会赴宝鉴宅村调研“精准扶贫”工作',
 	createdTime:"2017/7/12",
 	readCount:96,
