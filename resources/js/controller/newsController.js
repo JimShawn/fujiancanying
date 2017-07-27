@@ -2,6 +2,298 @@ var news = angular.module('news', []);
 
 news.constant("newsList", [
 	{
+	title:'中共福建省餐饮烹饪行业协会支部委员会成立',
+	createdTime:"2017/7/27",
+	readCount:456,
+	brief:'根据省民政厅社会组织党建的相关要求，结合我会实际情况，我会向中共福建省民政厅社会组织综合委员会申请以兼合组建的方式成立中共福建省餐饮烹饪行业协会支部委员会。2017年6月21日，经省民政厅闽民社党〔2017〕120号文批复同意。',
+	content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'         根据省民政厅社会组织党建的相关要求，结合我会实际情况，我会向中共福建省民政厅社会组织综合委员会申请以兼合组建的方式成立中共福建省餐饮烹饪行业协会支部委员会。2017年6月21日，经省民政厅闽民社党〔2017〕120号文批复同意。7月1日晚，中共福建省餐饮烹饪行业协会支部委员成立大会在福州聚春园会展酒店召开。经过支部党员选举，并报经中共福建省民政厅社会组织综合委员会研究决定，同意翁贵明同志当选担任支部书记。'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new18.jpg" width="557" height="319">'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new19.jpg" width="557" height="787">'+
+'        </p>'+
+'        '+
+'        '+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>'
+	},{
+	title:'首届安溪美食节——暨安溪名厨协会成立一周年庆典活动',
+	createdTime:"2017/7/27",
+	readCount:212,
+	brief:'7月26日成立了一周年的安溪名厨协会将邀请350位业界资深名厨、协会友人在安溪县永隆国际酒店，携手共创首届安溪美食节开启一场精美绝伦的味蕾盛宴',
+	content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'         根据省民政厅社会组织党建的相关要求，结合我会实际情况，我会向中共福建省民政厅社会组织综合委员会申请以兼合组建的方式成立中共福建省餐饮烹饪行业协会支部委员会。2017年6月21日，经省民政厅闽民社党〔2017〕120号文批复同意。7月1日晚，中共福建省餐饮烹饪行业协会支部委员成立大会在福州聚春园会展酒店召开。经过支部党员选举，并报经中共福建省民政厅社会组织综合委员会研究决定，同意翁贵明同志当选担任支部书记。'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new20.jpg" width="800" height="532">'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq">'+
+'         <iframe width=695 height=383 src="http://v.qq.com/iframe/player.html?vid=v0530b5jege&width=670&height=376.875&auto=0"></iframe> '+
+'        </p>'+
+'        <p class="qq">安溪美食节开幕 舞狮子</p>'+
+'        <p class="qq">'+
+'         <iframe width=695 height=383 src="http://v.qq.com/iframe/player.html?vid=m0530pdyubi&width=670&height=376.875&auto=0"></iframe> '+
+'        </p>'+
+'        <p class="qq">名厨 菜品展示</p>'+
+'        <p class="qq">'+
+'         <iframe width=695 height=383 src="http://v.qq.com/iframe/player.html?vid=m0530pdyubi&width=670&height=376.875&auto=0"></iframe> '+
+'        </p>'+
+'        <p class="qq">7月26日'+
+'成立了一周年的安溪名厨协会'+
+'将邀请350位业界资深名厨、协会友人'+
+'在安溪县永隆国际酒店，携手共创首届安溪美食节'+
+'开启一场精美绝伦的味蕾盛宴</p>'+
+'        '+
+'        '+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>'
+	},{
+	title:'福建省餐饮烹饪行业协会首次在福清进行福建省闽菜名师、大师认定',
+	createdTime:"2017/7/27",
+	readCount:435,
+	brief:'2017年7月10日福建省餐饮烹饪行业协会首次在福清进行福建省闽菜名师、大师认定，由福清市餐饮烹饪行业协会组织，活动在福清市千语餐饮培训基地举办。',
+	content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'         2017年7月10日福建省餐饮烹饪行业协会首次在福清进行福建省闽菜名师、大师认定，由福清市餐饮烹饪行业协会组织，活动在福清市千语餐饮培训基地举办。'+
+'        </p>'+
+'        <p class="qq">&nbsp;</p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new21.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         活动在福建省职业培训中心福清千语餐饮培训基地举办'+
+'        </p>'+
+'         <p class="qq">'+
+'         <img src="./resources/img/news/new22.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         名厨们现场展示精湛厨艺'+
+'        </p>'+
+'         <p class="qq">'+
+'         <img src="./resources/img/news/new23.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         名厨们现场展示精湛厨艺'+
+'        </p>'+
+'         <p class="qq">'+
+'         <img src="./resources/img/news/new24.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         名厨们现场展示精湛厨艺'+
+'        </p>'+
+'         <p class="qq">'+
+'         <img src="./resources/img/news/new25.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         参评作品'+
+'        </p> '+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new26.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         参评作品'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new27.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         参评作品'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new28.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         参评作品'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new29.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         火热的考评现场'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new30.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         现场评委为福清大厨们评审精致作品'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new31.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         福清市餐饮烹饪行业协会会长曾永福与各位烹饪评委为现场作品点评'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new32.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         福清市餐饮烹饪行业协会会长曾永福与各位烹饪评委为现场作品点评'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new33.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         福建省餐饮烹饪行业协会秘书长陈德美老师与中国好人薛建波先生合影'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new34.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         参评作品'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new35.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         参评作品'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new36.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         参评作品'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new37.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         参评作品'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new38.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         参评作品'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new39.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         参评作品'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new40.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         现场作品展示'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new41.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new42.jpg" width="600" height="532">'+
+'        </p>'+
+'        <p class="qq">'+
+'         感谢福建超霸调味品给予福清市餐饮烹饪行业协会的大力赞助'+
+'        </p>'+
+'        <p class="qq">'+
+'         感谢福建省餐饮烹饪行业协会对福清市餐饮烹饪行业协会一直以来的指导与支持。'+
+'         福清市餐饮烹饪将不断努力，不断发展，努力为福清市的餐饮业发展贡献自己应有的力量！'+
+'        </p>'+
+'        <p class="qq">'+
+'         <img src="./resources/img/news/new43.jpg" width="600" height="532">'+
+'        </p>'+
+'        '+
+'        <p class="qq">'+
+'         点击以上二维码，关注福清烹协实时动态'+
+'        </p>'+
+'        '+
+'        '+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>'
+	},{
+	title:'“厉行勤俭节约 反对餐饮浪费”倡议书',
+	createdTime:"2017/7/27",
+	readCount:341,
+	brief:'为弘扬勤俭节约的传统美德，践行习近平总书记关于推动形成绿色发展方式和生活方式的重要指示精神，我会号召广大餐饮企业、会员单位积极响应商务部、中央文明办关于推动餐饮行业深入开展“厉行勤俭节约 反对餐饮浪费”的号召，现提出如下倡议：',
+	content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p class="qq">'+
+'         为弘扬勤俭节约的传统美德，践行习近平总书记关于推动形成绿色发展方式和生活方式的重要指示精神，我会号召广大餐饮企业、会员单位积极响应商务部、中央文明办关于推动餐饮行业深入开展“厉行勤俭节约 反对餐饮浪费”的号召，现提出如下倡议：'+
+'        </p>'+
+'        <p class="qq">'+
+'一、履行社会责任'+
+'        </p>'+
+'        <p class="qq">'+
+'         餐饮企业要自觉将厉行节约纳入餐饮生产、加工、服务的全过程，全程节约，减少餐厨垃圾；餐饮服务员要遵守职业道德，严格执行服务规范，提醒消费者适量点餐，杜绝诱导消费者超出正常范围的点餐消费。'+
+'        </p>'+
+'        <p class="qq">'+
+'         二、增强节约能力'+
+'        </p>'+
+'         <p class="qq">'+
+'         鼓励餐饮企业通过直营直营、加盟等形式发展连锁网络，整合现有网点，扩大企业规模，提高品牌影响力。鼓励餐饮企业发展中央厨房或配送中心，加强业态融合，降低生产成本。 '+
+'        </p>'+
+'        <p class="qq">'+
+'        三、科学引导就餐'+
+'        </p>'+
+'         <p class="qq">'+
+'         餐饮企业提供宴席服务时，合理安排宴席的流程和餐台数量，引导顾客理性定餐、合理消费；自助餐企业推行服务押金等措施，提醒顾客按需、少量、多次取餐，增强顾客节约消费的主动性。合理调整菜品数量、份量，推广分餐制，主动提供小份菜、半份菜，引导消费者主动打包，倡导“光盘行动”。'+
+'        </p>'+
+'        <p class="qq">'+
+'         四、树立行业新风'+
+'        </p>'+
+'         <p class="qq">'+
+'         将厉行节约作为餐饮业常态化发展的重要任务， 向广大消费者宣传节约光荣、浪费可耻的消费理念，摒弃好面子、讲排场的陋习，减少宴席、自助餐浪费。使“珍惜食品、剩余打包、杜绝浪费”的消费理念深入人心。'+
+'        </p>'+
+'        '+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>'
+	},
+	{
 	title:'建宁2017第二届建莲文化旅游嘉年华之美食文化节成功举办',
 	createdTime:"2017/7/26",
 	readCount:579,
