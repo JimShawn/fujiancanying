@@ -2,6 +2,61 @@ var news = angular.module('news', []);
 
 news.constant("newsList", [
 	{
+	title:'福建省餐饮烹饪行业协会名厨委员会关于开展中国烹饪大师、名师注册管理的通知',
+	createdTime:"2017/7/31",
+	readCount:356,
+	brief:'为进一步规范中国烹饪大师、名师的评定工作，提升中国烹饪大师、名师的含金量和美誉度，经与中国烹饪协会商请，我会将于8月15日在福州举行注册中国烹饪大师、名师的认定申报工作。请符合申报注册条件的人员填报注册登记表（详见附件2），并于7月30日前提交电子版材料和扫描件至我会邮箱，我会集中向中国烹饪协会申报。申报人员理论考试和技能实操合格后进行公示。',
+	content:'<table width="100%" border="0" cellspacing="0" cellpadding="0">'+
+'  <tbody> '+
+'    <tr></tr>'+
+'    <tr>'+
+'      <td align="left">'+
+'        <p align="left" class="lh24 ti24"></p>'+
+'        <p>'+
+'          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
+'        </p>'+
+'        <p >'+
+'         各有关会员：'+
+'        </p>'+
+'        <p class="qq">'+
+'            为进一步规范中国烹饪大师、名师的评定工作，提升中国烹饪大师、名师的含金量和美誉度，经与中国烹饪协会商请，我会将于8月15日在福州举行注册中国烹饪大师、名师的认定申报工作。请符合申报注册条件的人员填报注册登记表（详见附件2），并于7月30日前提交电子版材料和扫描件至我会邮箱，我会集中向中国烹饪协会申报。申报人员理论考试和技能实操合格后进行公示。'+
+'        </p>'+
+'        <p class="qq">'+
+'         注册中国烹饪大师、名师需缴纳费用3500元（含理论培训考试、证书、奖章），注册中国烹饪大师需另外缴纳服装费1000元。'+
+'        </p>'+
+'        <p class="qq">'+
+'         联 系 人：陈德美  刘宝贵'+
+'        </p>'+
+'         <p class="qq">'+
+'         联系方式：13805068362、18050275353 '+
+'        </p>'+
+'        <p class="qq">'+
+'        电子邮箱：1583787938@qq.com'+
+'        </p>'+
+'         <p class="qq">&nbsp;</p>'+
+'         <p class="qq">'+
+'         附件：'+
+'        </p>'+
+'        <p class="qq">'+
+'         <a href="./resources/doc/中国烹饪协会中国烹饪大师名师注册管理办法（试行）.docx">1.中国烹饪协会中国烹饪大师名师注册管理办法（试行）</a>'+
+'        </p>'+
+'        <p class="qq">'+
+'         <a href="./resources/doc/中国烹饪大师注册登记表.docx">2.中国烹饪大师注册登记表</a>'+
+'        </p>'+
+'         <p class="qq" style="text-align: right;">'+
+'         福建省餐饮烹饪行业协会名厨委员会'+
+'        </p><br>'+
+'        <p class="qq" style="text-align: right;">'+
+'         2017年7月10日'+
+'        </p>'+
+'        '+
+'        <p class="qq">&nbsp;</p>'+
+'        <p></p>'+
+'      </td>'+
+'    </tr>'+
+'  </tbody>'+
+'</table>'
+	},{
 	title:'中共福建省餐饮烹饪行业协会支部委员会成立',
 	createdTime:"2017/7/27",
 	readCount:456,
@@ -46,9 +101,6 @@ news.constant("newsList", [
 '        <p align="left" class="lh24 ti24"></p>'+
 '        <p>'+
 '          <style type="text/css">.qq{font-size: 14px;line-height: 25px;text-indent: 28px;text-align:left}</style>'+
-'        </p>'+
-'        <p class="qq">'+
-'         根据省民政厅社会组织党建的相关要求，结合我会实际情况，我会向中共福建省民政厅社会组织综合委员会申请以兼合组建的方式成立中共福建省餐饮烹饪行业协会支部委员会。2017年6月21日，经省民政厅闽民社党〔2017〕120号文批复同意。7月1日晚，中共福建省餐饮烹饪行业协会支部委员成立大会在福州聚春园会展酒店召开。经过支部党员选举，并报经中共福建省民政厅社会组织综合委员会研究决定，同意翁贵明同志当选担任支部书记。'+
 '        </p>'+
 '        <p class="qq">'+
 '         <img src="./resources/img/news/new20.jpg" width="800" height="532">'+
