@@ -1,0 +1,21 @@
+<div ng-controller="createController" >
+	<div id='edit'></div>
+	<button type="button" class="btn btn-default" style="margin: 13px;" ng-click="save();">保存</button>
+	<button type="button" class="btn btn-default" style="margin: 13px;" ng-click="goToCreate();">取消</button>
+	<script type="text/javascript" src="./jquery/jquery.min.js""></script>
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/codemirror.min.js"></script>
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/xml.min.js"></script>
+ 
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/froala_editor.pkgd.min.js"></script>
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/languages/zh_cn.js"></script>
+ 
+    <!-- Initialize the editor. -->
+    <script> $(function() { $('#edit').froalaEditor({
+    	language:'zh_cn',
+    	heightMin: 700,
+    	width:'1000'
+
+    	}) }); </script>
+</div>
+

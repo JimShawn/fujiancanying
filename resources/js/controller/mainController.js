@@ -40,5 +40,8 @@ main.controller('MainController', ['$scope', '$http','$location','$rootScope','$
     };
     $scope.goToCulture = function(){
         $state.go("main.culture");
+    };
+    $scope.goToCreate = function (argument) {
+        $state.go("main.create");
     }
 }]);
