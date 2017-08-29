@@ -9,18 +9,19 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         var deferd = $q.defer();
         var url = commonProperty.serverHost + "oauth/token?grant_type=password&username="+name+"&password="+password;
         $http.post(url,{},{
-            headers : {'Authorization' : 'Basic bGViYW5nX2NsaWVudDpsbnBPZWFVUXJtUWo3cjlhNmY5NGx0akN1enFZN2pFdk8='}
+            headers : {'Authorization' : 'Basic YW5kcm9pZDphbmRyb2lkX3NlY3JldF9rZXk='}
         }).then(function (result) {
 
             $window.sessionStorage["token_info"] = JSON.stringify(result);
             $window.sessionStorage["access_token"] = result.data.access_token;
-            var allMeUrl = commonProperty.serverHost + "users/me?access_token=" + $window.sessionStorage["access_token"];
-            $http.get(allMeUrl).then(function (res) {
-                $window.sessionStorage["userInfo"] = JSON.stringify(res);
-                deferd.resolve(res);
-            },function (error) {
-                deferd.reject(error);
-            });
+            deferd.resolve(result);
+            // var allMeUrl = commonProperty.serverHost + "users/me?access_token=" + $window.sessionStorage["access_token"];
+            // $http.get(allMeUrl).then(function (res) {
+            //     $window.sessionStorage["userInfo"] = JSON.stringify(res);
+            //     deferd.resolve(res);
+            // },function (error) {
+            //     deferd.reject(error);
+            // });
 
         },function(error){
             deferd.reject(error);

@@ -45,18 +45,34 @@ main.controller('MainController', ['$scope', '$http', '$location', '$rootScope',
         $state.go("main.create");
     };
     $scope.login = function() {
-        // if (!$scope.userName || $scope.userName.length < 4 || $scope.userName.length > 20) {
-            
-        // };
-        swal({  title:'',
+        if (!$scope.userName || $scope.userName.length < 4 || $scope.userName.length > 20) {
+            swal({  title:'',
                 text: "账号格式不对",
-                timer: 2000,
+                timer: 1000,
+                type: "warning",
                 showConfirmButton: false
-            });        
-        httpService.login($scope.userName, $scope.password).then(function(res) {
-            // body...
-        }, function(argument) {
-            // body...
+            });   
+            return;     
+        };
+        if (!$scope.password || $scope.password.length < 4 || $scope.password.length > 20) {
+            swal({  title:'',
+                text: "密码格式不对",
+                timer: 1000,
+                type: "warning",
+                showConfirmButton: false
+            });
+            return;     
+        };
+
+        httpService.login('fjcy', 'f4j7c3y6').then(function(res) {
+            console.log(res);
+        }, function(err) {
+            swal({  title:'',
+                text: err,
+                timer: 1000,
+                type: "warning",
+                showConfirmButton: false
+            });
         })
     }
 }]);
