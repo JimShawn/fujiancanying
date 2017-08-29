@@ -1,10 +1,8 @@
-
 <link rel="stylesheet" type="text/css" href="./resources/css/header.css">
-
 <div class="row" style="margin-left: auto; margin-right: auto; width:1920px;" ng-controller="MainController">
-	<div style="margin-left: auto; margin-right: auto; width: 1140px; height: 65px; line-height:65px;">
-		<span style="text-align: center; float: left; font-size: 24px; font-weight: bold; color: #e43232;">福建餐饮网</span>
-		<span style="text-align: center; float: left; margin-left: 150px; height: inherit;">
+    <div style="margin-left: auto; margin-right: auto; width: 1570px; height: 65px; line-height:65px;">
+        <span style="text-align: center; float: left; font-size: 24px; font-weight: bold; color: #e43232;">福建餐饮网</span>
+        <span style="text-align: center; float: left; margin-left: 150px; height: inherit;">
 			<ul class="nav nav-pills" role="tablist">
 				<li class="main-menu" ng-click="goToHomepage()"><a href="">首页</a></li>
 				<li class="main-menu" ng-click="goToCulture()"><a href="">闽菜文化</a></li>
@@ -17,16 +15,29 @@
 					<!-- <li class="dropdown main-menu" ng-click="goToIndustryInfo()"> -->
 				    	<!-- <a href="" class="dropdown-toggle" data-toggle="dropdown" >产业对接
 				    		<span class="caret"></span>
-				    	</a>
-				    	<ul class="dropdown-menu" role="menu">
-					        <li><a href="">劳务信息</a></li>
-					        <li><a href="">餐饮转让</a></li>
-					        <li><a href="">食材对接</a></li>
-					    </ul> -->
-					    <!-- </li> -->
-			</ul>
-		</span>
-		 <button type="button" class="btn btn-default" style="float: right;margin-top: 13px;" ng-click="goToCreate();">发布消息</button>
-	</div>
-	<div ui-view></div>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="">劳务信息</a></li>
+            <li><a href="">餐饮转让</a></li>
+            <li><a href="">食材对接</a></li>
+        </ul> -->
+        <!-- </li> -->
+        </ul>
+        </span>
+        <span style="text-align: center; float: right; margin-right: 10px; height: inherit;">
+		<form class="form-inline" role="form">
+            <div class="form-group">
+                <label class="sr-only" for="name">名称</label>
+                <input type="text" class="form-control" id="name" placeholder="请输入用户名" required="" minlength="4" ng-model = "userName">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="password">密码</label>
+                <input type="password" class="form-control" id="name" placeholder="请输入密码" required="" minlength="8" ng-model = "password">
+            </div>
+            <button type="submit" class="btn btn-default" ng-click="login()">登录</button>
+        </form>        	
+        </span>
+        <!-- <button type="button" class="btn btn-default" style="float: right;margin-top: 13px;" ng-click="goToCreate();">发布消息</button> -->
+    </div>
+    <div ui-view></div>
 </div>

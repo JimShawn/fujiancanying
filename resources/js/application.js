@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('app', ['ui.router','main','homepage','news','chef','snack','industryinfo','culture','video','create']);
+var app = angular.module('app', ['ui.router','main','homepage','news','chef','snack','industryinfo','culture','video','create','commonProperty','commonUtil','httpService']);
 
 app.config(function ($stateProvider,$urlRouterProvider) {
     $stateProvider.state("main",{
