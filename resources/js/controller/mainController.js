@@ -66,6 +66,7 @@ main.controller('MainController', ['$scope', '$http', '$location', '$rootScope',
 
         httpService.login('fjcy', 'f4j7c3y6').then(function(res) {
             console.log(res);
+            $state.go("manage.banner");
         }, function(err) {
             swal({  title:'',
                 text: err,
