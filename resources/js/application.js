@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('app', ['ui.router','main','homepage','news','chef','snack','industryinfo','culture','video','create','banner','manage','commonProperty','commonUtil','httpService']);
+var app = angular.module('app', ['ui.router','main','homepage','news','chef','snack','industryinfo','culture','video','create','banner','manage','commonProperty','commonUtil','httpService','footer']);
 
 app.config(function ($stateProvider,$urlRouterProvider) {
     $stateProvider.state("main",{
@@ -100,14 +100,15 @@ app.config(function ($stateProvider,$urlRouterProvider) {
             params:{item:null}
         }
 
-    ).state("main.create",{
+    ).state("manage.create",{
             url: "/create",
             templateUrl: 'create.html'
         }
 
     ).state("manage",{
             url: "/manage",
-            templateUrl: 'manage.html'
+            templateUrl: 'manage.html',
+             params:{'item':null}
         }
 
     ).state("manage.banner",{
@@ -115,7 +116,12 @@ app.config(function ($stateProvider,$urlRouterProvider) {
             templateUrl: 'manageBanner.html'
         }
 
-    );;
+    ).state("manage.news",{
+            url: "/manageNews",
+            templateUrl: 'manageNews.html'
+        }
+
+    );
     $urlRouterProvider.otherwise('/main');
 
 });

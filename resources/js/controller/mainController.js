@@ -41,9 +41,7 @@ main.controller('MainController', ['$scope', '$http', '$location', '$rootScope',
     $scope.goToCulture = function() {
         $state.go("main.culture");
     };
-    $scope.goToCreate = function(argument) {
-        $state.go("main.create");
-    };
+    
     $scope.login = function() {
         if (!$scope.userName || $scope.userName.length < 4 || $scope.userName.length > 20) {
             swal({  title:'',

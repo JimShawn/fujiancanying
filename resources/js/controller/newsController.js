@@ -1629,6 +1629,62 @@ news.constant("newsList", [
 news.controller('NewsController', function ($scope,$http,$location,$rootScope,$state,newsList) {
 	$scope.newsList = newsList;
 });
+news.controller('manageNewsController', function ($scope,$http,$location,$rootScope,$state,newsList,httpService) {
+	$scope.query = {
+		page:0,
+		size:10,
+		articleType:0
+	};
+	$scope.newsStatuses = [
+		{
+			name:'全部',
+			status:-1
+		},
+		{
+			name:'已发布',
+			status:0
+		},
+		{
+			name:'未发布',
+			status:1
+		}
+	];
+	$scope.changePageSizeFun = function (size) {
+        $scope.query.page = $scope.data.number;
+        $scope.query.size = size;
+        getList($scope.query);
+    };
+
+    $scope.gotoPageFun = function (x) {
+        $scope.query.page = x;
+        $scope.query.size = $scope.data.size;
+        getList($scope.query);
+    };
+	function getList(queryObj) {
+		httpService.getNewsList(queryObj).then(function (res) {
+		console.log(res);
+		$scope.data = res.data;
+	},function (err) {
+		console.log(err);
+	});
+	};
+	getList($scope.query);
+	
+    $scope.goToCreate = function(argument) {
+        $state.go("manage.create",{item:null});
+    };
+    $scope.goToEdit = function(item) {
+        $state.go("manage.create",{item:item});
+    };
+    $scope.operate = function (item) {
+    	httpService.newsOperate(item.id,{is_public:!item.isPublic}).then(function (res) {
+    		console.log(res);
+    		getList($scope.query);
+    	},function (err) {
+    		console.log(err);
+    	})
+    }
+    });
 
 news.controller('NewsDetailController', function($scope,$stateParams) {
 	$scope.news = $stateParams.news;

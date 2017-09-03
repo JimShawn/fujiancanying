@@ -4,12 +4,16 @@
 'use strict';
 var httpService = angular.module('httpService', ['commonProperty']);
 httpService.factory('httpService',function ($http, $q, $window, commonProperty) {
+    
     var api = {};
     api.login = function (name,password) {
         var deferd = $q.defer();
         var url = commonProperty.serverHost + "oauth/token?grant_type=password&username="+name+"&password="+password;
         $http.post(url,{},{
-            headers : {'Authorization' : 'Basic YW5kcm9pZDphbmRyb2lkX3NlY3JldF9rZXk='}
+            headers : {
+                'Authorization' : 'Basic YW5kcm9pZDphbmRyb2lkX3NlY3JldF9rZXk=',
+                "Content-Type":"application/x-www-form-urlencoded"
+        }
         }).then(function (result) {
 
             $window.sessionStorage["token_info"] = JSON.stringify(result);
@@ -39,20 +43,30 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         });
         return deferd.promise;
     };
-    api.taskCreate = function (task) {
+    api.newsCreate = function (news) {
         var deferd = $q.defer();
-        var url = commonProperty.serverHost + "tasks?access_token=" + $window.sessionStorage["access_token"];
-        $http.post(url,task).then(function (result) {
+        var url = commonProperty.serverHost + "news?access_token=" + $window.sessionStorage["access_token"];
+        $http.post(url,news).then(function (result) {
             deferd.resolve(result);
         },function (error) {
             deferd.reject(error);
         });
         return deferd.promise;
     };
-    api.taskUpdate = function (id,task) {
+    api.newsUpdate = function (id,news) {
         var deferd = $q.defer();
-        var url = commonProperty.serverHost + "tasks/"+id+"?access_token=" + $window.sessionStorage["access_token"];
-        $http.put(url,task).then(function (result) {
+        var url = commonProperty.serverHost + "news/"+id+"?access_token=" + $window.sessionStorage["access_token"];
+        $http.put(url,news).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
+    api.newsOperate = function (id,news) {
+        var deferd = $q.defer();
+        var url = commonProperty.serverHost + "news/"+id+"?access_token=" + $window.sessionStorage["access_token"];
+        $http.patch(url,news).then(function (result) {
             deferd.resolve(result);
         },function (error) {
             deferd.reject(error);
@@ -99,16 +113,17 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         });
         return deferd.promise;
     };
-    api.getTaskTypeList = function (queryObj) {
+    api.getNewsList = function (queryObj) {
         var deferd = $q.defer();
-        var url =commonProperty.serverHost + "task_types?access_token=" + $window.sessionStorage["access_token"];
+        var url =commonProperty.serverHost + "news?";
         if(queryObj){
-            if (queryObj.size) {
                url += "&size="+queryObj.size;
-            };
-            if (queryObj.page) {
                url += "&page="+queryObj.page;
-            };
+               if(queryObj.isPublic!=undefined){
+                    url += "&isPublic="+queryObj.isPublic;
+               }
+               
+                url += "&articleType="+queryObj.articleType;
         };
         
         
