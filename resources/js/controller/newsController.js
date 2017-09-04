@@ -1649,6 +1649,7 @@ news.controller('manageNewsController', function ($scope,$http,$location,$rootSc
 			status:1
 		}
 	];
+	$scope.selectedStatus = $scope.newsStatuses[0];
 	$scope.changePageSizeFun = function (size) {
         $scope.query.page = $scope.data.number;
         $scope.query.size = size;
@@ -1668,6 +1669,14 @@ news.controller('manageNewsController', function ($scope,$http,$location,$rootSc
 		console.log(err);
 	});
 	};
+	$scope.changeStatus = function () {
+		if ($scope.selectedStatus.status=1) {
+			$scope.query.isPublic = false;
+		}else if ($scope.selectedStatus.status=0) {
+			$scope.query.isPublic = true;
+		}
+		getList($scope.query);
+	}
 	getList($scope.query);
 	
     $scope.goToCreate = function(argument) {

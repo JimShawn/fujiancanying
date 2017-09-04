@@ -134,6 +134,26 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         });
         return deferd.promise;
     };
+    api.getBannerList = function (queryObj) {
+        var deferd = $q.defer();
+        var url =commonProperty.serverHost + "banner?";
+        if(queryObj){
+               url += "&size="+queryObj.size;
+               url += "&page="+queryObj.page;
+               if(queryObj.isPublic!=undefined){
+                    url += "&isPublic="+queryObj.isPublic;
+               }
+        };
+        
+        
+        $http.get(url).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
+
     api.getTaktypeListAll = function () {
         var deferd = $q.defer();
         var url =commonProperty.serverHost + "task_types/all?access_token=" + $window.sessionStorage["access_token"];

@@ -9,8 +9,7 @@
                                 
              <button type="submit" class="btn btn-success" style = "float: right;" ng-click="goToCreate()">新增</button> 
              <div  style = "float: right;margin-right: 50px">
-                                    <select id="task-type" class="form-control parsley-success" required="" ng-model="selectedStatus" data-parsley-id="38" ng-options="newsStatuse.name for newsStatuse in newsStatuses">
-                                        <option value="">请选择</option>
+                                    <select id="task-type" class="form-control parsley-success" required="" ng-model="selectedStatus" data-parsley-id="38" ng-options="newsStatuse.name for newsStatuse in newsStatuses" ng-change="changeStatus()">
                                     </select>
                                 </div> 
              <label class="control-label" for="task-type" style = "float: right;margin-right: 10px">新闻状态 <span class="required">*</span>

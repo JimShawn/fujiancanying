@@ -7,7 +7,12 @@
 	            <span class="input-group-addon">搜索</span>
         	</div> -->
              <button type="submit" class="btn btn-success" style = "float: right;" ng-click="showInsertAppDialog()">新增</button>                       
-
+            <div  style = "float: right;margin-right: 50px">
+                                    <select id="task-type" class="form-control parsley-success" required="" ng-model="selectedStatus" data-parsley-id="38" ng-options="newsStatuse.name for newsStatuse in newsStatuses" ng-change="changeStatus()">
+                                    </select>
+                                </div> 
+             <label class="control-label" for="task-type" style = "float: right;margin-right: 10px">新闻状态 <span class="required">*</span>
+                                </label>     
 
 
             <div class="x_panel">
@@ -26,9 +31,11 @@
                         <tbody>
                         <tr ng-repeat="item in data.content">
                             <td><a href="" ng-click="openDetailDialog(item)">{{item.id}}</a></td>
-                             <td>{{item.des}}</td>
+                             <td>{{item.title}}</td>
                             <td>{{item.url}}</td>
-                            <td><button type="button" class="btn btn-default" ng-click="deleteItem(item)">删除</button></td>
+                            <td>{{item.isPublic?'已发布':'未发布'}}</td>
+                            <td ng-show="item.isPublic"><button type="button" class="btn btn-default" ng-click="operate(item)">下架</button></td>
+                            <td ng-show="!item.isPublic"><button type="button" class="btn btn-default" ng-click="operate(item)">发布</button></td>
                         </tr>
 
                         
@@ -37,81 +44,9 @@
                     </table>
                 </div>
             </div>
-            <t-footer page-size = 'data.size' page-num = 'data.number' total-page = 'data.totalPages' total-num = 'data.totalElements' change-page-size-fun = 'changePageSizeFun(size)' goto-page-fun='gotoPageFun(page)'></t-footer>
+            <t-footer page-size = 'data.size' page-num = 'data.number' total-page = 'data.total_pages' total-num = 'data.total_elements' change-page-size-fun = 'changePageSizeFun(size)' goto-page-fun='gotoPageFun(page)'></t-footer>
         </div>
-        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"        aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="myModalLabel">新增app</h4>
-                        </div>
-                        <div class="modal-body">
-                        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="app-name">app名称 <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="app-name" required="required" class="form-control col-md-7 col-xs-12" ng-model="appName">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="callback-url">回调地址 <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="callback-url" required="required" class="form-control col-md-7 col-xs-12" ng-model="callbackUrl">
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                                <button type="submit" class="btn btn-primary" ng-click="doInsert()">提交</button>
-                            </div>
-                            </form>
-
-                        </div>
-                        
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal -->
-        </div>
-        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"        aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                            <h4 class="modal-title" id="myModalLabel">app详情</h4>
-                        </div>
-                        <div class="modal-body">
-                        <form id="demo-form3" data-parsley-validate class="form-horizontal form-label-left">
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="app-name">app名称 
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12" style="margin-top: 6px;">
-                                    <input type="text" id="app-name2" required="required" class="form-control col-md-7 col-xs-12" ng-model="selectedApp.clientId">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="callback-url">回调地址
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12" style="margin-top: 6px;">
-                                    <input type="text" id="callback-url2" required="required" class="form-control col-md-7 col-xs-12" ng-model="selectedApp.webServerRedirectUri">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="app-secret">密匙
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12" style="margin-top: 6px;">
-                                    <span>{{selectedApp.clientSecret}}</span>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-                            <button type="submit" class="btn btn-primary" ng-click="doUpdate()">提交</button>
-                        </div>
-                            </form>
-                        </div>
-
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal -->
-        </div>
+        
+        
 	
 </div>
