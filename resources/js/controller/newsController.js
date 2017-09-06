@@ -1670,9 +1670,9 @@ news.controller('manageNewsController', function ($scope,$http,$location,$rootSc
 	});
 	};
 	$scope.changeStatus = function () {
-		if ($scope.selectedStatus.status=1) {
+		if ($scope.selectedStatus.status==1) {
 			$scope.query.isPublic = false;
-		}else if ($scope.selectedStatus.status=0) {
+		}else if ($scope.selectedStatus.status==0) {
 			$scope.query.isPublic = true;
 		}
 		getList($scope.query);

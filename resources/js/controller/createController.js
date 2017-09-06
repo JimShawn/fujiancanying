@@ -50,9 +50,10 @@ create.controller('createController', ['$scope', '$http','$location','$rootScope
           // Do something here.
           
             if(selectedItem){
-                $('#edit').froalaEditor('html.set', selectedItem.content);
                 $scope.brief = selectedItem.description;
                 $scope.newsTitle = selectedItem.title;
+                $('#edit').froalaEditor('html.set', selectedItem.content);
+                
             };
         });
         

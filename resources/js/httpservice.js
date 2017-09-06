@@ -43,6 +43,26 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         });
         return deferd.promise;
     };
+    api.bannerCreate = function (banner) {
+        var deferd = $q.defer();
+        var url = commonProperty.serverHost + "banner?access_token=" + $window.sessionStorage["access_token"];
+        $http.post(url,banner).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
+    api.bannerUpdate = function (id,banner) {
+        var deferd = $q.defer();
+        var url = commonProperty.serverHost + "banner/"+id+"?access_token=" + $window.sessionStorage["access_token"];
+        $http.put(url,banner).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
     api.newsCreate = function (news) {
         var deferd = $q.defer();
         var url = commonProperty.serverHost + "news?access_token=" + $window.sessionStorage["access_token"];

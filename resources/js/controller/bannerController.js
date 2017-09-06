@@ -52,7 +52,80 @@ banner.controller('bannerController', ['$scope', '$http', '$location', '$rootSco
         getList($scope.query);
     }    
     getList($scope.query);
+    $scope.add = function () {
+        
+        $state.go('manage.bannerNew',{item:null});
+    };
+    $scope.edit = function (item) {
+        $state.go('manage.bannerNew',{item:item});
+    }
 
 
 
 }]);
+banner.controller('createBannerController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams','$window','FileUploader','commonProperty',function($scope, $http, $location, $rootScope, $state, httpService,$stateParams,$window,FileUploader,commonProperty) {
+                var selectedItem = $stateParams.item;
+                if(selectedItem){
+                    $scope.bannerurl = selectedItem.url;
+                    $scope.bannerorder = selectedItem.sequence;
+                    $scope.desc = selectedItem.title;
+                };
+                var imageUploader = $scope.imageUploader = new FileUploader({
+                        url: commonProperty.serverHost + "upload/1?access_token=" + $window.sessionStorage["access_token"],
+                        queueLimit: 1, //文件个数
+                    });
+
+                imageUploader.onAfterAddingFile = function(fileItem) {
+                        imageUploader.uploadAll();
+                    };
+
+                imageUploader.onSuccessItem = function(fileItem, response, status, headers) {
+                    imageUploader.clearQueue(); 
+                    console.log(response);
+                    $scope.bannerurl = response.link;
+
+                };
+                
+                imageUploader.onErrorItem = function(fileItem, response, status, headers) {
+                };
+                imageUploader.onCompleteAll = function () {
+                };
+
+                $scope.save = function () {
+                    var newsObj = {
+                          image: $scope.bannerurl,
+                          isPublic: false,
+                          sequence: $scope.bannerorder,
+                          title: $scope.desc,
+                          url: $scope.bannerurl
+                        };
+                        if(selectedItem){
+                            httpService.bannerUpdate(selectedItem.id,newsObj).then(function (res) {
+                            console.log(res);
+                            $state.go("manage.banner");
+                        },function (err) {
+                            console.log(err);
+                        });
+                        }else{
+                          httpService.bannerCreate(newsObj).then(function (res) {
+                            console.log(res);
+                            $state.go("manage.banner");
+                        },function (err) {
+                            console.log(err);
+                        })  
+                        }
+                        
+                };
+                $scope.cancel = function (argument) {
+                    $state.go("manage.banner");
+                };
+                $scope.changeStatus = function () {
+                    if ($scope.selectedStatus.status==1) {
+                        $scope.query.isPublic = false;
+                    }else if ($scope.selectedStatus.status==0) {
+                        $scope.query.isPublic = true;
+                    }
+                    getList($scope.query);
+                }
+
+            }])
