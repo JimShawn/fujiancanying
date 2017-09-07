@@ -17,31 +17,7 @@ snack.constant("snackList", [
 		type:2,
 		city:"longyan"
 	},
-// 	{
-// 		title:"时来运转",
-// 		createdTime:"2016/6/12",
-// 		readCount:529,
-// 		content:"<h4>材料：地瓜面团（地瓜粉和地瓜泥比例为1:2），其中地瓜粉和木薯粉比例又为3:1</h4>" +
-// "<p>地瓜面团是用蒸好的地瓜和当地的地瓜粉以及木薯粉加工搅拌成细腻的地瓜面团待用</p>" +
-// "<h4>内馅材料：</h4>" +
-// "<p>后腿肉 虾仁 螃蟹肉 当地紫菜 花蛤 蚬子 白菜 葱油 葱 芹菜 青蒜</p>" +
-// "<h4>调料：</h4>" +
-// "<p>生抽 老抽 糖 料酒 盐巴 鸡精</p>" +
-// "<h4>做法：</h4>" +
-// "<p>1、新鲜的虾事先剥壳取肉，螃蟹蒸熟将肉取出，花蛤和蚬子也是煮开取肉，紫菜切小段，肉捞下切小丁，白菜切小块用盐杀水攥干，其他的芹菜蒜葱也切颗粒，另外用葱白熬好葱油待用</p>" +
-// "<p>2、锅内倒入葱油适量，将肉事先放入炒出香味</p>" +
-// "<p>3、加入调料品拌匀</p>" +
-// "<p>4、将其他海鲜食材一一放入，每放入一样都要翻拌均匀</p>" +
-// "<p>5、最后放入青菜、芹菜、青蒜和葱，再淋适量的葱油拌匀调整下口味盛出待用</p>" +
-// "<p>6、将地瓜面团揉匀，取一团在手心捏开</p>" +
-// "<p>7、包入适量的馅料（这个量要多些，后面吃 的时候感觉才舒服）</p>" +
-// "<p>8、慢慢的往虎口上方推 ，然后捏合搓好，收口朝下</p>" +
-// "<p>9、将时来运转一个个包好</p>" +
-// "<p>10、放入烧开的热水锅中</p>" +
-// "<p>11、大约15分钟左右就好</p>",
-//		type:2,
-// 		city:"pingtan"
-// 	},
+
 	{
 		title:"同利肉燕",
 		createdTime:"2016/6/12",
@@ -216,3 +192,150 @@ snack.controller('SnackDetailController', function($scope,$stateParams,snackList
 		}
 	} 
 });
+
+snack.controller('manageRecipesController', function($scope, $http, $location, $rootScope, $state, httpService) {
+    $scope.query = {
+        page: 0,
+        size: 10,
+        articleType: 1
+    };
+    $scope.newsStatuses = [{
+            name: '全部',
+            status: -1
+        },
+        {
+            name: '已发布',
+            status: 0
+        },
+        {
+            name: '未发布',
+            status: 1
+        }
+    ];
+    $scope.selectedStatus = $scope.newsStatuses[0];
+    $scope.changePageSizeFun = function(size) {
+        $scope.query.page = $scope.data.number;
+        $scope.query.size = size;
+        getList($scope.query);
+    };
+
+    $scope.gotoPageFun = function(x) {
+        $scope.query.page = x;
+        $scope.query.size = $scope.data.size;
+        getList($scope.query);
+    };
+
+    function getList(queryObj) {
+        httpService.getNewsList(queryObj).then(function(res) {
+            console.log(res);
+            $scope.data = res.data;
+        }, function(err) {
+            console.log(err);
+        });
+    };
+    $scope.changeStatus = function() {
+        if ($scope.selectedStatus.status == 1) {
+            $scope.query.isPublic = false;
+        } else if ($scope.selectedStatus.status == 0) {
+            $scope.query.isPublic = true;
+        }
+        getList($scope.query);
+    }
+    getList($scope.query);
+
+    $scope.goToCreate = function(argument) {
+        $state.go("manage.recipesCreate", { item: null });
+    };
+    $scope.goToEdit = function(item) {
+        $state.go("manage.recipesCreate", { item: item });
+    };
+    $scope.operate = function(item) {
+        httpService.newsOperate(item.id, { is_public: !item.is_public }).then(function(res) {
+            console.log(res);
+            getList($scope.query);
+        }, function(err) {
+            console.log(err);
+        })
+    }
+});
+
+
+
+snack.controller('createRecipesController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
+    $(function() {
+        $('#edit').froalaEditor({
+            language: 'zh_cn',
+            heightMin: 700,
+            width: '1000',
+            imageUploadURL: 'http://www.fjcy.net/api/upload/1?access_token=' + $window.sessionStorage["access_token"]
+
+        });
+
+    });
+    var imageUploader = $scope.imageUploader = new FileUploader({
+        url: commonProperty.serverHost + "upload/1?access_token=" + $window.sessionStorage["access_token"],
+        queueLimit: 1, //文件个数
+    });
+
+    imageUploader.onAfterAddingFile = function(fileItem) {
+        imageUploader.uploadAll();
+    };
+
+    imageUploader.onSuccessItem = function(fileItem, response, status, headers) {
+        imageUploader.clearQueue();
+        console.log(response);
+        $scope.bannerurl = response.link;
+
+    };
+
+    imageUploader.onErrorItem = function(fileItem, response, status, headers) {};
+    imageUploader.onCompleteAll = function() {};
+    var selectedItem = $stateParams.item;
+    $scope.save = function(argument) {
+        console.log($('#edit').froalaEditor('html.get', true));
+        var newsObj = {
+            "article_type": 1,
+            "content": $('#edit').froalaEditor('html.get', true),
+            "description": $scope.brief,
+            "introduction": "",
+            "thumbnails": $scope.bannerurl,
+            "title": $scope.newsTitle
+        };
+        if (selectedItem) {
+            httpService.newsUpdate(selectedItem.id, newsObj).then(function(res) {
+                console.log(res);
+                $state.go('manage.recipes');
+            }, function(err) {
+                console.log(err);
+            })
+        } else {
+            httpService.newsCreate(newsObj).then(function(res) {
+                console.log(res);
+                $state.go('manage.recipes');
+            }, function(err) {
+                console.log(err);
+            })
+        }
+
+    };
+    $scope.cancel = function(argument) {
+        $state.go('manage.recipes');
+    }
+
+
+    $('#edit').on('froalaEditor.initialized', function(e, editor) {
+
+        // Do something here.
+
+        if (selectedItem) {
+            $scope.brief = selectedItem.description;
+            $scope.newsTitle = selectedItem.title;
+            $scope.bannerurl = selectedItem.thumbnails;
+            $('#edit').froalaEditor('html.set', selectedItem.content);
+
+        };
+    });
+
+
+
+}]);

@@ -125,7 +125,7 @@ culture.controller('manageCultureController', function($scope, $http, $location,
         $state.go("manage.cultureCreate", { item: item });
     };
     $scope.operate = function(item) {
-        httpService.newsOperate(item.id, { is_public: !item.isPublic }).then(function(res) {
+        httpService.newsOperate(item.id, { is_public: !item.is_public }).then(function(res) {
             console.log(res);
             getList($scope.query);
         }, function(err) {

@@ -136,6 +136,24 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         params:{
                     'item':null
                 }           
+    }).state("manage.recipes",{
+        url:"/recipes",
+        templateUrl:'recipes.html'
+    }).state("manage.recipesCreate",{
+        url:"/recipesCreate",
+        templateUrl:'create-recipes.html',
+        params:{
+                    'item':null
+                }           
+    }).state("manage.famous",{
+        url:"/famous",
+        templateUrl:'famous.html'
+    }).state("manage.famousCreate",{
+        url:"/famousCreate",
+        templateUrl:'create-famous.html',
+        params:{
+                    'item':null
+                }           
     });
     $urlRouterProvider.otherwise('/main');
 

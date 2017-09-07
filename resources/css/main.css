@@ -283,14 +283,14 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
- .news-tech{
+ .container.news-tech{
     
     width: 1140px;
     height: 442px;
     background: url(../img/food1_03.jpg);
     display: inline-flex;
  }
-.transform-info{
+.container.transform-info{
     
     width: 1140px;
     height: 350px;

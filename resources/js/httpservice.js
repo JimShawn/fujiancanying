@@ -93,6 +93,16 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         });
         return deferd.promise;
     };
+    api.bannerOperate = function (id,banner) {
+        var deferd = $q.defer();
+        var url = commonProperty.serverHost + "banner/"+id+"?access_token=" + $window.sessionStorage["access_token"];
+        $http.patch(url,banner).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
     api.appCreate = function (app) {
         var deferd = $q.defer();
         var url = commonProperty.serverHost + "apps?access_token=" + $window.sessionStorage["access_token"];

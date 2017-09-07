@@ -44,9 +44,9 @@ banner.controller('bannerController', ['$scope', '$http', '$location', '$rootSco
         });
     };
     $scope.changeStatus = function () {
-        if ($scope.selectedStatus.status=1) {
+        if ($scope.selectedStatus.status==1) {
             $scope.query.isPublic = false;
-        }else if ($scope.selectedStatus.status=0) {
+        }else if ($scope.selectedStatus.status==0) {
             $scope.query.isPublic = true;
         }
         getList($scope.query);
@@ -58,6 +58,14 @@ banner.controller('bannerController', ['$scope', '$http', '$location', '$rootSco
     };
     $scope.edit = function (item) {
         $state.go('manage.bannerNew',{item:item});
+    };
+    $scope.operate = function(item) {
+        httpService.bannerOperate(item.id, { is_public: !item.is_public }).then(function(res) {
+            console.log(res);
+            getList($scope.query);
+        }, function(err) {
+            console.log(err);
+        })
     }
 
 

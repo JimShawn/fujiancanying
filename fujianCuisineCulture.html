@@ -39,9 +39,9 @@
                             <td>{{item.title}}</td>
                             <td>{{item.description}}</td>
                             <td>{{item.thumbnails}}</td>
-                            <td>{{item.isPublic?'已发布':'未发布'}}</td>
-                            <td ng-show="item.isPublic"><button type="button" class="btn btn-default" ng-click="operate(item)">下架</button></td>
-                            <td ng-show="!item.isPublic"><button type="button" class="btn btn-default" ng-click="operate(item)">发布</button></td>
+                            <td>{{item.is_public?'已发布':'未发布'}}</td>
+                            <td ng-show="item.is_public"><button type="button" class="btn btn-default" ng-click="operate(item)">下架</button></td>
+                            <td ng-show="!item.is_public"><button type="button" class="btn btn-default" ng-click="operate(item)">发布</button></td>
                         </tr>
 
                         

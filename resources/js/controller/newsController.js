@@ -1686,7 +1686,7 @@ news.controller('manageNewsController', function ($scope,$http,$location,$rootSc
         $state.go("manage.create",{item:item});
     };
     $scope.operate = function (item) {
-    	httpService.newsOperate(item.id,{is_public:!item.isPublic}).then(function (res) {
+    	httpService.newsOperate(item.id,{is_public:!item.is_public}).then(function (res) {
     		console.log(res);
     		getList($scope.query);
     	},function (err) {

@@ -1,4 +1,4 @@
-<div ng-controller="manageNewsController">
+<div ng-controller="manageFamousController">
 
 <div class="col-md-12 col-sm-12 col-xs-12">
 			
@@ -13,6 +13,12 @@
                                     </select>
                                 </div> 
              <label class="control-label" for="task-type" style = "float: right;margin-right: 10px">状态: <span class="required">*</span>
+                                </label>  
+            <div  style = "float: right;margin-right: 50px">
+                                    <select id="task-type" class="form-control parsley-success" required="" ng-model="selectedFamousType" data-parsley-id="38" ng-options="famousTypeArray.name for famousTypeArray in famousTypeArrays" ng-change="changeType()">
+                                    </select>
+                                </div> 
+             <label class="control-label" for="task-type" style = "float: right;margin-right: 10px">类别: <span class="required">*</span>
                                 </label>        
                                                      
 
@@ -24,8 +30,9 @@
                         <thead>
                         <tr>
                             <th width="10%"><a href="">序号</a></th>
-                            <th width="20%">标题</th>
+                            <th width="20%">姓名</th>
                             <th width="50">简介</th>
+                            <th width="50">标题图片</th>
                             <th width="10%">状态</th>
                             <th width="10%">操作</th>
                         </tr>
@@ -37,6 +44,7 @@
                             <td ><a href="" ng-click="goToEdit(item)">{{item.id}}</a></td>
                             <td>{{item.title}}</td>
                             <td>{{item.description}}</td>
+                            <td>{{item.thumbnails}}</td>
                             <td>{{item.is_public?'已发布':'未发布'}}</td>
                             <td ng-show="item.is_public"><button type="button" class="btn btn-default" ng-click="operate(item)">下架</button></td>
                             <td ng-show="!item.is_public"><button type="button" class="btn btn-default" ng-click="operate(item)">发布</button></td>
