@@ -127,6 +127,15 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         params:{
             'item':null
         }
+    }).state("manage.fujianCuisineCulture",{
+        url:"/fujianCuisineCulture",
+        templateUrl:'fujianCuisineCulture.html'
+    }).state("manage.cultureCreate",{
+        url:"/cultureCreate",
+        templateUrl:'create-culture.html',
+        params:{
+                    'item':null
+                }           
     });
     $urlRouterProvider.otherwise('/main');
 
