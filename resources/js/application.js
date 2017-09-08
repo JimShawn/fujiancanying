@@ -154,6 +154,24 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         params:{
                     'item':null
                 }           
+    }).state("manage.industry",{
+        url:"/industry",
+        templateUrl:'industry.html'
+    }).state("manage.industryCreate",{
+        url:"/industryCreate",
+        templateUrl:'create-industry.html',
+        params:{
+                    'item':null
+                }           
+    }).state("manage.tutorial",{
+        url:"/tutorial",
+        templateUrl:'tutorial.html'
+    }).state("manage.tutorialCreate",{
+        url:"/tutorialCreate",
+        templateUrl:'create-tutorial.html',
+        params:{
+                    'item':null
+                }           
     });
     $urlRouterProvider.otherwise('/main');
 
