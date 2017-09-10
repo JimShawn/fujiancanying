@@ -25,8 +25,8 @@
                         <tr>
                             <th width="10%"><a href="">序号</a></th>
                             <th width="20%">标题</th>
-                            <th width="50">简介</th>
-                            <th width="50">标题图片</th>
+                            <th width="50">简介图片</th>
+                            <th width="50">视频链接</th>
                             <th width="10%">状态</th>
                             <th width="10%">操作</th>
                         </tr>
@@ -37,8 +37,8 @@
                         <tr ng-repeat="item in data.content" class="tr_nowrap">
                             <td ><a href="" ng-click="goToEdit(item)">{{item.id}}</a></td>
                             <td>{{item.title}}</td>
-                            <td>{{item.description}}</td>
-                            <td>{{item.thumbnails}}</td>
+                            <td>{{item.image}}</td>
+                            <td>{{item.video}}</td>
                             <td>{{item.is_public?'已发布':'未发布'}}</td>
                             <td ng-show="item.is_public"><button type="button" class="btn btn-default" ng-click="operate(item)">下架</button></td>
                             <td ng-show="!item.is_public"><button type="button" class="btn btn-default" ng-click="operate(item)">发布</button></td>

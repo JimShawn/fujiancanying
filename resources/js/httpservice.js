@@ -73,6 +73,16 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         });
         return deferd.promise;
     };
+    api.tutorialCreate = function (news) {
+        var deferd = $q.defer();
+        var url = commonProperty.serverHost + "tutorial?access_token=" + $window.sessionStorage["access_token"];
+        $http.post(url,news).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
     api.newsUpdate = function (id,news) {
         var deferd = $q.defer();
         var url = commonProperty.serverHost + "news/"+id+"?access_token=" + $window.sessionStorage["access_token"];
@@ -83,9 +93,29 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         });
         return deferd.promise;
     };
+    api.tutorialUpdate = function (id,news) {
+        var deferd = $q.defer();
+        var url = commonProperty.serverHost + "tutorial/"+id+"?access_token=" + $window.sessionStorage["access_token"];
+        $http.put(url,news).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
     api.newsOperate = function (id,news) {
         var deferd = $q.defer();
         var url = commonProperty.serverHost + "news/"+id+"?access_token=" + $window.sessionStorage["access_token"];
+        $http.patch(url,news).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
+    api.tutorialOperate = function (id,news) {
+        var deferd = $q.defer();
+        var url = commonProperty.serverHost + "tutorial/"+id+"?access_token=" + $window.sessionStorage["access_token"];
         $http.patch(url,news).then(function (result) {
             deferd.resolve(result);
         },function (error) {
@@ -154,6 +184,25 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
                }
                
                 url += "&articleType="+queryObj.articleType;
+        };
+        
+        
+        $http.get(url).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
+    api.getTutorialList = function (queryObj) {
+        var deferd = $q.defer();
+        var url =commonProperty.serverHost + "tutorial?";
+        if(queryObj){
+               url += "&size="+queryObj.size;
+               url += "&page="+queryObj.page;
+               if(queryObj.isPublic!=undefined){
+                    url += "&isPublic="+queryObj.isPublic;
+               }
         };
         
         

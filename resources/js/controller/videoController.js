@@ -80,8 +80,7 @@ video.controller('VideoPlayController', ['$scope', '$http','$location','$rootSco
 video.controller('manageTutorialController', function($scope, $http, $location, $rootScope, $state, httpService) {
     $scope.query = {
         page: 0,
-        size: 10,
-        articleType: 6
+        size: 10
     };
     $scope.newsStatuses = [{
             name: '全部',
@@ -110,7 +109,7 @@ video.controller('manageTutorialController', function($scope, $http, $location, 
     };
 
     function getList(queryObj) {
-        httpService.getNewsList(queryObj).then(function(res) {
+        httpService.getTutorialList(queryObj).then(function(res) {
             console.log(res);
             $scope.data = res.data;
         }, function(err) {
@@ -128,13 +127,13 @@ video.controller('manageTutorialController', function($scope, $http, $location, 
     getList($scope.query);
 
     $scope.goToCreate = function(argument) {
-        $state.go("manage.cultureCreate", { item: null });
+        $state.go("manage.tutorialCreate", { item: null });
     };
     $scope.goToEdit = function(item) {
-        $state.go("manage.cultureCreate", { item: item });
+        $state.go("manage.tutorialCreate", { item: item });
     };
     $scope.operate = function(item) {
-        httpService.newsOperate(item.id, { is_public: !item.is_public }).then(function(res) {
+        httpService.tutorialOperate(item.id, { is_public: !item.is_public }).then(function(res) {
             console.log(res);
             getList($scope.query);
         }, function(err) {
@@ -146,18 +145,9 @@ video.controller('manageTutorialController', function($scope, $http, $location, 
 
 
 video.controller('createTutorialController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
-    $(function() {
-        $('#edit').froalaEditor({
-            language: 'zh_cn',
-            heightMin: 700,
-            width: '1000',
-            imageUploadURL: 'http://www.fjcy.net/api/upload/6?access_token=' + $window.sessionStorage["access_token"]
-
-        });
-
-    });
+    
     var imageUploader = $scope.imageUploader = new FileUploader({
-        url: commonProperty.serverHost + "upload/6?access_token=" + $window.sessionStorage["access_token"],
+        url: commonProperty.serverHost + "upload/10?access_token=" + $window.sessionStorage["access_token"],
         queueLimit: 1, //文件个数
     });
 
@@ -168,34 +158,66 @@ video.controller('createTutorialController', ['$scope', '$http', '$location', '$
     imageUploader.onSuccessItem = function(fileItem, response, status, headers) {
         imageUploader.clearQueue();
         console.log(response);
-        $scope.bannerurl = response.link;
+        $scope.image = response.link;
 
     };
 
     imageUploader.onErrorItem = function(fileItem, response, status, headers) {};
     imageUploader.onCompleteAll = function() {};
+
+	var imageUploader1 = $scope.imageUploader1 = new FileUploader({
+        url: commonProperty.serverHost + "upload/10?access_token=" + $window.sessionStorage["access_token"],
+        queueLimit: 1, //文件个数
+    });
+
+    imageUploader1.onAfterAddingFile = function(fileItem) {
+        imageUploader1.uploadAll();
+        
+    };
+
+    imageUploader1.onSuccessItem = function(fileItem, response, status, headers) {
+        imageUploader1.clearQueue();
+        console.log(response);
+        $scope.video = response.link;
+
+    };
+
+    imageUploader1.onErrorItem = function(fileItem, response, status, headers) {};
+    imageUploader1.onCompleteAll = function() {
+    	swal.close();
+    };
+    imageUploader1.onProgressItem  = function(item, progress){
+    	swal({  title:'',
+                text: "已上传"+progress+"%",
+                type: "info",
+                showConfirmButton: false
+            });
+    	console.log(progress);
+    }
+
     var selectedItem = $stateParams.item;
+    if (selectedItem) {
+            $scope.video = selectedItem.video;
+            $scope.newsTitle = selectedItem.title;
+            $scope.image = selectedItem.image;
+        };
     $scope.save = function(argument) {
-        console.log($('#edit').froalaEditor('html.get', true));
         var newsObj = {
-            "article_type": 6,
-            "content": $('#edit').froalaEditor('html.get', true),
-            "description": $scope.brief,
-            "introduction": "",
-            "thumbnails": $scope.bannerurl,
+            "video":$scope.video,
+            "image": $scope.image,
             "title": $scope.newsTitle
         };
         if (selectedItem) {
-            httpService.newsUpdate(selectedItem.id, newsObj).then(function(res) {
+            httpService.tutorialUpdate(selectedItem.id, newsObj).then(function(res) {
                 console.log(res);
-                $state.go('manage.fujianCuisineCulture');
+                $state.go('manage.tutorial');
             }, function(err) {
                 console.log(err);
             })
         } else {
-            httpService.newsCreate(newsObj).then(function(res) {
+            httpService.tutorialCreate(newsObj).then(function(res) {
                 console.log(res);
-                $state.go('manage.fujianCuisineCulture');
+                $state.go('manage.tutorial');
             }, function(err) {
                 console.log(err);
             })
@@ -203,22 +225,14 @@ video.controller('createTutorialController', ['$scope', '$http', '$location', '$
 
     };
     $scope.cancel = function(argument) {
-        $state.go('manage.fujianCuisineCulture');
+        $state.go('manage.tutorial');
     }
 
 
-    $('#edit').on('froalaEditor.initialized', function(e, editor) {
 
         // Do something here.
 
-        if (selectedItem) {
-            $scope.brief = selectedItem.description;
-            $scope.newsTitle = selectedItem.title;
-            $scope.bannerurl = selectedItem.thumbnails;
-            $('#edit').froalaEditor('html.set', selectedItem.content);
-
-        };
-    });
+        
 
 
 
