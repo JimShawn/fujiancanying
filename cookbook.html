@@ -9,19 +9,32 @@
 
             <div class="con index" style="margin-top: 20px;">
                 <ul id="ArticleContentor">
-                    <li ng-repeat="snack in snackList | filter: {type: 1}">
-                        <div class="b-img"><a ui-sref="main.snackDetail({snackTitle:snack.title})"><img src="./resources/img/{{snack.title}}.jpg" alt="{{snack.title}}"></a></div>
+                    <li ng-repeat="snack in data.content">
+                        <div class="b-img">
+                            <a ui-sref="main.snackDetail({id:snack.id})">
+                                <img ng-src="{{snack.thumbnails}}" alt="{{snack.title}}">
+                            </a>
+                        </div>
                         <dl>
-                            <dt><a ui-sref="main.snackDetail({snackTitle:snack.title})">{{snack.title}}</a></dt>
-                            <dd><a ui-sref="main.snackDetail({snackTitle:snack.title})">{{snack.brief}}</a></dd>
-                            <div class="stampstr">时间:{{snack.createdTime}}&nbsp;&nbsp;|&nbsp;&nbsp;浏览: {{snack.readCount}}次 </div>
+                            <dt><a ui-sref="main.snackDetail({id:snack.id})">{{snack.title}}</a></dt>
+                            <dd><a ui-sref="main.snackDetail({id:snack.id})">{{snack.description}}</a></dd>
+                            <div class="stampstr">时间:{{commonUtil.getDateFromInt(snack.time_created)}}&nbsp;&nbsp;|&nbsp;&nbsp;浏览: {{snack.read_count}}次 </div>
                         </dl>
                     </li>
                 </ul>
+            <div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 5px 0px;">
+                <div class="col-md-2 col-lg-2"></div>
+                <div class="col-md-8 col-lg-8">
+                    <t-footer page-size = 'data.size' page-num = 'data.number' total-page = 'data.total_pages' total-num = 'data.total_elements' change-page-size-fun = 'changePageSizeFun(size)' goto-page-fun='gotoPageFun(page)'></t-footer>
+                </div>
+                <div class="col-md-2 col-lg-2"></div>
+
+            </div>
             </div>
             <div class="cl10"></div>
         </div>
     </div>
+
     <span class="clr"></span>
 
 </div>

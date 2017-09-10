@@ -3,20 +3,22 @@
 			<div class="line"></div>
 
 			<div class="f-cb" id="j-container">
-				<div class="u-unicard f-fl" ng-repeat="video in videos">              
+				<div class="u-unicard f-fl" ng-repeat="video in data.content">              
 					<a href="" class="u-cover" target="_blank" ng-click="gotoDetail(video)">
 						<div class="shadow rel">                  
-							<img ng-src="{{video.icon}}" alt="{{video.name}}" height="158" width="250" style="display: inline;">
+							<img ng-src="{{video.image}}" alt="{{video.title}}" height="158" width="250" style="display: inline;">
 							<div class="mask abs"></div>                
 						</div>              
 					</a>             
 					<a href="" target="_blank" ng-click="gotoDetail(video)">
-					    <h5 class="f-c3 f-thide">{{video.name}}</h5>
+					    <h5 class="f-c3 f-thide">{{video.title}}</h5>
 					</a>              
-					<span class="f-c9">{{video.time}}</span>
+					<span class="f-c9">{{commonUtil.getDateFromInt(video.time_created)}}</span>
 				</div>
+				
 				
 
 			</div>
+			
 		</div>
 		

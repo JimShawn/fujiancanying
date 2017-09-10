@@ -62,16 +62,49 @@ video.constant('videos', [
 			url:'./resources/video/11红糟羊肉.mp4'
 		}
 	]);
-video.controller('VideoController', ['$scope', '$http','$location','$rootScope','$state','videos',function ($scope,$http,$location,$rootScope,$state,videos) {
+video.controller('VideoController', ['$scope', '$http','$location','$rootScope','$state','videos','commonUtil','httpService',function ($scope,$http,$location,$rootScope,$state,videos,commonUtil,httpService) {
     $scope.videos = videos;
+    $scope.commonUtil = commonUtil;
     $scope.gotoDetail = function (item) {
-        $state.go('main.videoplay',{item:item});
+        $state.go('main.videoplay',{id:item.id});
     };
+    $scope.query = {
+        page: 0,
+        size: 12
+    };
+    $scope.changePageSizeFun = function(size) {
+        $scope.query.page = $scope.data.number;
+        $scope.query.size = size;
+        getList($scope.query);
+    };
+
+    $scope.gotoPageFun = function(x) {
+        $scope.query.page = x;
+        $scope.query.size = $scope.data.size;
+        getList($scope.query);
+    };
+
+    function getList(queryObj) {
+        httpService.getTutorialList(queryObj).then(function(res) {
+            console.log(res);
+            $scope.data = res.data;
+        }, function(err) {
+            console.log(err);
+        });
+    };
+    getList($scope.query);
 
 
 }]);
-video.controller('VideoPlayController', ['$scope', '$http','$location','$rootScope','$state','$stateParams',function ($scope,$http,$location,$rootScope,$state,$stateParams) {
-    $scope.item = $stateParams.item;
+video.controller('VideoPlayController', ['$scope', '$http','$location','$rootScope','$state','$stateParams','httpService',function ($scope,$http,$location,$rootScope,$state,$stateParams,httpService) {
+    $scope.id = $stateParams.id;
+    if ($scope.id) {
+        httpService.getTutorialById($scope.id).then(function (res) {
+            $scope.tutorial = res.data;
+        },function (err) {
+            console.log(err);
+        });
+    }
 
 
 }]);

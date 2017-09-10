@@ -5116,21 +5116,42 @@ industryinfo.controller('IndustryinfoController', ['$scope', '$http','$location'
 
 
 }]);
-industryinfo.controller('TransforminfoController', ['$scope', '$http','$location','$rootScope','$state','$stateParams',function ($scope,$http,$location,$rootScope,$state,$stateParams) {
-    $scope.item = $stateParams.item;
-    console.log($scope.item);
+industryinfo.controller('TransforminfoController', ['$scope', '$http','$location','$rootScope','$state','$stateParams','commonUtil','httpService',function ($scope,$http,$location,$rootScope,$state,$stateParams,commonUtil,httpService) {
+    $scope.commonUtil = commonUtil;
+    $scope.id = $stateParams.id;
+    if ($scope.id) {
+        httpService.getNewsById($scope.id).then(function (res) {
+            $scope.item = res.data;
+        },function (err) {
+            console.log(err);
+        });
+    }
 
 
 }]);
-industryinfo.controller('LabourinfoController', ['$scope', '$http','$location','$rootScope','$state','$stateParams',function ($scope,$http,$location,$rootScope,$state,$stateParams) {
-    $scope.item = $stateParams.item;
-    console.log($scope.item);
+industryinfo.controller('LabourinfoController', ['$scope', '$http','$location','$rootScope','$state','$stateParams','commonUtil','httpService',function ($scope,$http,$location,$rootScope,$state,$stateParams,commonUtil,httpService) {
+    $scope.commonUtil = commonUtil;
+    $scope.id = $stateParams.id;
+    if ($scope.id) {
+        httpService.getNewsById($scope.id).then(function (res) {
+            $scope.item = res.data;
+        },function (err) {
+            console.log(err);
+        });
+    }
 
 
 }]);
-industryinfo.controller('FoodinfoController', ['$scope', '$http','$location','$rootScope','$state','$stateParams',function ($scope,$http,$location,$rootScope,$state,$stateParams) {
-    $scope.item = $stateParams.item;
-    console.log($scope.item);
+industryinfo.controller('FoodinfoController', ['$scope', '$http','$location','$rootScope','$state','$stateParams','commonUtil','httpService',function ($scope,$http,$location,$rootScope,$state,$stateParams,commonUtil,httpService) {
+    $scope.commonUtil = commonUtil;
+    $scope.id = $stateParams.id;
+    if ($scope.id) {
+        httpService.getNewsById($scope.id).then(function (res) {
+            $scope.item = res.data;
+        },function (err) {
+            console.log(err);
+        });
+    }
 
 
 }]);

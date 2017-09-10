@@ -1,6 +1,6 @@
 <div class="container" style="width: 1140px" ng-controller="NewsController">
 			
-			<div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 5px 0px;" ng-repeat="news in newsList | slice:0:25">
+			<div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 5px 0px;" ng-repeat="news in data.content">
 				<div class="col-md-2 col-lg-2"></div>
 				<div class="col-md-8 col-lg-8" ng-click="newsDetail()">
 					<div class="row" style="padding: 5px 0px;">
@@ -8,14 +8,27 @@
 					</div>
 					<div class="row">
 						<div class="col-md-12 col-lg-12" style="color: gray;">
-						{{news.brief}}...<a ui-sref="main.newsDetail({news:news})">阅读全文</a>
+						{{news.description}}...<a ui-sref="main.newsDetail({id:news.id})">阅读全文</a>
 						</div>
 					</div>
 					<div class="row" style="font-size: 12px; color: gray; margin-top: 8px;">
-					<div class="col-md-2 col-lg-2">阅读：{{news.readCount}}</div>
-					<div class="col-md-2 col-lg-2">时间：{{news.createdTime}}</div>
+					<div class="col-md-2 col-lg-2">阅读：{{news.read_count}}</div>
+					<div class="col-md-2 col-lg-2">时间：{{commonUtil.getDateFromInt(news.time_modified)}}</div>
 					</div>
 				</div>
 				<div class="col-md-2 col-lg-2"></div>
+
 			</div>
+			<div class="row" style="border-top:1px solid #f2f2f2; color: #0d0d0d; padding: 5px 0px;">
+				<div class="col-md-2 col-lg-2"></div>
+				<div class="col-md-8 col-lg-8">
+					<t-footer page-size = 'data.size' page-num = 'data.number' total-page = 'data.total_pages' total-num = 'data.total_elements' change-page-size-fun = 'changePageSizeFun(size)' goto-page-fun='gotoPageFun(page)'></t-footer>
+				</div>
+				<div class="col-md-2 col-lg-2"></div>
+
+			</div>
+			<div class="row">
+				
+			</div>
+			
 </div>

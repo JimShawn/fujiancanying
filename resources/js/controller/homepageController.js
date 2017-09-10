@@ -1,14 +1,14 @@
 var homepage = angular.module('homepage', []);
 
-homepage.controller('HomePageController', function ($scope,$http,$location,$rootScope,$state,snackList,newsList,chefList,restaurantList,info) {
+homepage.controller('HomePageController', function ($scope,$http,$location,$rootScope,$state,snackList,chefList,restaurantList,info,httpService,commonUtil) {
     $scope.snackList = snackList;
-    $scope.newsList = newsList;
     $scope.chefList = chefList;
     $scope.restaurantList = restaurantList;
     $scope.infoList = info;
     $scope.famousChef = true;
     $scope.famousHotel = false;
     $scope.famousSnack = false;
+    $scope.commonUtil = commonUtil;
     $scope.changeTab = function (type) {
         switch(type){
             case 1:
@@ -27,7 +27,100 @@ homepage.controller('HomePageController', function ($scope,$http,$location,$root
                 $scope.famousSnack = true;
                 break;
         }
+    };
+    //获取banner数据
+    $scope.queryBanner = {
+        page: 0,
+        size: 3,
+        isPublic:true
+    };
+    httpService.getBannerList($scope.queryBanner).then(function(res) {
+            console.log(res);
+            $scope.dataBannerContents = res.data.content;
+            $scope.banner1 = $scope.dataBannerContents[0].image;
+            $scope.banner2 = $scope.dataBannerContents[1].image;
+        }, function(err) {
+            console.log(err);
+        });
+    //获取名菜数据
+    $scope.queryRecipes = {
+        page: 0,
+        size: 5,
+        isPublic:true,
+        articleType:1
+    };
+    httpService.getNewsList($scope.queryRecipes).then(function (res) {
+        $scope.dataRecipeContents = res.data.content;
+    },function (err) {
+        console.log(err);
+    });
+    //获取新闻列表
+    $scope.queryRecipes = {
+        page: 0,
+        size: 2,
+        isPublic:true,
+        articleType:0
+    };
+    httpService.getNewsList($scope.queryRecipes).then(function (res) {
+        $scope.dataNewsContents = res.data.content;
+    },function (err) {
+        console.log(err);
+    });
+    //获取教学视频list
+    $scope.queryTutorial = {
+        page: 0,
+        size: 4,
+        isPublic:true
+    };
+    httpService.getTutorialList($scope.queryTutorial).then(function(res) {
+            console.log(res);
+            $scope.dataTutorialContents = res.data.content;
+        }, function(err) {
+            console.log(err);
+        });
+    //获取转让list
+    $scope.queryTransform = {
+        page: 0,
+        size: 7,
+        isPublic:true,
+        articleType:3
+    };
+    httpService.getNewsList($scope.queryTransform).then(function(res) {
+            console.log(res);
+            $scope.dataTransformContents = res.data.content;
+        }, function(err) {
+            console.log(err);
+        });
+    //获取转让list
+    $scope.queryLabor = {
+        page: 0,
+        size: 7,
+        isPublic:true,
+        articleType:4
+    };
+    httpService.getNewsList($scope.queryLabor).then(function(res) {
+            console.log(res);
+            $scope.dataLaborContents = res.data.content;
+        }, function(err) {
+            console.log(err);
+        });
+    //获取转让list
+    $scope.queryFood = {
+        page: 0,
+        size: 7,
+        isPublic:true,
+        articleType:5
+    };
+    httpService.getNewsList($scope.queryFood).then(function(res) {
+            console.log(res);
+            $scope.dataFoodContents = res.data.content;
+        }, function(err) {
+            console.log(err);
+        });
+    $scope.goNewsDetail = function (id) {
+        $state.go("main.newsDetail",{id:id});
     }
+
     $scope.gotoFamous = function() {
         if ($scope.famousHotel || $scope.famousChef) {
             $state.go("main.chefRestaurant");
@@ -57,7 +150,7 @@ homepage.controller('HomePageController', function ($scope,$http,$location,$root
             icon:'./resources/img/jiaoxue/05.jpg',
             url:'./resources/video/05全节黄瓜鱼.mp4'
         }];
-    $scope.gotoDetail = function (item) {
-        $state.go('main.videoplay',{item:item});
+    $scope.gotoDetail = function (id) {
+        $state.go('main.videoplay',{id:id});
     };
 });

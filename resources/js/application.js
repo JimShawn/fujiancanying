@@ -19,7 +19,7 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         }
 
     ).state("main.newsDetail",{
-        params:{"news":null},
+        params:{"id":null},
         url: "/newsDetail",
         templateUrl: 'news-detail.html'
         }
@@ -49,7 +49,7 @@ app.config(function ($stateProvider,$urlRouterProvider) {
     ).state("main.videoplay",{
         url: "/videoplay",
         templateUrl: 'video-play.html',
-        params:{item:null}
+        params:{id:null}
         }
 
     ).state("main.industryInfo",{
@@ -66,7 +66,7 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         templateUrl: 'cookbook.html'
         }
     ).state("main.snackDetail",{
-        params:{"snackTitle":null},
+        params:{"snackTitle":null,"id":null},
         url: "/snackDetail",
         templateUrl: 'snack-detail.html'
         }
@@ -74,19 +74,19 @@ app.config(function ($stateProvider,$urlRouterProvider) {
     ).state("main.transformInfo",{
             url: "/transformInfo",
             templateUrl: 'transforminfo.html',
-            params:{item:null}
+            params:{id:null}
         }
 
     ).state("main.labourInfo",{
             url: "/labourInfo",
             templateUrl: 'labourinfo.html',
-            params:{item:null}
+            params:{id:null}
         }
 
     ).state("main.foodInfo",{
             url: "/foodInfo",
             templateUrl: 'foodinfo.html',
-            params:{item:null}
+            params:{id:null}
         }
 
     ).state("main.culture",{

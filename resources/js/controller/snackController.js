@@ -174,17 +174,52 @@ snack.constant("snackList", [
 	}
 ]);
 
-snack.controller('SnackController', function ($scope,$http,$location,$rootScope,$state,snackList) {
+snack.controller('SnackController', function ($scope,$http,$location,$rootScope,$state,snackList,httpService,commonUtil) {
 	$scope.snackList = snackList;
+	$scope.commonUtil = commonUtil;
+	$scope.query = {
+		page:0,
+		size:10,
+		articleType:1,
+		isPublic:true
+	};
+	$scope.changePageSizeFun = function (size) {
+        $scope.query.page = $scope.data.number;
+        $scope.query.size = size;
+        getList($scope.query);
+    };
 
+    $scope.gotoPageFun = function (x) {
+        $scope.query.page = x;
+        $scope.query.size = $scope.data.size;
+        getList($scope.query);
+    };
+	function getList(queryObj) {
+		httpService.getNewsList(queryObj).then(function (res) {
+		console.log(res);
+		$scope.data = res.data;
+	},function (err) {
+		console.log(err);
+	});
+	};
+	getList($scope.query);
 	$scope.gotoSnackDetail = function (city) {
 		title = $(".snack[name='"+city+"'] .title").html();
         $state.go("main.snackDetail", {snackTitle:title});
     };
 });
 
-snack.controller('SnackDetailController', function($scope,$stateParams,snackList) {
+snack.controller('SnackDetailController', function($scope,$stateParams,snackList,commonUtil,httpService) {
 	$scope.snackTitle = $stateParams.snackTitle;
+	$scope.id = $stateParams.id;
+	$scope.commonUtil = commonUtil;
+	if ($scope.id) {
+		httpService.getNewsById($scope.id).then(function (res) {
+			$scope.snack = res.data;
+		},function (err) {
+			console.log(err);
+		});
+	}
 	for (i in snackList) {
 		if (snackList[i].title == $scope.snackTitle) {
 			$scope.snack = snackList[i];

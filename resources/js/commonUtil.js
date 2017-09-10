@@ -3,14 +3,14 @@ var commonUtil = angular.module('commonUtil', []);
 	commonUtil.factory('commonUtil', function(){
 		 	var factory = {};
 		    factory.getDateFromInt = function(timeInt){
-		        var time = new Date(timeInt * 1000);
+		        var time = new Date(timeInt);
 		        var y = time.getFullYear();
 		        var m = time.getMonth()+1;
 		        var d = time.getDate();
 		        return y+"-"+m+"-"+d;
 		    };
 		    factory.getDateWithSecondsFromInt = function(timeInt){
-		        var time = new Date(timeInt * 1000);
+		        var time = new Date(timeInt);
 		        var y = time.getFullYear();
 		        var m = time.getMonth()+1;
 		        var d = time.getDate();

@@ -489,3 +489,7 @@
 .nice-paper li:hover{
     color: #e43232;
 }
+.carousel .carousel-inner .item .homepage-banner{
+    width: 100%; 
+    height: 400px;
+}

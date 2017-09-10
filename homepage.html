@@ -7,11 +7,11 @@
 					<!-- <li data-target="#myCarousel" data-slide-to="2"></li> -->
 				</ol>
 				<div class="carousel-inner">
-					<div class="item active">
-						<img src="./resources/img/banner1.jpg" style="width: 100%; height: 400px; " data-src="" alt="First slide">
+					<div class="item active" style="cursor: pointer;" ng-click="goNewsDetail(18576463695905)">
+						<img ng-src="{{banner1}}" class="homepage-banner">
 					</div>
-					<div class="item">
-						<img src="./resources/img/banner2.jpg" style="width: 100%; height: 400px; " data-src="" alt="Second slide">	
+					<div class="item" style="cursor: pointer;" ng-click="goNewsDetail(18581392216166)">
+						<img ng-src="{{banner2}}" class="homepage-banner">	
 					</div>
 					<!-- <div class="item">
 						<img src="./resources/img/banner3.jpg" style="width: 100%; height: 400px; " data-src="" alt="Second slide">	
@@ -42,12 +42,12 @@
 
 					<div class="caipu-img img-pre" style="display: none;"></div>
 
-					<div class="caipu-img show-img" style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="snack in snackList | filter: {type: 1} | slice:0:5">
-						<a style="text-decoration-line: none;"ui-sref="main.snackDetail({snackTitle:snack.title})">
+					<div class="caipu-img show-img" style="height: 214px;width: 192px;margin-left: 20px;text-align: center;" ng-repeat="dataRecipeContent in dataRecipeContents">
+						<a style="text-decoration-line: none;"ui-sref="main.snackDetail({id:dataRecipeContent.id})">
 						<div style="height: 144px; width: 192px; overflow: hidden;">
-							<img src="./resources/img/{{snack.title}}.jpg" class="img-responsive" alt="Cinque Terre" style="height: 144px; width: 192px; cursor: pointer;">
+							<img ng-src="{{dataRecipeContent.thumbnails}}" class="img-responsive" alt="Cinque Terre" style="height: 144px; width: 192px; cursor: pointer;">
 						</div>
-						<h4 style="color:#333333;">{{snack.title}}</h4>
+						<h4 style="color:#333333;">{{dataRecipeContent.title}}</h4>
 						</a>
 					</div>
 					
@@ -66,10 +66,10 @@
 						</h2>
 						<div class="line news-line"></div>
 
-						<div class="news-content1" ng-repeat="news in newsList | slice:0:2">
-							<a ui-sref="main.newsDetail({news:news})">{{news.title}}</a>
-							<p style="font-size: 14px;letter-spacing: 2px;margin-top: 18px;color: #666666;">{{news.brief}}...</p>
-							<h3>{{news.createdTime}}</h3>
+						<div class="news-content1" ng-repeat="dataNewsContent in dataNewsContents">
+							<a ui-sref="main.newsDetail({id:dataNewsContent.id})">{{dataNewsContent.title}}</a>
+							<p style="font-size: 14px;letter-spacing: 2px;margin-top: 18px;color: #666666;">{{dataNewsContent.description}}...</p>
+							<h3>{{ commonUtil.getDateFromInt(dataNewsContent.time_created)}}</h3>
 						</div>
 					</div>
 					<div style="padding-top: 1px;margin-left: 50px; width: 485px;">
@@ -79,29 +79,29 @@
 						<div class="video-content1">
 							<div style="width: 237px;height: 306px;margin-top: 10px;">
 								<div class="p-thumb"  >
-							        <a href="" title="{{videoList[0].name}}" data-from="1-1" target="video" ng-click="gotoDetail(videoList[0])"></a>
+							        <a href="" title="{{dataTutorialContents[0].title}}" data-from="1-1" target="video" ng-click="gotoDetail(dataTutorialContents[0].id)"></a>
 							        <i class="bg"></i>
-									<img class="quic" src="{{videoList[0].icon}}">
+									<img class="quic" ng-src="{{dataTutorialContents[0].image}}">
 									<!-- <span class="time-tip">00:09</span> -->
 								</div>
 								<div class="p-thumb"  style="margin-top: 10px;">
-								        <a href="" title="{{videoList[1].name}}" data-from="1-1" target="video" ng-click="gotoDetail(videoList[1])"></a>
+								        <a href="" title="{{dataTutorialContents[1].title}}" data-from="1-1" target="video" ng-click="gotoDetail(dataTutorialContents[1].id)"></a>
 								        <i class="bg"></i>
-										<img class="quic" src="{{videoList[1].icon}}">
+										<img class="quic" ng-src="{{dataTutorialContents[1].image}}">
 										<!-- <span class="time-tip">00:09</span> -->
 								</div>
 							</div>
 							<div style="width: 237px;height: 306px;margin-top: 10px;margin-left: 10px;">
 								<div class="p-thumb"  >
-							        <a href="" title="{{videoList[2].name}}" data-from="1-1" target="video" ng-click="gotoDetail(videoList[2])"></a>
+							        <a href="" title="{{dataTutorialContents[2].title}}" data-from="1-1" target="video" ng-click="gotoDetail(dataTutorialContents[2].id)"></a>
 							        <i class="bg"></i>
-									<img class="quic" src="{{videoList[2].icon}}">
+									<img class="quic" ng-src="{{dataTutorialContents[2].image}}">
 									<!-- <span class="time-tip">00:09</span> -->
 								</div>
 								<div class="p-thumb"  style="margin-top: 10px;">
-								        <a href="" title="{{videoList[3].name}}" data-from="1-1" target="video" ng-click="gotoDetail(videoList[3])"></a>
+								        <a href="" title="{{dataTutorialContents[3].title}}" data-from="1-1" target="video" ng-click="gotoDetail(dataTutorialContents[3].id)"></a>
 								        <i class="bg"></i>
-										<img class="quic" src="{{videoList[3].icon}}">
+										<img class="quic" ng-src="{{dataTutorialContents[3].image}}">
 										<!-- <span class="time-tip">00:09</span> -->
 								</div>
 							</div>
@@ -185,7 +185,7 @@
 							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.industryInfo">更多></a>
 						</h2>
 						<ul>
-							<li ng-repeat="info in infoList.transferInfo | slice:0:7"><a ui-sref="main.transformInfo({item:info})">{{info.title.substr(0, 20)}}{{info.title.length > 16 ? '...' : ''}}</a></li>
+							<li ng-repeat="dataTransformContent in dataTransformContents"><a ui-sref="main.transformInfo({id:dataTransformContent.id})">{{dataTransformContent.title.substr(0, 20)}}{{dataTransformContent.title.length > 16 ? '...' : ''}}</a></li>
 						</ul>
 					</div>
 					<div class="line-vertical"></div>
@@ -194,7 +194,7 @@
 							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.industryInfo">更多></a>
 						</h2>
 						<ul>
-							<li ng-repeat="info in infoList.labourInfo | slice:0:7"><a ui-sref="main.labourInfo({item:info})">{{info.title.substr(0, 16)}}{{info.title.length > 16 ? '...' : ''}}</a></li>
+							<li ng-repeat="dataLaborContent in dataLaborContents"><a ui-sref="main.labourInfo({id:dataLaborContent.id})">{{dataLaborContent.title.substr(0, 16)}}{{dataLaborContent.title.length > 16 ? '...' : ''}}</a></li>
 						</ul>
 					</div>
 					<div class="line-vertical"></div>
@@ -203,7 +203,7 @@
 							<a style="font-size: 14px;color: #999999;float: right;margin-top: 10px;" ui-sref="main.industryInfo">更多></a>
 						</h2>
 						<ul>
-							<li ng-repeat="info in infoList.foodInfo | slice:0:7"><a ui-sref="main.foodInfo({item:info})">{{info.title.substr(0, 16)}}{{info.title.length > 16 ? '...' : ''}}</a></li>
+							<li ng-repeat="dataFoodContent in dataFoodContents"><a ui-sref="main.foodInfo({id:dataFoodContent.id})">{{dataFoodContent.title.substr(0, 16)}}{{dataFoodContent.title.length > 16 ? '...' : ''}}</a></li>
 						</ul>
 					</div>
 				</div>
