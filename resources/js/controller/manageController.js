@@ -1,8 +1,14 @@
 var manage = angular.module('manage', []);
 
 
-manage.controller('manageController', ['$scope', '$http','$location','$rootScope','$state',function ($scope,$http,$location,$rootScope,$state) {
-			$scope.$watch('$viewContentLoaded', function() {
+manage.controller('manageController', ['$scope', '$http', '$location', '$rootScope', '$state','httpService', function($scope, $http, $location, $rootScope, $state,httpService) {
+    $scope.logout = function () {
+        httpService.logout().then(function () {
+                        $state.go("login");
+                    },function (err) {
+                    });
+    }
+    $scope.$watch('$viewContentLoaded', function() {
         (function($, sr) {
             // debouncing function from John Hann
             // http://unscriptable.com/index.php/2009/03/20/debouncing-javascript-methods/
@@ -140,15 +146,15 @@ manage.controller('manageController', ['$scope', '$http','$location','$rootScope
                 });
             }
         };
-		$(document).ready(function() {
-                
-        init_sidebar();
-        // init_daterangepicker();
-        // init_daterangepicker_reservation();
-        // init_echarts();
-        // init_DataTables();
-                
-    });         
+        $(document).ready(function() {
+
+            init_sidebar();
+            // init_daterangepicker();
+            // init_daterangepicker_reservation();
+            // init_echarts();
+            // init_DataTables();
+
+        });
         // /Sidebar
         //获取随机数
         var randNum = function() {
@@ -185,11 +191,11 @@ manage.controller('manageController', ['$scope', '$http','$location','$rootScope
                 hide: 400
             }
         });
-    });   
+    });
 
-			
 
-		    
 
-    
+
+
+
 }]);

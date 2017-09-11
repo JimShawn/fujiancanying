@@ -1,10 +1,9 @@
 var homepage = angular.module('homepage', []);
 
-homepage.controller('HomePageController', function ($scope,$http,$location,$rootScope,$state,snackList,chefList,restaurantList,info,httpService,commonUtil) {
+homepage.controller('HomePageController', function ($scope,$http,$location,$rootScope,$state,snackList,chefList,restaurantList,httpService,commonUtil) {
     $scope.snackList = snackList;
     $scope.chefList = chefList;
     $scope.restaurantList = restaurantList;
-    $scope.infoList = info;
     $scope.famousChef = true;
     $scope.famousHotel = false;
     $scope.famousSnack = false;

@@ -4,46 +4,23 @@
 			<div class="row">
 				<div class="col-md-12 col-lg-12">
 				<ul id="myTab" class="nav nav-tabs" style="height: 30px;">
-					<li class="active">
-						<a href="" data-toggle="tab" data-target="#home" style="font-weight: bold;font-size: 15px">
-							 餐饮转让
+					<li ng-class="selectedIndustryType.type ==industryType.type ?'active':''" ng-repeat="industryType in industryTypeArrays">
+						<a href=""  style="font-weight: bold;font-size: 15px" ng-click='changeType(industryType)'>
+							 {{industryType.name}}
 						</a>
-					</li>
-					<li><a href="" data-toggle="tab" data-target="#ios" style="font-weight: bold;font-size: 15px">劳务消息</a></li>
-					<li>
-						<a href="" data-toggle="tab" data-target="#ejb" style="font-weight: bold;font-size: 15px">食材对接</a>
 					</li>
 				</ul>
 				</div>
 			</div>
 			<div class="row tab-content" style="height: 220px;">
-				<div class="col-md-12 col-lg-12 tab-pane fade in active"  style="margin-top: 10px;" id="home">
+				<div class="col-md-12 col-lg-12 "  style="margin-top: 10px;" >
 					<ul class="list-group">
-					    <li class="list-group-item rent" style="height: 50px;" ng-repeat="transferInfo in info.transferInfo | slice:0:10" ng-click="transferDetail(transferInfo)">
-							    <a href="" class="rent-name list">
-							    	{{transferInfo.title}}
-							    </a>
-					    		<h4 style="font-size: 14px;float: right;color: #999999" class="rent-time">
-									{{transferInfo.publishTime}}
-								</h4>
-								<h4 style="font-size: 17px;color:#333;float: right;margin-right:250px;" class="rent-time">
-									{{transferInfo.tel}}
-								</h4>	
-						</li>
-						
-					</ul>	
-					
-					
-
-				</div>
-				<div class="col-md-12 col-lg-12 tab-pane fade"  style="margin-top: 10px;" id="ios">
-					<ul class="list-group">
-					    <li class="list-group-item rent" style="height: 50px;" ng-repeat="labourInfo in info.labourInfo | slice:0:10" ng-click="labourDetail(labourInfo)">
+					    <li class="list-group-item rent" style="height: 50px;" ng-repeat="labourInfo in data.content">
 							    <a href="" class="rent-name list">
 							    	{{labourInfo.title}}
 							    </a>
 					    		<h4 style="font-size: 14px;float: right;color: #999999" class="rent-time">
-									{{labourInfo.publishTime}}
+									{{commonUtil.getDateFromInt(labourInfo.time_created)}}
 								</h4>
 								<h4 style="font-size: 17px;color:#333;float: right;margin-right:250px;" class="rent-time">
 									
@@ -56,31 +33,11 @@
 					
 
 				</div>
-				
-				<div class="col-md-12 col-lg-12 tab-pane fade"  style="margin-top: 10px;" id="ejb">
-					<ul class="list-group">
-					    <li class="list-group-item rent" style="height: 50px;" ng-repeat="foodInfo in info.foodInfo | slice:0:10" ng-click="foodDetail(foodInfo)">
-							    <a href="" class="rent-name list">
-							    	{{foodInfo.title}}
-							    </a>
-					    		<h4 style="font-size: 14px;float: right;color: #999999" class="rent-time">
-									{{foodInfo.publishTime}}
-								</h4>
-								<h4 style="font-size: 17px;color:#333;float: right;margin-right:250px;" class="rent-time">
-									
-								</h4>	
-						</li>
-						
-
-					</ul>	
-					
-					
-
 				</div>
+				<t-footer page-size = 'data.size' page-num = 'data.number' total-page = 'data.total_pages' total-num = 'data.total_elements' change-page-size-fun = 'changePageSizeFun(size)' goto-page-fun='gotoPageFun(page)'></t-footer>
 			
 			</div>
 		
-		</div>
 			
 
 			

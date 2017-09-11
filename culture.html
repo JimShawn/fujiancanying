@@ -10,22 +10,17 @@
 				<p>闽菜以烹制山珍海味而著称，在色香味形俱佳的基础上，尤以“香”、“味”见长，其清鲜、和醇、荤香、不腻的风格特色，以及汤路广泛的特点，在烹坛园地中独具一席。</p>
 				</div>
 				<div class="p-thumb2"  >
-				        <a href="" title="{{videoObj.name}}" data-from="1-1" target="video"
-				        ng-click="gotoVideoDetail(videoObj)"></a>
-				        <i class="bg"></i>
-						<img class="quic" src="{{videoObj.icon}}">
-						<span class="time-tip">{{videoObj.time}}</span>
+				        
+					<video ng-src="{{videoObj.url}}" width="580" height="400" controls style="margin-left: 100px;">
+						  您的浏览器不支持 HTML5 video 标签。
+					</video>						
 				</div>
 
 			</div>
 			<div style="width: 300px; margin-left: 40px;" class="nice-paper">
 				<h2>闽菜文化</h2>
 				<ul>
-					<li title="{{article.title}}" ng-repeat="article in articles| filter: {type: 1} | slice:0:5" ng-click="gotoDetail(article)">{{article.name}}</li>
-				</ul>
-				<h2 style="margin-top: 100px;">名师名店</h2>
-				<ul>
-					<li title="{{article.title}}" ng-repeat="article in articles| filter: {type: 2} | slice:0:5" ng-click="gotoDetail(article)">{{article.name}}</li>
+					<li title="{{article.title}}" ng-repeat="article in data.content" ng-click="gotoDetail(article)">{{article.title}}</li>
 				</ul>
 			</div>
 		</div>

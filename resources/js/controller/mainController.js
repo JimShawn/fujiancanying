@@ -62,7 +62,7 @@ main.controller('MainController', ['$scope', '$http', '$location', '$rootScope',
             return;     
         };
 
-        httpService.login('fjcy', 'f4j7c3y6').then(function(res) {
+        httpService.login($scope.userName, $scope.password).then(function(res) {
             console.log(res);
             $state.go("manage.banner");
         }, function(err) {

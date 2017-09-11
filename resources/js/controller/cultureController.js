@@ -44,10 +44,26 @@ culture.constant('articles', [{
         content: '<div style="line-height: 2;"><p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"><span style="font-family:宋体; font-size:10.5pt">林瑞斌自</span><span style="font-family:Calibri; font-size:10.5pt">1986</span><span style="font-family:宋体; font-size:10.5pt">年参加工作以来，就一直从事餐饮行业。他是传统闽菜的守护者，也是闽东饮食文化新境界的开拓者。</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"><span style="font-family:宋体; font-size:10.5pt">林瑞斌在闽东各地天然食材的研究上颇有造诣，他凭借自身的专注与执着，将烹饪技艺推向新境界。他烹制的“三菇酿猪蹄”、“太子甲鱼裙”、“梅花土鲍”、“百花酿竹荪”、“菊花石鳞腿”等菜肴和“泥鳅面”、“八宝乌饭”等小吃，食品雕刻“丹凤迎宾”等，曾在省、市烹饪比赛中获奖。他个人也曾先后获得“闽菜名师”、“全国优秀厨师”、“中华金厨奖”、“中国烹饪大师”、“闽菜大师金爵奖”等多项奖项。</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"><span style="font-family:宋体; font-size:10.5pt">从业以来，他先后在柘荣县武装部招待所、柘荣县交安宾馆、柘荣县长城宾馆、柘荣县大自然美食城、柘荣县邮电公寓、柘荣县金都大酒楼等多家宾馆、饭店担任厨师长、行政总厨、经理等职务，在经营和管理中始终保持着精益求精、热情服务的理念，因此他赢得了广大客户的好评，也给企业带来了良好的经济效益。</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"><span style="font-family:宋体; font-size:10.5pt">作为闽东餐饮业的领军人物，林瑞斌努力钻研烹调技艺及餐饮管理知识，多次被省、市烹饪技术职称考评委员会及烹饪技术大</span><span style="font-family:宋体; font-size:10.5pt">赛组委会聘为评委，多次在市烹饪技术培训班以及下岗职工再教育培训班授课。他在培训和教学过程中，注重对学员的思想品德、职业道德和烹饪专业技术等方面的教育，林瑞斌旗下培养出来的厨师不下</span><span style="font-family:Calibri; font-size:10.5pt">2000</span><span style="font-family:宋体; font-size:10.5pt">人，但是他在收徒弟时要求十分严苛。他注重厨师的道德品质，他认为，评价一个厨师应厨德在先，厨艺在后，厨师教徒弟，不仅要在技艺上多花时间和精力，还要教徒弟做人的方法和原则。</span></p><p style="margin:0pt; orphans:0; text-align:justify; text-indent:21pt; widows:0"><span style="font-family:宋体; font-size:10.5pt">林瑞斌还是柘荣县餐饮商会的会长，为着力引导餐饮企业增强品牌意识，林瑞斌积极致力于开展餐饮行业的相关荣誉认定及职称评定，促进行业提档升级。通过开展柘荣县养生菜肴烹饪技能竞赛、推送县里优秀厨师参加福建“绿进杯”烹饪技能竞赛等活动，促进全县各餐饮单位的厨师们踊跃参与，大大提升了柘荣县餐饮行业从业者的专业技能水平。他还积极推动商会建设，在维护会员的合法权益、培养行业技术力量等方面做了大量有益、有效的工作，赢得了会员和政府的信赖。</span></p></div>'
     }
 ]);
-culture.controller('CultureController', ['$scope', '$http', '$location', '$rootScope', '$state', 'articles', function($scope, $http, $location, $rootScope, $state, articles) {
-    $scope.articles = articles;
+culture.controller('CultureController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', function($scope, $http, $location, $rootScope, $state, httpService) {
+
+    $scope.query = {
+            page:0,
+            size:10,
+            articleType:6,
+            isPublic:true
+        };   
+    function getList(queryObj) {
+        httpService.getNewsList(queryObj).then(function (res) {
+        console.log(res);
+        $scope.data = res.data;
+    },function (err) {
+        console.log(err);
+    });
+    };
+    getList($scope.query);     
+
     $scope.gotoDetail = function(item) {
-        $state.go('main.cultureDetail', { item: item });
+        $state.go('main.cultureDetail', { id: item.id });
     };
     $scope.videoObj = {
         name: '闽菜走天下',
@@ -61,8 +77,15 @@ culture.controller('CultureController', ['$scope', '$http', '$location', '$rootS
 
 
 }]);
-culture.controller('CultureDetailController', ['$scope', '$http', '$location', '$rootScope', '$state', '$stateParams', function($scope, $http, $location, $rootScope, $state, $stateParams) {
-    $scope.item = $stateParams.item;
+culture.controller('CultureDetailController', ['$scope', '$http', '$location', '$rootScope', '$state', '$stateParams','httpService', function($scope, $http, $location, $rootScope, $state, $stateParams,httpService) {
+    $scope.id = $stateParams.id;
+    if ($scope.id) {
+        httpService.getNewsById($scope.id).then(function (res) {
+            $scope.item = res.data;
+        },function (err) {
+            console.log(err);
+        });
+    }    
 
 
 }]);

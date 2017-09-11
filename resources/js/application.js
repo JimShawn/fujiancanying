@@ -54,8 +54,10 @@ app.config(function ($stateProvider,$urlRouterProvider) {
 
     ).state("main.industryInfo",{
         url: "/industryInfo",
-        templateUrl: 'industryinfo.html'
-        }
+        templateUrl: 'industryinfo.html',
+        params:{type:null}
+        }        
+        
 
     ).state("main.map",{
         url: "/map",
@@ -97,7 +99,7 @@ app.config(function ($stateProvider,$urlRouterProvider) {
     ).state("main.cultureDetail",{
             url: "/cultureDetail",
             templateUrl: 'culturedetail.html',
-            params:{item:null}
+            params:{id:null}
         }
 
     ).state("manage.create",{
