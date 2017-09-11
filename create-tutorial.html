@@ -14,10 +14,10 @@
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <div class="input-append">  
                                           
-                                        <a class="btn btn-primary" onclick="$('input[id=lefile]').click();">添加图片</a>  
+                                        <a class="btn btn-primary"  onclick="$('input[id=lefile]').click();">添加图片</a>  
                                     </div> 
                                     <input id="lefile" type="file" style="display:none" nv-file-select uploader="imageUploader">  
-                                    <img ng-src="{{image}}" ng-show="image">
+                                    <img ng-src="{{image}}" ng-show="image" width="352" height="264">
 
                                 </div>
                             </div>  
@@ -30,8 +30,8 @@
                                         <a class="btn btn-primary" onclick="$('input[id=lefile1]').click();">添加视频</a>  
                                     </div> 
                                     <input id="lefile1" type="file" style="display:none" nv-file-select uploader="imageUploader1">
-                                    <video width="480" height="340" controls ng-show="video" ng-src="{{video}}">
-                                          您的浏览器不支持 HTML5 video 标签。
+                                    <video width="352" height="264" ng-src="{{video}}" controls autobuffer ng-show="video">
+                                        
                                     </video>
                                 </div>
                             </div>                              
@@ -42,9 +42,8 @@
 	<button type="button" class="btn btn-default" style="margin: 13px;" ng-click="save();">保存</button>
 	<button type="button" class="btn btn-default" style="margin: 13px;" ng-click="cancel();">取消</button>
  
-    <!-- Initialize the editor. -->
-    <script> 
-
-    </script>
+    <div id="bg" ng-show="isLoading">
+    <span>{{tips}}</span>
+  </div>
 </div>
 

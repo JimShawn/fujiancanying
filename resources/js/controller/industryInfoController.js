@@ -25,6 +25,7 @@ industryinfo.controller('IndustryinfoController', ['$scope', '$http','$location'
     $scope.query = {
             page: 0,
             size: 10,
+            isPublic:true,
             articleType: $scope.selectedIndustryType.type
         };  
     $scope.changePageSizeFun = function(size) {
@@ -61,15 +62,17 @@ industryinfo.controller('IndustryinfoController', ['$scope', '$http','$location'
         getList($scope.query);
     }
     getList($scope.query);      
-    $scope.transferDetail = function (item) {
-        $state.go('main.transformInfo',{item:item});
+    $scope.goToInfo = function (id) {
+        if($scope.selectedIndustryType.type == 3){
+            $state.go('main.transformInfo',{id:id});
+        }else if ($scope.selectedIndustryType.type == 4) {
+            $state.go('main.labourInfo',{id:id});
+        }else if ($scope.selectedIndustryType.type == 5) {
+            $state.go('main.foodInfo',{id:id});
+        }
+        
     };
-    $scope.labourDetail = function (item) {
-        $state.go('main.labourInfo',{item:item});
-    };
-    $scope.foodDetail = function (item) {
-        $state.go('main.foodInfo',{item:item});
-    }
+    
 
 
 }]);

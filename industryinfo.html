@@ -16,7 +16,7 @@
 				<div class="col-md-12 col-lg-12 "  style="margin-top: 10px;" >
 					<ul class="list-group">
 					    <li class="list-group-item rent" style="height: 50px;" ng-repeat="labourInfo in data.content">
-							    <a href="" class="rent-name list">
+							    <a href="" class="rent-name list" ng-click="goToInfo(labourInfo.id)">
 							    	{{labourInfo.title}}
 							    </a>
 					    		<h4 style="font-size: 14px;float: right;color: #999999" class="rent-time">

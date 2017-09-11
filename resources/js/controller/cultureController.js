@@ -229,6 +229,7 @@ culture.controller('createCultureController', ['$scope', '$http', '$location', '
             $scope.brief = selectedItem.description;
             $scope.newsTitle = selectedItem.title;
             $scope.bannerurl = selectedItem.thumbnails;
+            $scope.$apply();
             $('#edit').froalaEditor('html.set', selectedItem.content);
 
         };

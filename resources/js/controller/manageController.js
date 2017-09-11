@@ -165,12 +165,6 @@ manage.controller('manageController', ['$scope', '$http', '$location', '$rootSco
         });
         // /Panel toolbox
 
-        // Tooltip,包括setting,fullscreen,lock,logout
-        $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip({
-                container: 'body'
-            });
-        });
         // /Tooltip
 
         // Progressbar动态进度条

@@ -205,6 +205,7 @@ video.controller('createTutorialController', ['$scope', '$http', '$location', '$
 
     imageUploader1.onAfterAddingFile = function(fileItem) {
         imageUploader1.uploadAll();
+        $scope.isLoading = true;
         
     };
 
@@ -217,14 +218,16 @@ video.controller('createTutorialController', ['$scope', '$http', '$location', '$
 
     imageUploader1.onErrorItem = function(fileItem, response, status, headers) {};
     imageUploader1.onCompleteAll = function() {
-    	swal.close();
+    	// swal.close();
+        $scope.isLoading = false;
     };
     imageUploader1.onProgressItem  = function(item, progress){
-    	swal({  title:'',
-                text: "已上传"+progress+"%",
-                type: "info",
-                showConfirmButton: false
-            });
+    	// swal({  title:'',
+     //            text: "已上传"+progress+"%",
+     //            type: "info",
+     //            showConfirmButton: false
+     //        });
+     $scope.tips = "已上传"+progress+"%";
     	console.log(progress);
     }
 
