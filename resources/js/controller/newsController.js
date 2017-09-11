@@ -30,7 +30,7 @@ news.controller('NewsController', function ($scope,$http,$location,$rootScope,$s
 	};
 	getList($scope.query);
 });
-news.controller('manageNewsController', function ($scope,$http,$location,$rootScope,$state,newsList,httpService) {
+news.controller('manageNewsController', function ($scope,$http,$location,$rootScope,$state,httpService) {
 	$scope.query = {
 		page:0,
 		size:10,
