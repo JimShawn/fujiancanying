@@ -3,10 +3,7 @@ var manage = angular.module('manage', []);
 
 manage.controller('manageController', ['$scope', '$http', '$location', '$rootScope', '$state','httpService', function($scope, $http, $location, $rootScope, $state,httpService) {
     $scope.logout = function () {
-        httpService.logout().then(function () {
-                        $state.go("login");
-                    },function (err) {
-                    });
+        $state.go("main.homepage");
     }
     $scope.$watch('$viewContentLoaded', function() {
         (function($, sr) {
