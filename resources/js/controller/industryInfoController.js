@@ -290,6 +290,7 @@ industryinfo.controller('createIndustryController', ['$scope', '$http', '$locati
                     $scope.selectedIndustryType = $scope.industryTypeArrays[i];
                 }
             }
+            $scope.$apply();
             
             $('#edit').froalaEditor('html.set', selectedItem.content);
 

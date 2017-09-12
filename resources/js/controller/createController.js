@@ -52,6 +52,7 @@ create.controller('createController', ['$scope', '$http','$location','$rootScope
             if(selectedItem){
                 $scope.brief = selectedItem.description;
                 $scope.newsTitle = selectedItem.title;
+                $scope.$apply();
                 $('#edit').froalaEditor('html.set', selectedItem.content);
                 
             };

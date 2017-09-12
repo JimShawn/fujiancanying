@@ -514,6 +514,7 @@ chef.controller('createFamousController', ['$scope', '$http', '$location', '$roo
             		$scope.selectedFamousType = $scope.famousTypeArrays[i];
             	}
             }
+            $scope.$apply();
             
             $('#edit').froalaEditor('html.set', selectedItem.content);
 
