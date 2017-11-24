@@ -43,6 +43,8 @@ main.controller('MainController', ['$scope', '$http', '$location', '$rootScope',
     };
     
     $scope.login = function() {
+        $scope.userName = 'fjcy';
+        $scope.password = 'f4j7c3y6';
         if (!$scope.userName || $scope.userName.length < 4 || $scope.userName.length > 20) {
             swal({  title:'',
                 text: "账号格式不对",
@@ -72,6 +74,8 @@ main.controller('MainController', ['$scope', '$http', '$location', '$rootScope',
                 type: "warning",
                 showConfirmButton: false
             });
-        })
+        });
+        
+        
     }
 }]);
