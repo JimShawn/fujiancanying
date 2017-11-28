@@ -133,6 +133,16 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         });
         return deferd.promise;
     };
+    api.bannerDelete = function (id) {
+        var deferd = $q.defer();
+        var url = commonProperty.serverHost + "banner/"+id+"?access_token=" + $window.sessionStorage["access_token"];
+        $http.delete(url).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
     api.getNewsList = function (queryObj) {
         var deferd = $q.defer();
         var url =commonProperty.serverHost + "news?";

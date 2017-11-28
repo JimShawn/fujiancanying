@@ -147,12 +147,12 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         params:{
                     'item':null
                 }           
-    }).state("manage.famous",{
-        url:"/famous",
-        templateUrl:'famous.html'
-    }).state("manage.famousCreate",{
-        url:"/famousCreate",
-        templateUrl:'create-famous.html',
+    }).state("manage.famousChief",{
+        url:"/famousChief",
+        templateUrl:'famous-chief.html'
+    }).state("manage.famousChiefCreate",{
+        url:"/famousChiefCreate",
+        templateUrl:'create-chief-famous.html',
         params:{
                     'item':null
                 }           

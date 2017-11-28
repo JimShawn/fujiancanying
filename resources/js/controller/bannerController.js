@@ -60,7 +60,7 @@ banner.controller('bannerController', ['$scope', '$http', '$location', '$rootSco
         $state.go('manage.bannerNew',{item:item});
     };
     $scope.operate = function(item) {
-        httpService.bannerOperate(item.id, { is_public: !item.is_public }).then(function(res) {
+        httpService.bannerDelete(item.id).then(function(res) {
             console.log(res);
             getList($scope.query);
         }, function(err) {
@@ -74,9 +74,10 @@ banner.controller('bannerController', ['$scope', '$http', '$location', '$rootSco
 banner.controller('createBannerController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams','$window','FileUploader','commonProperty',function($scope, $http, $location, $rootScope, $state, httpService,$stateParams,$window,FileUploader,commonProperty) {
                 var selectedItem = $stateParams.item;
                 if(selectedItem){
-                    $scope.bannerurl = selectedItem.url;
-                    $scope.bannerorder = selectedItem.sequence;
-                    $scope.desc = selectedItem.title;
+                    $scope.url = selectedItem.url;
+                    $scope.sequence = selectedItem.sequence;
+                    $scope.title = selectedItem.title;
+                    $scope.bannerurl = selectedItem.image;
                 };
                 var imageUploader = $scope.imageUploader = new FileUploader({
                         url: commonProperty.serverHost + "upload/1?access_token=" + $window.sessionStorage["access_token"],
@@ -102,10 +103,9 @@ banner.controller('createBannerController', ['$scope', '$http', '$location', '$r
                 $scope.save = function () {
                     var newsObj = {
                           image: $scope.bannerurl,
-                          isPublic: false,
-                          sequence: $scope.bannerorder,
-                          title: $scope.desc,
-                          url: $scope.bannerurl
+                          sequence: $scope.sequence,
+                          title: $scope.title,
+                          url: $scope.url
                         };
                         if(selectedItem){
                             httpService.bannerUpdate(selectedItem.id,newsObj).then(function (res) {

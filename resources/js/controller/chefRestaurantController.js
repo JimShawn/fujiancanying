@@ -426,7 +426,7 @@ chef.controller('manageFamousController', function($scope, $http, $location, $ro
 
 
 
-chef.controller('createFamousController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
+chef.controller('createFamousChiefController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
     $(function() {
         $('#edit').froalaEditor({
             language: 'zh_cn',
@@ -437,19 +437,6 @@ chef.controller('createFamousController', ['$scope', '$http', '$location', '$roo
         });
 
     });
-    $scope.famousTypeArrays = [{
-            name: '名师',
-            type: 9
-        },
-        {
-            name: '名店',
-            type: 8
-        },
-        {
-            name: '名小吃',
-            type: 2
-        }
-    ];
     var imageUploader = $scope.imageUploader = new FileUploader({
         url: commonProperty.serverHost + "upload/7?access_token=" + $window.sessionStorage["access_token"],
         queueLimit: 1, //文件个数
