@@ -1,4 +1,4 @@
-<div ng-controller="manageFamousChiefController">
+<div ng-controller="manageFamousStoreController">
 
 <div class="col-md-12 col-sm-12 col-xs-12">
 			
@@ -18,10 +18,9 @@
                         <thead>
                         <tr>
                             <th >#</th>
-                            <th >姓名</th>
-                            <th >酒店/单位</th>
+                            <th >名称</th>
+                            <th >拥有菜系</th>
                             <th width="30%">简介</th>
-                            <th width="30%">工作经历</th>
                             <th>创建人</th>
                             <th>创建时间</th>
                             <th >操作</th>
@@ -33,9 +32,8 @@
                         <tr ng-repeat="item in data.content">
                             <td>{{$index}}</td>
                             <td><a href="" ng-click="edit(item)">{{item.name}}</a></td>
-                             <td>{{item.restaurantName}}</td>
+                             <td>{{item.flagcursine}}</td>
                              <td>{{item.brief}}</td>
-                            <td>{{item.experience}}</td>
                             <td>{{item.user_created}}</td>
                             <td>{{item.time_created | date:'yyyy-MM-dd'}}</td>
                             <td ><button type="button" class="btn btn-default" ng-click="operate(item)">删除</button></td>

@@ -36,7 +36,7 @@ banner.controller('bannerController', ['$scope', '$http', '$location', '$rootSco
     };
 
     function getList(queryObj) {
-        httpService.getBannerList(queryObj).then(function(res) {
+        httpService.HttpGet('banner',queryObj).then(function(res) {
             console.log(res);
             $scope.data = res.data;
         }, function(err) {
@@ -60,7 +60,7 @@ banner.controller('bannerController', ['$scope', '$http', '$location', '$rootSco
         $state.go('manage.bannerNew',{item:item});
     };
     $scope.operate = function(item) {
-        httpService.bannerDelete(item.id).then(function(res) {
+        httpService.HttpDelete('banner/'+item.id).then(function(res) {
             console.log(res);
             getList($scope.query);
         }, function(err) {
@@ -108,14 +108,14 @@ banner.controller('createBannerController', ['$scope', '$http', '$location', '$r
                           url: $scope.url
                         };
                         if(selectedItem){
-                            httpService.bannerUpdate(selectedItem.id,newsObj).then(function (res) {
+                            httpService.HttpPut('banner/'+selectedItem.id,newsObj).then(function (res) {
                             console.log(res);
                             $state.go("manage.banner");
                         },function (err) {
                             console.log(err);
                         });
                         }else{
-                          httpService.bannerCreate(newsObj).then(function (res) {
+                          httpService.HttpPost('banner',newsObj).then(function (res) {
                             console.log(res);
                             $state.go("manage.banner");
                         },function (err) {
@@ -127,13 +127,5 @@ banner.controller('createBannerController', ['$scope', '$http', '$location', '$r
                 $scope.cancel = function (argument) {
                     $state.go("manage.banner");
                 };
-                $scope.changeStatus = function () {
-                    if ($scope.selectedStatus.status==1) {
-                        $scope.query.isPublic = false;
-                    }else if ($scope.selectedStatus.status==0) {
-                        $scope.query.isPublic = true;
-                    }
-                    getList($scope.query);
-                }
 
             }])

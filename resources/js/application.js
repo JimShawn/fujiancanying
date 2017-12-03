@@ -156,6 +156,15 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         params:{
                     'item':null
                 }           
+    }).state("manage.famousSotre",{
+        url:"/famousSotre",
+        templateUrl:'famous-store.html'
+    }).state("manage.famousStoreCreate",{
+        url:"/famousStoreCreate",
+        templateUrl:'create-store-famous.html',
+        params:{
+                    'item':null
+                }           
     }).state("manage.industry",{
         url:"/industry",
         templateUrl:'industry.html'

@@ -43,9 +43,29 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         });
         return deferd.promise;
     };
-    api.bannerCreate = function (banner) {
+    api.HttpGet = function (url,queryObj) {
+        if (queryObj) {
+            var paramUrl = "";
+            $.each(queryObj,function(item,key){
+                var link = '&' + key + "=" + item;
+                paramUrl += link;                
+            });
+            url = url + "?" + paramUrl.substr(1);
+        }
         var deferd = $q.defer();
-        var url = commonProperty.serverHost + "banner?access_token=" + $window.sessionStorage["access_token"];
+        url =commonProperty.serverHost + url;
+        
+        
+        $http.get(url).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
+    api.HttpPost = function (url,banner) {
+        var deferd = $q.defer();
+        url = commonProperty.serverHost + url+"?access_token=" + $window.sessionStorage["access_token"];
         $http.post(url,banner).then(function (result) {
             deferd.resolve(result);
         },function (error) {
@@ -53,9 +73,9 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         });
         return deferd.promise;
     };
-    api.bannerUpdate = function (id,banner) {
+    api.HttpPut = function (url,banner) {
         var deferd = $q.defer();
-        var url = commonProperty.serverHost + "banner/"+id+"?access_token=" + $window.sessionStorage["access_token"];
+        url = commonProperty.serverHost + url+"?access_token=" + $window.sessionStorage["access_token"];
         $http.put(url,banner).then(function (result) {
             deferd.resolve(result);
         },function (error) {
@@ -63,163 +83,10 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         });
         return deferd.promise;
     };
-    api.newsCreate = function (news) {
+    api.HttpDelete = function (url) {
         var deferd = $q.defer();
-        var url = commonProperty.serverHost + "news?access_token=" + $window.sessionStorage["access_token"];
-        $http.post(url,news).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.tutorialCreate = function (news) {
-        var deferd = $q.defer();
-        var url = commonProperty.serverHost + "tutorial?access_token=" + $window.sessionStorage["access_token"];
-        $http.post(url,news).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.newsUpdate = function (id,news) {
-        var deferd = $q.defer();
-        var url = commonProperty.serverHost + "news/"+id+"?access_token=" + $window.sessionStorage["access_token"];
-        $http.put(url,news).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.tutorialUpdate = function (id,news) {
-        var deferd = $q.defer();
-        var url = commonProperty.serverHost + "tutorial/"+id+"?access_token=" + $window.sessionStorage["access_token"];
-        $http.put(url,news).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.newsOperate = function (id,news) {
-        var deferd = $q.defer();
-        var url = commonProperty.serverHost + "news/"+id+"?access_token=" + $window.sessionStorage["access_token"];
-        $http.patch(url,news).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.tutorialOperate = function (id,news) {
-        var deferd = $q.defer();
-        var url = commonProperty.serverHost + "tutorial/"+id+"?access_token=" + $window.sessionStorage["access_token"];
-        $http.patch(url,news).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.bannerOperate = function (id,banner) {
-        var deferd = $q.defer();
-        var url = commonProperty.serverHost + "banner/"+id+"?access_token=" + $window.sessionStorage["access_token"];
-        $http.patch(url,banner).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.bannerDelete = function (id) {
-        var deferd = $q.defer();
-        var url = commonProperty.serverHost + "banner/"+id+"?access_token=" + $window.sessionStorage["access_token"];
+        url = commonProperty.serverHost + url+"?access_token=" + $window.sessionStorage["access_token"];
         $http.delete(url).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.getNewsList = function (queryObj) {
-        var deferd = $q.defer();
-        var url =commonProperty.serverHost + "news?";
-        if(queryObj){
-               url += "&size="+queryObj.size;
-               url += "&page="+queryObj.page;
-               if(queryObj.isPublic!=undefined){
-                    url += "&isPublic="+queryObj.isPublic;
-               }
-               
-                url += "&articleType="+queryObj.articleType;
-        };
-        
-        
-        $http.get(url).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.getNewsById = function (id) {
-        var deferd = $q.defer();
-        var url =commonProperty.serverHost + "news/"+id;
-        
-        
-        $http.get(url).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.getTutorialById = function (id) {
-        var deferd = $q.defer();
-        var url =commonProperty.serverHost + "tutorial/"+id;
-        
-        
-        $http.get(url).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.getTutorialList = function (queryObj) {
-        var deferd = $q.defer();
-        var url =commonProperty.serverHost + "tutorial?";
-        if(queryObj){
-               url += "&size="+queryObj.size;
-               url += "&page="+queryObj.page;
-               if(queryObj.isPublic!=undefined){
-                    url += "&isPublic="+queryObj.isPublic;
-               }
-        };
-        
-        
-        $http.get(url).then(function (result) {
-            deferd.resolve(result);
-        },function (error) {
-            deferd.reject(error);
-        });
-        return deferd.promise;
-    };
-    api.getBannerList = function (queryObj) {
-        var deferd = $q.defer();
-        var url =commonProperty.serverHost + "banner?";
-        if(queryObj){
-               url += "&size="+queryObj.size;
-               url += "&page="+queryObj.page;
-               if(queryObj.isPublic!=undefined){
-                    url += "&isPublic="+queryObj.isPublic;
-               }
-        };
-        
-        
-        $http.get(url).then(function (result) {
             deferd.resolve(result);
         },function (error) {
             deferd.reject(error);

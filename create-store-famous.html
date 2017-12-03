@@ -1,0 +1,187 @@
+<div ng-controller="createFamousStoreController" style="    margin-top: 60px;">
+    <div class="modal-body">
+                        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="news-title">名称 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="app-name" required="required" class="form-control col-md-7 col-xs-12" ng-model="name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="news-title">类型 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="type" id="optionsRadios3" value="1" ng-model="type"> 酒店酒楼
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">简述 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <textarea ng-model="brief" class="form-control col-md-7 col-xs-12"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="features">拥有菜系 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"  name="cuisine" ng-model="min" ng-checked="min"> 闽菜
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"  name="cuisine" ng-model="hui" ng-checked="hui"> 徽菜
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="cuisine" ng-model="yue" ng-checked="yue"> 粤菜
+                                    </label>
+                                   
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"  name="cuisine" ng-model="xiang" ng-checked="xiang"> 湘菜
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="cuisine" ng-model="chuan" ng-checked="chuan"> 川菜
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"  name="cuisine" ng-model="lu" ng-checked="lu"> 鲁菜
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="cuisine" ng-model="su" ng-checked="su"> 苏菜
+                                    </label>
+                                     <label class="checkbox-inline">
+                                        <input type="checkbox"  name="cuisine" ng-model="zhe" ng-checked="zhe"> 浙菜
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="features">特色推荐 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <textarea ng-model="features" class="form-control col-md-7 col-xs-12"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="address">地址 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <textarea ng-model="address" class="form-control col-md-7 col-xs-12"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="address">电话 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="tel" required="required" class="form-control col-md-7 col-xs-12" ng-model="tel">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="restaurantName">人均消费<span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12" style="display: inline-flex;">
+                                   <input type="number" id="consumption" required="required" class="form-control col-md-7 col-xs-12" ng-model="consumption">
+                                    <label style="margin-top: 7px;">元</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="environment">适合环境<span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12" >
+                                   <input type="number" id="environment" required="required" class="form-control col-md-7 col-xs-12" ng-model="environment">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="environment">交通<span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12" >
+                                   <input type="transport" id="environment" required="required" class="form-control col-md-7 col-xs-12" ng-model="transport">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="restaurantName">营业开始结束时间<span class="required">*</span>
+                                </label>
+                                <div class="col-md-2 col-sm-2 col-xs-2" style="display: inline-flex;">
+                                   <input type="number"  required="required" class="form-control col-xs-2" ng-model="startOur">
+                                   <label style="margin-top: 7px;">时</label>
+                                   
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-2" style="display: inline-flex;">
+                                   <input type="number"  required="required" class="form-control col-xs-2" ng-model="startMin">
+                                   <label style="margin-top: 7px;">分</label>
+                                </div>
+                                <div class="col-md-1 col-sm-1 col-xs-1" >
+                                   
+                                   <label style="margin-top: 7px;">----</label>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-2" style="display: inline-flex;">
+                                   <input type="number"  required="required" class="form-control col-xs-2" ng-model="endOur">
+                                   <label style="margin-top: 7px;">时</label>
+                                </div>
+                                <div class="col-md-2 col-sm-2 col-xs-2" style="display: inline-flex;">
+                                   <input type="number"  required="required" class="form-control col-xs-2" ng-model="endMin">
+                                   <label style="margin-top: 7px;">分</label>
+                                </div>  
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="features">其他服务 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"  name="otherService" ng-model="car" ng-checked="car"> 车位
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"  name="otherService" ng-model="room" ng-checked="room"> 包厢
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" name="otherService" ng-model="takeout" ng-checked="takeout"> 外卖
+                                    </label>
+                                   
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"  name="otherService" ng-model="supper" ng-checked="supper"> 夜宵
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"  name="otherService" ng-model="credit" ng-checked="credit"> 刷卡
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox"  name="otherService" ng-model="wlan" ng-checked="wlan"> 无线
+                                    </label>
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="avatar">头像 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="file" nv-file-select="" uploader="imageUploader">
+                                    <img ng-src="{{image}}" ng-show="image" width="352" height="264">
+                                </div>
+                            </div> 
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="avatar">综合信息 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div id='edit'></div>
+                                </div>
+                            </div>                            
+                            </form>
+
+                        </div>
+	
+	<div class="modal-footer" style="text-align: center;">
+                <button type="button" class="btn btn-default" style="margin: 13px;" ng-click="save();">保存</button>
+    <button type="button" class="btn btn-default" style="margin: 13px;" ng-click="cancel();">取消</button>    
+    </div>
+	<script type="text/javascript" src="./jquery/jquery.min.js""></script>
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/codemirror.min.js"></script>
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/xml.min.js"></script>
+ 
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/froala_editor.pkgd.min.js"></script>
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/languages/zh_cn.js"></script>
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/plugins/image.min.js"></script>
+    <!-- Initialize the editor. -->
+    <script> 
+
+    </script>
+</div>
+

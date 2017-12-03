@@ -5,7 +5,7 @@
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="news-title">姓名 <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="app-name" required="required" class="form-control col-md-7 col-xs-12" ng-model="newsTitle">
+                                    <input type="text" id="app-name" required="required" class="form-control col-md-7 col-xs-12" ng-model="name">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -15,20 +15,43 @@
                                     <textarea ng-model="brief" class="form-control col-md-7 col-xs-12"></textarea>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="experience">工作经历 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <textarea ng-model="experience" class="form-control col-md-7 col-xs-12"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="restaurantName">酒店/单位 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                   <input type="text" id="restaurantName" required="required" class="form-control col-md-7 col-xs-12" ng-model="restaurantName">
+                                </div>
+                            </div>
 							<div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="bannerorder">图片 <span class="required">*</span>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="avatar">头像 <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input type="file" nv-file-select="" uploader="imageUploader">
-                                    <img ng-src="{{bannerurl}}" ng-show="bannerurl" width="352" height="264">
+                                    <img ng-src="{{avatar}}" ng-show="avatar" width="352" height="264">
+                                </div>
+                            </div> 
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="avatar">综合信息 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div id='edit'></div>
                                 </div>
                             </div>                            
                             </form>
 
                         </div>
-	<div id='edit'></div>
-	<button type="button" class="btn btn-default" style="margin: 13px;" ng-click="save();">保存</button>
-	<button type="button" class="btn btn-default" style="margin: 13px;" ng-click="cancel();">取消</button>
+	
+	<div class="modal-footer" style="text-align: center;">
+                <button type="button" class="btn btn-default" style="margin: 13px;" ng-click="save();">保存</button>
+    <button type="button" class="btn btn-default" style="margin: 13px;" ng-click="cancel();">取消</button>    
+    </div>
 	<script type="text/javascript" src="./jquery/jquery.min.js""></script>
     <script type="text/javascript" src="./froala_editor_2.6.5/js/codemirror.min.js"></script>
     <script type="text/javascript" src="./froala_editor_2.6.5/js/xml.min.js"></script>
