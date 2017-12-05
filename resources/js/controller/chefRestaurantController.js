@@ -63,7 +63,10 @@ chef.controller('manageFamousStoreController', function($scope, $http, $location
 
 
 
-chef.controller('createFamousStoreController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
+chef.controller('createFamousStoreController', ['$scope', '$http', '$location', 
+	'$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader',
+	'commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, 
+		$stateParams, $window, FileUploader,commonProperty) {
     $(function() {
         $('#edit').froalaEditor({
             language: 'zh_cn',
@@ -93,9 +96,7 @@ chef.controller('createFamousStoreController', ['$scope', '$http', '$location', 
     imageUploader.onCompleteAll = function() {};
     var selectedItem = $stateParams.item;
     $scope.save = function(argument) {
-        console.log($('#edit').froalaEditor('html.get', true));
-		console.log($scope.);
-		return;
+        
 		var cuisineInt = 0;
 		if ($scope.min) {cuisineInt+=1};
 		if ($scope.hui) {cuisineInt+=2};
@@ -359,6 +360,153 @@ chef.controller('createFamousChiefController', ['$scope', '$http', '$location', 
             
             $('#edit').froalaEditor('html.set', selectedItem.detail);
 
+        }
+    });
+
+
+
+}]);
+
+
+
+
+chef.controller('manageFamousSnackController', function($scope, $http, $location, $rootScope, $state, httpService) {
+   
+    $scope.query = {
+        page: 0,
+        size: 10
+    };
+    $scope.changePageSizeFun = function(size) {
+        $scope.query.page = $scope.data.number;
+        $scope.query.size = size;
+        getList($scope.query);
+    };
+
+    $scope.gotoPageFun = function(x) {
+        $scope.query.page = x;
+        $scope.query.size = $scope.data.size;
+        getList($scope.query);
+    };
+
+    function getList(queryObj) {
+        httpService.HttpGet('recipes',queryObj).then(function(res) {
+            console.log(res);
+            $scope.data = res.data;
+        }, function(err) {
+            console.log(err);
+        });
+    };
+    getList($scope.query);
+
+    $scope.goToCreate = function(argument) {
+        $state.go("manage.famousSnackCreate", { item: null });
+    };
+    $scope.goToEdit = function(item) {
+        $state.go("manage.famousSnackCreate", { item: item });
+    };
+    
+    $scope.operate = function(item) {
+        httpService.HttpDelete('recipes/'+item.id).then(function(res) {
+            console.log(res);
+            getList($scope.query);
+        }, function(err) {
+            console.log(err);
+        })
+    }
+});
+
+
+
+chef.controller('createFamousSnackController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
+    $(function() {
+        $('#edit').froalaEditor({
+            language: 'zh_cn',
+            heightMin: 700,
+            width: '800',
+            imageUploadURL: 'http://www.fjcy.net/qa/api/upload/6?access_token=' + $window.sessionStorage["access_token"]
+
+        });
+
+    });
+    var imageUploader = $scope.imageUploader = new FileUploader({
+        url: commonProperty.serverHost + "upload/6?access_token=" + $window.sessionStorage["access_token"],
+        queueLimit: 1, //文件个数
+    });
+
+    imageUploader.onAfterAddingFile = function(fileItem) {
+        imageUploader.uploadAll();
+    };
+
+    imageUploader.onSuccessItem = function(fileItem, response, status, headers) {
+        imageUploader.clearQueue();
+        console.log(response);
+        $scope.avatar = response.link;
+
+    };
+
+    imageUploader.onErrorItem = function(fileItem, response, status, headers) {};
+    imageUploader.onCompleteAll = function() {};
+    var selectedItem = $stateParams.item;
+    $scope.save = function(argument) {
+        console.log($('#edit').froalaEditor('html.get', true));
+        console.log($scope.cuisine);
+        return;
+        var newsObj = 
+        {
+          "brief": $scope.brief,
+          "classification": 2,
+          "cuisine": $scope.cuisine,
+          "detail": $('#edit').froalaEditor('html.get', true),
+          "district": $scope.cuisine,
+          "image": $scope.image,
+          "name": $scope.name,
+          "restaurantId": 0,
+          "restaurantName": $scope.restaurantName,
+          "thumbnails": $scope.image
+        };
+        if (selectedItem) {
+            httpService.HttpPut('recipes/'+selectedItem.id, newsObj).then(function(res) {
+                console.log(res);
+                $state.go('manage.famousSnack');
+            }, function(err) {
+                console.log(err);
+            })
+        } else {
+            httpService.HttpPost('recipes',newsObj).then(function(res) {
+                console.log(res);
+                $state.go('manage.famousSnack');
+            }, function(err) {
+                console.log(err);
+            })
+        }
+
+    };
+    $scope.cancel = function(argument) {
+        $state.go('manage.famousSnack');
+    }
+    $scope.cuisine = 1;
+            $scope.district = 1;
+
+    $('#edit').on('froalaEditor.initialized', function(e, editor) {
+
+        // Do something here.
+
+        if (selectedItem) {
+
+            $scope.brief = selectedItem.brief;
+            $scope.cuisine = selectedItem.cuisine;
+            $scope.district = selectedItem.district;
+            $scope.image = selectedItem.image;
+            $scope.name = selectedItem.name;
+            $scope.restaurantName =  selectedItem.restaurantName
+            $scope.$apply();
+            
+            $('#edit').froalaEditor('html.set', selectedItem.detail);
+
+        }else{
+            $scope.cuisine = 1;
+            $scope.district = 1;
+            $scope.$apply();
         }
     });
 

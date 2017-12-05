@@ -46,7 +46,7 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
     api.HttpGet = function (url,queryObj) {
         if (queryObj) {
             var paramUrl = "";
-            $.each(queryObj,function(item,key){
+            $.each(queryObj,function(key,item){
                 var link = '&' + key + "=" + item;
                 paramUrl += link;                
             });
@@ -77,6 +77,16 @@ httpService.factory('httpService',function ($http, $q, $window, commonProperty) 
         var deferd = $q.defer();
         url = commonProperty.serverHost + url+"?access_token=" + $window.sessionStorage["access_token"];
         $http.put(url,banner).then(function (result) {
+            deferd.resolve(result);
+        },function (error) {
+            deferd.reject(error);
+        });
+        return deferd.promise;
+    };
+    api.HttpPatch = function (url,banner) {
+        var deferd = $q.defer();
+        url = commonProperty.serverHost + url+"?access_token=" + $window.sessionStorage["access_token"];
+        $http.patch(url,banner).then(function (result) {
             deferd.resolve(result);
         },function (error) {
             deferd.reject(error);

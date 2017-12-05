@@ -33,8 +33,7 @@ news.controller('NewsController', function ($scope,$http,$location,$rootScope,$s
 news.controller('manageNewsController', function ($scope,$http,$location,$rootScope,$state,httpService) {
 	$scope.query = {
 		page:0,
-		size:10,
-		articleType:0
+		size:10
 	};
 	$scope.newsStatuses = [
 		{
@@ -63,7 +62,7 @@ news.controller('manageNewsController', function ($scope,$http,$location,$rootSc
         getList($scope.query);
     };
 	function getList(queryObj) {
-		httpService.getNewsList(queryObj).then(function (res) {
+		httpService.HttpGet('news',$scope.query).then(function (res) {
 		console.log(res);
 		$scope.data = res.data;
 	},function (err) {
@@ -71,23 +70,27 @@ news.controller('manageNewsController', function ($scope,$http,$location,$rootSc
 	});
 	};
 	$scope.changeStatus = function () {
-		if ($scope.selectedStatus.status==1) {
-			$scope.query.isPublic = false;
-		}else if ($scope.selectedStatus.status==0) {
-			$scope.query.isPublic = true;
-		}
+		$scope.query.is_published = $scope.selectedStatus.status;
 		getList($scope.query);
 	}
 	getList($scope.query);
 	
     $scope.goToCreate = function(argument) {
-        $state.go("manage.create",{item:null});
+        $state.go("manage.createNews",{item:null});
     };
     $scope.goToEdit = function(item) {
-        $state.go("manage.create",{item:item});
+        $state.go("manage.createNews",{item:item});
+    };
+    $scope.delete = function(item){
+    	httpService.HttpDelete('news/'+item.id).then(function(res) {
+            console.log(res);
+            getList($scope.query);
+        }, function(err) {
+            console.log(err);
+        })
     };
     $scope.operate = function (item) {
-    	httpService.newsOperate(item.id,{is_public:!item.is_public}).then(function (res) {
+    	httpService.HttpPatch('news/'+item.id,{is_published:!item.is_published}).then(function (res) {
     		console.log(res);
     		getList($scope.query);
     	},function (err) {

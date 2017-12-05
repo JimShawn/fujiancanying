@@ -102,9 +102,9 @@ app.config(function ($stateProvider,$urlRouterProvider) {
             params:{id:null}
         }
 
-    ).state("manage.create",{
-            url: "/create",
-            templateUrl: 'create.html'
+    ).state("manage.createNews",{
+            url: "/createNews",
+            templateUrl: 'create-news.html'
         }
 
     ).state("manage",{
@@ -153,6 +153,15 @@ app.config(function ($stateProvider,$urlRouterProvider) {
     }).state("manage.famousChiefCreate",{
         url:"/famousChiefCreate",
         templateUrl:'create-chief-famous.html',
+        params:{
+                    'item':null
+                }           
+    }).state("manage.famousSnack",{
+        url:"/famousSnack",
+        templateUrl:'famous-snack.html'
+    }).state("manage.famousSnackCreate",{
+        url:"/famousSnackCreate",
+        templateUrl:'create-snack-famous.html',
         params:{
                     'item':null
                 }           

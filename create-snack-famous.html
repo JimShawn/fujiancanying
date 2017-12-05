@@ -1,0 +1,142 @@
+<div ng-controller="createFamousSnackController" style="margin-top: 60px;">
+    <div class="modal-body">
+                        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="news-title">名称 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="app-name" required="required" class="form-control col-md-7 col-xs-12" ng-model="name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="news-title">菜系 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <label class="radio-inline">
+                                       
+                                        <input type="radio"  name="cuisine1" ng-model="cuisine" value="1"> 闽菜
+                                        
+                                    </label>
+                                    
+                                    <label class="radio-inline">
+                                       
+                                        <input type="radio"  name="cuisine1" ng-model="cuisine" value="2"> 徽菜
+                                        
+                                    </label>
+                                   
+                                    <label class="radio-inline">
+                                        <input type="radio" name="cuisine1" ng-model="cuisine" value="4"> 粤菜
+                                    </label>
+                                   
+                                    <label class="radio-inline">
+                                        <input type="radio"  name="cuisine1" ng-model="cuisine" value="8"> 湘菜
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="cuisine1" ng-model="cuisine" value="16"> 川菜
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio"  name="cuisine1" ng-model="cuisine" value="32"> 鲁菜
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="cuisine1" ng-model="cuisine" value="64"> 苏菜
+                                    </label>
+                                     <label class="radio-inline">
+                                        <input type="radio"  name="cuisine1" ng-model="cuisine" value="128"> 浙菜
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="news-title">地区 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <label class="radio-inline">
+                                       
+                                        <input type="radio"  name="district" ng-model="district" value="1"> 福州
+                                        
+                                    </label>
+                                    
+                                    <label class="radio-inline">
+                                       
+                                        <input type="radio"  name="district" ng-model="district" value="2"> 莆田
+                                        
+                                    </label>
+                                   
+                                    <label class="radio-inline">
+                                        <input type="radio" name="district" ng-model="district" value="3"> 泉州
+                                    </label>
+                                   
+                                    <label class="radio-inline">
+                                        <input type="radio"  name="district" ng-model="district" value="4"> 厦门
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="district" ng-model="district" value="5"> 漳州
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio"  name="district" ng-model="district" value="6"> 龙岩
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="district" ng-model="district" value="7"> 三明
+                                    </label>
+                                     <label class="radio-inline">
+                                        <input type="radio"  name="district" ng-model="district" value="8"> 南平
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="district" ng-model="district" value="9"> 宁德
+                                    </label>
+                                     <label class="radio-inline">
+                                        <input type="radio"  name="district" ng-model="district" value="10"> 平潭
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">简述 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <textarea ng-model="brief" class="form-control col-md-7 col-xs-12"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="restaurantName">推荐酒店/酒楼 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                   <input type="text" id="restaurantName" required="required" class="form-control col-md-7 col-xs-12" ng-model="restaurantName">
+                                </div>
+                            </div>
+							<div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="image">图片 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="file" nv-file-select="" uploader="imageUploader">
+                                    <img ng-src="{{image}}" ng-show="avatar" width="352" height="264">
+                                </div>
+                            </div> 
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="avatar">详细描述 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div id='edit'></div>
+                                </div>
+                            </div>                            
+                            </form>
+
+                        </div>
+	
+	<div class="modal-footer" style="text-align: center;">
+                <button type="button" class="btn btn-default" style="margin: 13px;" ng-click="save();">保存</button>
+    <button type="button" class="btn btn-default" style="margin: 13px;" ng-click="cancel();">取消</button>    
+    </div>
+	<script type="text/javascript" src="./jquery/jquery.min.js""></script>
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/codemirror.min.js"></script>
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/xml.min.js"></script>
+ 
+    <!-- Include Editor JS files. -->
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/froala_editor.pkgd.min.js"></script>
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/languages/zh_cn.js"></script>
+    <script type="text/javascript" src="./froala_editor_2.6.5/js/plugins/image.min.js"></script>
+ 
+    <!-- Initialize the editor. -->
+    <script> 
+
+    </script>
+</div>
+
