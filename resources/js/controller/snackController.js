@@ -56,25 +56,11 @@ snack.controller('SnackDetailController', function($scope,$stateParams,snackList
 });
 
 snack.controller('manageRecipesController', function($scope, $http, $location, $rootScope, $state, httpService) {
+    
     $scope.query = {
         page: 0,
-        size: 10,
-        articleType: 1
+        size: 10
     };
-    $scope.newsStatuses = [{
-            name: '全部',
-            status: -1
-        },
-        {
-            name: '已发布',
-            status: 0
-        },
-        {
-            name: '未发布',
-            status: 1
-        }
-    ];
-    $scope.selectedStatus = $scope.newsStatuses[0];
     $scope.changePageSizeFun = function(size) {
         $scope.query.page = $scope.data.number;
         $scope.query.size = size;
@@ -88,21 +74,13 @@ snack.controller('manageRecipesController', function($scope, $http, $location, $
     };
 
     function getList(queryObj) {
-        httpService.getNewsList(queryObj).then(function(res) {
+        httpService.HttpGet('recipes',queryObj).then(function(res) {
             console.log(res);
             $scope.data = res.data;
         }, function(err) {
             console.log(err);
         });
     };
-    $scope.changeStatus = function() {
-        if ($scope.selectedStatus.status == 1) {
-            $scope.query.isPublic = false;
-        } else if ($scope.selectedStatus.status == 0) {
-            $scope.query.isPublic = true;
-        }
-        getList($scope.query);
-    }
     getList($scope.query);
 
     $scope.goToCreate = function(argument) {
@@ -111,8 +89,9 @@ snack.controller('manageRecipesController', function($scope, $http, $location, $
     $scope.goToEdit = function(item) {
         $state.go("manage.recipesCreate", { item: item });
     };
+    
     $scope.operate = function(item) {
-        httpService.newsOperate(item.id, { is_public: !item.is_public }).then(function(res) {
+        httpService.HttpDelete('recipes/'+item.id).then(function(res) {
             console.log(res);
             getList($scope.query);
         }, function(err) {
@@ -124,18 +103,18 @@ snack.controller('manageRecipesController', function($scope, $http, $location, $
 
 
 snack.controller('createRecipesController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
-    $(function() {
+   $(function() {
         $('#edit').froalaEditor({
             language: 'zh_cn',
             heightMin: 700,
-            width: '1000',
-            imageUploadURL: 'http://www.fjcy.net/api/upload/1?access_token=' + $window.sessionStorage["access_token"]
+            width: '800',
+            imageUploadURL: 'http://www.fjcy.net/qa/api/upload/6?access_token=' + $window.sessionStorage["access_token"]
 
         });
 
     });
     var imageUploader = $scope.imageUploader = new FileUploader({
-        url: commonProperty.serverHost + "upload/1?access_token=" + $window.sessionStorage["access_token"],
+        url: commonProperty.serverHost + "upload/6?access_token=" + $window.sessionStorage["access_token"],
         queueLimit: 1, //文件个数
     });
 
@@ -146,7 +125,7 @@ snack.controller('createRecipesController', ['$scope', '$http', '$location', '$r
     imageUploader.onSuccessItem = function(fileItem, response, status, headers) {
         imageUploader.clearQueue();
         console.log(response);
-        $scope.bannerurl = response.link;
+        $scope.image = response.link;
 
     };
 
@@ -154,24 +133,28 @@ snack.controller('createRecipesController', ['$scope', '$http', '$location', '$r
     imageUploader.onCompleteAll = function() {};
     var selectedItem = $stateParams.item;
     $scope.save = function(argument) {
-        console.log($('#edit').froalaEditor('html.get', true));
-        var newsObj = {
-            "article_type": 1,
-            "content": $('#edit').froalaEditor('html.get', true),
-            "description": $scope.brief,
-            "introduction": "",
-            "thumbnails": $scope.bannerurl,
-            "title": $scope.newsTitle
+        var newsObj = 
+        {
+          "brief": $scope.brief,
+          "classification": 1,
+          "cuisine": $scope.cuisine,
+          "detail": $('#edit').froalaEditor('html.get', true),
+          "district": $scope.cuisine,
+          "image": $scope.image,
+          "name": $scope.name,
+          "restaurantId": 0,
+          "restaurantName": $scope.restaurantName,
+          "thumbnails": $scope.image
         };
         if (selectedItem) {
-            httpService.newsUpdate(selectedItem.id, newsObj).then(function(res) {
+            httpService.HttpPut('recipes/'+selectedItem.id, newsObj).then(function(res) {
                 console.log(res);
                 $state.go('manage.recipes');
             }, function(err) {
                 console.log(err);
             })
         } else {
-            httpService.newsCreate(newsObj).then(function(res) {
+            httpService.HttpPost('recipes',newsObj).then(function(res) {
                 console.log(res);
                 $state.go('manage.recipes');
             }, function(err) {
@@ -183,20 +166,30 @@ snack.controller('createRecipesController', ['$scope', '$http', '$location', '$r
     $scope.cancel = function(argument) {
         $state.go('manage.recipes');
     }
-
+    $scope.cuisine = 1;
+            $scope.district = 1;
 
     $('#edit').on('froalaEditor.initialized', function(e, editor) {
 
         // Do something here.
 
         if (selectedItem) {
-            $scope.brief = selectedItem.description;
-            $scope.newsTitle = selectedItem.title;
-            $scope.bannerurl = selectedItem.thumbnails;
-            $scope.$apply();
-            $('#edit').froalaEditor('html.set', selectedItem.content);
 
-        };
+            $scope.brief = selectedItem.brief;
+            $scope.cuisine = selectedItem.cuisine;
+            $scope.district = selectedItem.district;
+            $scope.image = selectedItem.image;
+            $scope.name = selectedItem.name;
+            $scope.restaurantName =  selectedItem.restaurantName
+            $scope.$apply();
+            
+            $('#edit').froalaEditor('html.set', selectedItem.detail);
+
+        }else{
+            $scope.cuisine = 1;
+            $scope.district = 1;
+            $scope.$apply();
+        }
     });
 
 
