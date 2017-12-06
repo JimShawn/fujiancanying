@@ -174,12 +174,30 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         params:{
                     'item':null
                 }           
-    }).state("manage.industry",{
-        url:"/industry",
-        templateUrl:'industry.html'
-    }).state("manage.industryCreate",{
-        url:"/industryCreate",
-        templateUrl:'create-industry.html',
+    }).state("manage.transfer",{
+        url:"/transfer",
+        templateUrl:'transfer.html'
+    }).state("manage.transferCreate",{
+        url:"/transferCreate",
+        templateUrl:'create-transfer.html',
+        params:{
+                    'item':null
+                }           
+    }).state("manage.labour",{
+        url:"/labour",
+        templateUrl:'labour.html'
+    }).state("manage.labourCreate",{
+        url:"/labourCreate",
+        templateUrl:'create-labour.html',
+        params:{
+                    'item':null
+                }           
+    }).state("manage.foodCompany",{
+        url:"/foodCompany",
+        templateUrl:'food-company.html'
+    }).state("manage.foodCompanyCreate",{
+        url:"/foodCompanyreate",
+        templateUrl:'create-company-food.html',
         params:{
                     'item':null
                 }           
