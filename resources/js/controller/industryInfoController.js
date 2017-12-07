@@ -115,41 +115,12 @@ industryinfo.controller('FoodinfoController', ['$scope', '$http','$location','$r
 
 
 }]);
-industryinfo.controller('manageIndustryController', function($scope, $http, $location, $rootScope, $state, httpService) {
+industryinfo.controller('manageTransferController', function($scope, $http, $location, $rootScope, $state, httpService) {
     
-    $scope.industryTypeArrays = [{
-            name: '餐饮转让',
-            type: 3
-        },
-        {
-            name: '劳务信息',
-            type: 4
-        },
-        {
-            name: '食材对接',
-            type: 5
-        }
-    ];
-    $scope.selectedIndustryType = $scope.industryTypeArrays[0];
     $scope.query = {
         page: 0,
-        size: 10,
-        articleType: $scope.selectedIndustryType.type
+        size: 10
     };
-    $scope.newsStatuses = [{
-            name: '全部',
-            status: -1
-        },
-        {
-            name: '已发布',
-            status: 0
-        },
-        {
-            name: '未发布',
-            status: 1
-        }
-    ];
-    $scope.selectedStatus = $scope.newsStatuses[0];
     $scope.changePageSizeFun = function(size) {
         $scope.query.page = $scope.data.number;
         $scope.query.size = size;
@@ -163,35 +134,23 @@ industryinfo.controller('manageIndustryController', function($scope, $http, $loc
     };
 
     function getList(queryObj) {
-        httpService.getNewsList(queryObj).then(function(res) {
+        httpService.HttpGet('transfer',queryObj).then(function(res) {
             console.log(res);
             $scope.data = res.data;
         }, function(err) {
             console.log(err);
         });
     };
-    $scope.changeStatus = function() {
-        if ($scope.selectedStatus.status == 1) {
-            $scope.query.isPublic = false;
-        } else if ($scope.selectedStatus.status == 0) {
-            $scope.query.isPublic = true;
-        }
-        getList($scope.query);
-    }
-    $scope.changeType = function () {
-        $scope.query.articleType = $scope.selectedIndustryType.type;
-        getList($scope.query);
-    }
     getList($scope.query);
 
     $scope.goToCreate = function(argument) {
-        $state.go("manage.industryCreate", { item: null });
+        $state.go("manage.transferCreate", { item: null });
     };
     $scope.goToEdit = function(item) {
-        $state.go("manage.industryCreate", { item: item });
+        $state.go("manage.transferCreate", { item: item });
     };
     $scope.operate = function(item) {
-        httpService.newsOperate(item.id, { is_public: !item.is_public }).then(function(res) {
+        httpService.HttpDelete('transfer/'+item.id).then(function(res) {
             console.log(res);
             getList($scope.query);
         }, function(err) {
@@ -202,30 +161,9 @@ industryinfo.controller('manageIndustryController', function($scope, $http, $loc
 
 
 
-industryinfo.controller('createIndustryController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
-    $(function() {
-        $('#edit').froalaEditor({
-            language: 'zh_cn',
-            heightMin: 700,
-            width: '1000',
-            imageUploadURL: 'http://www.fjcy.net/api/upload/3?access_token=' + $window.sessionStorage["access_token"]
-
-        });
-
-    });
-    $scope.industryTypeArrays = [{
-            name: '餐饮转让',
-            type: 3
-        },
-        {
-            name: '劳务信息',
-            type: 4
-        },
-        {
-            name: '食材对接',
-            type: 5
-        }
-    ];
+industryinfo.controller('createTransferController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
+    
+    
     var imageUploader = $scope.imageUploader = new FileUploader({
         url: commonProperty.serverHost + "upload/3?access_token=" + $window.sessionStorage["access_token"],
         queueLimit: 1, //文件个数
@@ -238,34 +176,54 @@ industryinfo.controller('createIndustryController', ['$scope', '$http', '$locati
     imageUploader.onSuccessItem = function(fileItem, response, status, headers) {
         imageUploader.clearQueue();
         console.log(response);
-        $scope.bannerurl = response.link;
+        $scope.images = response.link;
 
     };
 
     imageUploader.onErrorItem = function(fileItem, response, status, headers) {};
     imageUploader.onCompleteAll = function() {};
     var selectedItem = $stateParams.item;
+    if (selectedItem) {
+                $scope.address = selectedItem.address;
+                $scope.area = selectedItem.area;
+                $scope.business = selectedItem.business;
+                $scope.contact_mobile = selectedItem.contact_mobile;
+                $scope.contact_name = selectedItem.contact_name;
+                $scope.district = selectedItem.district;                
+                $scope.images = selectedItem.images;
+                $scope.price = selectedItem.price;
+                $scope.rent = selectedItem.rent;                
+                $scope.restaurant_name = selectedItem.restaurant_name;
+                $scope.title = selectedItem.title;
+                $scope.type = selectedItem.type;     
+            }           
     $scope.save = function(argument) {
-        console.log($('#edit').froalaEditor('html.get', true));
         var newsObj = {
-            "article_type": $scope.selectedIndustryType.type,
-            "content": $('#edit').froalaEditor('html.get', true),
-            "description": $scope.brief,
-            "introduction": "",
-            "thumbnails": $scope.bannerurl,
-            "title": $scope.newsTitle
-        };
+                          "address": $scope.address,
+                          "area": $scope.area,
+                          "business": $scope.business,
+                          "contact_mobile": $scope.contact_mobile,
+                          "contact_name": $scope.contact_name,
+                          "district": $scope.district,
+                          "images": $scope.images,
+                          "price": $scope.price,
+                          "rent": $scope.rent,
+                          "restaurant_id": 0,
+                          "restaurant_name": $scope.restaurant_name,
+                          "title": $scope.title,
+                          "type": $scope.type
+                        };
         if (selectedItem) {
-            httpService.newsUpdate(selectedItem.id, newsObj).then(function(res) {
+            httpService.HttpPut('transfer/'+selectedItem.id, newsObj).then(function(res) {
                 console.log(res);
-                $state.go('manage.industry');
+                $state.go('manage.transfer');
             }, function(err) {
                 console.log(err);
             })
         } else {
-            httpService.newsCreate(newsObj).then(function(res) {
+            httpService.HttpPost('transfer',newsObj).then(function(res) {
                 console.log(res);
-                $state.go('manage.industry');
+                $state.go('manage.transfer');
             }, function(err) {
                 console.log(err);
             })
@@ -273,31 +231,237 @@ industryinfo.controller('createIndustryController', ['$scope', '$http', '$locati
 
     };
     $scope.cancel = function(argument) {
-        $state.go('manage.industry');
+        $state.go('manage.transfer');
     }
 
 
-    $('#edit').on('froalaEditor.initialized', function(e, editor) {
 
-        // Do something here.
 
+
+}]);
+
+
+industryinfo.controller('manageLabourController', function($scope, $http, $location, $rootScope, $state, httpService) {
+    
+    $scope.query = {
+        page: 0,
+        size: 10
+    };
+    $scope.changePageSizeFun = function(size) {
+        $scope.query.page = $scope.data.number;
+        $scope.query.size = size;
+        getList($scope.query);
+    };
+
+    $scope.gotoPageFun = function(x) {
+        $scope.query.page = x;
+        $scope.query.size = $scope.data.size;
+        getList($scope.query);
+    };
+
+    function getList(queryObj) {
+        httpService.HttpGet('labor',queryObj).then(function(res) {
+            console.log(res);
+            $scope.data = res.data;
+        }, function(err) {
+            console.log(err);
+        });
+    };
+    getList($scope.query);
+
+    $scope.goToCreate = function(argument) {
+        $state.go("manage.labourCreate", { item: null });
+    };
+    $scope.goToEdit = function(item) {
+        $state.go("manage.labourCreate", { item: item });
+    };
+    $scope.operate = function(item) {
+        httpService.HttpDelete('labor/'+item.id).then(function(res) {
+            console.log(res);
+            getList($scope.query);
+        }, function(err) {
+            console.log(err);
+        })
+    }
+});
+
+
+
+industryinfo.controller('createLabourController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
+    
+    
+
+    var selectedItem = $stateParams.item;
+    if (selectedItem) {
+                $scope.contact = selectedItem.contact;
+                $scope.contact_mobile = selectedItem.contact_mobile;
+                $scope.description = selectedItem.description;
+                $scope.recruitment_method = selectedItem.recruitment_method;
+                $scope.remuneration = selectedItem.remuneration;
+                $scope.requirements = selectedItem.requirements;                
+                $scope.responsibilities = selectedItem.responsibilities;
+                $scope.restaurant_name = selectedItem.restaurant_name;
+                $scope.title = selectedItem.title;                
+                $scope.work_address = selectedItem.work_address;  
+            }           
+    $scope.save = function(argument) {
+        var newsObj = {
+                          "contact": $scope.contact,
+                          "contact_mobile": $scope.contact_mobile,
+                          "description": $scope.description,
+                          "recruitment_method": $scope.recruitment_method,
+                          "remuneration": $scope.remuneration,
+                          "requirements": $scope.requirements,
+                          "responsibilities": $scope.responsibilities,
+                          "restaurant_name": $scope.restaurant_name,
+                          "restaurant_id": 0,
+                          "title": $scope.title,
+                          "work_address": $scope.work_address
+                        };
+                        
         if (selectedItem) {
-            $scope.brief = selectedItem.description;
-            $scope.newsTitle = selectedItem.title;
-            $scope.bannerurl = selectedItem.thumbnails;
-            for (var i = 0; i < $scope.industryTypeArrays.length; i++) {
-                if ($scope.industryTypeArrays[i].type == selectedItem.article_type) {
-                    $scope.selectedIndustryType = $scope.industryTypeArrays[i];
-                }
-            }
-            $scope.$apply();
-            
-            $('#edit').froalaEditor('html.set', selectedItem.content);
+            httpService.HttpPut('labor/'+selectedItem.id, newsObj).then(function(res) {
+                console.log(res);
+                $state.go('manage.labour');
+            }, function(err) {
+                console.log(err);
+            })
+        } else {
+            httpService.HttpPost('labor',newsObj).then(function(res) {
+                console.log(res);
+                $state.go('manage.labour');
+            }, function(err) {
+                console.log(err);
+            })
+        }
 
-        }else{
-            $scope.selectedIndustryType = $scope.industryTypeArrays[0];
-        };
-    });
+    };
+    $scope.cancel = function(argument) {
+        $state.go('manage.labour');
+    }
+
+
+
+
+
+}]);
+
+
+
+industryinfo.controller('manageFoodCompanyController', function($scope, $http, $location, $rootScope, $state, httpService) {
+    
+    $scope.query = {
+        page: 0,
+        size: 10
+    };
+    $scope.changePageSizeFun = function(size) {
+        $scope.query.page = $scope.data.number;
+        $scope.query.size = size;
+        getList($scope.query);
+    };
+
+    $scope.gotoPageFun = function(x) {
+        $scope.query.page = x;
+        $scope.query.size = $scope.data.size;
+        getList($scope.query);
+    };
+
+    function getList(queryObj) {
+        httpService.HttpGet('ingredientsCompany',queryObj).then(function(res) {
+            console.log(res);
+            $scope.data = res.data;
+        }, function(err) {
+            console.log(err);
+        });
+    };
+    getList($scope.query);
+
+    $scope.goToCreate = function(argument) {
+        $state.go("manage.foodCompanyCreate", { item: null });
+    };
+    $scope.goToEdit = function(item) {
+        $state.go("manage.foodCompanyCreate", { item: item });
+    };
+    $scope.operate = function(item) {
+        httpService.HttpDelete('ingredientsCompany/'+item.id).then(function(res) {
+            console.log(res);
+            getList($scope.query);
+        }, function(err) {
+            console.log(err);
+        })
+    }
+});
+
+
+
+industryinfo.controller('createFoodCompanyController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
+        $(function() { 
+                $('#edit').froalaEditor({
+              language:'zh_cn',
+              heightMin: 700,
+              width:'800',
+                imageUploadURL: 'http://www.fjcy.net/api/upload/5?access_token='+$window.sessionStorage["access_token"]
+
+              });
+
+        });    
+    
+
+    var selectedItem = $stateParams.item;
+            
+    $scope.save = function(argument) {
+        var newsObj = {
+                          "address": $scope.address,
+                          "contact": $scope.contact,
+                          "description": $scope.description,
+                          "email": $scope.email,
+                          "fax": $scope.fax,
+                          "intro": $('#edit').froalaEditor('html.get', true),
+                          "name": $scope.name,
+                          "tel": $scope.tel,
+                          "website": $scope.website
+                        }
+                        
+        if (selectedItem) {
+            httpService.HttpPut('ingredientsCompany/'+selectedItem.id, newsObj).then(function(res) {
+                console.log(res);
+                $state.go('manage.foodCompany');
+            }, function(err) {
+                console.log(err);
+            })
+        } else {
+            httpService.HttpPost('ingredientsCompany',newsObj).then(function(res) {
+                console.log(res);
+                $state.go('manage.foodCompany');
+            }, function(err) {
+                console.log(err);
+            })
+        }
+
+    };
+    $scope.cancel = function(argument) {
+        $state.go('manage.foodCompany');
+    };
+    $('#edit').on('froalaEditor.initialized', function (e, editor) {
+          
+          // Do something here.
+          
+            if(selectedItem){
+                $scope.address = selectedItem.address;
+                $scope.contact = selectedItem.contact;
+                $scope.description = selectedItem.description;
+                $scope.email = selectedItem.email;
+                $scope.fax = selectedItem.fax;
+                $scope.name = selectedItem.name;
+                $scope.tel = selectedItem.tel;
+                $scope.website = selectedItem.website;                
+                $scope.$apply();
+                $('#edit').froalaEditor('html.set', selectedItem.intro);
+                
+            };
+        });    
+
+
 
 
 

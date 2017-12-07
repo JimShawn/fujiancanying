@@ -1,4 +1,4 @@
-<div ng-controller="createTransferController" style="    margin-top: 60px;">
+<div ng-controller="createLabourController" style="    margin-top: 60px;">
     <div class="modal-body">
                         <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                             <div class="form-group">
@@ -8,67 +8,60 @@
                                     <input type="text" id="title" required="required" class="form-control col-md-7 col-xs-12" ng-model="title">
                                 </div>
                             </div>
-<div class="form-group">
+                            <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="news-title"> 餐厅/酒店名称<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input type="text" id="restaurant_name" required="required" class="form-control col-md-7 col-xs-12" ng-model="restaurant_name">
                                 </div>
-                            </div>                            
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="news-title">区域 <span class="required">*</span>
+                            </div>     
+<div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="news-title"> 描述<span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="district" required="required" class="form-control col-md-7 col-xs-12" ng-model="district">
+                                    <input type="text" id="description" required="required" class="form-control col-md-7 col-xs-12" ng-model="description">
+                                </div>
+                            </div>                            
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="news-title">岗位职责 <span class="required">*</span>
+                                </label>
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <input type="text" id="requirements" required="required" class="form-control col-md-7 col-xs-12" ng-model="requirements">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">地址 <span class="required">*</span>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">薪酬范围 <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="address" required="required" class="form-control col-md-7 col-xs-12" ng-model="address">
+                                    <input type="text" name="remuneration" required="required" class="form-control col-md-7 col-xs-12" ng-model="remuneration">
                                 </div>
                             </div>
 <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">行业 <span class="required">*</span>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">招聘方式 <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="business" required="required" class="form-control col-md-7 col-xs-12" ng-model="business">
+                                    <input type="text" name="recruitment_method" required="required" class="form-control col-md-7 col-xs-12" ng-model="recruitment_method">
                                 </div>
                             </div>                            
 <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">类型 <span class="required">*</span>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">工作地址 <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="type" required="required" class="form-control col-md-7 col-xs-12" ng-model="type">
+                                    <input type="text" name="work_address" required="required" class="form-control col-md-7 col-xs-12" ng-model="work_address">
                                 </div>
                             </div>                            
 <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">面积 <span class="required">*</span>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">任职 <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="area" required="required" class="form-control col-md-7 col-xs-12" ng-model="area">
-                                </div>
-                            </div>                            
-<div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">转让费 <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="number" name="price" required="required" class="form-control col-md-7 col-xs-12" ng-model="price">
-                                </div>
-                            </div>                            
-<div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">租金 <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="number" name="rent" required="required" class="form-control col-md-7 col-xs-12" ng-model="rent">
+                                    <input type="text" name="responsibilities" required="required" class="form-control col-md-7 col-xs-12" ng-model="responsibilities">
                                 </div>
                             </div>                            
 <div class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12" for="brief">联系人 <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" name="contact_name" required="required" class="form-control col-md-7 col-xs-12" ng-model="contact_name">
+                                    <input type="text" name="contact" required="required" class="form-control col-md-7 col-xs-12" ng-model="contact">
                                 </div>
                             </div>                            
 <div class="form-group">
@@ -77,16 +70,8 @@
                                 <div class="col-md-6 col-sm-6 col-xs-12">
                                     <input type="text" name="contact_mobile" required="required" class="form-control col-md-7 col-xs-12" ng-model="contact_mobile">
                                 </div>
-                            </div>                            
-
-							<div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="bannerorder">图片 <span class="required">*</span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="file" nv-file-select="" uploader="imageUploader">
-                                    <img ng-src="{{images}}" ng-show="images" width="352" height="264">
-                                </div>
-                            </div>                            
+                            </div>                             
+                         
                             </form>
 
                         </div>

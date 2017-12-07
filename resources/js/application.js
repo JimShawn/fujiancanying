@@ -197,7 +197,7 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         templateUrl:'food-company.html'
     }).state("manage.foodCompanyCreate",{
         url:"/foodCompanyreate",
-        templateUrl:'create-company-food.html',
+        templateUrl:'create-food-company.html',
         params:{
                     'item':null
                 }           
