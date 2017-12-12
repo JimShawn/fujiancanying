@@ -2,10 +2,10 @@
     <div class="modal-body">
                         <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="news-title">标题 <span class="required">*</span>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="title">标题 <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="app-name" required="required" class="form-control col-md-7 col-xs-12" ng-model="newsTitle">
+                                    <input type="text" id="title" required="required" class="form-control col-md-7 col-xs-12" ng-model="title">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -15,20 +15,22 @@
                                     <textarea ng-model="brief" class="form-control col-md-7 col-xs-12"></textarea>
                                 </div>
                             </div>
-							<div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="bannerorder">图片 <span class="required">*</span>
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="bannerorder">内容 <span class="required">*</span>
                                 </label>
+                                
                                 <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="file" nv-file-select="" uploader="imageUploader">
-                                    <img ng-src="{{bannerurl}}" ng-show="bannerurl" width="352" height="264">
+                                    <div id='edit'></div>
                                 </div>
                             </div>                            
                             </form>
 
                         </div>
-	<div id='edit'></div>
-	<button type="button" class="btn btn-default" style="margin: 13px;" ng-click="save();">保存</button>
-	<button type="button" class="btn btn-default" style="margin: 13px;" ng-click="cancel();">取消</button>
+	
+	<div class="modal-footer" style="text-align: center;">
+                <button type="button" class="btn btn-default" style="margin: 13px;" ng-click="save();">保存</button>
+    <button type="button" class="btn btn-default" style="margin: 13px;" ng-click="cancel();">取消</button>    
+    </div>
 	<script type="text/javascript" src="./jquery/jquery.min.js""></script>
     <script type="text/javascript" src="./froala_editor_2.6.5/js/codemirror.min.js"></script>
     <script type="text/javascript" src="./froala_editor_2.6.5/js/xml.min.js"></script>

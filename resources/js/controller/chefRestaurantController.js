@@ -374,7 +374,8 @@ chef.controller('manageFamousSnackController', function($scope, $http, $location
    
     $scope.query = {
         page: 0,
-        size: 10
+        size: 10,
+        classification:2
     };
     $scope.changePageSizeFun = function(size) {
         $scope.query.page = $scope.data.number;
@@ -440,7 +441,7 @@ chef.controller('createFamousSnackController', ['$scope', '$http', '$location', 
     imageUploader.onSuccessItem = function(fileItem, response, status, headers) {
         imageUploader.clearQueue();
         console.log(response);
-        $scope.avatar = response.link;
+        $scope.image = response.link;
 
     };
 
@@ -448,9 +449,6 @@ chef.controller('createFamousSnackController', ['$scope', '$http', '$location', 
     imageUploader.onCompleteAll = function() {};
     var selectedItem = $stateParams.item;
     $scope.save = function(argument) {
-        console.log($('#edit').froalaEditor('html.get', true));
-        console.log($scope.cuisine);
-        return;
         var newsObj = 
         {
           "brief": $scope.brief,
