@@ -1,4 +1,4 @@
-<div ng-controller="manageFoodCompanyController">
+<div ng-controller="manageMyFoodController">
 
 <div class="col-md-12 col-sm-12 col-xs-12">
 			
@@ -18,9 +18,9 @@
                         <thead>
                         <tr>
                             <th><a href="">序号</a></th>
-                            <th>公司名称</th>
-                            <th>描述</th>
-                            <th>联系人</th>
+                            <th>名称</th>
+                            <th>食材特色</th>
+                            <th>介绍</th>
                             <th>创建人</th>
                             <th>创建时间</th>                            
                             <th width="10%">操作</th>
@@ -32,13 +32,12 @@
                         <tr ng-repeat="item in data.content" class="tr_nowrap">
                             <td ><a href="" ng-click="goToEdit(item)">{{item.id}}</a></td>
                             <td>{{item.name}}</td>
-                            <td>{{item.description}}</td>
-                            <td>{{item.contact}}</td>
+                            <td>{{item.specification}}</td>
+                            <td>{{item.intro}}</td>
                             <td>{{item.user_created}}</td>
                             <td>{{item.time_created | date:'yyyy-MM-dd'}}</td>                                                    
                            <td >
                                 <button type="button" class="btn btn-default" ng-click="operate(item)">删除</button>
-                                <button type="button" class="btn btn-default" ng-click="goToMyFood(item)">食材管理</button>
                             </td>
                         </tr>
 
