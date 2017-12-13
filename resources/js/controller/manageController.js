@@ -59,7 +59,7 @@ manage.controller('manageController', ['$scope', '$http', '$location', '$rootSco
             var setContentHeight = function() {
                 // reset height
                 $RIGHT_COL.css('min-height', $(window).height());
-
+                $FOOTER.css('height', '100%');
                 var bodyHeight = $BODY.outerHeight(),
                     footerHeight = $BODY.hasClass('footer_fixed') ? -10 : $FOOTER.height(),
                     leftColHeight = $LEFT_COL.eq(1).height() + $SIDEBAR_FOOTER.height(),
@@ -152,23 +152,7 @@ manage.controller('manageController', ['$scope', '$http', '$location', '$rootSco
             // init_DataTables();
 
         });
-        // /Sidebar
-        //获取随机数
-        var randNum = function() {
-            return (Math.floor(Math.random() * (1 + 40 - 20))) + 20;
-        };
-
-
-        // Panel toolbox首页分开渠道任务和分发渠道列表的统计图
-        $(document).ready(function() {
-
-        });
-        // /Panel toolbox
-
-        // /Tooltip
-
-        // Progressbar动态进度条
-
+        
 
 
 

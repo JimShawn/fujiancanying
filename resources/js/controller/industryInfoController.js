@@ -379,8 +379,18 @@ industryinfo.controller('manageFoodCompanyController', function($scope, $http, $
     $scope.goToCreate = function(argument) {
         $state.go("manage.foodCompanyCreate", { item: null });
     };
+    $scope.goToMyFood = function(item){
+        $state.go("manage.myFood", { 
+                    'companyId':item.id,
+                    'companyName':item.name                
+        });
+    };
     $scope.goToEdit = function(item) {
-        $state.go("manage.foodCompanyCreate", { item: item });
+        $state.go("manage.myFoodCreate", { 
+                'companyId':item.id,
+                'companyName':item.name,
+                'item': item ,
+        });
     };
     $scope.operate = function(item) {
         httpService.HttpDelete('ingredientsCompany/'+item.id).then(function(res) {
@@ -466,3 +476,145 @@ industryinfo.controller('createFoodCompanyController', ['$scope', '$http', '$loc
 }]);
 
 
+
+industryinfo.controller('manageMyFoodController', function($scope, $http, $location, $rootScope, $state, httpService,$stateParams) {
+    console.log($stateParams.companyId);
+    console.log($stateParams.companyName);
+
+    var companyId = $stateParams.companyId;
+    var companyName = $stateParams.companyName;
+    $scope.query = {
+        page: 0,
+        size: 10,
+        ingredients_company_id:companyId
+    };
+    $scope.changePageSizeFun = function(size) {
+        $scope.query.page = $scope.data.number;
+        $scope.query.size = size;
+        getList($scope.query);
+    };
+
+    $scope.gotoPageFun = function(x) {
+        $scope.query.page = x;
+        $scope.query.size = $scope.data.size;
+        getList($scope.query);
+    };
+
+    function getList(queryObj) {
+        httpService.HttpGet('ingredients',queryObj).then(function(res) {
+            console.log(res);
+            $scope.data = res.data;
+        }, function(err) {
+            console.log(err);
+        });
+    };
+    getList($scope.query);
+
+    $scope.goToCreate = function(argument) {
+        $state.go("manage.myFoodCreate", { 
+            item:null,
+            companyId:companyId,
+            companyName:companyName
+        });
+    };
+    $scope.goToEdit = function(item) {
+        $state.go("manage.myFoodCreate", { 
+            item: item ,
+            companyId:companyId,
+            companyName:companyName
+        });
+    };
+    $scope.operate = function(item) {
+        httpService.HttpDelete('ingredients/'+item.id).then(function(res) {
+            console.log(res);
+            getList($scope.query);
+        }, function(err) {
+            console.log(err);
+        })
+    }
+});
+
+
+
+industryinfo.controller('createMyFoodController', ['$scope', '$http', '$location', '$rootScope', '$state', 'httpService', '$stateParams', '$window', 'FileUploader','commonProperty', function($scope, $http, $location, $rootScope, $state, httpService, $stateParams, $window, FileUploader,commonProperty) {
+    $(function() {
+        $('#edit').froalaEditor({
+            language: 'zh_cn',
+            heightMin: 700,
+            width: 700,
+            imageUploadURL: 'http://www.fjcy.net/api/upload/2?access_token=' + $window.sessionStorage["access_token"]
+
+        });
+
+    });
+    
+
+    var selectedItem = $stateParams.item;
+    var companyId = $stateParams.companyId;
+    var companyName = $stateParams.companyName;    
+              
+    $scope.save = function(argument) {
+        var newsObj ={
+                      "cooking_methods": $scope.cooking_methods,
+                      "detail": $('#edit').froalaEditor('html.get', true),
+                      "english_name": $scope.english_name,
+                      "ingredients_company_id": $scope.ingredients_company_id,
+                      "ingredients_company_name": $scope.ingredients_company_name,
+                      "intro": $scope.intro,
+                      "name": $scope.name,
+                      "specification": $scope.specification
+                    };
+        if (selectedItem) {
+            httpService.HttpPut('ingredients/'+selectedItem.id, newsObj).then(function(res) {
+                console.log(res);
+                $state.go('manage.myFood',{ 
+                    'companyId':ingredients_company_id,
+                    'companyName':ingredients_company_name               
+        });
+            }, function(err) {
+                console.log(err);
+            })
+        } else {
+            httpService.HttpPost('ingredients',newsObj).then(function(res) {
+                console.log(res);
+                $state.go('manage.myFood',{ 
+                    'companyId':ingredients_company_id,
+                    'companyName':ingredients_company_name               
+        });
+            }, function(err) {
+                console.log(err);
+            })
+        }
+
+    };
+    $scope.cancel = function(argument) {
+        $state.go('manage.myFood',{ 
+                    'companyId':ingredients_company_id,
+                    'companyName':ingredients_company_name               
+        });
+    }
+    $('#edit').on('froalaEditor.initialized', function(e, editor) {
+
+            // Do something here.
+
+            if (selectedItem) {
+                $scope.cooking_methods = selectedItem.cooking_methods;
+                $scope.english_name = selectedItem.english_name;
+                $scope.ingredients_company_id = selectedItem.ingredients_company_id;
+                $scope.ingredients_company_name = selectedItem.ingredients_company_name;
+                $scope.intro = selectedItem.intro;
+                $scope.name = selectedItem.name;
+                $scope.specification = selectedItem.specification;
+                $scope.$apply();
+                $('#edit').froalaEditor('html.set', selectedItem.detail);
+
+            }else{
+                $scope.ingredients_company_id = companyId;
+                $scope.ingredients_company_name = companyName;                
+            };
+        });
+
+
+
+
+}]);

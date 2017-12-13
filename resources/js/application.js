@@ -205,13 +205,16 @@ app.config(function ($stateProvider,$urlRouterProvider) {
         url:"/myFood",
         templateUrl:'my-food.html',
         params:{
-                    'companyId':null
+                    'companyId':null,
+                    'companyName':null
                 }           
     }).state("manage.myFoodCreate",{
         url:"/myFoodCeate",
         templateUrl:'create-my-food.html',
         params:{
-                    'item':null
+                    'item':null,
+                    'companyId':null,
+                    'companyName':null
                 }           
     }).state("manage.tutorial",{
         url:"/tutorial",

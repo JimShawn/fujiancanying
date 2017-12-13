@@ -59,7 +59,8 @@ snack.controller('manageRecipesController', function($scope, $http, $location, $
     
     $scope.query = {
         page: 0,
-        size: 10
+        size: 10,
+        classification:1
     };
     $scope.changePageSizeFun = function(size) {
         $scope.query.page = $scope.data.number;
