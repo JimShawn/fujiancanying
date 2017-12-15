@@ -47,7 +47,7 @@
 						<div style="height: 144px; width: 192px; overflow: hidden;">
 							<img ng-src="{{dataRecipeContent.thumbnails}}" class="img-responsive" alt="Cinque Terre" style="height: 144px; width: 192px; cursor: pointer;">
 						</div>
-						<h4 style="color:#333333;">{{dataRecipeContent.title}}</h4>
+						<h4 style="color:#333333;">{{dataRecipeContent.name}}</h4>
 						</a>
 					</div>
 					
@@ -68,7 +68,7 @@
 
 						<div class="news-content1" ng-repeat="dataNewsContent in dataNewsContents">
 							<a ui-sref="main.newsDetail({id:dataNewsContent.id})">{{dataNewsContent.title}}</a>
-							<p style="font-size: 14px;letter-spacing: 2px;margin-top: 18px;color: #666666;">{{dataNewsContent.description}}...</p>
+							<p style="font-size: 14px;letter-spacing: 2px;margin-top: 18px;color: #666666;">{{dataNewsContent.brief}}...</p>
 							<h3>{{ commonUtil.getDateFromInt(dataNewsContent.time_created)}}</h3>
 						</div>
 					</div>

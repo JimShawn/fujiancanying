@@ -1,9 +1,7 @@
 var homepage = angular.module('homepage', []);
 
-homepage.controller('HomePageController', function ($scope,$http,$location,$rootScope,$state,snackList,chefList,restaurantList,httpService,commonUtil) {
-    $scope.snackList = snackList;
-    $scope.chefList = chefList;
-    $scope.restaurantList = restaurantList;
+homepage.controller('HomePageController', function ($scope,$http,$location,$rootScope,$state,httpService,commonUtil) {
+
     $scope.famousChef = true;
     $scope.famousHotel = false;
     $scope.famousSnack = false;
@@ -30,10 +28,9 @@ homepage.controller('HomePageController', function ($scope,$http,$location,$root
     //获取banner数据
     $scope.queryBanner = {
         page: 0,
-        size: 3,
-        isPublic:true
+        size: 2
     };
-    httpService.getBannerList($scope.queryBanner).then(function(res) {
+    httpService.HttpGet('banner',$scope.queryBanner).then(function(res) {
             console.log(res);
             $scope.dataBannerContents = res.data.content;
             $scope.banner1 = $scope.dataBannerContents[0].image;
@@ -45,22 +42,19 @@ homepage.controller('HomePageController', function ($scope,$http,$location,$root
     $scope.queryRecipes = {
         page: 0,
         size: 5,
-        isPublic:true,
-        articleType:1
+        classification:1
     };
-    httpService.getNewsList($scope.queryRecipes).then(function (res) {
+    httpService.HttpGet('recipes',$scope.queryRecipes).then(function (res) {
         $scope.dataRecipeContents = res.data.content;
     },function (err) {
         console.log(err);
     });
     //获取新闻列表
-    $scope.queryRecipes = {
+    $scope.queryNews = {
         page: 0,
-        size: 2,
-        isPublic:true,
-        articleType:0
+        size: 2
     };
-    httpService.getNewsList($scope.queryRecipes).then(function (res) {
+    httpService.HttpGet('news',$scope.queryNews).then(function (res) {
         $scope.dataNewsContents = res.data.content;
     },function (err) {
         console.log(err);
@@ -68,10 +62,9 @@ homepage.controller('HomePageController', function ($scope,$http,$location,$root
     //获取教学视频list
     $scope.queryTutorial = {
         page: 0,
-        size: 4,
-        isPublic:true
+        size: 4
     };
-    httpService.getTutorialList($scope.queryTutorial).then(function(res) {
+    httpService.HttpGet('tutorial',$scope.queryTutorial).then(function(res) {
             console.log(res);
             $scope.dataTutorialContents = res.data.content;
         }, function(err) {
@@ -80,11 +73,9 @@ homepage.controller('HomePageController', function ($scope,$http,$location,$root
     //获取转让list
     $scope.queryTransform = {
         page: 0,
-        size: 7,
-        isPublic:true,
-        articleType:3
+        size: 7
     };
-    httpService.getNewsList($scope.queryTransform).then(function(res) {
+    httpService.HttpGet('transfer',$scope.queryTransform).then(function(res) {
             console.log(res);
             $scope.dataTransformContents = res.data.content;
         }, function(err) {
@@ -93,11 +84,9 @@ homepage.controller('HomePageController', function ($scope,$http,$location,$root
     //获取转让list
     $scope.queryLabor = {
         page: 0,
-        size: 7,
-        isPublic:true,
-        articleType:4
+        size: 7
     };
-    httpService.getNewsList($scope.queryLabor).then(function(res) {
+    httpService.HttpGet('labor',$scope.queryLabor).then(function(res) {
             console.log(res);
             $scope.dataLaborContents = res.data.content;
         }, function(err) {
@@ -106,11 +95,9 @@ homepage.controller('HomePageController', function ($scope,$http,$location,$root
     //获取转让list
     $scope.queryFood = {
         page: 0,
-        size: 7,
-        isPublic:true,
-        articleType:5
+        size: 7
     };
-    httpService.getNewsList($scope.queryFood).then(function(res) {
+    httpService.HttpGet('ingredientsCompany',$scope.queryFood).then(function(res) {
             console.log(res);
             $scope.dataFoodContents = res.data.content;
         }, function(err) {
@@ -128,27 +115,6 @@ homepage.controller('HomePageController', function ($scope,$http,$location,$root
             $state.go("main.map");   
         }
     };
-    $scope.videoList = [{
-            name:'淡糟香螺片',
-            time:'2017/06/29 13:33:54',
-            icon:'./resources/img/jiaoxue/02.jpg',
-            url:'./resources/video/02淡糟香螺片.mp4'
-        },{
-            name:'爆炒双脆',
-            time:'2017/06/29 17:33:25',
-            icon:'./resources/img/jiaoxue/03.jpg',
-            url:'./resources/video/03爆炒双脆.mp4'
-        },{
-            name:'注油鳗鱼',
-            time:'2017/06/10 17:32:12',
-            icon:'./resources/img/jiaoxue/04.jpg',
-            url:'./resources/video/04注油鳗鱼.mp4'
-        },{
-            name:'全节黄瓜鱼',
-            time:'2017/06/11 14:44:21',
-            icon:'./resources/img/jiaoxue/05.jpg',
-            url:'./resources/video/05全节黄瓜鱼.mp4'
-        }];
     $scope.gotoDetail = function (id) {
         $state.go('main.videoplay',{id:id});
     };
