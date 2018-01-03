@@ -56,6 +56,11 @@ homepage.controller('HomePageController', function ($scope,$http,$location,$root
     };
     httpService.HttpGet('news',$scope.queryNews).then(function (res) {
         $scope.dataNewsContents = res.data.content;
+        for (var i = $scope.dataNewsContents.length - 1; i >= 0; i--) {
+            if ($scope.dataNewsContents[i].brief.length>90) {
+                $scope.dataNewsContents[i].brief = $scope.dataNewsContents[i].brief.substr(0,90)+'...';
+            }
+        }
     },function (err) {
         console.log(err);
     });
